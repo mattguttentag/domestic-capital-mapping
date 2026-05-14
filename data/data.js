@@ -4982,6 +4982,42 @@ const DATASET = {
     "Pipeline confidence": "H",
     "Reason not in Commitments Database": "Named AOFSA member; public evidence supports aggregate AOFSA commitments but not a separate member-level commitment record.",
     "Source URL": "https://www.engineeringnews.co.za/article/aofsa-exceeds-infrastructure-investment-target-as-it-marks-first-anniversary-2022-11-21"
+  },
+  {
+    "Entity / prospective allocator": "KEPFIC (Kenya Pension Funds Investment Consortium)",
+    "Allocator country": "Kenya",
+    "Allocator type": "Pension consortium / pooled mandate",
+    "Status category": "Pooled mandate / aggregate evidence",
+    "GP or counterparty": "Various managers via KEPFIC consortium",
+    "Fund / Vehicle / Deal name": "KEPFIC pooled mandates (Kenya)",
+    "Asset class": "Infrastructure / Alts",
+    "Geographic focus": "Kenya + regional",
+    "Vintage / Year": "2019-ongoing",
+    "Potential size / target": "USD 113m mobilized into two housing projects; member AUM ~USD 5bn",
+    "Currency": "USD",
+    "Disclosure type": "Aggregate consortium / pooled mandate",
+    "Source (short)": "IFC 2023; MiDA Advisors",
+    "Pipeline confidence": "H",
+    "Reason not in Commitments Database": "Aggregate pooled mandate / consortium archetype, not a conventional fund vehicle LP row. Kept out of Fund Vehicles and Commitments Database to avoid treating a mandate platform as a fund commitment.",
+    "Source URL": "https://www.ifc.org/en/stories/2023/pooling-pensions-in-kenya ; https://www.midaadvisors.com/advisory-firm-financing-the-development-of-critical-infrastructure-in-kenya-with-local-institutional-capital"
+  },
+  {
+    "Entity / prospective allocator": "Asset Owners Forum of South Africa (AOFSA)",
+    "Allocator country": "South Africa",
+    "Allocator type": "Pension consortium / pooled mandate",
+    "Status category": "Pooled mandate / aggregate evidence",
+    "GP or counterparty": "Various managers via AOFSA consortium",
+    "Fund / Vehicle / Deal name": "AOFSA pooled infrastructure mandates (South Africa)",
+    "Asset class": "Infrastructure / Alts",
+    "Geographic focus": "South Africa",
+    "Vintage / Year": "2021-ongoing",
+    "Potential size / target": "R5.7bn / USD 400m+ collectively committed to infrastructure and other alternatives",
+    "Currency": "ZAR / USD",
+    "Disclosure type": "Aggregate consortium / pooled mandate",
+    "Source (short)": "Engineering News 2022; MiDA/USAID AOFSA case materials",
+    "Pipeline confidence": "H",
+    "Reason not in Commitments Database": "Aggregate pooled mandate / consortium archetype, not a conventional fund vehicle LP row. Kept out of Fund Vehicles and Commitments Database to avoid treating a mandate platform as a fund commitment.",
+    "Source URL": "https://www.engineeringnews.co.za/article/aofsa-exceeds-infrastructure-investment-target-as-it-marks-first-anniversary-2022-11-21 ; https://www.midaadvisors.com/advisory-firm-what-we-do/institutional-investors-capacity-development"
   }
 ],
   "Source_Library": [
@@ -7188,20 +7224,6 @@ const DATASET = {
     "Co-investor pattern note": "Bilateral SWF healthcare platform."
   },
   {
-    "Fund / Vehicle": "KEPFIC pooled mandates (Kenya)",
-    "Manager / GP": "Various (mandates allocated to managers)",
-    "Vintage": "2019-ongoing",
-    "Fund size (USD m)": "USD 113m mobilized into two housing projects; member AUM ~USD 5bn",
-    "Asset class": "Infrastructure / alts",
-    "Geographic focus": "Kenya + regional",
-    "African PF/SWF LPs (count)": "24 member schemes",
-    "Named African PF/SWF LPs": "24 Kenyan retirement benefit funds (named on KEPFIC site); collective ~1/3 of total Kenyan pension AUM",
-    "DFI LPs (count)": 0,
-    "Named DFI LPs": "—",
-    "Other named LPs": "USAID + World Bank Group technical support; FMA Kenya MOU",
-    "Co-investor pattern note": "Aggregate consortium archetype, not a conventional fund LP row. Retained because IFC reports two facilitated member-fund investments and $113m mobilized; MiDA reports members invested in Lot 3 Road Project Bonds."
-  },
-  {
     "Fund / Vehicle": "Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN)",
     "Manager / GP": "Sahel Capital",
     "Vintage": 2017,
@@ -7242,20 +7264,6 @@ const DATASET = {
     "Named DFI LPs": "FSD Africa Investments (structuring + planned guarantee)",
     "Other named LPs": "—",
     "Co-investor pattern note": "First permanent capital vehicle anchored by an African pension fund (per RSSB CEO). Three regional firsts: pension-fund-led SME-only mandate, anchor permanent-capital vehicle, pension-fund TA facility."
-  },
-  {
-    "Fund / Vehicle": "AOFSA pooled infrastructure mandates (South Africa)",
-    "Manager / GP": "Various managers (mandates allocated)",
-    "Vintage": "2021-ongoing",
-    "Fund size (USD m)": "R5.7bn / USD 400m+ collectively committed to infrastructure and other alternatives",
-    "Asset class": "Infrastructure / Alts",
-    "Geographic focus": "South Africa",
-    "African PF/SWF LPs (count)": "12-15 member schemes",
-    "Named African PF/SWF LPs": "GEPF; EPPF; Telkom Retirement Fund; Transnet Retirement Fund; National Fund for Municipal Workers; KZN Joint Municipal Pension Fund (NJMPF); KZN Municipal Pension Fund; Motor Industry Retirement Fund (named); 4-7 additional founding members not individually named",
-    "DFI LPs (count)": 0,
-    "Named DFI LPs": "—",
-    "Other named LPs": "Batseta Council; USAID + MiDA Advisors + World Bank technical support",
-    "Co-investor pattern note": "Aggregate consortium archetype, not a conventional fund LP row. Retained because public sources report actual collective member commitments, while individual member rows are not separately counted as commitments."
   },
   {
     "Fund / Vehicle": "Mirepa Capital SME Fund I",
@@ -8546,9 +8554,9 @@ const DATASET = {
     "Original row": 37,
     "Vehicle / entity": "KEPFIC pooled mandates (Kenya)",
     "Column H / named African PF/SWF evidence": "24 Kenyan retirement benefit funds (named on KEPFIC site); collective ~1/3 of total Kenyan pension AUM",
-    "Decision": "Include",
-    "Audit confidence": "Include - aggregate actual pooled mandate",
-    "Rationale": "Retain as aggregate consortium archetype, not as a conventional fund LP row. IFC reports KEPFIC mobilized $113m into two housing projects and facilitated two member-fund investments; MiDA reports Lot 3 Road Project Bonds investment by KEPFIC members.",
+    "Decision": "Move to Pipeline & Mandates",
+    "Audit confidence": "Moved - aggregate pooled mandate",
+    "Rationale": "Aggregate pooled mandate / consortium archetype, not a conventional fund vehicle LP row. Kept out of Fund Vehicles and Commitments Database to avoid treating a mandate platform as a fund commitment.",
     "Source URLs": "https://www.ifc.org/en/stories/2023/pooling-pensions-in-kenya ; https://www.midaadvisors.com/advisory-firm-financing-the-development-of-critical-infrastructure-in-kenya-with-local-institutional-capital"
   },
   {
@@ -8606,9 +8614,9 @@ const DATASET = {
     "Original row": 43,
     "Vehicle / entity": "AOFSA pooled infrastructure mandates (South Africa)",
     "Column H / named African PF/SWF evidence": "GEPF; EPPF; Telkom Retirement Fund; Transnet Retirement Fund; National Fund for Municipal Workers; KZN Joint Municipal Pension Fund (NJMPF); KZN Municipal Pension Fund; Motor Industry Retirement Fund (named); 4-7 additional founding members not individually named",
-    "Decision": "Include",
-    "Audit confidence": "Include - aggregate actual pooled mandate",
-    "Rationale": "Retain as aggregate consortium archetype. Engineering News reports AOFSA member funds collectively committed R5.7bn to infrastructure; MiDA/USAID sources also report >$400m commitments.",
+    "Decision": "Move to Pipeline & Mandates",
+    "Audit confidence": "Moved - aggregate pooled mandate",
+    "Rationale": "Aggregate pooled mandate / consortium archetype, not a conventional fund vehicle LP row. Kept out of Fund Vehicles and Commitments Database to avoid treating a mandate platform as a fund commitment.",
     "Source URLs": "https://www.engineeringnews.co.za/article/aofsa-exceeds-infrastructure-investment-target-as-it-marks-first-anniversary-2022-11-21 ; https://www.midaadvisors.com/advisory-firm-what-we-do/institutional-investors-capacity-development"
   },
   {

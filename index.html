@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>African PF &amp; SWF Capital Mapping</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="app-header">
+  <h1>African <span>PF &amp; SWF</span> Capital Mapping</h1>
+</header>
+
+<nav id="tab-bar">
+  <button class="tab-btn active" data-tab="overview">Overview</button>
+  <button class="tab-btn" data-tab="institutions">Institutions</button>
+  <button class="tab-btn" data-tab="commitments">Commitments</button>
+  <button class="tab-btn" data-tab="funds">Fund Vehicles</button>
+  <button class="tab-btn" data-tab="pipeline">Pipeline &amp; Mandates</button>
+  <button class="tab-btn" data-tab="network">Network Map</button>
+  <button class="tab-btn" data-tab="charts">Charts &amp; Analysis</button>
+</nav>
+
+<!-- ═══════════════ OVERVIEW ═══════════════ -->
+<div id="tab-overview" class="tab-panel active">
+<div class="pg">
+
+  <div class="stats-row">
+    <div class="stat-card"><div class="stat-num" id="stat-allocators">—</div><div class="stat-label">Active Allocators</div></div>
+    <div class="stat-card"><div class="stat-num" id="stat-commitments">—</div><div class="stat-label">Commitments (H+M)</div></div>
+    <div class="stat-card"><div class="stat-num" id="stat-funds">—</div><div class="stat-label">Fund Vehicles</div></div>
+    <div class="stat-card"><div class="stat-num" id="stat-dfis">—</div><div class="stat-label">DFI Co-Investors</div></div>
+  </div>
+
+  <div class="overview-grid">
+
+    <div class="card">
+      <div class="section-title">Top Allocators by Commitment Count</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Institution</th><th>Commitments</th><th></th></tr></thead>
+          <tbody id="top-allocators-list"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-title">Commitments by Asset Class</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Asset Class</th><th>Count</th><th></th></tr></thead>
+          <tbody id="asset-breakdown"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /overview-grid -->
+</div><!-- /main -->
+</div><!-- /tab-overview -->
+
+<!-- ═══════════════ INSTITUTIONS ═══════════════ -->
+<div id="tab-institutions" class="tab-panel">
+<div class="pg">
+  <div class="card">
+    <div class="section-title">Pension Funds &amp; Sovereign Wealth Funds <span class="count" id="inst-result-count"></span></div>
+    <div class="filters-bar">
+      <input type="text" id="inst-search" placeholder="Search institution or country…">
+      <select id="inst-type-filter"><option value="">All types</option><option value="PF">Pension Funds</option><option value="SWF">Sovereign Wealth Funds</option></select>
+      <select id="inst-country-filter"><option value="">All countries</option></select>
+      <label class="net-ctrl-label"><input type="checkbox" id="inst-tier1"> Tier 1 only (≥$2bn)</label>
+      <button class="btn-clear" id="inst-clear">Clear</button>
+    </div>
+    <div class="data-table-wrap">
+      <table class="data-table" id="inst-table">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th data-col="Institution">Institution <span class="sort-arrow"></span></th>
+            <th data-col="Country">Country <span class="sort-arrow"></span></th>
+            <th>Mandate / Type</th>
+            <th data-col="AUM (USD m, approx)">AUM <span class="sort-arrow">↓</span></th>
+            <th>As-of</th>
+          </tr>
+        </thead>
+        <tbody id="inst-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ═══════════════ COMMITMENTS ═══════════════ -->
+<div id="tab-commitments" class="tab-panel">
+<div class="pg">
+
+    <div class="card">
+      <div class="section-title">Commitments Database <span class="count" id="comm-result-count"></span></div>
+      <div class="filters-bar">
+        <input type="text" id="comm-search" placeholder="Allocator, fund, GP…">
+        <select id="comm-asset-filter"><option value="">All asset classes</option></select>
+        <select id="comm-geo-filter">
+          <option value="">All geographies</option>
+          <option value="Domestic">Domestic</option>
+          <option value="Pan-Africa">Pan-African</option>
+          <option value="Regional">Regional</option>
+        </select>
+        <select id="comm-conf-filter"><option value="">Any confidence</option><option value="H">High</option><option value="M">Medium</option><option value="L">Low</option></select>
+        <input type="text" id="comm-year-filter" placeholder="Year e.g. 2022" style="width:110px">
+        <button class="btn-clear" id="comm-clear">Clear</button>
+      </div>
+      <div class="data-table-wrap full-tab-table">
+        <table class="data-table" id="comm-table">
+          <thead>
+            <tr>
+              <th data-col="Allocator (institution)">Allocator <span class="sort-arrow"></span></th>
+              <th data-col="Allocator country">Country <span class="sort-arrow"></span></th>
+              <th data-col="Fund / Vehicle / Deal name">Fund / Vehicle <span class="sort-arrow"></span></th>
+              <th>GP</th>
+              <th>Asset</th>
+              <th>Geography</th>
+              <th data-col="Vintage / Year">Year <span class="sort-arrow">↓</span></th>
+              <th>Conf.</th>
+            </tr>
+          </thead>
+          <tbody id="comm-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+</div>
+</div>
+
+<!-- ═══════════════ FUND VEHICLES ═══════════════ -->
+<div id="tab-funds" class="tab-panel">
+<div class="pg">
+
+    <div class="card">
+      <div class="section-title">Fund Vehicles <span class="count" id="fund-result-count"></span></div>
+      <div class="filters-bar">
+        <input type="text" id="fund-search" placeholder="Fund, manager, LP name…">
+        <select id="fund-asset-filter"><option value="">All asset classes</option></select>
+        <select id="fund-geo-filter">
+          <option value="">All geographies</option>
+          <option value="Domestic">Domestic</option>
+          <option value="Pan-Africa">Pan-African</option>
+          <option value="Regional">Regional</option>
+        </select>
+        <button class="btn-clear" id="fund-clear">Clear</button>
+      </div>
+      <div class="full-tab-list">
+        <div id="funds-list"></div>
+      </div>
+    </div>
+
+</div>
+</div>
+
+<!-- ═══════════════ PIPELINE & MANDATES ═══════════════ -->
+<div id="tab-pipeline" class="tab-panel">
+<div class="pg">
+
+  <div class="stats-row">
+    <div class="stat-card"><div class="stat-num" id="pipe-total">—</div><div class="stat-label">Pipeline Rows</div></div>
+    <div class="stat-card"><div class="stat-num" id="pipe-forward">—</div><div class="stat-label">Targeted / Expected / Planned</div></div>
+    <div class="stat-card"><div class="stat-num" id="pipe-member">—</div><div class="stat-label">Member-Only Mandates</div></div>
+    <div class="stat-card"><div class="stat-num" id="pipe-countries">—</div><div class="stat-label">Countries</div></div>
+  </div>
+
+  <div class="card">
+    <div class="section-title">Pipeline &amp; Mandates <span class="count" id="pipe-result-count"></span></div>
+    <p class="helper-text">Forward-looking, mandate, and membership-evidence rows are tracked here separately. They are excluded from the Commitments Database until there is public evidence of an actual allocator-to-vehicle commitment.</p>
+    <div class="filters-bar">
+      <input type="text" id="pipe-search" placeholder="Allocator, vehicle, GP, rationale…">
+      <select id="pipe-status-filter"><option value="">All status categories</option></select>
+      <select id="pipe-country-filter"><option value="">All countries</option></select>
+      <select id="pipe-asset-filter"><option value="">All asset classes</option></select>
+      <select id="pipe-conf-filter"><option value="">Any confidence</option><option value="H">High</option><option value="M">Medium</option><option value="L">Low</option></select>
+      <button class="btn-clear" id="pipe-clear">Clear</button>
+    </div>
+    <div class="data-table-wrap" style="max-height:640px;overflow-y:auto">
+      <table class="data-table" id="pipe-table">
+        <thead>
+          <tr>
+            <th data-col="Entity / prospective allocator">Entity <span class="sort-arrow"></span></th>
+            <th data-col="Status category">Status <span class="sort-arrow"></span></th>
+            <th data-col="Allocator country">Country <span class="sort-arrow"></span></th>
+            <th data-col="Fund / Vehicle / Deal name">Fund / Vehicle <span class="sort-arrow"></span></th>
+            <th>GP</th>
+            <th>Asset</th>
+            <th>Potential Size</th>
+            <th>Conf.</th>
+            <th>Reason Separate</th>
+          </tr>
+        </thead>
+        <tbody id="pipe-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ═══════════════ NETWORK ═══════════════ -->
+<div id="tab-network" class="tab-panel" style="padding:12px 24px;height:calc(100vh - 100px)">
+
+  <div id="network-container">
+
+    <!-- Controls sidebar -->
+    <div id="network-controls">
+
+      <div class="card" style="padding:12px">
+        <div class="network-section">
+          <h4>Search Nodes</h4>
+          <input type="text" id="network-search" placeholder="Filter by name…">
+        </div>
+      </div>
+
+      <div class="card" style="padding:12px">
+        <div class="network-section">
+          <h4>Show / Hide</h4>
+          <label class="net-ctrl-label"><input type="checkbox" id="net-show-allocators" checked> Allocators (PF/SWF)</label>
+          <label class="net-ctrl-label"><input type="checkbox" id="net-show-funds" checked> Fund Vehicles</label>
+          <label class="net-ctrl-label"><input type="checkbox" id="net-show-dfis" checked> DFI / Other LPs</label>
+        </div>
+      </div>
+
+      <div class="card" style="padding:12px">
+        <div class="network-section">
+          <h4>Node Legend</h4>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <div class="network-legend-item"><div class="legend-dot" style="background:#c8891a;transform:rotate(45deg);border-radius:2px"></div> DFI / Other LP (diamond, sized by count)</div>
+            <div class="network-legend-item"><div class="legend-dot" style="background:#2563eb"></div> Allocator — circle</div>
+            <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#6b7280"></div> Fund Vehicle — square</div>
+            <div style="border-top:1px solid var(--border);margin:4px 0"></div>
+            <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em">Allocator colors</div>
+            <div class="network-legend-item"><div class="legend-dot" style="background:#1e7b5e"></div> Southern Africa</div>
+            <div class="network-legend-item"><div class="legend-dot" style="background:#2563eb"></div> East Africa</div>
+            <div class="network-legend-item"><div class="legend-dot" style="background:#d97706"></div> West Africa</div>
+            <div class="network-legend-item"><div class="legend-dot" style="background:#7c3aed"></div> North Africa</div>
+            <div style="border-top:1px solid var(--border);margin:4px 0"></div>
+            <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em">Fund colors</div>
+            <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#2563eb"></div> PE</div>
+            <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#7c3aed"></div> VC</div>
+            <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#059669"></div> Infrastructure</div>
+            <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#d97706"></div> Private Credit</div>
+            <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#dc2626"></div> Direct</div>
+            <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#0891b2"></div> Fund-of-Funds</div>
+            <div style="border-top:1px solid var(--border);margin:4px 0"></div>
+            <div style="font-size:11px;color:var(--muted)">
+              <strong style="color:#f59e0b">Gold edges</strong> = DFI / other-LP co-investment<br>
+              <strong style="color:#94a3b8">Grey edges</strong> = PF/SWF commitment<br>
+              Scroll to zoom · Drag nodes/canvas
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="padding:12px">
+        <div class="network-section">
+          <h4>Selected Node</h4>
+          <div id="network-selected-info" class="selected-info">
+            <em style="color:var(--muted)">Click a node to inspect it.</em>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /controls -->
+
+    <!-- SVG -->
+    <div id="network-svg-wrap">
+      <svg id="network-svg"></svg>
+      <div id="network-tooltip"></div>
+      <div id="network-info"></div>
+    </div>
+
+  </div><!-- /network-container -->
+</div><!-- /tab-network -->
+
+<!-- ═══════════════ CHARTS ═══════════════ -->
+<div id="tab-charts" class="tab-panel">
+<div class="pg">
+
+  <div class="overview-grid">
+
+    <div class="card" style="grid-column:1/-1">
+      <div class="section-title">DFI Co-Investor Frequency</div>
+      <p style="font-size:12px;color:var(--muted);margin-bottom:8px">Number of fund vehicles with at least one African PF/SWF LP where each DFI also co-invested. <strong style="color:#1e7b5e">Green</strong> = Tier 1 · <strong style="color:#2563eb">Blue</strong> = Tier 2 · <strong style="color:#7c3aed">Purple</strong> = Tier 3.</p>
+      <div class="chart-wrap tall"><canvas id="chart-dfi"></canvas></div>
+    </div>
+
+  </div>
+
+</div>
+</div><!-- /tab-charts -->
+
+<!-- ── Scripts ─────────────────────────────────────────────────── -->
+<script src="data/data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/network.js"></script>
+
+</body>
+</html>

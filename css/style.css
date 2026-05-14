@@ -392,6 +392,47 @@ canvas { max-width: 100%; }
   border: 1px solid var(--border);
   border-radius: 6px;
   font-size: 12px;
+  order: 2;
+}
+.network-search-results {
+  order: 3;
+  display: none;
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: white;
+}
+.network-search-results.is-visible { display: flex; flex-direction: column; }
+.network-search-result {
+  appearance: none;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  background: white;
+  padding: 8px 9px;
+  text-align: left;
+  cursor: pointer;
+}
+.network-search-result:last-child { border-bottom: 0; }
+.network-search-result:hover,
+.network-search-result:focus {
+  background: #f1f5f9;
+  outline: none;
+}
+.network-search-result strong {
+  display: block;
+  color: var(--navy);
+  font-size: 12px;
+  line-height: 1.25;
+}
+.network-search-result span {
+  color: var(--muted);
+  font-size: 11px;
+}
+.network-search-empty {
+  padding: 8px 9px;
+  color: var(--muted);
+  font-size: 12px;
 }
 .selected-info {
   background: var(--bg);

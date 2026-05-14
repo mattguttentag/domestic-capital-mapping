@@ -371,9 +371,12 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
     .attr('width', W)
     .attr('height', H);
 
+  const nodeById = new Map(nodeArr.map(d => [d.id, d]));
+
   // Zoom container
   const g = svg.append('g').attr('class', 'zoom-layer');
-  svg.call(d3.zoom().scaleExtent([0.15, 4]).on('zoom', e => g.attr('transform', e.transform)));
+  const zoomBehavior = d3.zoom().scaleExtent([0.15, 4]).on('zoom', e => g.attr('transform', e.transform));
+  svg.call(zoomBehavior);
 
   // ── Simulation ────────────────────────────────────────────────
   const sim = d3.forceSimulation(nodeArr)
@@ -486,17 +489,19 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
 
   svg.on('click', (e) => {
     if (e.target !== svg.node()) return;
-    selected = null;
-    resetHighlight();
-    infoEl.innerHTML = '<em style="color:var(--muted)">Click a node to inspect it.</em>';
+    clearSelection();
   });
 
   node.on('click', (e, d) => {
     e.stopPropagation();
+    selectNode(d, { toggle: true, center: false });
+  });
+
+  function selectNode(d, opts = {}) {
+    if (!d) return;
     if (selected === d.id) {
-      selected = null;
-      resetHighlight();
-      infoEl.innerHTML = '<em style="color:var(--muted)">Click a node to inspect it.</em>';
+      if (opts.toggle) clearSelection();
+      else if (opts.center) centerOnNode(d);
       return;
     }
     selected = d.id;
@@ -524,7 +529,21 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
     if (d.type === 'fund') html += `<br>Type: Fund<br>GP: ${escHtml(d.gp||'—')}<br>Asset: ${escHtml(d.assetClass||'—')}<br>Geo: ${escHtml(d.geo||'—')}`;
     html += `<br>Connections: <strong>${[...connectedIds].length - 1}</strong>`;
     infoEl.innerHTML = html;
-  });
+    if (opts.center) centerOnNode(d);
+  }
+
+  function clearSelection() {
+    selected = null;
+    resetHighlight();
+    infoEl.innerHTML = '<em style="color:var(--muted)">Click a node to inspect it.</em>';
+  }
+
+  function centerOnNode(d) {
+    if (!Number.isFinite(d.x) || !Number.isFinite(d.y)) return;
+    const scale = 1.35;
+    const transform = d3.zoomIdentity.translate(W / 2 - d.x * scale, H / 2 - d.y * scale).scale(scale);
+    svg.transition().duration(450).call(zoomBehavior.transform, transform);
+  }
 
   function resetHighlight() {
     node.selectAll('circle, rect').attr('opacity', 1);
@@ -541,16 +560,72 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
   });
 
   // ── Filter controls ───────────────────────────────────────────
+  const searchInput = document.getElementById('network-search');
+  const searchResultsEl = document.getElementById('network-search-results');
+
+  function normalizeSearch(v) {
+    return String(v || '')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, ' ')
+      .trim();
+  }
+
+  function nodeSearchText(d) {
+    return normalizeSearch([d.label, d.type, d.country, d.allocType, d.gp, d.assetClass, d.geo, d.tier].filter(Boolean).join(' '));
+  }
+
+  function typeLabel(d) {
+    if (d.type === 'dfi') return 'DFI / Other LP';
+    if (d.type === 'fund') return 'Fund Vehicle';
+    return 'Allocator';
+  }
+
+  function currentMatches() {
+    const q = normalizeSearch(searchInput?.value || '');
+    if (!q) return [];
+    const terms = q.split(/\s+/).filter(Boolean);
+    return nodeArr
+      .filter(d => terms.every(term => nodeSearchText(d).includes(term)))
+      .sort((a, b) => {
+        const aStarts = normalizeSearch(a.label).startsWith(q) ? 0 : 1;
+        const bStarts = normalizeSearch(b.label).startsWith(q) ? 0 : 1;
+        return aStarts - bStarts || (b.linkCount || 0) - (a.linkCount || 0) || a.label.localeCompare(b.label);
+      });
+  }
+
+  function renderSearchResults(matches) {
+    if (!searchResultsEl) return;
+    if (!normalizeSearch(searchInput?.value || '')) {
+      searchResultsEl.classList.remove('is-visible');
+      searchResultsEl.innerHTML = '';
+      return;
+    }
+    if (!matches.length) {
+      searchResultsEl.classList.add('is-visible');
+      searchResultsEl.innerHTML = '<div class="network-search-empty">No matching nodes.</div>';
+      return;
+    }
+    searchResultsEl.classList.add('is-visible');
+    searchResultsEl.innerHTML = matches.slice(0, 8).map(d => `
+      <button type="button" class="network-search-result" data-node-id="${encodeURIComponent(d.id)}">
+        <strong>${escHtml(d.label)}</strong>
+        <span>${escHtml(typeLabel(d))} - ${d.linkCount || 0} connections</span>
+      </button>
+    `).join('');
+  }
+
   function applyFilters() {
     const showAlloc = document.getElementById('net-show-allocators')?.checked ?? true;
     const showFund  = document.getElementById('net-show-funds')?.checked ?? true;
     const showDFI   = document.getElementById('net-show-dfis')?.checked ?? true;
-    const q = (document.getElementById('network-search')?.value || '').toLowerCase();
+    const matches = currentMatches();
+    const matchIds = new Set(matches.map(d => d.id));
+    const q = normalizeSearch(searchInput?.value || '');
     const searchVisible = new Set();
     if (q) {
-      nodeArr.forEach(d => {
-        if (d.label.toLowerCase().includes(q)) searchVisible.add(d.id);
-      });
+      matches.forEach(d => searchVisible.add(d.id));
       linkArr.forEach(l => {
         const s = typeof l.source === 'object' ? l.source.id : l.source;
         const t = typeof l.target === 'object' ? l.target.id : l.target;
@@ -573,18 +648,38 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
     node.style('display', d => {
       return isVisibleNode(d) ? '' : 'none';
     });
+    node.selectAll('circle, rect')
+      .attr('stroke', d => q && matchIds.has(d.id) ? '#111827' : 'white')
+      .attr('stroke-width', d => q && matchIds.has(d.id) ? 3 : 1.5);
     link.style('display', l => {
-      const sNode = typeof l.source === 'object' ? l.source : nodes.get(l.source);
-      const tNode = typeof l.target === 'object' ? l.target : nodes.get(l.target);
+      const sNode = typeof l.source === 'object' ? l.source : nodeById.get(l.source);
+      const tNode = typeof l.target === 'object' ? l.target : nodeById.get(l.target);
       if (!sNode || !tNode) return 'none';
       return (isVisibleNode(sNode) && isVisibleNode(tNode)) ? '' : 'none';
     });
+    renderSearchResults(matches);
   }
 
   ['net-show-allocators','net-show-funds','net-show-dfis'].forEach(id => {
     document.getElementById(id)?.addEventListener('change', applyFilters);
   });
-  document.getElementById('network-search')?.addEventListener('input', applyFilters);
+  searchInput?.addEventListener('input', () => {
+    clearSelection();
+    applyFilters();
+  });
+  searchInput?.addEventListener('keydown', e => {
+    if (e.key !== 'Enter') return;
+    const first = currentMatches()[0];
+    if (!first) return;
+    e.preventDefault();
+    selectNode(first, { center: true });
+  });
+  searchResultsEl?.addEventListener('click', e => {
+    const btn = e.target.closest('.network-search-result');
+    if (!btn) return;
+    const d = nodeById.get(decodeURIComponent(btn.dataset.nodeId || ''));
+    if (d) selectNode(d, { center: true });
+  });
 
   // ── Node count info ───────────────────────────────────────────
   const dfisCount  = nodeArr.filter(n => n.type === 'dfi').length;

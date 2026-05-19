@@ -3715,18 +3715,18 @@ const DATASET = {
     "Allocator (institution)": "Ithmar Capital",
     "Allocator country": "Morocco",
     "Allocator type": "SWF (sector-strategic)",
-    "Commitment type": "Fund LP",
-    "GP or counterparty": "Wessal Capital",
-    "Fund / Vehicle / Deal name": "Wessal Capital (joint Morocco + Gulf SWFs platform)",
-    "Asset class": "Direct / Real estate, infra",
+    "Commitment type": "Platform / direct strategic investment vehicle",
+    "GP or counterparty": "Wessal Capital joint venture",
+    "Fund / Vehicle / Deal name": "Wessal Capital (SWF joint investment vehicle)",
+    "Asset class": "Direct / real estate / tourism infrastructure",
     "Geographic focus": "Domestic",
     "Vintage / Year": "active",
-    "Commitment size (reported)": "USD 2.5bn target",
+    "Commitment size (reported)": "EUR 2.5bn equity commitment",
     "Currency": "USD",
     "Disclosure type": "Press release",
-    "Source (short)": "Wessal Capital announcements",
+    "Source (short)": "Ithmar portfolio: Wessal",
     "Confidence": "H",
-    "Notes": "Joint platform with Abu Dhabi, Kuwait, Qatar SWFs."
+    "Notes": "Ithmar describes Wessal as an investment vehicle / joint venture equally owned by five SWFs, not a conventional GP-managed fund. Named projects include Wessal Bouregreg and Wessal Casa-Port."
   },
   {
     "Allocator (institution)": "Mohammed VI Fund for Investment",
@@ -4004,9 +4004,9 @@ const DATASET = {
     "Allocator (institution)": "FONSIS",
     "Allocator country": "Senegal",
     "Allocator type": "SWF (strategic)",
-    "Commitment type": "Fund LP",
+    "Commitment type": "Fund LP / sponsor",
     "GP or counterparty": "SEAF (Small Enterprise Assistance Funds)",
-    "Fund / Vehicle / Deal name": "Oyass Capital",
+    "Fund / Vehicle / Deal name": "Oyass Capital (SME fund)",
     "Asset class": "PE / SME",
     "Geographic focus": "Domestic",
     "Vintage / Year": 2024,
@@ -4015,7 +4015,7 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "FONSIS announcement Jan 2024",
     "Confidence": "H",
-    "Notes": "FONSIS partnered with KfW (Germany) to launch Oyass Capital for Senegalese SMEs; awarded mgmt mandate to SEAF after intl tender."
+    "Notes": "FONSIS and KfW/World Bank launched Oyass Capital as an SME-focused private-equity fund/financing vehicle; FONSIS says SEAF received the management mandate after an international tender."
   },
   {
     "Allocator (institution)": "FONSIS",
@@ -5236,7 +5236,7 @@ const DATASET = {
     "Title / publication": "FONSIS launches Oyass Capital, a XOF 50bn fund",
     "Date accessed": "May 2026",
     "URL": "https://www.fonsis.org/en/actualites/le-fonsis-lance-oyass-capital-un-fonds-de-50-milliards/",
-    "Used for": "FONSIS Oyass Capital launch with SEAF as manager"
+    "Used for": "Oyass Capital as FONSIS/KfW/World Bank-backed SME fund/financing vehicle; management mandate awarded to SEAF"
   },
   {
     "Allocator": "FONSIS",
@@ -6461,6 +6461,14 @@ const DATASET = {
     "Date accessed": "May 2026",
     "URL": "https://english.dggf.nl/latest/news/2019/01/24/zebu-s-africa-food-security-fund-a-dggf-investee-reaches-total-fund-size-of-usd-84-million",
     "Used for": "PIC/GEPF LP confirmation in Africa Food Security Fund; co-investors AfDB, CDC/BII, DGGF, IFU, EBID and Kuramo"
+  },
+  {
+    "Allocator": "Ithmar Capital",
+    "Source type": "SWF portfolio page",
+    "Title / publication": "Ithmar Capital - Our portfolio: Wessal",
+    "Date accessed": "May 2026",
+    "URL": "https://www.ithmar.gov.ma/en/our-portfolio/",
+    "Used for": "Wessal as SWF joint investment vehicle; EUR 2.5bn equity commitment; projects Wessal Bouregreg and Wessal Casa-Port"
   }
 ],
   "Tier_1_Candidates": [
@@ -6955,10 +6963,10 @@ const DATASET = {
     "Co-investor pattern note": "Landmark first-Nigerian-pension-funded infra fund."
   },
   {
-    "Fund / Vehicle": "Oyass Capital",
-    "Manager / GP": "SEAF (Small Enterprise Assistance Funds)",
+    "Fund / Vehicle": "Oyass Capital (SME fund)",
+    "Manager / GP": "SEAF / SEAF Senegal",
     "Vintage": "2024",
-    "Fund size (USD m)": "~82 (XOF 50bn)",
+    "Fund size (USD m)": "~79m target / EUR 54m mobilized",
     "Asset class": "PE / SME",
     "Geographic focus": "Senegal",
     "African PF/SWF LPs (count)": 1,
@@ -6966,7 +6974,7 @@ const DATASET = {
     "DFI LPs (count)": 1,
     "Named DFI LPs": "KfW (German cooperation)",
     "Other named LPs": "—",
-    "Co-investor pattern note": "FONSIS + KfW launch; SEAF mandate award after international tender."
+    "Co-investor pattern note": "FONSIS source describes Oyass Capital as an SME-focused private-equity fund/financing vehicle set up with KfW/World Bank support; management mandate awarded to SEAF."
   },
   {
     "Fund / Vehicle": "Yield Uganda Investment Fund",
@@ -7193,18 +7201,18 @@ const DATASET = {
     "Co-investor pattern note": "Digital infrastructure; PIC participant."
   },
   {
-    "Fund / Vehicle": "Wessal Capital",
-    "Manager / GP": "Wessal Capital partnership",
+    "Fund / Vehicle": "Wessal Capital (SWF joint investment vehicle)",
+    "Manager / GP": "Wessal Capital joint venture",
     "Vintage": "active",
-    "Fund size (USD m)": "USD 2.5bn target",
-    "Asset class": "Direct (real estate / infra)",
+    "Fund size (USD m)": "EUR 2.5bn equity commitment",
+    "Asset class": "Direct / real estate / tourism infrastructure",
     "Geographic focus": "Morocco",
     "African PF/SWF LPs (count)": 1,
     "Named African PF/SWF LPs": "Ithmar Capital (Morocco SWF)",
     "DFI LPs (count)": 0,
     "Named DFI LPs": "—",
-    "Other named LPs": "Abu Dhabi, Kuwait, Qatar SWFs (Gulf SWF co-investors)",
-    "Co-investor pattern note": "Joint Morocco + Gulf SWF platform."
+    "Other named LPs": "Al Ajial Investment Fund Holding; Mubadala; Public Investment Fund; Qatar Holding",
+    "Co-investor pattern note": "Ithmar describes Wessal as a joint investment vehicle, equally owned by five SWFs. Specific launched projects: Wessal Bouregreg and Wessal Casa-Port."
   },
   {
     "Fund / Vehicle": "Mohammed VI Fund for Investment",
@@ -8325,11 +8333,11 @@ const DATASET = {
   {
     "Sheet": "Funds & LP Co-Investors",
     "Original row": 9,
-    "Vehicle / entity": "Oyass Capital",
+    "Vehicle / entity": "Oyass Capital (SME fund)",
     "Column H / named African PF/SWF evidence": "FONSIS",
     "Decision": "Include",
     "Audit confidence": "Include",
-    "Rationale": "Column H identifies a named African PF/SWF, a named cohort, or the allocator itself is an African SWF/PF vehicle.",
+    "Rationale": "Retain as a fund/financing vehicle, not a GP. FONSIS describes Oyass Capital as an SME private-equity fund/financing vehicle; SEAF is the manager.",
     "Source URLs": null
   },
   {
@@ -8565,12 +8573,12 @@ const DATASET = {
   {
     "Sheet": "Funds & LP Co-Investors",
     "Original row": 33,
-    "Vehicle / entity": "Wessal Capital",
+    "Vehicle / entity": "Wessal Capital (SWF joint investment vehicle)",
     "Column H / named African PF/SWF evidence": "Ithmar Capital (Morocco SWF)",
     "Decision": "Include",
     "Audit confidence": "Include",
-    "Rationale": "Column H identifies a named African PF/SWF, a named cohort, or the allocator itself is an African SWF/PF vehicle.",
-    "Source URLs": null
+    "Rationale": "Retain as a direct SWF joint investment vehicle/platform rather than a conventional GP-managed fund. Ithmar names Wessal as an investment vehicle and identifies Wessal Bouregreg and Wessal Casa-Port as launched projects.",
+    "Source URLs": "https://www.ithmar.gov.ma/en/our-portfolio/"
   },
   {
     "Sheet": "Funds & LP Co-Investors",

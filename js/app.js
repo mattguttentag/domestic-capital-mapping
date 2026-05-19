@@ -371,7 +371,7 @@ function renderFunds() {
         <strong>${fmtAUM(r['Fund size (USD m)'])}</strong>
       </div>
       ${lps.length ? `<div class="fund-lps"><strong>African LPs:</strong> ${lps.map(l => `<span class="pill">${escHtml(l)}</span>`).join(' ')}</div>` : ''}
-      ${dfis.length ? `<div class="fund-lps"><strong>DFI LPs:</strong> ${dfis.map(d => `<span class="pill" style="background:#fef3c7;color:#78350f">${escHtml(d)}</span>`).join(' ')}</div>` : ''}
+      ${dfis.length ? `<div class="fund-lps"><strong>DFIs and Other LPs:</strong> ${dfis.map(d => `<span class="pill" style="background:#fef3c7;color:#78350f">${escHtml(d)}</span>`).join(' ')}</div>` : ''}
     </div>`;
   }).join('');
 }

@@ -15,6 +15,32 @@ const D = {
 };
 
 // ─── Helpers ───────────────────────────────────────────────────────
+const TRUE_DFI_NAMES = new Set([
+  'AfDB',
+  'BII',
+  'BIO',
+  'CDP Group',
+  'DEG',
+  'Dutch Good Growth Fund',
+  'EBID',
+  'EIB',
+  'FinDev Canada',
+  'FMO',
+  'IFC',
+  'IFU',
+  'KfW',
+  'Norfund',
+  'OeEB',
+  'Proparco',
+  'SIFEM',
+  'Swedfund',
+  'US DFC',
+]);
+
+function isTrueDfiRow(row) {
+  return TRUE_DFI_NAMES.has(String(row['DFI / Catalytic capital provider'] || '').trim());
+}
+
 function fmt(v) {
   if (v == null || v === '' || v === 'Not disclosed publicly') return '—';
   return String(v);
@@ -123,7 +149,7 @@ function renderOverview() {
   document.getElementById('stat-allocators').textContent = allAllocators.length;
   document.getElementById('stat-commitments').textContent = comms.length;
   document.getElementById('stat-funds').textContent = D.funds().length;
-  document.getElementById('stat-dfis').textContent = D.dfis().length;
+  document.getElementById('stat-dfis').textContent = D.dfis().filter(isTrueDfiRow).length;
 
   // Top allocators by commitment count
   const byAlloc = {};
@@ -546,7 +572,7 @@ function renderCharts() {
 
 function renderDFIChart() {
   const dfis = D.dfis()
-    .filter(r => r['DFI / Catalytic capital provider'] && r['Co-investments in funds with African PF/SWF LP'])
+    .filter(r => isTrueDfiRow(r) && r['Co-investments in funds with African PF/SWF LP'])
     .sort((a, b) => (b['Co-investments in funds with African PF/SWF LP'] || 0) - (a['Co-investments in funds with African PF/SWF LP'] || 0))
     .slice(0, 20);
 

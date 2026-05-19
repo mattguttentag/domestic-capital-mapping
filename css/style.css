@@ -38,30 +38,36 @@ body {
 
 /* ── Header ── */
 #app-header {
-  background: var(--navy);
+  background: linear-gradient(135deg, #153452 0%, #1e5f58 100%);
   color: white;
   padding: 0 24px;
   display: flex;
   align-items: center;
-  gap: 24px;
-  height: 56px;
+  justify-content: center;
+  min-height: 72px;
   position: sticky;
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 #app-header h1 {
-  font-size: 15px;
-  font-weight: 600;
-  white-space: nowrap;
-  letter-spacing: 0.01em;
+  font-size: 20px;
+  font-weight: 750;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 1.25;
+  max-width: 980px;
 }
-#app-header h1 span { color: #7ec8a4; }
+#app-header h1 span {
+  color: #b8ead1;
+  white-space: nowrap;
+}
 
 /* ── Tabs ── */
 #tab-bar {
   background: #132d47;
   display: flex;
+  justify-content: center;
   padding: 0 24px;
   gap: 4px;
   overflow-x: auto;
@@ -699,12 +705,14 @@ canvas { max-width: 100%; }
     padding: 10px 14px;
   }
   #app-header h1 {
-    font-size: 13px;
+    font-size: 15px;
     white-space: normal;
     line-height: 1.25;
   }
+  #app-header h1 span { white-space: normal; }
   #tab-bar {
     padding: 0 10px;
+    justify-content: flex-start;
   }
   .tab-btn {
     padding: 10px 12px;

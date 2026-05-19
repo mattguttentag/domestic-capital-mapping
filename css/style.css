@@ -282,6 +282,139 @@ body {
 }
 .btn-clear:hover { background: var(--bg); }
 
+.view-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  height: 34px;
+  background: white;
+}
+.view-toggle-btn {
+  border: 0;
+  border-right: 1px solid var(--border);
+  background: white;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0 12px;
+}
+.view-toggle-btn:last-child { border-right: 0; }
+.view-toggle-btn.active {
+  background: var(--navy);
+  color: white;
+}
+.view-panel { display: none; }
+.view-panel.active { display: block; }
+
+.africa-map {
+  min-height: 620px;
+}
+.map-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 14px;
+  align-items: stretch;
+}
+.map-canvas {
+  position: relative;
+  min-height: 560px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #eef4f5;
+  overflow: hidden;
+}
+.map-canvas svg {
+  display: block;
+  width: 100%;
+  height: 560px;
+}
+.map-country {
+  fill: #d9e6df;
+  stroke: #ffffff;
+  stroke-width: 0.7;
+}
+.map-country.has-data {
+  fill: #c9ded3;
+}
+.map-bubble {
+  fill: var(--teal);
+  fill-opacity: 0.78;
+  stroke: white;
+  stroke-width: 1.5;
+  cursor: pointer;
+}
+.map-bubble:hover,
+.map-bubble.active {
+  fill: var(--gold);
+  fill-opacity: 0.9;
+}
+.map-label {
+  fill: var(--navy);
+  font-size: 10px;
+  font-weight: 700;
+  pointer-events: none;
+  paint-order: stroke;
+  stroke: white;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+.map-panel {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: white;
+  padding: 14px;
+  min-height: 560px;
+}
+.map-panel h3 {
+  color: var(--navy);
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.map-panel .map-stat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 12px 0;
+}
+.map-stat-card {
+  background: var(--bg);
+  border-radius: 6px;
+  padding: 8px;
+}
+.map-stat-card strong {
+  display: block;
+  color: var(--navy);
+  font-size: 18px;
+}
+.map-stat-card span {
+  color: var(--muted);
+  font-size: 11px;
+}
+.map-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 8px;
+}
+.map-list-item {
+  border-top: 1px solid var(--border);
+  padding-top: 7px;
+  font-size: 12px;
+}
+.map-list-item strong {
+  color: var(--navy);
+}
+.map-muted {
+  color: var(--muted);
+  font-size: 12px;
+}
+.map-error {
+  padding: 28px;
+  color: var(--muted);
+}
+
 /* ── Tables ── */
 .data-table-wrap { overflow-x: auto; }
 .data-table {
@@ -392,6 +525,9 @@ body {
 }
 @media (max-width: 900px) {
   .overview-grid { grid-template-columns: 1fr; }
+  .map-layout { grid-template-columns: 1fr; }
+  .map-panel { min-height: auto; }
+  .map-canvas svg { height: 460px; }
 }
 
 /* ── Chart containers ── */

@@ -158,6 +158,63 @@ body {
   text-decoration: none;
 }
 .research-card a:hover { text-decoration: underline; }
+.key-facts-section {
+  margin-top: 22px;
+}
+.facts-band {
+  margin-top: 14px;
+}
+.facts-band-title {
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px;
+}
+.facts-grid.compact {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.fact-tile {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--navy);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 13px 14px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.fact-tile.warning { border-top-color: var(--gold); }
+.fact-tile.success { border-top-color: var(--teal); }
+.fact-tile.lesson { border-top-color: var(--fof); }
+.fact-number {
+  color: var(--navy);
+  font-size: 26px;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.fact-label {
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.45;
+}
+.fact-source {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: auto;
+  padding-top: 12px;
+}
 .section-title {
   font-size: 16px;
   font-weight: 700;

@@ -364,8 +364,8 @@ function buildNetwork() {
 
 function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
   const wrap  = document.getElementById('network-svg-wrap');
-  const W = wrap.clientWidth  || 900;
-  const H = wrap.clientHeight || 700;
+  let W = wrap.clientWidth  || 900;
+  let H = wrap.clientHeight || 700;
 
   const svg = d3.select('#network-svg')
     .attr('width', W)
@@ -560,6 +560,17 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
   });
 
   // ── Filter controls ───────────────────────────────────────────
+  const resizeObserver = new ResizeObserver(entries => {
+    const rect = entries[0]?.contentRect;
+    if (!rect || rect.width < 10 || rect.height < 10) return;
+    W = rect.width;
+    H = rect.height;
+    svg.attr('width', W).attr('height', H);
+    sim.force('center', d3.forceCenter(W / 2, H / 2));
+    sim.alpha(0.25).restart();
+  });
+  resizeObserver.observe(wrap);
+
   const searchInput = document.getElementById('network-search');
   const searchResultsEl = document.getElementById('network-search-results');
 

@@ -422,7 +422,7 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
     if (d.type === 'dfi')       return '#c8891a';
     if (d.type === 'fund') {
       const ac = d.assetClass || assetClass(d.label);
-      const colors = { PE: '#2563eb', VC: '#7c3aed', Infra: '#059669', Credit: '#d97706', Direct: '#dc2626', FoF: '#0891b2', Mixed: '#6b7280', Other: '#6b7280' };
+      const colors = { PE: '#2563eb', VC: '#7c3aed', Infra: '#059669', Credit: '#d97706', Direct: '#dc2626', FundOfFunds: '#0891b2', Mixed: '#6b7280', Other: '#6b7280' };
       return colors[ac] || '#6b7280';
     }
     return d.color || allocColor(d.country || 'Unknown');
@@ -530,7 +530,10 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
     let html = `<strong>${escHtml(d.label)}</strong>`;
     if (d.type === 'dfi') html += `<br>Type: DFI / Other LP<br>Tier: ${escHtml(d.tier||'—')}<br>Count: ${d.dfiCount||0}`;
     if (d.type === 'allocator') html += `<br>Type: ${escHtml(d.allocType||'Allocator')}<br>Country: ${escHtml(d.country||'—')}`;
-    if (d.type === 'fund') html += `<br>Type: Fund<br>GP: ${escHtml(d.gp||'—')}<br>Asset: ${escHtml(d.assetClass||'—')}<br>Geo: ${escHtml(d.geo||'—')}`;
+    if (d.type === 'fund') {
+      const displayAsset = typeof assetLabel === 'function' ? assetLabel(d.assetClass) : (d.assetClass || '—');
+      html += `<br>Type: Fund<br>GP: ${escHtml(d.gp||'—')}<br>Asset: ${escHtml(displayAsset)}<br>Geo: ${escHtml(d.geo||'—')}`;
+    }
     html += `<br>Connections: <strong>${[...connectedIds].length - 1}</strong>`;
     infoEl.innerHTML = html;
     if (opts.center) centerOnNode(d);

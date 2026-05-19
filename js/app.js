@@ -32,9 +32,9 @@ function fmtAUM(v) {
 function assetClass(str) {
   if (!str) return 'Other';
   const s = String(str).toLowerCase();
+  if (s.includes('fof') || s.includes('fund of fund') || s.includes('fund-of-fund') || s.includes('fundoffunds')) return 'FundOfFunds';
   if (s.includes('infrastructure') || s.includes('infra')) return 'Infra';
   if (s.includes('private credit') || s.includes('sme debt') || s.includes('credit')) return 'Credit';
-  if (s.includes('fof') || s.includes('fund of fund')) return 'FoF';
   if (s.includes('vc') || s.includes('venture')) return 'VC';
   if (s.includes('direct')) return 'Direct';
   if (s.includes('mixed')) return 'Mixed';
@@ -42,7 +42,21 @@ function assetClass(str) {
   return 'Other';
 }
 
+function assetLabel(key) {
+  return key === 'FundOfFunds' ? 'Fund of Funds' : key;
+}
+
 function uniq(arr) { return [...new Set(arr.filter(Boolean))].sort(); }
+
+function searchText(v) {
+  return String(v || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
+function rowMatchesSearch(row, keys, query) {
+  const q = searchText(query);
+  if (!q) return true;
+  return keys.some(k => searchText(row[k]).includes(q));
+}
 
 function parseSemicolon(str) {
   if (!str) return [];
@@ -70,7 +84,7 @@ function escHtml(s) {
 
 function assetTag(ac) {
   const key = assetClass(ac);
-  return `<span class="asset-tag asset-${key}">${key}</span>`;
+  return `<span class="asset-tag asset-${key}">${assetLabel(key)}</span>`;
 }
 
 function confBadge(c) {
@@ -245,15 +259,14 @@ let commSort = { col: 'Vintage / Year', dir: -1 };
 function renderCommitments() {
   let rows = D.commitments();
 
-  const q    = (document.getElementById('comm-search')?.value || '').toLowerCase();
+  const q    = document.getElementById('comm-search')?.value || '';
   const asst = document.getElementById('comm-asset-filter')?.value || '';
   const geo  = document.getElementById('comm-geo-filter')?.value || '';
   const conf = document.getElementById('comm-conf-filter')?.value || '';
   const yr   = document.getElementById('comm-year-filter')?.value || '';
 
   rows = rows.filter(r => {
-    if (q && !['Allocator (institution)','Fund / Vehicle / Deal name','GP or counterparty','Allocator country']
-      .some(k => String(r[k]||'').toLowerCase().includes(q))) return false;
+    if (!rowMatchesSearch(r, ['Allocator (institution)','Fund / Vehicle / Deal name','GP or counterparty','Allocator country'], q)) return false;
     if (asst && assetClass(r['Asset class']) !== asst) return false;
     if (geo && !String(r['Geographic focus']||'').toLowerCase().includes(geo.toLowerCase())) return false;
     if (conf && String(r['Confidence']||'').charAt(0).toUpperCase() !== conf) return false;
@@ -300,13 +313,12 @@ function renderCommitments() {
 
 function renderFunds() {
   let rows = D.funds();
-  const q    = (document.getElementById('fund-search')?.value || '').toLowerCase();
+  const q    = document.getElementById('fund-search')?.value || '';
   const asst = document.getElementById('fund-asset-filter')?.value || '';
   const geo  = document.getElementById('fund-geo-filter')?.value || '';
 
   rows = rows.filter(r => {
-    if (q && !['Fund / Vehicle','Manager / GP','Named African PF/SWF LPs','Named DFI LPs']
-      .some(k => String(r[k]||'').toLowerCase().includes(q))) return false;
+    if (!rowMatchesSearch(r, ['Fund / Vehicle','Manager / GP','Named African PF/SWF LPs','Named DFI LPs'], q)) return false;
     if (asst && assetClass(r['Asset class']) !== asst) return false;
     if (geo && !String(r['Geographic focus']||'').toLowerCase().includes(geo.toLowerCase())) return false;
     return true;
@@ -339,10 +351,10 @@ function renderFunds() {
 }
 
 function initCommitments() {
-  const assetOpts = ['PE','VC','Infra','Credit','Direct','FoF','Mixed','Other'];
+  const assetOpts = ['PE','VC','Infra','Credit','Direct','FundOfFunds','Mixed','Other'];
   ['comm-asset-filter','fund-asset-filter'].forEach(id => {
     const el = document.getElementById(id);
-    assetOpts.forEach(a => { const o = document.createElement('option'); o.value = a; o.textContent = a; el.appendChild(o); });
+    assetOpts.forEach(a => { const o = document.createElement('option'); o.value = a; o.textContent = assetLabel(a); el.appendChild(o); });
   });
 
   ['comm-search','comm-asset-filter','comm-geo-filter','comm-conf-filter','comm-year-filter'].forEach(id => {
@@ -413,20 +425,20 @@ function renderPipelineStats(rows) {
 
 function renderPipeline() {
   let rows = D.pipeline();
-  const q = (document.getElementById('pipe-search')?.value || '').toLowerCase();
+  const q = document.getElementById('pipe-search')?.value || '';
   const status = document.getElementById('pipe-status-filter')?.value || '';
   const country = document.getElementById('pipe-country-filter')?.value || '';
   const asset = document.getElementById('pipe-asset-filter')?.value || '';
   const conf = document.getElementById('pipe-conf-filter')?.value || '';
 
   rows = rows.filter(r => {
-    if (q && ![
+    if (!rowMatchesSearch(r, [
       'Entity / prospective allocator',
       'Fund / Vehicle / Deal name',
       'GP or counterparty',
       'Reason not in Commitments Database',
       'Source (short)'
-    ].some(k => String(r[k] || '').toLowerCase().includes(q))) return false;
+    ], q)) return false;
     if (status && r['Status category'] !== status) return false;
     if (country && r['Allocator country'] !== country) return false;
     if (asset && assetClass(r['Asset class']) !== asset) return false;
@@ -491,7 +503,7 @@ function initPipeline() {
   uniq(rows.map(r => assetClass(r['Asset class']))).forEach(v => {
     const o = document.createElement('option');
     o.value = v;
-    o.textContent = v;
+    o.textContent = assetLabel(v);
     assetFilter.appendChild(o);
   });
 

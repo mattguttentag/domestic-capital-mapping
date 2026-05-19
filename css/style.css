@@ -248,7 +248,7 @@ body {
 .asset-Infra   { background: #d1fae5; color: #065f46; }
 .asset-Credit  { background: #fef3c7; color: #92400e; }
 .asset-Direct  { background: #fee2e2; color: #991b1b; }
-.asset-FoF     { background: #cffafe; color: #164e63; }
+.asset-FundOfFunds { background: #cffafe; color: #164e63; }
 .asset-Mixed   { background: #f3f4f6; color: #374151; }
 .asset-Other   { background: #f3f4f6; color: #374151; }
 
@@ -571,7 +571,7 @@ canvas { max-width: 100%; }
 .fund-card.asset-Infra   { border-left-color: #059669; }
 .fund-card.asset-Credit  { border-left-color: #d97706; }
 .fund-card.asset-Direct  { border-left-color: #dc2626; }
-.fund-card.asset-FoF     { border-left-color: #0891b2; }
+.fund-card.asset-FundOfFunds { border-left-color: #0891b2; }
 .fund-card.asset-Mixed   { border-left-color: #6b7280; }
 
 /* ── Misc ── */

@@ -4866,6 +4866,40 @@ const DATASET = {
     "Source (short)": "IFC-NSIA MedServe financing Feb 2026",
     "Confidence": "H",
     "Notes": "IFC and NSIA partnered to finance MedServe, NSIA's wholly owned healthcare subsidiary, to scale diagnostic centers, cancer care facilities and cath labs across Nigerian states."
+  },
+  {
+    "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
+    "Allocator country": "Nigeria",
+    "Allocator type": "SWF (NIF sub-fund)",
+    "Commitment type": "Platform / direct strategic investment vehicle",
+    "GP or counterparty": "Infrastructure Credit Guarantee Company PLC (InfraCredit)",
+    "Fund / Vehicle / Deal name": "InfraCredit",
+    "Asset class": "Infrastructure credit enhancement / guarantees",
+    "Geographic focus": "Nigeria",
+    "Vintage / Year": "2016/2017",
+    "Commitment size (reported)": "43.88% ownership interest retained by NSIA at FY2025; capitalization over USD 237m reported in 2023",
+    "Currency": "USD",
+    "Disclosure type": "NSIA portfolio / financial statements",
+    "Source (short)": "NSIA InfraCredit portfolio; NSIA FY2025 financial statements",
+    "Confidence": "H",
+    "Notes": "InfraCredit is a specialised infrastructure credit enhancement facility established by NSIA with GuarantCo/PIDG. NSIA FY2025 statements report a 43.88% retained ownership interest after shareholder changes."
+  },
+  {
+    "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
+    "Allocator country": "Nigeria",
+    "Allocator type": "SWF (NIF sub-fund)",
+    "Commitment type": "Direct / facility anchor",
+    "GP or counterparty": "InfraCredit",
+    "Fund / Vehicle / Deal name": "Construction Finance Warehouse Facility (CFWF)",
+    "Asset class": "Infrastructure construction finance / credit enhancement",
+    "Geographic focus": "Nigeria",
+    "Vintage / Year": 2023,
+    "Commitment size (reported)": "NGN 10bn NSIA anchor; target NGN 100bn facility capacity",
+    "Currency": "NGN",
+    "Disclosure type": "InfraCredit press release",
+    "Source (short)": "InfraCredit CFWF announcement Oct 2023",
+    "Confidence": "H",
+    "Notes": "NSIA invested NGN 10bn into a multi-funder revolving construction finance facility developed with InfraCredit to support greenfield infrastructure projects backed by InfraCredit guarantees."
   }
 ],
   "Pipeline_and_Mandates": [
@@ -6602,6 +6636,54 @@ const DATASET = {
     "Date accessed": "May 2026",
     "URL": "https://www.verod.com/",
     "Used for": "Verod Growth fund manager profile and AUM context"
+  },
+  {
+    "Allocator": "InfraCredit",
+    "Source type": "Case study",
+    "Title / publication": "Harvard Business School - InfraCredit and the Project Inception Facility",
+    "Date accessed": "May 2026",
+    "URL": "https://www.hbs.edu/faculty/Pages/item.aspx?num=66419",
+    "Used for": "InfraCredit business model and project-inception funding context"
+  },
+  {
+    "Allocator": "InfraCredit",
+    "Source type": "NSIA portfolio page",
+    "Title / publication": "NSIA Portfolio - InfraCredit",
+    "Date accessed": "May 2026",
+    "URL": "https://nsia.com.ng/portfolio/infracredit/",
+    "Used for": "InfraCredit as NSIA/GuarantCo participant vehicle catalysing pension and insurance investment"
+  },
+  {
+    "Allocator": "InfraCredit / NSIA",
+    "Source type": "Press release",
+    "Title / publication": "NSIA invests NGN10bn into Construction Finance Warehouse Facility with InfraCredit",
+    "Date accessed": "May 2026",
+    "URL": "https://infracredit.ng/nsia-invests-ngn10-billion-into-an-innovative-construction-finance-warehouse-facility-in-collaboration-with-infracredit-to-support-bankable-greenfield-infrastructure-project-finance-in-nigeria/",
+    "Used for": "NSIA NGN10bn anchor investment; CFWF target NGN100bn capacity; InfraCredit capitalization USD237m+"
+  },
+  {
+    "Allocator": "InfraCredit",
+    "Source type": "Press release",
+    "Title / publication": "KfW Development Bank invests EUR31m subordinated capital in InfraCredit",
+    "Date accessed": "May 2026",
+    "URL": "https://infracredit.ng/kfw-development-bank-invests-e31-million-surbordinated-capital-in-infracredit/",
+    "Used for": "KfW subordinated capital and InfraCredit establishment by NSIA with GuarantCo/PIDG"
+  },
+  {
+    "Allocator": "InfraCredit",
+    "Source type": "OECD case study",
+    "Title / publication": "InfraCredit: Making infrastructure projects in Nigeria more bankable through credit enhancement",
+    "Date accessed": "May 2026",
+    "URL": "https://www.oecd.org/en/publications/blended-finance-case-studies_2fb90b9a-en/infracredit-making-infrastructure-projects-in-nigeria-more-bankable-through-credit-enhancement_bdb679c6-en.html",
+    "Used for": "PIDG/NSIA establishment, GuarantCo initial contingent capital, InfraCo Africa and domestic institutional mobilization"
+  },
+  {
+    "Allocator": "NSIA",
+    "Source type": "Financial statements",
+    "Title / publication": "NSIA 2025 Group Financial Statements - InfraCredit ownership",
+    "Date accessed": "May 2026",
+    "URL": "https://nsia.com.ng/download/267/2025-report/15287/nsia-2025-group-financial-statements-usd.pdf",
+    "Used for": "NSIA retained InfraCredit ownership interest; Access ARM Pensions, CardinalStone, AFC and insurers as shareholders"
   }
 ],
   "Tier_1_Candidates": [
@@ -7542,6 +7624,34 @@ const DATASET = {
     "Named DFI LPs": "IFC",
     "Other named LPs": "International Development Association Private Sector Window Local Currency Facility",
     "Co-investor pattern note": "IFC provided roughly NGN 14.2bn / USD 24.5m local-currency financing for NSIA's wholly owned MedServe expansion program."
+  },
+  {
+    "Fund / Vehicle": "InfraCredit",
+    "Manager / GP": "Infrastructure Credit Guarantee Company PLC",
+    "Vintage": "2016/2017",
+    "Fund size (USD m)": "USD 237m+ capitalization reported in 2023",
+    "Asset class": "Infrastructure credit enhancement / guarantees",
+    "Geographic focus": "Nigeria",
+    "African PF/SWF LPs (count)": 3,
+    "Named African PF/SWF LPs": "NSIA Nigeria; Access ARM Pensions; CardinalStone Pensions",
+    "DFI LPs (count)": 4,
+    "Named DFI LPs": "GuarantCo / PIDG; KfW; AfDB; InfraCo Africa",
+    "Other named LPs": "Africa Finance Corporation; Leadway Assurance; AIICO Insurance; FCDO / Mobilist",
+    "Co-investor pattern note": "NSIA established InfraCredit with GuarantCo/PIDG. Later shareholders/backers include KfW, AfDB, InfraCo Africa, AFC, insurers, and Nigerian pension shareholders."
+  },
+  {
+    "Fund / Vehicle": "Construction Finance Warehouse Facility (CFWF)",
+    "Manager / GP": "InfraCredit / NSIA",
+    "Vintage": 2023,
+    "Fund size (USD m)": "NGN 10bn anchor; NGN 100bn target capacity",
+    "Asset class": "Infrastructure construction finance / credit enhancement",
+    "Geographic focus": "Nigeria",
+    "African PF/SWF LPs (count)": 1,
+    "Named African PF/SWF LPs": "NSIA Nigeria",
+    "DFI LPs (count)": 0,
+    "Named DFI LPs": null,
+    "Other named LPs": null,
+    "Co-investor pattern note": "NSIA provided NGN 10bn anchor funding; FSD Africa supported facility set-up costs through technical assistance rather than a disclosed LP/co-investment commitment."
   }
 ],
   "DFI_Co-Investor_Patterns": [
@@ -7554,8 +7664,8 @@ const DATASET = {
   },
   {
     "DFI / Catalytic capital provider": "AfDB",
-    "Co-investments in funds with African PF/SWF LP": 7,
-    "Notable vehicles": "AfricInvest FIVE (Financial Inclusion Vehicle); Africa50 (general); Africa50 Infrastructure Acceleration Fund (IAF); Mediterrania Capital II / III / IV; Nigeria Infrastructure Fund (NIF, NSIA sub-fund); Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Africa Food Security Fund (AFSF)",
+    "Co-investments in funds with African PF/SWF LP": 8,
+    "Notable vehicles": "AfricInvest FIVE (Financial Inclusion Vehicle); Africa50 (general); Africa50 Infrastructure Acceleration Fund (IAF); Mediterrania Capital II / III / IV; Nigeria Infrastructure Fund (NIF, NSIA sub-fund); Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Africa Food Security Fund (AFSF); InfraCredit",
     "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "1 (Top tier)"
   },
@@ -7610,8 +7720,8 @@ const DATASET = {
   },
   {
     "DFI / Catalytic capital provider": "KfW",
-    "Co-investments in funds with African PF/SWF LP": 2,
-    "Notable vehicles": "AfricInvest FIVE (Financial Inclusion Vehicle); Oyass Capital",
+    "Co-investments in funds with African PF/SWF LP": 3,
+    "Notable vehicles": "AfricInvest FIVE (Financial Inclusion Vehicle); Oyass Capital; InfraCredit",
     "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "3 (Selective / TA)"
   },
@@ -7753,6 +7863,20 @@ const DATASET = {
     "Co-investments in funds with African PF/SWF LP": 1,
     "Notable vehicles": "Africa Food Security Fund (AFSF)",
     "Strategic role": "Other named LP / fund-of-funds investor appearing in retained vehicles with African PF/SWF participation.",
+    "Frequency tier": "3 (Selective / TA)"
+  },
+  {
+    "DFI / Catalytic capital provider": "GuarantCo / PIDG",
+    "Co-investments in funds with African PF/SWF LP": 1,
+    "Notable vehicles": "InfraCredit",
+    "Strategic role": "Guarantee/catalytic capital provider that established InfraCredit with NSIA via PIDG/GuarantCo.",
+    "Frequency tier": "3 (Selective / TA)"
+  },
+  {
+    "DFI / Catalytic capital provider": "InfraCo Africa",
+    "Co-investments in funds with African PF/SWF LP": 1,
+    "Notable vehicles": "InfraCredit",
+    "Strategic role": "PIDG project-development arm/shareholder capital provider to InfraCredit.",
     "Frequency tier": "3 (Selective / TA)"
   }
 ],
@@ -9092,6 +9216,26 @@ const DATASET = {
     "Audit confidence": "Include",
     "Rationale": "Column H identifies NSIA, an African SWF, as a named LP/sponsor in the vehicle.",
     "Source URLs": "https://www.ifc.org/en/pressroom/2026/ifc-and-nsia-to-scale-oncology-and-diagnostic-services-for-underserved-communities"
+  },
+  {
+    "Sheet": "Funds & LP Co-Investors",
+    "Original row": "added May 2026",
+    "Vehicle / entity": "InfraCredit",
+    "Column H / named African PF/SWF evidence": "NSIA Nigeria",
+    "Decision": "Include",
+    "Audit confidence": "Include",
+    "Rationale": "Column H identifies NSIA, an African SWF, as sponsor/anchor investor; InfraCredit also has named Nigerian pension shareholders.",
+    "Source URLs": "https://nsia.com.ng/portfolio/infracredit/"
+  },
+  {
+    "Sheet": "Funds & LP Co-Investors",
+    "Original row": "added May 2026",
+    "Vehicle / entity": "Construction Finance Warehouse Facility (CFWF)",
+    "Column H / named African PF/SWF evidence": "NSIA Nigeria",
+    "Decision": "Include",
+    "Audit confidence": "Include",
+    "Rationale": "Column H identifies NSIA, an African SWF, as sponsor/anchor investor; InfraCredit also has named Nigerian pension shareholders.",
+    "Source URLs": "https://infracredit.ng/nsia-invests-ngn10-billion-into-an-innovative-construction-finance-warehouse-facility-in-collaboration-with-infracredit-to-support-bankable-greenfield-infrastructure-project-finance-in-nigeria/"
   }
 ],
   "Omission_Candidates": [

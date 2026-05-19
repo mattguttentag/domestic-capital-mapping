@@ -52,6 +52,7 @@ HEADER_ROWS = {
     'Regulatory vs Behaviour': 2,
     'Absentees Investigation': 2,
     'Inclusion Audit': 0,
+    'Omission Candidates': 0,
 }
 
 data = {}

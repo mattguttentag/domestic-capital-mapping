@@ -4764,6 +4764,23 @@ const DATASET = {
     "Source (short)": "AVCA — Injaro announces final close; Africa Global Funds; Africa PE News",
     "Confidence": "H",
     "Notes": "FIRST Ghana fund of its kind anchored by local pension funds (per Injaro press release). Predates Mirepa I (2023) and Ci-Gaba (2026). Specific Ghanaian pension fund names not disclosed in public sources but precedent-setting."
+  },
+  {
+    "Allocator (institution)": "GEPF / PIC (South Africa)",
+    "Allocator country": "South Africa",
+    "Allocator type": "Public PF (via asset manager)",
+    "Commitment type": "Fund LP",
+    "GP or counterparty": "Zebu Investment Partners",
+    "Fund / Vehicle / Deal name": "Africa Food Security Fund (AFSF)",
+    "Asset class": "PE / agriculture / food security",
+    "Geographic focus": "Sub-Saharan Africa",
+    "Vintage / Year": 2019,
+    "Commitment size (reported)": "Not disclosed; fund size USD 84m",
+    "Currency": "USD",
+    "Disclosure type": "DFI / fund close announcement",
+    "Source (short)": "DGGF news release, Jan 2019",
+    "Confidence": "H",
+    "Notes": "DGGF names PIC on behalf of GEPF among first-round AFSF investors alongside AfDB, CDC Group/BII, DGGF, IFU, and EBID; Kuramo later joined, bringing fund commitments to USD 84m."
   }
 ],
   "Pipeline_and_Mandates": [
@@ -6436,6 +6453,14 @@ const DATASET = {
     "Date accessed": "May 2026",
     "URL": "https://africancapitalmarketsnews.com/kenyas-new-infrastructure-and-sovereign-wealth-funds-to-be-funded-by-share-sales/",
     "Used for": "Kenya Cabinet-approved National Infrastructure Fund + SWF; KPC IPO planned March 2026"
+  },
+  {
+    "Allocator": "GEPF / PIC",
+    "Source type": "DFI / fund announcement",
+    "Title / publication": "DGGF - Zebu Africa Food Security Fund reaches total fund size of USD 84 million",
+    "Date accessed": "May 2026",
+    "URL": "https://english.dggf.nl/latest/news/2019/01/24/zebu-s-africa-food-security-fund-a-dggf-investee-reaches-total-fund-size-of-usd-84-million",
+    "Used for": "PIC/GEPF LP confirmation in Africa Food Security Fund; co-investors AfDB, CDC/BII, DGGF, IFU, EBID and Kuramo"
   }
 ],
   "Tier_1_Candidates": [
@@ -7292,20 +7317,34 @@ const DATASET = {
     "Named DFI LPs": "—",
     "Other named LPs": "Venture Capital Trust Fund (VCTF) of Ghana",
     "Co-investor pattern note": "FIRST Ghana fund of its kind anchored by local pension funds. Historical precedent for Mirepa I, Ci-Gaba, GIP Ghana model. Ghana cedi-denominated."
+  },
+  {
+    "Fund / Vehicle": "Africa Food Security Fund (AFSF)",
+    "Manager / GP": "Zebu Investment Partners",
+    "Vintage": 2019,
+    "Fund size (USD m)": 84,
+    "Asset class": "PE / agriculture / food security",
+    "Geographic focus": "Sub-Saharan Africa",
+    "African PF/SWF LPs (count)": 1,
+    "Named African PF/SWF LPs": "PIC on behalf of GEPF (South Africa)",
+    "DFI LPs (count)": 5,
+    "Named DFI LPs": "AfDB; BII (CDC Group); Dutch Good Growth Fund (DGGF); IFU; EBID",
+    "Other named LPs": "Kuramo Capital Management",
+    "Co-investor pattern note": "DGGF news release names PIC/GEPF in first-round investor group alongside DFIs and DGGF; Kuramo subsequently joined to bring commitments to USD 84m."
   }
 ],
   "DFI_Co-Investor_Patterns": [
   {
     "DFI / Catalytic capital provider": "BII",
-    "Co-investments in funds with African PF/SWF LP": 8,
-    "Notable vehicles": "Ascent Rift Valley Fund II (ARVF II); Capital Alliance Private Equity I-IV (CAPE); Catalyst Fund II; Growth Investment Partners (GIP) Ghana; Growth Investment Partners (GIP) Zambia; Helios Investors II/III/IV (historical); Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Vantage Mezzanine IV (Pan-African sub-fund)",
+    "Co-investments in funds with African PF/SWF LP": 9,
+    "Notable vehicles": "Ascent Rift Valley Fund II (ARVF II); Capital Alliance Private Equity I-IV (CAPE); Catalyst Fund II; Growth Investment Partners (GIP) Ghana; Growth Investment Partners (GIP) Zambia; Helios Investors II/III/IV (historical); Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Vantage Mezzanine IV (Pan-African sub-fund); Africa Food Security Fund (AFSF)",
     "Strategic role": "Frequent anchor/catalytic DFI, including BII-established GIP platforms designed to crowd in local pension capital.",
     "Frequency tier": "1 (Top tier)"
   },
   {
     "DFI / Catalytic capital provider": "AfDB",
-    "Co-investments in funds with African PF/SWF LP": 6,
-    "Notable vehicles": "AfricInvest FIVE (Financial Inclusion Vehicle); Africa50 (general); Africa50 Infrastructure Acceleration Fund (IAF); Mediterrania Capital II / III / IV; Nigeria Infrastructure Fund (NIF, NSIA sub-fund); Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN)",
+    "Co-investments in funds with African PF/SWF LP": 7,
+    "Notable vehicles": "AfricInvest FIVE (Financial Inclusion Vehicle); Africa50 (general); Africa50 Infrastructure Acceleration Fund (IAF); Mediterrania Capital II / III / IV; Nigeria Infrastructure Fund (NIF, NSIA sub-fund); Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Africa Food Security Fund (AFSF)",
     "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "1 (Top tier)"
   },
@@ -7437,8 +7476,8 @@ const DATASET = {
   },
   {
     "DFI / Catalytic capital provider": "Dutch Good Growth Fund",
-    "Co-investments in funds with African PF/SWF LP": 1,
-    "Notable vehicles": "Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN)",
+    "Co-investments in funds with African PF/SWF LP": 2,
+    "Notable vehicles": "Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Africa Food Security Fund (AFSF)",
     "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "3 (Selective / TA)"
   },
@@ -7458,8 +7497,8 @@ const DATASET = {
   },
   {
     "DFI / Catalytic capital provider": "IFU",
-    "Co-investments in funds with African PF/SWF LP": 1,
-    "Notable vehicles": "AfricInvest FIVE (Financial Inclusion Vehicle)",
+    "Co-investments in funds with African PF/SWF LP": 2,
+    "Notable vehicles": "AfricInvest FIVE (Financial Inclusion Vehicle); Africa Food Security Fund (AFSF)",
     "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "3 (Selective / TA)"
   },
@@ -7489,6 +7528,20 @@ const DATASET = {
     "Co-investments in funds with African PF/SWF LP": 1,
     "Notable vehicles": "Adenia Capital V",
     "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
+    "Frequency tier": "3 (Selective / TA)"
+  },
+  {
+    "DFI / Catalytic capital provider": "EBID",
+    "Co-investments in funds with African PF/SWF LP": 1,
+    "Notable vehicles": "Africa Food Security Fund (AFSF)",
+    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
+    "Frequency tier": "3 (Selective / TA)"
+  },
+  {
+    "DFI / Catalytic capital provider": "Kuramo Capital Management",
+    "Co-investments in funds with African PF/SWF LP": 1,
+    "Notable vehicles": "Africa Food Security Fund (AFSF)",
+    "Strategic role": "Other named LP / fund-of-funds investor appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "3 (Selective / TA)"
   }
 ],
@@ -8768,6 +8821,16 @@ const DATASET = {
     "Audit confidence": "Excluded - mandate/member/planned evidence only",
     "Rationale": "Removed from commitments because the row evidenced membership, eligibility, MoU, expected follow-on, or planned allocation rather than an actual allocator-to-vehicle commitment.",
     "Source URLs": null
+  },
+  {
+    "Sheet": "Funds & LP Co-Investors",
+    "Original row": null,
+    "Vehicle / entity": "Africa Food Security Fund (AFSF)",
+    "Column H / named African PF/SWF evidence": "PIC on behalf of GEPF (South Africa)",
+    "Decision": "Include",
+    "Audit confidence": "Include - confirmed African PF/SWF LP",
+    "Rationale": "DGGF names PIC on behalf of GEPF as a first-round investor in AFSF alongside DFIs and DGGF; this is confirmed African pension fund involvement in a fund vehicle.",
+    "Source URLs": "https://english.dggf.nl/latest/news/2019/01/24/zebu-s-africa-food-security-fund-a-dggf-investee-reaches-total-fund-size-of-usd-84-million"
   }
 ],
 };

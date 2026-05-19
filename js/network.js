@@ -25,7 +25,7 @@ function buildNetwork() {
     { name: 'SIFEM', patterns: ['SIFEM'] },
     { name: 'BIO', patterns: ['BIO'] },
     { name: 'OeEB', patterns: ['OeEB', 'OeB'] },
-    { name: 'AfDB', patterns: ['AfDB', 'African Development Bank'] },
+    { name: 'AfDB', patterns: ['AfDB', 'African Development Bank', 'Africa Development Bank'] },
     { name: 'KfW', patterns: ['KfW'] },
     { name: 'IFU', patterns: ['IFU'] },
     { name: 'US DFC', patterns: ['US DFC', 'DFC'] },
@@ -50,6 +50,8 @@ function buildNetwork() {
     { name: 'South Suez Capital', patterns: ['South Suez Capital'] },
     { name: 'Attijariwafa Bank', patterns: ['Attijariwafa Bank'] },
     { name: 'Arab Bank for Economic Development in Africa', patterns: ['Arab Bank for Economic Development in Africa', 'BADEA'] },
+    { name: 'EBID', patterns: ['EBID', 'Ecowas Bank for Investment & Development', 'ECOWAS Bank for Investment and Development'] },
+    { name: 'Kuramo Capital Management', patterns: ['Kuramo Capital Management', 'Kuramo'] },
   ];
 
   const ALLOCATOR_ALIASES = new Map([
@@ -57,6 +59,8 @@ function buildNetwork() {
     ['PIC South Africa', 'GEPF / PIC (South Africa)'],
     ['PIC (South Africa)', 'GEPF / PIC (South Africa)'],
     ['PIC (mgr for GEPF)', 'GEPF / PIC (South Africa)'],
+    ['PIC on behalf of GEPF (South Africa)', 'GEPF / PIC (South Africa)'],
+    ['GEPF / PIC (South Africa)', 'GEPF / PIC (South Africa)'],
     ['GEPF (via PIC)', 'GEPF / PIC (South Africa)'],
     ['GEPF', 'GEPF / PIC (South Africa)'],
     ['PIC South Africa (historical)', 'GEPF / PIC (South Africa)'],

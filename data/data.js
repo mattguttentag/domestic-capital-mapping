@@ -4781,6 +4781,91 @@ const DATASET = {
     "Source (short)": "DGGF news release, Jan 2019",
     "Confidence": "H",
     "Notes": "DGGF names PIC on behalf of GEPF among first-round AFSF investors alongside AfDB, CDC Group/BII, DGGF, IFU, and EBID; Kuramo later joined, bringing fund commitments to USD 84m."
+  },
+  {
+    "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
+    "Allocator country": "Nigeria",
+    "Allocator type": "SWF (FGF)",
+    "Commitment type": "Fund LP",
+    "GP or counterparty": "Alitheia Capital / IDF Capital",
+    "Fund / Vehicle / Deal name": "Alitheia IDF Fund",
+    "Asset class": "PE / gender-lens",
+    "Geographic focus": "Sub-Saharan Africa",
+    "Vintage / Year": "2021 or earlier",
+    "Commitment size (reported)": "Not disclosed publicly",
+    "Currency": "USD",
+    "Disclosure type": "NSIA sustainability disclosure",
+    "Source (short)": "NSIA sustainability article Apr 2026",
+    "Confidence": "H",
+    "Notes": "NSIA names Alitheia IDF among investments supporting women-led and women-impacting businesses. Specific NSIA ticket size not publicly disclosed."
+  },
+  {
+    "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
+    "Allocator country": "Nigeria",
+    "Allocator type": "SWF (FGF)",
+    "Commitment type": "Fund LP",
+    "GP or counterparty": "Ingressive Capital",
+    "Fund / Vehicle / Deal name": "Ingressive Capital Fund / funds",
+    "Asset class": "VC / technology-enabled SMEs",
+    "Geographic focus": "Africa / Nigeria-led",
+    "Vintage / Year": "2023 or earlier",
+    "Commitment size (reported)": "Not disclosed publicly",
+    "Currency": "USD",
+    "Disclosure type": "NSIA sustainability disclosure",
+    "Source (short)": "NSIA sustainability article Apr 2026",
+    "Confidence": "H",
+    "Notes": "NSIA names Ingressive Capital among investments supporting women-led and women-impacting businesses. Public NSIA source does not identify a specific vintage, so retained as platform/fund exposure."
+  },
+  {
+    "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
+    "Allocator country": "Nigeria",
+    "Allocator type": "SWF (FGF)",
+    "Commitment type": "Fund LP",
+    "GP or counterparty": "Verod Capital Management",
+    "Fund / Vehicle / Deal name": "Verod Growth Fund II",
+    "Asset class": "PE / growth equity",
+    "Geographic focus": "West Africa / Nigeria",
+    "Vintage / Year": 2017,
+    "Commitment size (reported)": "USD 5m",
+    "Currency": "USD",
+    "Disclosure type": "NSIA impact report",
+    "Source (short)": "NSIA Development Impact Report 2021",
+    "Confidence": "H",
+    "Notes": "NSIA impact report states the Authority invested USD 5m in Verod Growth Fund II in 2017."
+  },
+  {
+    "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
+    "Allocator country": "Nigeria",
+    "Allocator type": "SWF (FGF)",
+    "Commitment type": "Fund LP",
+    "GP or counterparty": "Verod Capital Management",
+    "Fund / Vehicle / Deal name": "Verod Growth Fund III",
+    "Asset class": "PE / growth equity",
+    "Geographic focus": "West Africa / Nigeria",
+    "Vintage / Year": "2021 or earlier",
+    "Commitment size (reported)": "USD 7.5m commitment",
+    "Currency": "USD",
+    "Disclosure type": "NSIA impact report",
+    "Source (short)": "NSIA Development Impact Report 2021",
+    "Confidence": "H",
+    "Notes": "NSIA impact report states the Authority subsequently invested in Verod Growth Fund III, with 8% of the USD 7.5m commitment disbursed at the time of reporting."
+  },
+  {
+    "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
+    "Allocator country": "Nigeria",
+    "Allocator type": "SWF (healthcare subsidiary)",
+    "Commitment type": "Direct / co-investment",
+    "GP or counterparty": "NSIA Advanced Medical Services Limited (MedServe)",
+    "Fund / Vehicle / Deal name": "MedServe oncology and diagnostics expansion",
+    "Asset class": "Direct / Healthcare",
+    "Geographic focus": "Nigeria",
+    "Vintage / Year": 2026,
+    "Commitment size (reported)": "USD 154.1m project; IFC USD 24.5m local-currency financing",
+    "Currency": "USD",
+    "Disclosure type": "IFC press release",
+    "Source (short)": "IFC-NSIA MedServe financing Feb 2026",
+    "Confidence": "H",
+    "Notes": "IFC and NSIA partnered to finance MedServe, NSIA's wholly owned healthcare subsidiary, to scale diagnostic centers, cancer care facilities and cath labs across Nigerian states."
   }
 ],
   "Pipeline_and_Mandates": [
@@ -6469,6 +6554,54 @@ const DATASET = {
     "Date accessed": "May 2026",
     "URL": "https://www.ithmar.gov.ma/en/our-portfolio/",
     "Used for": "Wessal as SWF joint investment vehicle; EUR 2.5bn equity commitment; projects Wessal Bouregreg and Wessal Casa-Port"
+  },
+  {
+    "Allocator": "NSIA",
+    "Source type": "Press release / sustainability article",
+    "Title / publication": "The NSIA Model: Catalyzing Development Through Sustainable Investments",
+    "Date accessed": "May 2026",
+    "URL": "https://nsia.com.ng/the-nsia-model-catalyzing-development-through-sustainable-investments/",
+    "Used for": "NSIA investments in Alitheia IDF, Ingressive Capital and Verod Capital; MedServe impact reference"
+  },
+  {
+    "Allocator": "NSIA",
+    "Source type": "Impact report",
+    "Title / publication": "NSIA Development Impact Report 2021",
+    "Date accessed": "May 2026",
+    "URL": "https://nsia.com.ng/download/56/2021-report/10080/nsia-development-impact-report-2021_.pdf",
+    "Used for": "Verod Growth Fund II USD 5m commitment and Verod Growth Fund III USD 7.5m commitment"
+  },
+  {
+    "Allocator": "IFC / NSIA",
+    "Source type": "Press release",
+    "Title / publication": "IFC and NSIA to Scale Oncology and Diagnostic Services for Underserved Communities in Nigeria",
+    "Date accessed": "May 2026",
+    "URL": "https://www.ifc.org/en/pressroom/2026/ifc-and-nsia-to-scale-oncology-and-diagnostic-services-for-underserved-communities",
+    "Used for": "MedServe expansion project size USD 154.1m; IFC USD 24.5m local-currency financing"
+  },
+  {
+    "Allocator": "Alitheia IDF",
+    "Source type": "Investor profile",
+    "Title / publication": "Soros Economic Development Fund - Alitheia IDF Fund LP",
+    "Date accessed": "May 2026",
+    "URL": "https://www.soroseconomicdevelopmentfund.org/investments/alitheia-idf-fund-lp",
+    "Used for": "Alitheia IDF as USD 100m gender-lens fund and SEDF co-investor"
+  },
+  {
+    "Allocator": "Ingressive Capital",
+    "Source type": "Manager profile",
+    "Title / publication": "Ingressive Capital - About Us",
+    "Date accessed": "May 2026",
+    "URL": "https://ingressivecapital.com/about-us/",
+    "Used for": "Ingressive Capital strategy and geographic focus"
+  },
+  {
+    "Allocator": "Verod Capital",
+    "Source type": "Manager profile",
+    "Title / publication": "Verod Capital - Home",
+    "Date accessed": "May 2026",
+    "URL": "https://www.verod.com/",
+    "Used for": "Verod Growth fund manager profile and AUM context"
   }
 ],
   "Tier_1_Candidates": [
@@ -7339,6 +7472,76 @@ const DATASET = {
     "Named DFI LPs": "AfDB; BII (CDC Group); Dutch Good Growth Fund (DGGF); IFU; EBID",
     "Other named LPs": "Kuramo Capital Management",
     "Co-investor pattern note": "DGGF news release names PIC/GEPF in first-round investor group alongside DFIs and DGGF; Kuramo subsequently joined to bring commitments to USD 84m."
+  },
+  {
+    "Fund / Vehicle": "Alitheia IDF Fund",
+    "Manager / GP": "Alitheia Capital / IDF Capital",
+    "Vintage": "2021 or earlier",
+    "Fund size (USD m)": "100",
+    "Asset class": "PE / gender-lens",
+    "Geographic focus": "Sub-Saharan Africa",
+    "African PF/SWF LPs (count)": 1,
+    "Named African PF/SWF LPs": "NSIA Nigeria",
+    "DFI LPs (count)": 0,
+    "Named DFI LPs": null,
+    "Other named LPs": "Soros Economic Development Fund",
+    "Co-investor pattern note": "NSIA names Alitheia IDF as an investment; SEDF describes Alitheia IDF as a USD 100m gender-lens fund. NSIA ticket size not disclosed."
+  },
+  {
+    "Fund / Vehicle": "Ingressive Capital Fund / funds",
+    "Manager / GP": "Ingressive Capital",
+    "Vintage": "2023 or earlier",
+    "Fund size (USD m)": "Not disclosed",
+    "Asset class": "VC / technology-enabled SMEs",
+    "Geographic focus": "Africa / Nigeria-led",
+    "African PF/SWF LPs (count)": 1,
+    "Named African PF/SWF LPs": "NSIA Nigeria",
+    "DFI LPs (count)": 0,
+    "Named DFI LPs": null,
+    "Other named LPs": null,
+    "Co-investor pattern note": "NSIA names Ingressive Capital as an investment; specific NSIA vehicle/vintage and ticket size not publicly disclosed."
+  },
+  {
+    "Fund / Vehicle": "Verod Growth Fund II",
+    "Manager / GP": "Verod Capital Management",
+    "Vintage": 2017,
+    "Fund size (USD m)": "Not disclosed",
+    "Asset class": "PE / growth equity",
+    "Geographic focus": "West Africa / Nigeria",
+    "African PF/SWF LPs (count)": 1,
+    "Named African PF/SWF LPs": "NSIA Nigeria (USD 5m)",
+    "DFI LPs (count)": 0,
+    "Named DFI LPs": null,
+    "Other named LPs": null,
+    "Co-investor pattern note": "NSIA impact report identifies a USD 5m FGF commitment to Verod Growth Fund II."
+  },
+  {
+    "Fund / Vehicle": "Verod Growth Fund III",
+    "Manager / GP": "Verod Capital Management",
+    "Vintage": "2021 or earlier",
+    "Fund size (USD m)": "Not disclosed",
+    "Asset class": "PE / growth equity",
+    "Geographic focus": "West Africa / Nigeria",
+    "African PF/SWF LPs (count)": 1,
+    "Named African PF/SWF LPs": "NSIA Nigeria (USD 7.5m commitment)",
+    "DFI LPs (count)": 0,
+    "Named DFI LPs": null,
+    "Other named LPs": null,
+    "Co-investor pattern note": "NSIA impact report identifies a USD 7.5m FGF commitment to Verod Growth Fund III."
+  },
+  {
+    "Fund / Vehicle": "MedServe oncology and diagnostics expansion",
+    "Manager / GP": "NSIA Advanced Medical Services Limited (MedServe)",
+    "Vintage": 2026,
+    "Fund size (USD m)": "154.1 project size",
+    "Asset class": "Direct / Healthcare",
+    "Geographic focus": "Nigeria",
+    "African PF/SWF LPs (count)": 1,
+    "Named African PF/SWF LPs": "NSIA Nigeria",
+    "DFI LPs (count)": 1,
+    "Named DFI LPs": "IFC",
+    "Other named LPs": "International Development Association Private Sector Window Local Currency Facility",
+    "Co-investor pattern note": "IFC provided roughly NGN 14.2bn / USD 24.5m local-currency financing for NSIA's wholly owned MedServe expansion program."
   }
 ],
   "DFI_Co-Investor_Patterns": [
@@ -8839,6 +9042,56 @@ const DATASET = {
     "Audit confidence": "Include - confirmed African PF/SWF LP",
     "Rationale": "DGGF names PIC on behalf of GEPF as a first-round investor in AFSF alongside DFIs and DGGF; this is confirmed African pension fund involvement in a fund vehicle.",
     "Source URLs": "https://english.dggf.nl/latest/news/2019/01/24/zebu-s-africa-food-security-fund-a-dggf-investee-reaches-total-fund-size-of-usd-84-million"
+  },
+  {
+    "Sheet": "Funds & LP Co-Investors",
+    "Original row": "added May 2026",
+    "Vehicle / entity": "Alitheia IDF Fund",
+    "Column H / named African PF/SWF evidence": "NSIA Nigeria",
+    "Decision": "Include",
+    "Audit confidence": "Include",
+    "Rationale": "Column H identifies NSIA, an African SWF, as a named LP/sponsor in the vehicle.",
+    "Source URLs": "https://nsia.com.ng/the-nsia-model-catalyzing-development-through-sustainable-investments/"
+  },
+  {
+    "Sheet": "Funds & LP Co-Investors",
+    "Original row": "added May 2026",
+    "Vehicle / entity": "Ingressive Capital Fund / funds",
+    "Column H / named African PF/SWF evidence": "NSIA Nigeria",
+    "Decision": "Include",
+    "Audit confidence": "Include",
+    "Rationale": "Column H identifies NSIA, an African SWF, as a named LP/sponsor in the vehicle.",
+    "Source URLs": "https://nsia.com.ng/the-nsia-model-catalyzing-development-through-sustainable-investments/"
+  },
+  {
+    "Sheet": "Funds & LP Co-Investors",
+    "Original row": "added May 2026",
+    "Vehicle / entity": "Verod Growth Fund II",
+    "Column H / named African PF/SWF evidence": "NSIA Nigeria",
+    "Decision": "Include",
+    "Audit confidence": "Include",
+    "Rationale": "Column H identifies NSIA, an African SWF, as a named LP/sponsor in the vehicle.",
+    "Source URLs": "https://nsia.com.ng/the-nsia-model-catalyzing-development-through-sustainable-investments/"
+  },
+  {
+    "Sheet": "Funds & LP Co-Investors",
+    "Original row": "added May 2026",
+    "Vehicle / entity": "Verod Growth Fund III",
+    "Column H / named African PF/SWF evidence": "NSIA Nigeria",
+    "Decision": "Include",
+    "Audit confidence": "Include",
+    "Rationale": "Column H identifies NSIA, an African SWF, as a named LP/sponsor in the vehicle.",
+    "Source URLs": "https://nsia.com.ng/the-nsia-model-catalyzing-development-through-sustainable-investments/"
+  },
+  {
+    "Sheet": "Funds & LP Co-Investors",
+    "Original row": "added May 2026",
+    "Vehicle / entity": "MedServe oncology and diagnostics expansion",
+    "Column H / named African PF/SWF evidence": "NSIA Nigeria",
+    "Decision": "Include",
+    "Audit confidence": "Include",
+    "Rationale": "Column H identifies NSIA, an African SWF, as a named LP/sponsor in the vehicle.",
+    "Source URLs": "https://www.ifc.org/en/pressroom/2026/ifc-and-nsia-to-scale-oncology-and-diagnostic-services-for-underserved-communities"
   }
 ],
   "Omission_Candidates": [

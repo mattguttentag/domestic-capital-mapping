@@ -112,6 +112,11 @@ const APPROACH_TAXONOMY = [
   'Mandate / Pipeline Only'
 ];
 
+const FUND_APPROACH_LABELS = {
+  'Fund LP': 'Fund',
+  'Fund of Funds LP': 'Fund of Funds'
+};
+
 const FOCUS_TAXONOMY = [
   'Infrastructure',
   'SME Finance',
@@ -134,6 +139,11 @@ function investmentApproach(row) {
   return row['Investment approach'] || '';
 }
 
+function approachLabel(value, context = 'commitment') {
+  if (context === 'fund') return FUND_APPROACH_LABELS[value] || value || '—';
+  return value || '—';
+}
+
 function focusTags(row) {
   return parseSemicolon(row['Sector / thematic focus']);
 }
@@ -144,7 +154,7 @@ function populateTaxonomyFilter(id, values) {
   values.forEach(v => {
     const o = document.createElement('option');
     o.value = v;
-    o.textContent = v;
+    o.textContent = id === 'fund-approach-filter' ? approachLabel(v, 'fund') : v;
     el.appendChild(o);
   });
   el.dataset.populated = '1';
@@ -843,7 +853,7 @@ function renderFunds() {
         ${escHtml(r['Geographic focus']||'—')} &nbsp;·&nbsp;
         <strong>${fmtAUM(r['Fund size (USD m)'])}</strong>
       </div>
-      <div class="fund-lps"><strong>Focus:</strong> ${escHtml(r['Sector / thematic focus']||'—')} &nbsp; <strong>Approach:</strong> ${escHtml(r['Investment approach']||'—')}</div>
+      <div class="fund-lps"><strong>Focus:</strong> ${escHtml(r['Sector / thematic focus']||'—')} &nbsp; <strong>Approach:</strong> ${escHtml(approachLabel(investmentApproach(r), 'fund'))}</div>
       ${lps.length ? `<div class="fund-lps"><strong>African LPs:</strong> ${lps.map(l => `<span class="pill">${escHtml(l)}</span>`).join(' ')}</div>` : ''}
       ${dfis.length ? `<div class="fund-lps"><strong>DFIs and Other LPs:</strong> ${dfis.map(d => `<span class="pill" style="background:#fef3c7;color:#78350f">${escHtml(d)}</span>`).join(' ')}</div>` : ''}
       <div class="source-link"><strong>Sources:</strong> ${sources}</div>

@@ -4900,6 +4900,57 @@ const DATASET = {
     "Source (short)": "InfraCredit CFWF announcement Oct 2023",
     "Confidence": "H",
     "Notes": "NSIA invested NGN 10bn into a multi-funder revolving construction finance facility developed with InfraCredit to support greenfield infrastructure projects backed by InfraCredit guarantees."
+  },
+  {
+    "Allocator (institution)": "Venture Capital Trust Fund (VCTF) Ghana",
+    "Allocator country": "Ghana",
+    "Allocator type": "Government-backed VC fund of funds",
+    "Commitment type": "Fund LP / Anchor",
+    "GP or counterparty": "Oasis Capital Ghana",
+    "Fund / Vehicle / Deal name": "Oasis Africa VC Fund (OAF)",
+    "Asset class": "PE / SME / VC",
+    "Geographic focus": "Ghana + Cote d'Ivoire",
+    "Vintage / Year": "2015/2016",
+    "Commitment size (reported)": "USD 2m VCTF commitment; OAF first close USD 27m; final/target size ~USD 50m",
+    "Currency": "USD",
+    "Disclosure type": "Annual report / DFI report / fund announcement",
+    "Source (short)": "VCTF 2015 Annual Report; DGGF Oasis first-close announcement; DGGF catalytic-capital paper",
+    "Confidence": "H",
+    "Notes": "VCTF 2015 annual report states VCTF made a USD 2m commitment to Oasis Africa Fund Limited, Oasis Capital Partners second fund. DGGF later described OAF as Ghana-domiciled to access VCTF government co-investment and noted the structure helped crowd in international DFIs."
+  },
+  {
+    "Allocator (institution)": "Venture Capital Trust Fund (VCTF) Ghana",
+    "Allocator country": "Ghana",
+    "Allocator type": "Government-backed VC fund of funds",
+    "Commitment type": "Fund LP / Anchor",
+    "GP or counterparty": "Mirepa Investment Advisors",
+    "Fund / Vehicle / Deal name": "Mirepa Capital SME Fund I",
+    "Asset class": "PE / SME growth",
+    "Geographic focus": "Ghana",
+    "Vintage / Year": 2023,
+    "Commitment size (reported)": "Part of GHS 120m initial close / reported USD 10.5m VCTF-led investment",
+    "Currency": "GHS / USD",
+    "Disclosure type": "Press / trade press",
+    "Source (short)": "Mirepa initial-close sources; Afrikan Heroes VCTF lead role",
+    "Confidence": "H",
+    "Notes": "VCTF is named in the Mirepa LP group alongside Petra Trust, Axis Pensions and CAMCOL-managed pension schemes; public coverage describes VCTF as leading the investment."
+  },
+  {
+    "Allocator (institution)": "Venture Capital Trust Fund (VCTF) Ghana",
+    "Allocator country": "Ghana",
+    "Allocator type": "Government-backed VC fund of funds",
+    "Commitment type": "Fund LP / Anchor",
+    "GP or counterparty": "Injaro Investment Advisors",
+    "Fund / Vehicle / Deal name": "Injaro Ghana Venture Capital Fund (IGVCF)",
+    "Asset class": "PE / SME / VC",
+    "Geographic focus": "Ghana + Cote d'Ivoire",
+    "Vintage / Year": 2023,
+    "Commitment size (reported)": "Part of GHS 216m final close; VCTF participation disclosed",
+    "Currency": "GHS",
+    "Disclosure type": "Press / impact-report coverage",
+    "Source (short)": "Injaro final-close sources; Graphic VCTF impact-report coverage",
+    "Confidence": "H",
+    "Notes": "VCTF is disclosed as an LP/other named investor for IGVCF, and Graphic coverage of the VCTF impact report identifies Injaro Ghana Venture Fund as one of the impactful funds anchored by VCTF."
   }
 ],
   "Pipeline_and_Mandates": [
@@ -6684,6 +6735,62 @@ const DATASET = {
     "Date accessed": "May 2026",
     "URL": "https://nsia.com.ng/download/267/2025-report/15287/nsia-2025-group-financial-statements-usd.pdf",
     "Used for": "NSIA retained InfraCredit ownership interest; Access ARM Pensions, CardinalStone, AFC and insurers as shareholders"
+  },
+  {
+    "Allocator": "VCTF Ghana / Oasis Capital",
+    "Source type": "Media / impact report coverage",
+    "Title / publication": "Graphic Online - Venture Capital Fund invests over GHc359m in local businesses",
+    "Date accessed": "May 2026",
+    "URL": "https://www.graphic.com.gh/news/general-news/ghana-news-venture-capital-fund-invests-over-ghc359m-in-local-businesses.html",
+    "Used for": "VCTF impact report coverage; GHc359.6m invested, GHc2bn leveraged; Oasis Capital and Injaro Ghana Venture Fund identified as anchored/impactful funds"
+  },
+  {
+    "Allocator": "Oasis Africa VC Fund",
+    "Source type": "DFI research report",
+    "Title / publication": "DGGF - Getting SME Risk Capital Funds to First Close",
+    "Date accessed": "May 2026",
+    "URL": "https://english.dggf.nl/site/binaries/site-content/collections/documents/2025/11/17/getting-sme-risk-capital-funds-to-first-close/dggf-knowledge-product-getting-sme-risk-capital-funds-to-first-close.pdf",
+    "Used for": "Oasis Africa VC Fund Ghana domicile, VCTF government co-investment rationale, DGGF legal TA and subsequent DFI crowd-in"
+  },
+  {
+    "Allocator": "Oasis Africa VC Fund",
+    "Source type": "DFI announcement",
+    "Title / publication": "DGGF - Oasis Capital Ghana first close Oasis Africa VC Fund USD 27 million",
+    "Date accessed": "May 2026",
+    "URL": "https://english.dggf.nl/latest/news/2018/5/31/oasis-capital-ghana-first-close-oasis-africa-vc-fund-usd-27-million",
+    "Used for": "OAF first close amount and DGGF role"
+  },
+  {
+    "Allocator": "Oasis Africa VC Fund",
+    "Source type": "GP announcement",
+    "Title / publication": "Oasis Capital Ghana - Oasis Africa VC Fund first close",
+    "Date accessed": "May 2026",
+    "URL": "https://oasiscapitalghana.com/v2/oasis-capital-ghana-has-completed-the-first-close-of-its-second-fund-oasis-africa-vc-fund-oaf/",
+    "Used for": "OAF first close: USD 27m, DGGF USD 5m, IFC USD 7m and local investor base over USD 15m"
+  },
+  {
+    "Allocator": "Oasis Africa VC Fund",
+    "Source type": "DFI fund profile",
+    "Title / publication": "EIB - Oasis Africa SME Fund",
+    "Date accessed": "May 2026",
+    "URL": "https://www.eib.org/en/products/equity/funds/oasis-africa-sme-fund",
+    "Used for": "Oasis Africa VC Fund final fund size USD 50.5m and EIB USD 8m commitment"
+  },
+  {
+    "Allocator": "VCTF Ghana / Oasis Capital",
+    "Source type": "Allocator annual report",
+    "Title / publication": "Venture Capital Trust Fund - Annual Report 2015",
+    "Date accessed": "May 2026",
+    "URL": "https://vctf.com.gh/wp-content/uploads/2022/09/Venture-Capital-Annual-report-2015.pdf",
+    "Used for": "VCTF USD 2m commitment to Oasis Africa Fund Limited and Ebankese Venture Fund portfolio context"
+  },
+  {
+    "Allocator": "VCTF Ghana",
+    "Source type": "Allocator profile",
+    "Title / publication": "Venture Capital Trust Fund - About Us",
+    "Date accessed": "May 2026",
+    "URL": "https://vctf.com.gh/about-us/",
+    "Used for": "VCTF mandate as government-backed venture capital fund of funds focused on SME venture funds"
   }
 ],
   "Tier_1_Candidates": [
@@ -7524,7 +7631,7 @@ const DATASET = {
     "Named African PF/SWF LPs": "Petra Trust; Axis Pensions; multiple schemes via CAL Asset Management Company (CAMCOL); Venture Capital Trust Fund (VCTF)",
     "DFI LPs (count)": 0,
     "Named DFI LPs": "—",
-    "Other named LPs": "VCTF is a Ghanaian quasi-government VC fund (not strictly a DFI)",
+    "Other named LPs": "-",
     "Co-investor pattern note": "Second Ghana fund anchored solely by local investors (after Injaro IGVCF). 100% local-LP-funded. Confirms Ghana's emerging mandated-minimum-alts policy is producing real deal flow."
   },
   {
@@ -7538,7 +7645,7 @@ const DATASET = {
     "Named African PF/SWF LPs": "Specific names not individually disclosed",
     "DFI LPs (count)": 0,
     "Named DFI LPs": "—",
-    "Other named LPs": "Venture Capital Trust Fund (VCTF) of Ghana",
+    "Other named LPs": "-",
     "Co-investor pattern note": "FIRST Ghana fund of its kind anchored by local pension funds. Historical precedent for Mirepa I, Ci-Gaba, GIP Ghana model. Ghana cedi-denominated."
   },
   {
@@ -7652,6 +7759,20 @@ const DATASET = {
     "Named DFI LPs": null,
     "Other named LPs": null,
     "Co-investor pattern note": "NSIA provided NGN 10bn anchor funding; FSD Africa supported facility set-up costs through technical assistance rather than a disclosed LP/co-investment commitment."
+  },
+  {
+    "Fund / Vehicle": "Oasis Africa VC Fund (OAF)",
+    "Manager / GP": "Oasis Capital Ghana",
+    "Vintage": "2015/2016",
+    "Fund size (USD m)": "50.5",
+    "Asset class": "PE / SME / VC",
+    "Geographic focus": "Ghana + Cote d'Ivoire",
+    "African PF/SWF LPs (count)": 1,
+    "Named African PF/SWF LPs": "Venture Capital Trust Fund (VCTF)",
+    "DFI LPs (count)": 3,
+    "Named DFI LPs": "Dutch Good Growth Fund (DGGF); IFC; EIB",
+    "Other named LPs": "Local investor base of five institutions and individuals at first close",
+    "Co-investor pattern note": "VCTF government co-investment helped Oasis domicile the fund locally in Ghana. DGGF TA/legal work helped make the Ghana structure bankable for international DFIs; first close included DGGF, IFC and local investors, with EIB later disclosing an USD 8m commitment."
   }
 ],
   "DFI_Co-Investor_Patterns": [
@@ -7678,15 +7799,15 @@ const DATASET = {
   },
   {
     "DFI / Catalytic capital provider": "IFC",
-    "Co-investments in funds with African PF/SWF LP": 5,
-    "Notable vehicles": "Adenia Capital V; Africa50 Infrastructure Acceleration Fund (IAF); Ascent Rift Valley Fund II (ARVF II); Catalyst Fund II; Vantage Mezzanine IV (Pan-African sub-fund)",
+    "Co-investments in funds with African PF/SWF LP": 6,
+    "Notable vehicles": "Adenia Capital V; Africa50 Infrastructure Acceleration Fund (IAF); Ascent Rift Valley Fund II (ARVF II); Catalyst Fund II; Vantage Mezzanine IV (Pan-African sub-fund); Oasis Africa VC Fund (OAF)",
     "Strategic role": "World Bank Group investor and disclosure source; active in flagship PE/infrastructure vehicles.",
     "Frequency tier": "2 (Active)"
   },
   {
     "DFI / Catalytic capital provider": "EIB",
-    "Co-investments in funds with African PF/SWF LP": 4,
-    "Notable vehicles": "Adenia Capital V; Catalyst Fund II; Mediterrania Capital II / III / IV; Vantage Mezzanine IV (Pan-African sub-fund)",
+    "Co-investments in funds with African PF/SWF LP": 5,
+    "Notable vehicles": "Adenia Capital V; Catalyst Fund II; Mediterrania Capital II / III / IV; Vantage Mezzanine IV (Pan-African sub-fund); Oasis Africa VC Fund (OAF)",
     "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "2 (Active)"
   },
@@ -7797,8 +7918,8 @@ const DATASET = {
   },
   {
     "DFI / Catalytic capital provider": "Dutch Good Growth Fund",
-    "Co-investments in funds with African PF/SWF LP": 2,
-    "Notable vehicles": "Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Africa Food Security Fund (AFSF)",
+    "Co-investments in funds with African PF/SWF LP": 3,
+    "Notable vehicles": "Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Africa Food Security Fund (AFSF); Oasis Africa VC Fund (OAF)",
     "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "3 (Selective / TA)"
   },
@@ -9236,6 +9357,16 @@ const DATASET = {
     "Audit confidence": "Include",
     "Rationale": "Column H identifies NSIA, an African SWF, as sponsor/anchor investor; InfraCredit also has named Nigerian pension shareholders.",
     "Source URLs": "https://infracredit.ng/nsia-invests-ngn10-billion-into-an-innovative-construction-finance-warehouse-facility-in-collaboration-with-infracredit-to-support-bankable-greenfield-infrastructure-project-finance-in-nigeria/"
+  },
+  {
+    "Sheet": "Funds & LP Co-Investors",
+    "Original row": 42,
+    "Vehicle / entity": "Oasis Africa VC Fund (OAF)",
+    "Column H / named African PF/SWF evidence": "Venture Capital Trust Fund (VCTF)",
+    "Decision": "Include",
+    "Audit confidence": "Include",
+    "Rationale": "VCTF is a Ghanaian government-backed venture capital fund of funds; VCTF 2015 annual report confirms USD 2m commitment and DGGF research confirms the fund was locally domiciled to access VCTF co-investment.",
+    "Source URLs": "https://vctf.com.gh/wp-content/uploads/2022/09/Venture-Capital-Annual-report-2015.pdf; https://english.dggf.nl/site/binaries/site-content/collections/documents/2025/11/17/getting-sme-risk-capital-funds-to-first-close/dggf-knowledge-product-getting-sme-risk-capital-funds-to-first-close.pdf"
   }
 ],
   "Omission_Candidates": [

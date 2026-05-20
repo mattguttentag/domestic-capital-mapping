@@ -295,6 +295,19 @@ function populateFundGeoFilter() {
   el.dataset.populated = '1';
 }
 
+function populateCommitmentCountryFilter() {
+  const el = document.getElementById('comm-country-filter');
+  if (!el || el.dataset.populated === '1') return;
+  const countries = uniq(D.commitments().map(r => r['Allocator country']).filter(Boolean)).sort((a, b) => String(a).localeCompare(String(b)));
+  countries.forEach(country => {
+    const o = document.createElement('option');
+    o.value = country;
+    o.textContent = country;
+    el.appendChild(o);
+  });
+  el.dataset.populated = '1';
+}
+
 function confBadge(c) {
   const v = String(c || '').trim().charAt(0).toUpperCase();
   if (!v || v === 'N') return '';
@@ -632,6 +645,7 @@ function renderCommitments() {
 
   const q    = document.getElementById('comm-search')?.value || '';
   const asst = document.getElementById('comm-asset-filter')?.value || '';
+  const country = document.getElementById('comm-country-filter')?.value || '';
   const geo  = document.getElementById('comm-geo-filter')?.value || '';
   const conf = document.getElementById('comm-conf-filter')?.value || '';
   const yr   = document.getElementById('comm-year-filter')?.value || '';
@@ -639,6 +653,7 @@ function renderCommitments() {
   rows = rows.filter(r => {
     if (!rowMatchesSearch(r, ['Allocator (institution)','Fund / Vehicle / Deal name','GP or counterparty','Allocator country'], q)) return false;
     if (asst && assetClass(r['Asset class']) !== asst) return false;
+    if (country && r['Allocator country'] !== country) return false;
     if (geo && !String(r['Geographic focus']||'').toLowerCase().includes(geo.toLowerCase())) return false;
     if (conf && String(r['Confidence']||'').charAt(0).toUpperCase() !== conf) return false;
     if (yr) {
@@ -757,13 +772,14 @@ function initCommitments() {
     assetOpts.forEach(a => { const o = document.createElement('option'); o.value = a; o.textContent = assetLabel(a); el.appendChild(o); });
   });
   populateFundGeoFilter();
+  populateCommitmentCountryFilter();
 
-  ['comm-search','comm-asset-filter','comm-geo-filter','comm-conf-filter','comm-year-filter'].forEach(id => {
+  ['comm-search','comm-asset-filter','comm-country-filter','comm-geo-filter','comm-conf-filter','comm-year-filter'].forEach(id => {
     document.getElementById(id)?.addEventListener('input', renderCommitments);
     document.getElementById(id)?.addEventListener('change', renderCommitments);
   });
   document.getElementById('comm-clear')?.addEventListener('click', () => {
-    ['comm-search','comm-asset-filter','comm-geo-filter','comm-conf-filter','comm-year-filter'].forEach(id => {
+    ['comm-search','comm-asset-filter','comm-country-filter','comm-geo-filter','comm-conf-filter','comm-year-filter'].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.value = '';
     });

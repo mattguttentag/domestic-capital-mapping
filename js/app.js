@@ -6,6 +6,7 @@ const D = {
   pipeline:    () => DATASET['Pipeline_and_Mandates'] || [],
   funds:       () => DATASET['Funds_and_LP_Co-Investors'] || [],
   dfis:        () => DATASET['DFI_Co-Investor_Patterns'] || [],
+  sources:     () => DATASET['Source_Library'] || [],
   swfs:        () => DATASET['Sovereign_Wealth_Funds'] || [],
   pensions:    () => DATASET['Pension_Funds'] || [],
   tier1:       () => DATASET['Tier_1_Candidates'] || [],
@@ -108,6 +109,95 @@ function escHtml(s) {
   return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
+function sourceTokens(text) {
+  return searchText(text).split(' ').filter(t => t.length >= 4 && ![
+    'fund','funds','with','from','and','the','for','investment','investments','capital','source','press','release','report'
+  ].includes(t));
+}
+
+function sourceFallbackLinks(row) {
+  const hay = searchText(`${row['Source (short)'] || ''} ${row['Fund / Vehicle / Deal name'] || ''} ${row['Fund / Vehicle'] || ''} ${row['Allocator (institution)'] || ''} ${row['Named African PF/SWF LPs'] || ''}`);
+  const rules = [
+    { test: /pembani remgro/, url: 'https://www.africaglobalfunds.com/news/private-equity/fundraising/pembani-remgro-infrastructure-fund-hits-first-close-at-245m/', title: 'Africa Global Funds - Pembani Remgro Infrastructure Fund first close' },
+    { test: /convergence partners communications|convergence partners communication/, url: 'https://www.convergencepartners.com/2015-07-27-convergencepartnerspanafricanictinfrastructurefundtodriveafricanbroadbandpenetration', title: 'Convergence Partners - Communication Infrastructure Fund final close' },
+    { test: /pencom multi fund|stanbic ibtc pension managers multiple funds/, url: 'https://www.stanbicibtcpension.com/nigeriapensionmanagers/pension-managers/help-desk/frequently-asked-questions/general-faqs/faq', title: 'Stanbic IBTC Pension Managers - Multi-Fund Structure FAQ' },
+    { test: /helios investors ii iii iv|helios historical/, url: 'https://www.heliosinvestment.com/our-firm', title: 'Helios Investment Partners - firm and fund history' },
+    { test: /ascent rift valley fund i arvf i|arvf i/, url: 'https://www.africaglobalfunds.com/news/private-equity/fundraising/arvf-hits-final-close-at-80m/', title: 'Africa Global Funds - Ascent Rift Valley Fund final close' },
+    { test: /nigeria infrastructure fund|nif nsia sub fund/, url: 'https://nsia.com.ng/download/84/investment-policy/11782/nigeria-infrastructure-fund-investment-policy-statement-2021.pdf', title: 'NSIA - Nigeria Infrastructure Fund investment policy statement' },
+    { test: /ez international|el ezaby|tsfe healthcare/, url: 'https://tsfe.com/press.html', title: 'The Sovereign Fund of Egypt - press and portfolio releases' },
+    { test: /capmezzanine|inframaroc|cdg capital materials/, url: 'https://www.cdg.ma/en/investment-0', title: 'CDG - Investment / CDG Invest Growth' },
+    { test: /mohammed vi fund for investment|sectoral co investment funds/, url: 'https://www.fm6i.ma/en/capital-investissement-fonds-thematiques-et-sectoriels', title: 'FM6I - Capital-investissement: fonds thematiques et sectoriels' },
+    { test: /stimulus investments|eos capital|housing financing programme|gipf disclosures/, url: 'https://www.gipf.com.na/unlisted-investments/', title: 'GIPF - Unlisted Investments portfolio overview' },
+    { test: /bpopf disclosures|botswana public officers pension fund various/, url: 'https://guardiansun.co.bw/News/bpopf-seeks-sweet-spot-in-alternative-investments', title: 'Guardian Sun - BPOPF alternative investments' },
+    { test: /afc announcement of pic|pic south africa afc equity stake/, url: 'https://www.africaglobalfunds.com/news/investors/pic-to-invest-100m-in-afc/', title: 'Africa Global Funds - PIC to invest US$100m in AFC' },
+    { test: /business in cameroon|cnps cameroon/, url: 'https://www.businessincameroon.com/finance/2906-13233-cameroons-national-social-security-fund-cnps-joins-africa-finance-corporation-afc-as-shareholder', title: 'Business in Cameroon - CNPS joins AFC as shareholder' },
+    { test: /cote d ivoire|mauritius shareholders|national pension fund npf mauritius|national savings fund nsf mauritius/, url: 'https://www.africafc.org/news-and-insights/news/africa-finance-corporation-diversifies-shareholders-with-equity-from-c%C3%B4te-divoire-mauritius-and-africare', title: 'AFC - Shareholder equity from Cote d Ivoire and Mauritius' },
+    { test: /ghana sierra leone seychelles|seychelles pension fund|government of sierra leone|ghana infrastructure investment fund|indian ocean shareholders/, url: 'https://www.africafc.org/news-and-insights/news/africa-finance-corporation-attracts-new-equity-from-ghana-sierra-leone-and-seychelles', title: 'AFC - Equity from Ghana, Sierra Leone and Seychelles' },
+    { test: /egypt becomes first north african|government of egypt afc equity stake/, url: 'https://www.africafc.org/news-and-insights/news/egypt-becomes-first-north-african-shareholder-in-africa-finance-corporation', title: 'AFC - Egypt becomes first North African shareholder' },
+    { test: /afc equity shareholder list|cdc gabon/, url: 'https://www.africafc.org/our-investors/equity', title: 'AFC - Our Investors' },
+    { test: /catalyst fund ii|avca fund close coverage/, url: 'https://africaglobalfunds.com/news/private-equity/fundraising/catalyst-fund-ii-reaches-155m-final-close/', title: 'Africa Global Funds - Catalyst Fund II final close' },
+    { test: /agaciro|agdf/, url: 'https://ifswf.org/sites/default/files/annual-reports/Agaciro%202021%20Annual%20Report.pdf', title: 'Agaciro Development Fund - 2021 annual report' },
+    { test: /rssb disclosures|bk group|rwandair|strategic stakes/, url: 'https://rssb.rw/investment', title: 'Rwanda Social Security Board - Investment' },
+    { test: /ssnit disclosures|direct stakes in ghanaian/, url: 'https://www.ssnit.org.gh/annual-reports/', title: 'SSNIT - Annual reports' },
+    { test: /fsd djibouti|fsd disclosures|domestic strategic partnerships/, url: 'https://www.fsd.dj/who-we-are/', title: 'Fonds Souverain de Djibouti - mandate and investment role' }
+  ];
+  return rules.filter(r => r.test.test(hay)).map(r => ({
+    url: r.url,
+    label: 'source',
+    title: r.title
+  }));
+}
+
+function sourceLinksFor(row, kind) {
+  if (row['Source URL']) {
+    return [{ url: row['Source URL'], label: row['Source (short)'] || 'source' }];
+  }
+  const vehicleName = row['Fund / Vehicle / Deal name'] || row['Fund / Vehicle'] || '';
+  const fallbackLinks = sourceFallbackLinks(row);
+  if (fallbackLinks.length) return fallbackLinks;
+  const sourceRows = D.sources().filter(s => s.URL);
+  const short = searchText(row['Source (short)']);
+  const shortTokens = searchText(row['Source (short)']).split(' ').filter(t => t.length >= 3 && ![
+    'the','and','for','with','source','press','release','report','fund','funds'
+  ].includes(t));
+  const vehicle = vehicleName;
+  const allocator = row['Allocator (institution)'] || row['Named African PF/SWF LPs'] || '';
+  const manager = row['GP or counterparty'] || row['Manager / GP'] || '';
+  const vehicleTokens = sourceTokens(vehicle);
+  const allocatorTokens = sourceTokens(allocator);
+  const managerTokens = sourceTokens(manager);
+  const scored = sourceRows.map(s => {
+    const hay = searchText(`${s.Allocator || ''} ${s['Title / publication'] || ''} ${s['Used for'] || ''}`);
+    let score = 0;
+    if (short && hay.includes(short)) score += 120;
+    shortTokens.slice(0, 6).forEach(t => { if (hay.includes(t)) score += 20; });
+    vehicleTokens.forEach(t => { if (hay.includes(t)) score += 18; });
+    allocatorTokens.slice(0, 5).forEach(t => { if (hay.includes(t)) score += 8; });
+    managerTokens.slice(0, 4).forEach(t => { if (hay.includes(t)) score += 6; });
+    if (kind === 'fund' && vehicleTokens.length && score >= 18) score += 10;
+    return { source: s, score };
+  }).filter(x => x.score >= 28)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3)
+    .map(x => ({
+      url: x.source.URL,
+      label: x.source['Source type'] || x.source.Allocator || 'source',
+      title: x.source['Title / publication'] || x.source.URL
+    }));
+  const seen = new Set();
+  return scored.filter(s => {
+    if (seen.has(s.url)) return false;
+    seen.add(s.url);
+    return true;
+  });
+}
+
+function sourceLinksHtml(row, kind) {
+  const links = sourceLinksFor(row, kind);
+  if (!links.length) return '<span class="map-muted">No source link matched</span>';
+  return links.map((s, i) => `<a href="${escHtml(s.url)}" target="_blank" rel="noopener" title="${escHtml(s.title || s.url)}">${escHtml(i === 0 ? 'source' : `source ${i + 1}`)}</a>`).join(' ');
+}
+
 function assetTag(ac) {
   const key = assetClass(ac);
   return `<span class="asset-tag asset-${key}">${assetLabel(key)}</span>`;
@@ -206,13 +296,16 @@ function renderAfricaMap(containerId, countries, mode) {
       ? `<div class="map-list-item"><strong>${escHtml(item.name)}</strong><br><span class="map-muted">${escHtml(item.type)} · ${fmtAUM(item.aum)}</span></div>`
       : `<div class="map-list-item"><strong>${escHtml(item.vehicle)}</strong><br><span class="map-muted">${escHtml(item.allocator)} · ${escHtml(item.asset)}</span></div>`
     ).join('');
+    const detailWithSources = mode === 'commitments'
+      ? d.items.slice(0, 10).map(item => `<div class="map-list-item"><strong>${escHtml(item.vehicle)}</strong><br><span class="map-muted">${escHtml(item.allocator)} - ${escHtml(item.asset)}</span>${item.source ? `<div class="source-link">${item.source}</div>` : ''}</div>`).join('')
+      : detail;
     return `<h3>${escHtml(d.country)}</h3>
       <p class="map-muted">${escHtml(d.caption || '')}</p>
       <div class="map-stat">
         <div class="map-stat-card"><strong>${d.count}</strong><span>${statLabel}</span></div>
         ${secondary}
       </div>
-      <div class="map-list">${detail || '<div class="map-muted">No detail rows.</div>'}</div>`;
+      <div class="map-list">${detailWithSources || '<div class="map-muted">No detail rows.</div>'}</div>`;
   }
 
   function draw(features) {
@@ -483,7 +576,7 @@ function renderCommitments() {
 
   const tbody = document.getElementById('comm-tbody');
   if (!rows.length) {
-    tbody.innerHTML = `<tr><td colspan="8"><div class="empty-state"><div class="icon">🔍</div>No commitments match.</div></td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="9"><div class="empty-state"><div class="icon">🔍</div>No commitments match.</div></td></tr>`;
     return;
   }
   tbody.innerHTML = rows.map(r => `<tr>
@@ -495,6 +588,7 @@ function renderCommitments() {
     <td>${escHtml(r['Geographic focus']||'—')}</td>
     <td class="num">${escHtml(r['Vintage / Year']||'—')}</td>
     <td>${confBadge(r['Confidence'])}</td>
+    <td><div class="source-link">${sourceLinksHtml(r, 'commitment')}</div></td>
   </tr>`).join('');
 }
 
@@ -510,7 +604,8 @@ function renderCommitmentMap(rows) {
     g.items.push({
       allocator: r['Allocator (institution)'] || '—',
       vehicle: r['Fund / Vehicle / Deal name'] || '—',
-      asset: assetLabel(assetClass(r['Asset class']))
+      asset: assetLabel(assetClass(r['Asset class'])),
+      source: sourceLinksHtml(r, 'commitment')
     });
   });
   const countries = [...grouped.values()].map(d => ({
@@ -546,6 +641,7 @@ function renderFunds() {
   container.innerHTML = rows.map(r => {
     const lps = parseSemicolon(r['Named African PF/SWF LPs']);
     const dfis = parseSemicolon(r['Named DFI LPs']);
+    const sources = sourceLinksHtml(r, 'fund');
     return `<div class="fund-card asset-${ac(r)}">
       <div class="fund-name">${escHtml(r['Fund / Vehicle']||'—')}</div>
       <div class="fund-meta">
@@ -557,6 +653,7 @@ function renderFunds() {
       </div>
       ${lps.length ? `<div class="fund-lps"><strong>African LPs:</strong> ${lps.map(l => `<span class="pill">${escHtml(l)}</span>`).join(' ')}</div>` : ''}
       ${dfis.length ? `<div class="fund-lps"><strong>DFIs and Other LPs:</strong> ${dfis.map(d => `<span class="pill" style="background:#fef3c7;color:#78350f">${escHtml(d)}</span>`).join(' ')}</div>` : ''}
+      <div class="source-link"><strong>Sources:</strong> ${sources}</div>
     </div>`;
   }).join('');
 }

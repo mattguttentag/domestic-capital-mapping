@@ -305,7 +305,7 @@ function buildNetwork() {
   // ── Fund nodes + DFI-Fund links (from Funds tab, confirmed vehicles only) ──
   D.funds().forEach(r => {
     const fname = canonicalVehicleName(r['Fund / Vehicle']);
-    const ac = assetClass(r['Asset class']);
+    const ac = assetClass(r['Asset class normalized'] || r['Asset class']);
     if (!fname || fname === 'nan') return;
     if (!confirmedVehicles.has(fname)) return;
 
@@ -350,7 +350,7 @@ function buildNetwork() {
     });
 
     if (fundName && fundName !== 'nan') {
-      getOrAdd(fundName, 'fund', { assetClass: assetClass(r['Asset class']), geo: r['Geographic focus'] });
+      getOrAdd(fundName, 'fund', { assetClass: assetClass(r['Asset class normalized'] || r['Asset class']), geo: r['Geographic focus'] });
       addLink(typedId('allocator', allocName), typedId('fund', fundName), 'pf-fund');
     }
   });
@@ -431,7 +431,18 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
     if (d.type === 'dfi')       return '#c8891a';
     if (d.type === 'fund') {
       const ac = d.assetClass || assetClass(d.label);
-      const colors = { PE: '#2563eb', VC: '#7c3aed', Infra: '#059669', Credit: '#d97706', Direct: '#dc2626', FundOfFunds: '#0891b2', Mixed: '#6b7280', Other: '#6b7280' };
+      const colors = {
+        PE: '#2563eb',
+        VC: '#7c3aed',
+        RealAssets: '#059669',
+        Credit: '#d97706',
+        Direct: '#dc2626',
+        FundOfFunds: '#0891b2',
+        Guarantee: '#ea580c',
+        Platform: '#4f46e5',
+        Mixed: '#6b7280',
+        Other: '#6b7280'
+      };
       return colors[ac] || '#6b7280';
     }
     return d.color || allocColor(d.country || 'Unknown');

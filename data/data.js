@@ -3335,7 +3335,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Africa50 announcement Apr 2025",
     "Confidence": "H",
-    "Notes": "PIC became 36th shareholder of Africa50 with USD 40m investment, signalling continental infrastructure commitment."
+    "Notes": "PIC became 36th shareholder of Africa50 with USD 40m investment, signalling continental infrastructure commitment.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "PIC (mgr for GEPF)",
@@ -3352,7 +3355,10 @@ const DATASET = {
     "Disclosure type": "Trade press / GP disclosure",
     "Source (short)": "Helios LP composition; widely reported",
     "Confidence": "M",
-    "Notes": "PIC has been a recurring LP in Helios funds dating back to Helios II; specific commitment sizes not publicly disclosed."
+    "Notes": "PIC has been a recurring LP in Helios funds dating back to Helios II; specific commitment sizes not publicly disclosed.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "PIC (mgr for GEPF)",
@@ -3369,7 +3375,10 @@ const DATASET = {
     "Disclosure type": "Trade press",
     "Source (short)": "Africa Capital Digest reporting",
     "Confidence": "M",
-    "Notes": "PIC was an anchor LP at fund formation."
+    "Notes": "PIC was an anchor LP at fund formation.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "PIC (mgr for GEPF)",
@@ -3386,7 +3395,10 @@ const DATASET = {
     "Disclosure type": "Trade press",
     "Source (short)": "AVCA fund close reporting",
     "Confidence": "M",
-    "Notes": "PIC participated in Convergence Partners' digital infrastructure platform."
+    "Notes": "PIC participated in Convergence Partners' digital infrastructure platform.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure; Digital / Technology",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "PIC (mgr for GEPF)",
@@ -3403,7 +3415,10 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "PIC Corporate Plan 2025/26",
     "Confidence": "H",
-    "Notes": "Isibaya programme deploys to unlisted equity and infrastructure across SA and rest of Africa; PIC reports ~20% to alternatives overall."
+    "Notes": "Isibaya programme deploys to unlisted equity and infrastructure across SA and rest of Africa; PIC reports ~20% to alternatives overall.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure; Multi-Sector",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Eskom Pension and Provident Fund (EPPF)",
@@ -3420,7 +3435,10 @@ const DATASET = {
     "Disclosure type": "Top1000funds.com profile / EPPF disclosure",
     "Source (short)": "EPPF investment strategy",
     "Confidence": "H",
-    "Notes": "EPPF has been investing in PE for 10+ years; ~10% to alts total, ~4% to PE; selectively includes pan-Africa funds."
+    "Notes": "EPPF has been investing in PE for 10+ years; ~10% to alts total, ~4% to PE; selectively includes pan-Africa funds.",
+    "Asset class normalized": "Mixed / Multi-Asset",
+    "Sector / thematic focus": "Multi-Sector",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "GEPF (via PIC)",
@@ -3437,7 +3455,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Africa50 announcement",
     "Confidence": "H",
-    "Notes": "GEPF is ultimate asset owner; PIC executes."
+    "Notes": "GEPF is ultimate asset owner; PIC executes.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure; Financial Inclusion / Financial Services",
+    "Investment approach": "Platform / Anchor Sponsor"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -3454,7 +3475,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "NSIA announcement Feb 2026",
     "Confidence": "H",
-    "Notes": "Latest committed fund LP investment; aligns with NIF sub-fund mandate."
+    "Notes": "Latest committed fund LP investment; aligns with NIF sub-fund mandate.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -3471,7 +3495,10 @@ const DATASET = {
     "Disclosure type": "Press release / annual report",
     "Source (short)": "NSIA disclosure on additional govt funding",
     "Confidence": "H",
-    "Notes": "Federal Government injected USD 550m to scale energy infra; NIF is the direct-deal vehicle."
+    "Notes": "Federal Government injected USD 550m to scale energy infra; NIF is the direct-deal vehicle.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure; Multi-Sector",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -3488,7 +3515,10 @@ const DATASET = {
     "Disclosure type": "Annual report / trade press",
     "Source (short)": "NSIA NIF portfolio disclosures",
     "Confidence": "H",
-    "Notes": "Notable NIF direct PPP equity stake."
+    "Notes": "Notable NIF direct PPP equity stake.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -3505,7 +3535,10 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "NSIA NIF portfolio",
     "Confidence": "H",
-    "Notes": "NIF agribusiness anchor investment."
+    "Notes": "NIF agribusiness anchor investment.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Agriculture / Food Security",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -3522,7 +3555,10 @@ const DATASET = {
     "Disclosure type": "Trade press / industry knowledge",
     "Source (short)": "Industry reporting",
     "Confidence": "M",
-    "Notes": "NSIA has been an LP in Nigerian-focused PE funds; sizes not disclosed."
+    "Notes": "NSIA has been an LP in Nigerian-focused PE funds; sizes not disclosed.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Multiple Nigerian PFAs (consortium)",
@@ -3539,7 +3575,10 @@ const DATASET = {
     "Disclosure type": "Press release / trade press",
     "Source (short)": "First fund local-pension participation",
     "Confidence": "H",
-    "Notes": "Landmark first Nigerian-pension-funded infra fund."
+    "Notes": "Landmark first Nigerian-pension-funded infra fund.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Stanbic IBTC Pension Managers",
@@ -3556,7 +3595,10 @@ const DATASET = {
     "Disclosure type": "PenCom returns / trade press",
     "Source (short)": "PenCom Multi-Fund disclosures",
     "Confidence": "M",
-    "Notes": "Largest PFA; alts are growing portion of portfolio under Multi-Fund Structure but per-fund sizes are not publicly disclosed."
+    "Notes": "Largest PFA; alts are growing portion of portfolio under Multi-Fund Structure but per-fund sizes are not publicly disclosed.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure; Multi-Sector",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "ARM Pension Managers (Access ARM Pensions)",
@@ -3573,7 +3615,10 @@ const DATASET = {
     "Disclosure type": "Industry reporting",
     "Source (short)": "ARM group disclosures",
     "Confidence": "M",
-    "Notes": "ARM Pension and ARM-Harith are part of the same group; intra-group LP commitments are an obvious starting point."
+    "Notes": "ARM Pension and ARM-Harith are part of the same group; intra-group LP commitments are an obvious starting point.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "The Sovereign Fund of Egypt (TSFE)",
@@ -3590,7 +3635,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "TSFE Healthcare & Pharma Subfund announcement",
     "Confidence": "H",
-    "Notes": "Co-invested via Healthcare & Pharma Subfund with B Investments and El-Ezaby Pharmacy."
+    "Notes": "Co-invested via Healthcare & Pharma Subfund with B Investments and El-Ezaby Pharmacy.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Healthcare",
+    "Investment approach": "Co-investment"
   },
   {
     "Allocator (institution)": "The Sovereign Fund of Egypt (TSFE)",
@@ -3607,7 +3655,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "ADQ-TSFE healthcare platform",
     "Confidence": "H",
-    "Notes": "Strategic healthcare platform co-developed with ADQ."
+    "Notes": "Strategic healthcare platform co-developed with ADQ.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Healthcare",
+    "Investment approach": "Platform / Anchor Sponsor"
   },
   {
     "Allocator (institution)": "The Sovereign Fund of Egypt (TSFE)",
@@ -3624,7 +3675,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Repeated Gulf SWF co-investment announcements",
     "Confidence": "H",
-    "Notes": "TSFE has been the on-ground co-investment vehicle for Gulf SWF deployment into Egypt across financial services, healthcare, infra."
+    "Notes": "TSFE has been the on-ground co-investment vehicle for Gulf SWF deployment into Egypt across financial services, healthcare, infra.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure; Financial Inclusion / Financial Services; Healthcare; Multi-Sector",
+    "Investment approach": "Platform / Anchor Sponsor"
   },
   {
     "Allocator (institution)": "Caisse de Dépôt et de Gestion (CDG)",
@@ -3641,7 +3695,10 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "CDG Group annual report",
     "Confidence": "H",
-    "Notes": "CDG Invest's direct-equity portfolio of Moroccan corporate stakes."
+    "Notes": "CDG Invest's direct-equity portfolio of Moroccan corporate stakes.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure; Multi-Sector",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Caisse de Dépôt et de Gestion (CDG)",
@@ -3658,7 +3715,10 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "CDG Capital materials",
     "Confidence": "H",
-    "Notes": "CDG Invest manages CapMezzanine III, a mezzanine fund for Moroccan SMEs."
+    "Notes": "CDG Invest manages CapMezzanine III, a mezzanine fund for Moroccan SMEs.",
+    "Asset class normalized": "Private Credit",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Caisse de Dépôt et de Gestion (CDG)",
@@ -3675,7 +3735,10 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "CDG Capital materials",
     "Confidence": "H",
-    "Notes": "CDG-managed infra investment vehicle."
+    "Notes": "CDG-managed infra investment vehicle.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Caisse de Dépôt et de Gestion (CDG)",
@@ -3692,7 +3755,10 @@ const DATASET = {
     "Disclosure type": "Trade press",
     "Source (short)": "Industry coverage",
     "Confidence": "M",
-    "Notes": "CDG has historically been an LP in Mediterrania PE funds focused on Maghreb mid-market."
+    "Notes": "CDG has historically been an LP in Mediterrania PE funds focused on Maghreb mid-market.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Caisse de Dépôt et de Gestion (CDG)",
@@ -3709,7 +3775,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "IFC announcement 2024",
     "Confidence": "H",
-    "Notes": "Joint investment with IFC and Fipar-Holding in retail/food platform."
+    "Notes": "Joint investment with IFC and Fipar-Holding in retail/food platform.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Agriculture / Food Security",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Ithmar Capital",
@@ -3726,7 +3795,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Ithmar portfolio: Wessal",
     "Confidence": "H",
-    "Notes": "Ithmar describes Wessal as an investment vehicle / joint venture equally owned by five SWFs, not a conventional GP-managed fund. Named projects include Wessal Bouregreg and Wessal Casa-Port."
+    "Notes": "Ithmar describes Wessal as an investment vehicle / joint venture equally owned by five SWFs, not a conventional GP-managed fund. Named projects include Wessal Bouregreg and Wessal Casa-Port.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure; Real Estate / Housing",
+    "Investment approach": "Platform / Anchor Sponsor"
   },
   {
     "Allocator (institution)": "Mohammed VI Fund for Investment",
@@ -3743,7 +3815,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Mohammed VI Fund framework",
     "Confidence": "M",
-    "Notes": "Newly-capitalised; intended as anchor for Moroccan sectoral funds."
+    "Notes": "Newly-capitalised; intended as anchor for Moroccan sectoral funds.",
+    "Asset class normalized": "Mixed / Multi-Asset",
+    "Sector / thematic focus": "Multi-Sector",
+    "Investment approach": "Platform / Anchor Sponsor"
   },
   {
     "Allocator (institution)": "Government Institutions Pension Fund (GIPF)",
@@ -3760,7 +3835,10 @@ const DATASET = {
     "Disclosure type": "Annual report / NAMFISA filing",
     "Source (short)": "GIPF unlisted-investments disclosures 2024/25",
     "Confidence": "H",
-    "Notes": "GIPF Unlisted Investment Policy mandates ~10% PE + 5% RE; 307 underlying companies."
+    "Notes": "GIPF Unlisted Investment Policy mandates ~10% PE + 5% RE; 307 underlying companies.",
+    "Asset class normalized": "Private Credit",
+    "Sector / thematic focus": "Infrastructure; Multi-Sector",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Government Institutions Pension Fund (GIPF)",
@@ -3777,7 +3855,10 @@ const DATASET = {
     "Disclosure type": "GP disclosures + industry knowledge",
     "Source (short)": "Stimulus Investments materials",
     "Confidence": "H",
-    "Notes": "Stimulus is a flagship Namibian unlisted manager; GIPF is an anchor LP."
+    "Notes": "Stimulus is a flagship Namibian unlisted manager; GIPF is an anchor LP.",
+    "Asset class normalized": "Private Credit",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Government Institutions Pension Fund (GIPF)",
@@ -3794,7 +3875,10 @@ const DATASET = {
     "Disclosure type": "GP disclosures",
     "Source (short)": "Eos Capital materials",
     "Confidence": "H",
-    "Notes": "Eos manages multiple unlisted funds anchored by GIPF."
+    "Notes": "Eos manages multiple unlisted funds anchored by GIPF.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Multi-Sector",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Government Institutions Pension Fund (GIPF)",
@@ -3811,7 +3895,10 @@ const DATASET = {
     "Disclosure type": "GP disclosures",
     "Source (short)": "OMIGNAM materials",
     "Confidence": "H",
-    "Notes": null
+    "Notes": null,
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Government Institutions Pension Fund (GIPF)",
@@ -3828,7 +3915,10 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "GIPF disclosures",
     "Confidence": "H",
-    "Notes": "Domestic housing facility — a developmental-investment direct programme."
+    "Notes": "Domestic housing facility — a developmental-investment direct programme.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure; Real Estate / Housing",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Botswana Public Officers Pension Fund (BPOPF)",
@@ -3845,7 +3935,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "BPOPF private equity incubation programme",
     "Confidence": "H",
-    "Notes": "Part of BPOPF's domestic PE incubation programme."
+    "Notes": "Part of BPOPF's domestic PE incubation programme.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Botswana Public Officers Pension Fund (BPOPF)",
@@ -3862,7 +3955,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "BPOPF private equity incubation programme",
     "Confidence": "H",
-    "Notes": "Part of BPOPF's incubation programme; anchor LP."
+    "Notes": "Part of BPOPF's incubation programme; anchor LP.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Botswana Public Officers Pension Fund (BPOPF)",
@@ -3879,7 +3975,10 @@ const DATASET = {
     "Disclosure type": "Trade press",
     "Source (short)": "Industry reporting",
     "Confidence": "M",
-    "Notes": "Disclosed in industry sources; sizes not public."
+    "Notes": "Disclosed in industry sources; sizes not public.",
+    "Asset class normalized": "Private Credit",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Botswana Public Officers Pension Fund (BPOPF)",
@@ -3896,7 +3995,10 @@ const DATASET = {
     "Disclosure type": "BPOPF investments page",
     "Source (short)": "BPOPF disclosures",
     "Confidence": "H",
-    "Notes": "BPOPF targets ~10% in alternatives including PE, infra, RE."
+    "Notes": "BPOPF targets ~10% in alternatives including PE, infra, RE.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure; Multi-Sector",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "NSSF Uganda",
@@ -3913,7 +4015,10 @@ const DATASET = {
     "Disclosure type": "Press release / annual report",
     "Source (short)": "Yield Uganda Investment Fund disclosures",
     "Confidence": "H",
-    "Notes": "NSSF Uganda was a founding LP alongside EU and IFAD; fund now at EUR 20m total commitments. [CORRECTED in Phase 6: NSSF Uganda's actual founding ticket was EUR 2m, alongside EUR 10m from EU/IFAD, for the EUR 12m total first close. Fund subsequently grew to EUR 20m via FCA Investments + Soros Economic Development Fund.]"
+    "Notes": "NSSF Uganda was a founding LP alongside EU and IFAD; fund now at EUR 20m total commitments. [CORRECTED in Phase 6: NSSF Uganda's actual founding ticket was EUR 2m, alongside EUR 10m from EU/IFAD, for the EUR 12m total first close. Fund subsequently grew to EUR 20m via FCA Investments + Soros Economic Development Fund.]",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Agriculture / Food Security",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "NSSF Uganda",
@@ -3930,7 +4035,10 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "NSSF Uganda Integrated Report",
     "Confidence": "H",
-    "Notes": "NSSF Uganda discloses ~20% alts; real estate dominant historically, infra/PE growing."
+    "Notes": "NSSF Uganda discloses ~20% alts; real estate dominant historically, infra/PE growing.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure; Real Estate / Housing; Multi-Sector",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "NSSF Uganda",
@@ -3947,7 +4055,10 @@ const DATASET = {
     "Disclosure type": "Trade press",
     "Source (short)": "AVCA fund close coverage",
     "Confidence": "M",
-    "Notes": "Reported among Catalyst II's LPs."
+    "Notes": "Reported among Catalyst II's LPs.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Fundo Soberano de Angola (FSDEA)",
@@ -3964,7 +4075,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "AltAssets reporting",
     "Confidence": "H",
-    "Notes": "Joint pan-African infra fund with Gemcorp."
+    "Notes": "Joint pan-African infra fund with Gemcorp.",
+    "Asset class normalized": "Platform / Holding Company",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Platform / Anchor Sponsor"
   },
   {
     "Allocator (institution)": "Fundo Soberano de Angola (FSDEA)",
@@ -3981,7 +4095,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Lobito Corridor announcement",
     "Confidence": "H",
-    "Notes": "Multi-party rail-and-port infrastructure development."
+    "Notes": "Multi-party rail-and-port infrastructure development.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Fundo Soberano de Angola (FSDEA)",
@@ -3998,7 +4115,10 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "FSDEA / IFSWF disclosures",
     "Confidence": "M",
-    "Notes": "FSDEA portfolio includes PE funds among other asset classes; per-fund detail not publicly disclosed."
+    "Notes": "FSDEA portfolio includes PE funds among other asset classes; per-fund detail not publicly disclosed.",
+    "Asset class normalized": "Mixed / Multi-Asset",
+    "Sector / thematic focus": "Infrastructure; Multi-Sector",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "FONSIS",
@@ -4015,7 +4135,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "FONSIS announcement Jan 2024",
     "Confidence": "H",
-    "Notes": "FONSIS and KfW/World Bank launched Oyass Capital as an SME-focused private-equity fund/financing vehicle; FONSIS says SEAF received the management mandate after an international tender."
+    "Notes": "FONSIS and KfW/World Bank launched Oyass Capital as an SME-focused private-equity fund/financing vehicle; FONSIS says SEAF received the management mandate after an international tender.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "SME Finance; Financial Inclusion / Financial Services",
+    "Investment approach": "Platform / Anchor Sponsor"
   },
   {
     "Allocator (institution)": "FONSIS",
@@ -4032,7 +4155,10 @@ const DATASET = {
     "Disclosure type": "FONSIS annual report",
     "Source (short)": "FONSIS portfolio disclosures",
     "Confidence": "H",
-    "Notes": "FONSIS's primary mandate is direct strategic investment in Senegalese transformational projects."
+    "Notes": "FONSIS's primary mandate is direct strategic investment in Senegalese transformational projects.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure; Agriculture / Food Security; Multi-Sector",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Agaciro Development Fund (AgDF)",
@@ -4049,7 +4175,10 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "AgDF disclosures",
     "Confidence": "M",
-    "Notes": "AgDF holds equity in selected Rwandan strategic companies."
+    "Notes": "AgDF holds equity in selected Rwandan strategic companies.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Rwanda Social Security Board (RSSB)",
@@ -4066,7 +4195,10 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "RSSB disclosures",
     "Confidence": "H",
-    "Notes": "RSSB holds significant direct equity in Rwandan strategic enterprises."
+    "Notes": "RSSB holds significant direct equity in Rwandan strategic enterprises.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Social Security and National Insurance Trust (SSNIT)",
@@ -4083,7 +4215,10 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "SSNIT 2022/23 Annual Report",
     "Confidence": "H",
-    "Notes": "34% of portfolio in alts as of 2023; 2024 strategy shift to rebalance toward fixed income announced."
+    "Notes": "34% of portfolio in alts as of 2023; 2024 strategy shift to rebalance toward fixed income announced.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure; Real Estate / Housing; Multi-Sector",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Social Security and National Insurance Trust (SSNIT)",
@@ -4100,7 +4235,10 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "SSNIT disclosures",
     "Confidence": "H",
-    "Notes": "Significant historic direct-equity holdings in listed and unlisted Ghanaian firms."
+    "Notes": "Significant historic direct-equity holdings in listed and unlisted Ghanaian firms.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Agriculture / Food Security; Financial Inclusion / Financial Services; Real Estate / Housing",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Ghana Infrastructure Investment Fund (GIIF)",
@@ -4117,7 +4255,10 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "GIIF disclosures",
     "Confidence": "M",
-    "Notes": "Domestic infrastructure direct-deal mandate."
+    "Notes": "Domestic infrastructure direct-deal mandate.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure; Multi-Sector",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "FGIS",
@@ -4134,7 +4275,10 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "FGIS disclosures",
     "Confidence": "M",
-    "Notes": "FGIS has built equity stakes in Gabonese banking and infrastructure."
+    "Notes": "FGIS has built equity stakes in Gabonese banking and infrastructure.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure; Financial Inclusion / Financial Services; Multi-Sector",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "FSD Djibouti",
@@ -4151,7 +4295,10 @@ const DATASET = {
     "Disclosure type": "Press releases",
     "Source (short)": "FSD disclosures",
     "Confidence": "M",
-    "Notes": "Mandate includes strategic co-investments."
+    "Notes": "Mandate includes strategic co-investments.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure; Multi-Sector",
+    "Investment approach": "Platform / Anchor Sponsor"
   },
   {
     "Allocator (institution)": "Axis Pension Trust",
@@ -4168,7 +4315,10 @@ const DATASET = {
     "Disclosure type": "Press release / trade press",
     "Source (short)": "BII / Axis Pension Trust / Norfund joint announcement April 2026",
     "Confidence": "H",
-    "Notes": "First disclosed Ghanaian pension trustee commitment to SME debt under Ghana's new 5% alternative-assets rule. Co-committed alongside Norfund (USD 15m); GIP capital base raised to ~USD 70m."
+    "Notes": "First disclosed Ghanaian pension trustee commitment to SME debt under Ghana's new 5% alternative-assets rule. Co-committed alongside Norfund (USD 15m); GIP capital base raised to ~USD 70m.",
+    "Asset class normalized": "Private Credit",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Co-investment"
   },
   {
     "Allocator (institution)": "Axis Pension Trust",
@@ -4185,7 +4335,10 @@ const DATASET = {
     "Disclosure type": "Press release / trade press",
     "Source (short)": "Ci Gaba FoF first close March 2026",
     "Confidence": "H",
-    "Notes": "Ghanaian pension capital is >2/3 of Ci Gaba's first-close commitments. West Africa's first domestically-domiciled private fund of funds; target size GHS 1bn / USD 91m."
+    "Notes": "Ghanaian pension capital is >2/3 of Ci Gaba's first-close commitments. West Africa's first domestically-domiciled private fund of funds; target size GHS 1bn / USD 91m.",
+    "Asset class normalized": "Fund of Funds",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund of Funds LP"
   },
   {
     "Allocator (institution)": "Enterprise Trustees Limited",
@@ -4202,7 +4355,10 @@ const DATASET = {
     "Disclosure type": "Press release / trade press",
     "Source (short)": "Ci Gaba FoF first close March 2026",
     "Confidence": "H",
-    "Notes": "One of Ghana's largest private trustees; LP alongside AXIS, Stanbic IMS, CAL Asset Management, FSDAi, Small Foundation, FMO."
+    "Notes": "One of Ghana's largest private trustees; LP alongside AXIS, Stanbic IMS, CAL Asset Management, FSDAi, Small Foundation, FMO.",
+    "Asset class normalized": "Fund of Funds",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund of Funds LP"
   },
   {
     "Allocator (institution)": "PIC (South Africa)",
@@ -4219,7 +4375,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "AFC announcement of PIC $100m equity investment Dec 2022",
     "Confidence": "H",
-    "Notes": "Separate from the 2025 PIC-Africa50 commitment. PIC's largest disclosed pan-African institutional equity position."
+    "Notes": "Separate from the 2025 PIC-Africa50 commitment. PIC's largest disclosed pan-African institutional equity position.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Seychelles Pension Fund",
@@ -4236,7 +4395,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "AFC press release on Indian Ocean shareholders",
     "Confidence": "H",
-    "Notes": "First Indian Ocean shareholder of AFC; joined with Sierra Leone and GIIF Ghana."
+    "Notes": "First Indian Ocean shareholder of AFC; joined with Sierra Leone and GIIF Ghana.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Ghana Infrastructure Investment Fund (GIIF)",
@@ -4253,7 +4415,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "AFC press release on Ghana/Sierra Leone/Seychelles shareholders",
     "Confidence": "H",
-    "Notes": "GIIF deploys its own balance sheet into AFC; aligns with GIIF's domestic-infra mandate."
+    "Notes": "GIIF deploys its own balance sheet into AFC; aligns with GIIF's domestic-infra mandate.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "National Pension Fund (NPF) Mauritius",
@@ -4270,7 +4435,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "AFC press release on Côte d'Ivoire / Mauritius shareholders",
     "Confidence": "H",
-    "Notes": "Mauritius participates via NPF and NSF jointly."
+    "Notes": "Mauritius participates via NPF and NSF jointly.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "National Savings Fund (NSF) Mauritius",
@@ -4287,7 +4455,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "AFC press release on Mauritius shareholders",
     "Confidence": "H",
-    "Notes": "Joint Mauritian participation alongside NPF."
+    "Notes": "Joint Mauritian participation alongside NPF.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "CNPS Cameroon",
@@ -4304,7 +4475,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Business in Cameroon — CNPS Cameroon joins AFC as shareholder",
     "Confidence": "H",
-    "Notes": "First Central African pension fund to take AFC equity. Important precedent for CIPRES-supervised funds."
+    "Notes": "First Central African pension fund to take AFC equity. Important precedent for CIPRES-supervised funds.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "CDC Gabon (State pension fund of Gabon)",
@@ -4321,7 +4495,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "AFC equity-shareholder list",
     "Confidence": "H",
-    "Notes": "Distinct from CNSS Gabon and FGIS. NEW entity vs Phase 1 roster — should be added to Pension Funds tab."
+    "Notes": "Distinct from CNSS Gabon and FGIS. NEW entity vs Phase 1 roster — should be added to Pension Funds tab.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Government of Côte d'Ivoire",
@@ -4338,7 +4515,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "AFC press release on Côte d'Ivoire / Mauritius shareholders",
     "Confidence": "H",
-    "Notes": "Ivorian sovereign equity participation."
+    "Notes": "Ivorian sovereign equity participation.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Government of Sierra Leone",
@@ -4355,7 +4535,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "AFC press release",
     "Confidence": "H",
-    "Notes": null
+    "Notes": null,
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Government of Egypt",
@@ -4372,7 +4555,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "AFC – Egypt becomes first North African shareholder (2024)",
     "Confidence": "H",
-    "Notes": "First North African shareholder of AFC; widens TSFE-NOSI Egypt's institutional alts footprint outside the country."
+    "Notes": "First North African shareholder of AFC; widens TSFE-NOSI Egypt's institutional alts footprint outside the country.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "CDC Sénégal",
@@ -4389,7 +4575,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Africa50 IAF first-close announcement",
     "Confidence": "H",
-    "Notes": "Distinct from FONSIS; Senegal's civil-service deposit institution. Africa50-IAF was named 'African first' as it was majority African-LP funded."
+    "Notes": "Distinct from FONSIS; Senegal's civil-service deposit institution. Africa50-IAF was named 'African first' as it was majority African-LP funded.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "CDC Benin",
@@ -4406,7 +4595,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Africa50 IAF first-close announcement",
     "Confidence": "H",
-    "Notes": "Beninese deposit-and-investment institution joining Africa50-IAF."
+    "Notes": "Beninese deposit-and-investment institution joining Africa50-IAF.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "CNSS Togo",
@@ -4423,7 +4615,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Africa50 IAF first-close announcement",
     "Confidence": "H",
-    "Notes": "First disclosed CIPRES-zone pension fund LP commitment to a pan-African PE-style infrastructure fund."
+    "Notes": "First disclosed CIPRES-zone pension fund LP commitment to a pan-African PE-style infrastructure fund.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "CDG Invest (Morocco)",
@@ -4440,7 +4635,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Africa50 IAF first-close announcement",
     "Confidence": "H",
-    "Notes": "CDG Invest is the asset-management subsidiary of CDG Morocco."
+    "Notes": "CDG Invest is the asset-management subsidiary of CDG Morocco.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "CBK Pension Fund (Kenya, Central Bank of Kenya)",
@@ -4457,7 +4655,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "AVCA – AfricInvest FIVE second close Oct 2018 announcement",
     "Confidence": "H",
-    "Notes": "CBK Pension Fund (Central Bank of Kenya staff pension) committed alongside Norfund and IFU. CBK PF remained LP through subsequent closes."
+    "Notes": "CBK Pension Fund (Central Bank of Kenya staff pension) committed alongside Norfund and IFU. CBK PF remained LP through subsequent closes.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Financial Inclusion / Financial Services",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "NAPSA Zambia",
@@ -4474,7 +4675,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "BII launch of GIP Zambia Jan 2025",
     "Confidence": "H",
-    "Notes": "NAPSA is the third anchor alongside BII (USD 37.5m) and Swedfund (USD 15m); GIP Zambia plans to deploy USD 300m over 15 years to ~150 Zambian SMEs in local currency. Largest single disclosed Zambian-pension alts commitment."
+    "Notes": "NAPSA is the third anchor alongside BII (USD 37.5m) and Swedfund (USD 15m); GIP Zambia plans to deploy USD 300m over 15 years to ~150 Zambian SMEs in local currency. Largest single disclosed Zambian-pension alts commitment.",
+    "Asset class normalized": "Private Credit",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Multiple Kenyan pension funds",
@@ -4491,7 +4695,10 @@ const DATASET = {
     "Disclosure type": "Trade press",
     "Source (short)": "Adenia April 2024 fund-close press release; Africa Global Funds; Bloomberg coverage",
     "Confidence": "M",
-    "Notes": "Adenia Capital V LP roster includes 'Kenyan pension funds' but no specific funds named at close-disclosure level. Likely candidates: schemes that participate via KEPFIC consortium."
+    "Notes": "Adenia Capital V LP roster includes 'Kenyan pension funds' but no specific funds named at close-disclosure level. Likely candidates: schemes that participate via KEPFIC consortium.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Multiple Ghanaian pension funds",
@@ -4508,7 +4715,10 @@ const DATASET = {
     "Disclosure type": "Trade press",
     "Source (short)": "Adenia April 2024 fund-close press release",
     "Confidence": "M",
-    "Notes": "Adenia Capital V LP roster includes 'Ghanaian pension funds' but no specific trustees named at close-disclosure level."
+    "Notes": "Adenia Capital V LP roster includes 'Ghanaian pension funds' but no specific trustees named at close-disclosure level.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "PIC (South Africa)",
@@ -4525,7 +4735,10 @@ const DATASET = {
     "Disclosure type": "Trade press",
     "Source (short)": "Adenia April 2024 fund-close press release",
     "Confidence": "H",
-    "Notes": "Specifically named as LP in Adenia V's hard-cap close; PIC commitment size not disclosed."
+    "Notes": "Specifically named as LP in Adenia V's hard-cap close; PIC commitment size not disclosed.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Multiple East African pension funds (likely incl. NSSF Uganda)",
@@ -4542,7 +4755,10 @@ const DATASET = {
     "Disclosure type": "Trade press",
     "Source (short)": "Catalyst Fund II close coverage; EIB profile",
     "Confidence": "M",
-    "Notes": "Catalyst Fund II disclosed 'local pension funds and family offices' as LPs alongside CDC/BII USD 30m, EIB, IFC, Proparco, Swedfund. NSSF Uganda is known to have committed (per earlier industry reporting); other names not publicly disclosed."
+    "Notes": "Catalyst Fund II disclosed 'local pension funds and family offices' as LPs alongside CDC/BII USD 30m, EIB, IFC, Proparco, Swedfund. NSSF Uganda is known to have committed (per earlier industry reporting); other names not publicly disclosed.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "KEPFIC (Kenya Pension Funds Investment Consortium)",
@@ -4559,7 +4775,10 @@ const DATASET = {
     "Disclosure type": "Allocator disclosure",
     "Source (short)": "IFC 2023 Pooling Pensions in Kenya; MiDA Lot 3 update",
     "Confidence": "H",
-    "Notes": "Retained as an aggregate consortium archetype only. IFC reports KEPFIC mobilized $113m into two housing projects and facilitated two member-fund investments, with a road infrastructure bond near closing. Individual KEPFIC member-only rows removed because membership alone is not allocator-to-vehicle commitment evidence."
+    "Notes": "Retained as an aggregate consortium archetype only. IFC reports KEPFIC mobilized $113m into two housing projects and facilitated two member-fund investments, with a road infrastructure bond near closing. Individual KEPFIC member-only rows removed because membership alone is not allocator-to-vehicle commitment evidence.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure; Real Estate / Housing; Multi-Sector",
+    "Investment approach": "Mandate / Pipeline Only"
   },
   {
     "Allocator (institution)": "Kenya Power & Lighting Co. Pension Fund (KPLC PF)",
@@ -4576,7 +4795,10 @@ const DATASET = {
     "Disclosure type": "Press release / trade press",
     "Source (short)": "Africa Global Funds — ARVF first close July 2014 (KPLC PF named as 'first pension fund in East African PE')",
     "Confidence": "H",
-    "Notes": "Historical first: described as 'the first pension fund in East African private equity'. ARVF I total first close USD 50m."
+    "Notes": "Historical first: described as 'the first pension fund in East African private equity'. ARVF I total first close USD 50m.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Nation Media Group Staff Retirement Benefits Scheme (NMG Pension Fund)",
@@ -4593,7 +4815,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Africa Global Funds — 'NMG Pension Fund commits $1m to Ascent' (25 Feb 2015)",
     "Confidence": "H",
-    "Notes": "Commitment made via STANLIB Kenya as fund manager. Trustee Wallace Kantai: 'first of many investments of this kind by our fund'."
+    "Notes": "Commitment made via STANLIB Kenya as fund manager. Trustee Wallace Kantai: 'first of many investments of this kind by our fund'.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Kenya Power & Lighting Co. Pension Fund (KPLC PF)",
@@ -4610,7 +4835,10 @@ const DATASET = {
     "Disclosure type": "DFI co-disclosure",
     "Source (short)": "BIO / IFC project disclosures; Africa Global Funds; AVCA Ascent interview",
     "Confidence": "H",
-    "Notes": "Source notes 'three pension funds (two from Kenya Power Pension Fund and one from Nation Media Group Staff Pension Fund)'. Two KPLC PF commitments likely reflect the KPLC main scheme + KPLC Staff Retirement Benefits Scheme separately."
+    "Notes": "Source notes 'three pension funds (two from Kenya Power Pension Fund and one from Nation Media Group Staff Pension Fund)'. Two KPLC PF commitments likely reflect the KPLC main scheme + KPLC Staff Retirement Benefits Scheme separately.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Nation Media Group Staff Retirement Benefits Scheme (NMG Pension Fund)",
@@ -4627,7 +4855,10 @@ const DATASET = {
     "Disclosure type": "DFI co-disclosure",
     "Source (short)": "IFC ARVF II project disclosure; Africa Global Funds",
     "Confidence": "H",
-    "Notes": "Re-up after ARVF I; NMG remains an LP."
+    "Notes": "Re-up after ARVF I; NMG remains an LP.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -4644,7 +4875,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "NSIA Sahel Capital FAFIN final close announcement",
     "Confidence": "H",
-    "Notes": "NSIA was an LP alongside AfDB, CDC Group/BII, and Dutch Good Growth Fund (DGGF) in Sahel's FAFIN. NSIA's earliest disclosed PE fund LP position alongside DFIs."
+    "Notes": "NSIA was an LP alongside AfDB, CDC Group/BII, and Dutch Good Growth Fund (DGGF) in Sahel's FAFIN. NSIA's earliest disclosed PE fund LP position alongside DFIs.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Agriculture / Food Security",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Nigerian PFAs (historical cohort)",
@@ -4661,7 +4895,10 @@ const DATASET = {
     "Disclosure type": "ACA disclosures / industry coverage",
     "Source (short)": "ACA member interview and corporate site",
     "Confidence": "M",
-    "Notes": "ACA historically championed PE inclusion as allowable Nigerian pension asset class. Some PFA commitments to CAPE funds confirmed by ACA's stated 'institutional investor base, primarily pension funds and DFIs'; specific PFA names not individually disclosed."
+    "Notes": "ACA historically championed PE inclusion as allowable Nigerian pension asset class. Some PFA commitments to CAPE funds confirmed by ACA's stated 'institutional investor base, primarily pension funds and DFIs'; specific PFA names not individually disclosed.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Rwanda Social Security Board (RSSB)",
@@ -4678,7 +4915,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "FSDA — RSSB Anchors First Close of USD 100m Rwanda SME Fund (28 April 2026)",
     "Confidence": "H",
-    "Notes": "Three regional firsts per RSSB CEO Regis Rugemanshuro: (i) FIRST public pension-fund-led initiative focused exclusively on SME financing; (ii) FIRST permanent capital vehicle anchored by a pension fund; (iii) FIRST pension fund dedicating a TA facility in a fund. Fund target USD 100m. Enko Capital parent has USD 1.6bn AUM. FSDA structured the deal + potential guarantee facility."
+    "Notes": "Three regional firsts per RSSB CEO Regis Rugemanshuro: (i) FIRST public pension-fund-led initiative focused exclusively on SME financing; (ii) FIRST permanent capital vehicle anchored by a pension fund; (iii) FIRST pension fund dedicating a TA facility in a fund. Fund target USD 100m. Enko Capital parent has USD 1.6bn AUM. FSDA structured the deal + potential guarantee facility.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Asset Owners Forum of South Africa (AOFSA)",
@@ -4695,7 +4935,10 @@ const DATASET = {
     "Disclosure type": "Allocator press release / Batseta / USAID + MiDA + World Bank",
     "Source (short)": "Engineering News 2022; MiDA/USAID AOFSA case materials",
     "Confidence": "H",
-    "Notes": "Retained as an aggregate consortium archetype only. Public sources report actual collective AOFSA member commitments; individual member-only rows removed because the public evidence does not allocate the commitments by named member fund."
+    "Notes": "Retained as an aggregate consortium archetype only. Public sources report actual collective AOFSA member commitments; individual member-only rows removed because the public evidence does not allocate the commitments by named member fund.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure; Multi-Sector",
+    "Investment approach": "Mandate / Pipeline Only"
   },
   {
     "Allocator (institution)": "Petra Trust Company (Ghana)",
@@ -4712,7 +4955,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Mirepa Investment Advisors press release / The Innovation Spark / B&FT",
     "Confidence": "H",
-    "Notes": "Second Ghana fund anchored solely by local investors (after Injaro IGVCF). Petra Trust named alongside Axis Pensions, VCTF, and CAMCOL schemes. Mirepa fund focuses on light manufacturing, technology, cleantech, agribusiness, healthcare, financial services."
+    "Notes": "Second Ghana fund anchored solely by local investors (after Injaro IGVCF). Petra Trust named alongside Axis Pensions, VCTF, and CAMCOL schemes. Mirepa fund focuses on light manufacturing, technology, cleantech, agribusiness, healthcare, financial services.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "SME Finance; Agriculture / Food Security; Financial Inclusion / Financial Services; Healthcare; Climate / Energy Transition; Digital / Technology",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Axis Pension Trust",
@@ -4729,7 +4975,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Mirepa Investment Advisors press release",
     "Confidence": "H",
-    "Notes": "Axis Pensions named LP alongside Petra Trust, VCTF, CAMCOL schemes. Predates Axis's later commitments to GIP Ghana (Apr 2026) and Ci-Gaba FoF (Mar 2026)."
+    "Notes": "Axis Pensions named LP alongside Petra Trust, VCTF, CAMCOL schemes. Predates Axis's later commitments to GIP Ghana (Apr 2026) and Ci-Gaba FoF (Mar 2026).",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Multiple Ghanaian pension schemes (via CAL Asset Management — CAMCOL)",
@@ -4746,7 +4995,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Mirepa Investment Advisors press release",
     "Confidence": "M",
-    "Notes": "CAL Asset Management Company Limited (CAMCOL) is one of the major Ghanaian pension asset managers. Underlying pension scheme identities not individually disclosed."
+    "Notes": "CAL Asset Management Company Limited (CAMCOL) is one of the major Ghanaian pension asset managers. Underlying pension scheme identities not individually disclosed.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Multiple Ghanaian pension funds (Injaro anchor cohort)",
@@ -4763,7 +5015,10 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "AVCA — Injaro announces final close; Africa Global Funds; Africa PE News",
     "Confidence": "H",
-    "Notes": "FIRST Ghana fund of its kind anchored by local pension funds (per Injaro press release). Predates Mirepa I (2023) and Ci-Gaba (2026). Specific Ghanaian pension fund names not disclosed in public sources but precedent-setting."
+    "Notes": "FIRST Ghana fund of its kind anchored by local pension funds (per Injaro press release). Predates Mirepa I (2023) and Ci-Gaba (2026). Specific Ghanaian pension fund names not disclosed in public sources but precedent-setting.",
+    "Asset class normalized": "Venture Capital",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "GEPF / PIC (South Africa)",
@@ -4780,7 +5035,10 @@ const DATASET = {
     "Disclosure type": "DFI / fund close announcement",
     "Source (short)": "DGGF news release, Jan 2019",
     "Confidence": "H",
-    "Notes": "DGGF names PIC on behalf of GEPF among first-round AFSF investors alongside AfDB, CDC Group/BII, DGGF, IFU, and EBID; Kuramo later joined, bringing fund commitments to USD 84m."
+    "Notes": "DGGF names PIC on behalf of GEPF among first-round AFSF investors alongside AfDB, CDC Group/BII, DGGF, IFU, and EBID; Kuramo later joined, bringing fund commitments to USD 84m.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Agriculture / Food Security",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -4797,7 +5055,10 @@ const DATASET = {
     "Disclosure type": "NSIA sustainability disclosure",
     "Source (short)": "NSIA sustainability article Apr 2026",
     "Confidence": "H",
-    "Notes": "NSIA names Alitheia IDF among investments supporting women-led and women-impacting businesses. Specific NSIA ticket size not publicly disclosed."
+    "Notes": "NSIA names Alitheia IDF among investments supporting women-led and women-impacting businesses. Specific NSIA ticket size not publicly disclosed.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Infrastructure; Gender Lens",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -4814,7 +5075,10 @@ const DATASET = {
     "Disclosure type": "NSIA sustainability disclosure",
     "Source (short)": "NSIA sustainability article Apr 2026",
     "Confidence": "H",
-    "Notes": "NSIA names Ingressive Capital among investments supporting women-led and women-impacting businesses. Public NSIA source does not identify a specific vintage, so retained as platform/fund exposure."
+    "Notes": "NSIA names Ingressive Capital among investments supporting women-led and women-impacting businesses. Public NSIA source does not identify a specific vintage, so retained as platform/fund exposure.",
+    "Asset class normalized": "Venture Capital",
+    "Sector / thematic focus": "Infrastructure; SME Finance; Digital / Technology",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -4831,7 +5095,10 @@ const DATASET = {
     "Disclosure type": "NSIA impact report",
     "Source (short)": "NSIA Development Impact Report 2021",
     "Confidence": "H",
-    "Notes": "NSIA impact report states the Authority invested USD 5m in Verod Growth Fund II in 2017."
+    "Notes": "NSIA impact report states the Authority invested USD 5m in Verod Growth Fund II in 2017.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -4848,7 +5115,10 @@ const DATASET = {
     "Disclosure type": "NSIA impact report",
     "Source (short)": "NSIA Development Impact Report 2021",
     "Confidence": "H",
-    "Notes": "NSIA impact report states the Authority subsequently invested in Verod Growth Fund III, with 8% of the USD 7.5m commitment disbursed at the time of reporting."
+    "Notes": "NSIA impact report states the Authority subsequently invested in Verod Growth Fund III, with 8% of the USD 7.5m commitment disbursed at the time of reporting.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -4865,7 +5135,10 @@ const DATASET = {
     "Disclosure type": "IFC press release",
     "Source (short)": "IFC-NSIA MedServe financing Feb 2026",
     "Confidence": "H",
-    "Notes": "IFC and NSIA partnered to finance MedServe, NSIA's wholly owned healthcare subsidiary, to scale diagnostic centers, cancer care facilities and cath labs across Nigerian states."
+    "Notes": "IFC and NSIA partnered to finance MedServe, NSIA's wholly owned healthcare subsidiary, to scale diagnostic centers, cancer care facilities and cath labs across Nigerian states.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Healthcare",
+    "Investment approach": "Direct Investment"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -4882,7 +5155,10 @@ const DATASET = {
     "Disclosure type": "NSIA portfolio / financial statements",
     "Source (short)": "NSIA InfraCredit portfolio; NSIA FY2025 financial statements",
     "Confidence": "H",
-    "Notes": "InfraCredit is a specialised infrastructure credit enhancement facility established by NSIA with GuarantCo/PIDG. NSIA FY2025 statements report a 43.88% retained ownership interest after shareholder changes."
+    "Notes": "InfraCredit is a specialised infrastructure credit enhancement facility established by NSIA with GuarantCo/PIDG. NSIA FY2025 statements report a 43.88% retained ownership interest after shareholder changes.",
+    "Asset class normalized": "Guarantee / Credit Enhancement",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Guarantee-backed Instrument"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -4899,7 +5175,10 @@ const DATASET = {
     "Disclosure type": "InfraCredit press release",
     "Source (short)": "InfraCredit CFWF announcement Oct 2023",
     "Confidence": "H",
-    "Notes": "NSIA invested NGN 10bn into a multi-funder revolving construction finance facility developed with InfraCredit to support greenfield infrastructure projects backed by InfraCredit guarantees."
+    "Notes": "NSIA invested NGN 10bn into a multi-funder revolving construction finance facility developed with InfraCredit to support greenfield infrastructure projects backed by InfraCredit guarantees.",
+    "Asset class normalized": "Guarantee / Credit Enhancement",
+    "Sector / thematic focus": "Infrastructure; Climate / Energy Transition",
+    "Investment approach": "Guarantee-backed Instrument"
   },
   {
     "Allocator (institution)": "Venture Capital Trust Fund (VCTF) Ghana",
@@ -4916,7 +5195,10 @@ const DATASET = {
     "Disclosure type": "Annual report / DFI report / fund announcement",
     "Source (short)": "VCTF 2015 Annual Report; DGGF Oasis first-close announcement; DGGF catalytic-capital paper",
     "Confidence": "H",
-    "Notes": "VCTF 2015 annual report states VCTF made a USD 2m commitment to Oasis Africa Fund Limited, Oasis Capital Partners second fund. DGGF later described OAF as Ghana-domiciled to access VCTF government co-investment and noted the structure helped crowd in international DFIs."
+    "Notes": "VCTF 2015 annual report states VCTF made a USD 2m commitment to Oasis Africa Fund Limited, Oasis Capital Partners second fund. DGGF later described OAF as Ghana-domiciled to access VCTF government co-investment and noted the structure helped crowd in international DFIs.",
+    "Asset class normalized": "Venture Capital",
+    "Sector / thematic focus": "Infrastructure; SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Venture Capital Trust Fund (VCTF) Ghana",
@@ -4933,7 +5215,10 @@ const DATASET = {
     "Disclosure type": "Press / trade press",
     "Source (short)": "Mirepa initial-close sources; Afrikan Heroes VCTF lead role",
     "Confidence": "H",
-    "Notes": "VCTF is named in the Mirepa LP group alongside Petra Trust, Axis Pensions and CAMCOL-managed pension schemes; public coverage describes VCTF as leading the investment."
+    "Notes": "VCTF is named in the Mirepa LP group alongside Petra Trust, Axis Pensions and CAMCOL-managed pension schemes; public coverage describes VCTF as leading the investment.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Allocator (institution)": "Venture Capital Trust Fund (VCTF) Ghana",
@@ -4950,7 +5235,10 @@ const DATASET = {
     "Disclosure type": "Press / impact-report coverage",
     "Source (short)": "Injaro final-close sources; Graphic VCTF impact-report coverage",
     "Confidence": "H",
-    "Notes": "VCTF is disclosed as an LP/other named investor for IGVCF, and Graphic coverage of the VCTF impact report identifies Injaro Ghana Venture Fund as one of the impactful funds anchored by VCTF."
+    "Notes": "VCTF is disclosed as an LP/other named investor for IGVCF, and Graphic coverage of the VCTF impact report identifies Injaro Ghana Venture Fund as one of the impactful funds anchored by VCTF.",
+    "Asset class normalized": "Venture Capital",
+    "Sector / thematic focus": "Infrastructure; SME Finance",
+    "Investment approach": "Fund LP"
   }
 ],
   "Pipeline_and_Mandates": [
@@ -4970,7 +5258,10 @@ const DATASET = {
     "Source (short)": "FSDAi GBP 10m catalytic commitment April 2025",
     "Pipeline confidence": "M",
     "Reason not in Commitments Database": "FSDAi commitment is structured to unlock pension contributions, but no named or closed PFA LP allocation is disclosed yet.",
-    "Source URL": "https://archive.fsdafrica.org/arm-harith-and-fsd-africa-investments-announce-gbp-10m-commitment-to-unlock-nigerian-pension-funds-and-catalyse-local-capital-for-infrastructure/"
+    "Source URL": "https://archive.fsdafrica.org/arm-harith-and-fsd-africa-investments-announce-gbp-10m-commitment-to-unlock-nigerian-pension-funds-and-catalyse-local-capital-for-infrastructure/",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure; Climate / Energy Transition",
+    "Investment approach": "Mandate / Pipeline Only"
   },
   {
     "Entity / prospective allocator": "Multiple Nigerian institutional investors (incl. PFAs)",
@@ -4988,7 +5279,10 @@ const DATASET = {
     "Source (short)": "Ecofin Agency Feb 2026",
     "Pipeline confidence": "M",
     "Reason not in Commitments Database": "Subscription is open to qualified institutional investors including pension funds, but no actual PFA subscription or allocation is disclosed.",
-    "Source URL": "https://www.ecofinagency.com/news-finances/2502-53253-nigerian-investment-firm-sahel-capital-launches-55-million-fund-to-narrow-farm-finance-gap"
+    "Source URL": "https://www.ecofinagency.com/news-finances/2502-53253-nigerian-investment-firm-sahel-capital-launches-55-million-fund-to-narrow-farm-finance-gap",
+    "Asset class normalized": "Private Credit",
+    "Sector / thematic focus": "Agriculture / Food Security",
+    "Investment approach": "Mandate / Pipeline Only"
   },
   {
     "Entity / prospective allocator": "NSSF Uganda",
@@ -5006,7 +5300,10 @@ const DATASET = {
     "Source (short)": "ImpactAlpha planned FoF coverage Apr 2026",
     "Pipeline confidence": "M",
     "Reason not in Commitments Database": "Planned/prospective fund of funds; not a closed commitment as of the audit date.",
-    "Source URL": null
+    "Source URL": null,
+    "Asset class normalized": "Fund of Funds",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Mandate / Pipeline Only"
   },
   {
     "Entity / prospective allocator": "The Sovereign Fund of Egypt (TSFE)",
@@ -5024,7 +5321,10 @@ const DATASET = {
     "Source (short)": "BlackRock-TSFE MoU coverage",
     "Pipeline confidence": "M",
     "Reason not in Commitments Database": "MoU/mandate announced; no specific fund commitment or allocation disclosed.",
-    "Source URL": null
+    "Source URL": null,
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure; Climate / Energy Transition",
+    "Investment approach": "Mandate / Pipeline Only"
   },
   {
     "Entity / prospective allocator": "Kenya Revenue Authority (KRA) Staff Pension Scheme",
@@ -5042,7 +5342,10 @@ const DATASET = {
     "Source (short)": "KEPFIC member evidence",
     "Pipeline confidence": "H",
     "Reason not in Commitments Database": "Named KEPFIC member; membership is useful pipeline context but is not an individual allocator-to-vehicle commitment.",
-    "Source URL": "https://www.ifc.org/en/stories/2023/pooling-pensions-in-kenya"
+    "Source URL": "https://www.ifc.org/en/stories/2023/pooling-pensions-in-kenya",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure; Multi-Sector",
+    "Investment approach": "Mandate / Pipeline Only"
   },
   {
     "Entity / prospective allocator": "Safaricom Staff Pension Scheme",
@@ -5060,7 +5363,10 @@ const DATASET = {
     "Source (short)": "KEPFIC member evidence",
     "Pipeline confidence": "H",
     "Reason not in Commitments Database": "Named KEPFIC member; membership is useful pipeline context but is not an individual allocator-to-vehicle commitment.",
-    "Source URL": "https://www.ifc.org/en/stories/2023/pooling-pensions-in-kenya"
+    "Source URL": "https://www.ifc.org/en/stories/2023/pooling-pensions-in-kenya",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure; Multi-Sector",
+    "Investment approach": "Mandate / Pipeline Only"
   },
   {
     "Entity / prospective allocator": "KenGen Staff Retirement Benefits Scheme",
@@ -5078,7 +5384,10 @@ const DATASET = {
     "Source (short)": "KEPFIC member evidence",
     "Pipeline confidence": "H",
     "Reason not in Commitments Database": "Named KEPFIC member; membership is useful pipeline context but is not an individual allocator-to-vehicle commitment.",
-    "Source URL": "https://www.ifc.org/en/stories/2023/pooling-pensions-in-kenya"
+    "Source URL": "https://www.ifc.org/en/stories/2023/pooling-pensions-in-kenya",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Mandate / Pipeline Only"
   },
   {
     "Entity / prospective allocator": "Kenya Pipeline Company Staff Retirement Benefits Scheme",
@@ -5096,7 +5405,10 @@ const DATASET = {
     "Source (short)": "KEPFIC member evidence",
     "Pipeline confidence": "H",
     "Reason not in Commitments Database": "Named KEPFIC member; membership is useful pipeline context but is not an individual allocator-to-vehicle commitment.",
-    "Source URL": "https://www.ifc.org/en/stories/2023/pooling-pensions-in-kenya"
+    "Source URL": "https://www.ifc.org/en/stories/2023/pooling-pensions-in-kenya",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Mandate / Pipeline Only"
   },
   {
     "Entity / prospective allocator": "National Fund for Municipal Workers (NFMW)",
@@ -5114,7 +5426,10 @@ const DATASET = {
     "Source (short)": "AOFSA member evidence",
     "Pipeline confidence": "H",
     "Reason not in Commitments Database": "Named AOFSA member; public evidence supports aggregate AOFSA commitments but not a separate member-level commitment record.",
-    "Source URL": "https://www.engineeringnews.co.za/article/aofsa-exceeds-infrastructure-investment-target-as-it-marks-first-anniversary-2022-11-21"
+    "Source URL": "https://www.engineeringnews.co.za/article/aofsa-exceeds-infrastructure-investment-target-as-it-marks-first-anniversary-2022-11-21",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Mandate / Pipeline Only"
   },
   {
     "Entity / prospective allocator": "KwaZulu-Natal Joint Municipal Pension Fund (NJMPF)",
@@ -5132,7 +5447,10 @@ const DATASET = {
     "Source (short)": "AOFSA member evidence",
     "Pipeline confidence": "H",
     "Reason not in Commitments Database": "Named AOFSA member; public evidence supports aggregate AOFSA commitments but not a separate member-level commitment record.",
-    "Source URL": "https://www.engineeringnews.co.za/article/aofsa-exceeds-infrastructure-investment-target-as-it-marks-first-anniversary-2022-11-21"
+    "Source URL": "https://www.engineeringnews.co.za/article/aofsa-exceeds-infrastructure-investment-target-as-it-marks-first-anniversary-2022-11-21",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Mandate / Pipeline Only"
   },
   {
     "Entity / prospective allocator": "KZN Municipal Pension Fund",
@@ -5150,7 +5468,10 @@ const DATASET = {
     "Source (short)": "AOFSA member evidence",
     "Pipeline confidence": "H",
     "Reason not in Commitments Database": "Named AOFSA member; public evidence supports aggregate AOFSA commitments but not a separate member-level commitment record.",
-    "Source URL": "https://www.engineeringnews.co.za/article/aofsa-exceeds-infrastructure-investment-target-as-it-marks-first-anniversary-2022-11-21"
+    "Source URL": "https://www.engineeringnews.co.za/article/aofsa-exceeds-infrastructure-investment-target-as-it-marks-first-anniversary-2022-11-21",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Mandate / Pipeline Only"
   },
   {
     "Entity / prospective allocator": "Motor Industry Retirement Fund (MIRF)",
@@ -5168,7 +5489,10 @@ const DATASET = {
     "Source (short)": "AOFSA member evidence",
     "Pipeline confidence": "H",
     "Reason not in Commitments Database": "Named AOFSA member; public evidence supports aggregate AOFSA commitments but not a separate member-level commitment record.",
-    "Source URL": "https://www.engineeringnews.co.za/article/aofsa-exceeds-infrastructure-investment-target-as-it-marks-first-anniversary-2022-11-21"
+    "Source URL": "https://www.engineeringnews.co.za/article/aofsa-exceeds-infrastructure-investment-target-as-it-marks-first-anniversary-2022-11-21",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Mandate / Pipeline Only"
   },
   {
     "Entity / prospective allocator": "KEPFIC (Kenya Pension Funds Investment Consortium)",
@@ -5186,7 +5510,10 @@ const DATASET = {
     "Source (short)": "IFC 2023; MiDA Advisors",
     "Pipeline confidence": "H",
     "Reason not in Commitments Database": "Aggregate pooled mandate / consortium archetype, not a conventional fund vehicle LP row. Kept out of Fund Vehicles and Commitments Database to avoid treating a mandate platform as a fund commitment.",
-    "Source URL": "https://www.ifc.org/en/stories/2023/pooling-pensions-in-kenya ; https://www.midaadvisors.com/advisory-firm-financing-the-development-of-critical-infrastructure-in-kenya-with-local-institutional-capital"
+    "Source URL": "https://www.ifc.org/en/stories/2023/pooling-pensions-in-kenya ; https://www.midaadvisors.com/advisory-firm-financing-the-development-of-critical-infrastructure-in-kenya-with-local-institutional-capital",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure; Multi-Sector",
+    "Investment approach": "Mandate / Pipeline Only"
   },
   {
     "Entity / prospective allocator": "Asset Owners Forum of South Africa (AOFSA)",
@@ -5204,7 +5531,10 @@ const DATASET = {
     "Source (short)": "Engineering News 2022; MiDA/USAID AOFSA case materials",
     "Pipeline confidence": "H",
     "Reason not in Commitments Database": "Aggregate pooled mandate / consortium archetype, not a conventional fund vehicle LP row. Kept out of Fund Vehicles and Commitments Database to avoid treating a mandate platform as a fund commitment.",
-    "Source URL": "https://www.engineeringnews.co.za/article/aofsa-exceeds-infrastructure-investment-target-as-it-marks-first-anniversary-2022-11-21 ; https://www.midaadvisors.com/advisory-firm-what-we-do/institutional-investors-capacity-development"
+    "Source URL": "https://www.engineeringnews.co.za/article/aofsa-exceeds-infrastructure-investment-target-as-it-marks-first-anniversary-2022-11-21 ; https://www.midaadvisors.com/advisory-firm-what-we-do/institutional-investors-capacity-development",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure; Multi-Sector",
+    "Investment approach": "Mandate / Pipeline Only"
   }
 ],
   "Source_Library": [
@@ -7240,7 +7570,10 @@ const DATASET = {
     "DFI LPs (count)": 2,
     "Named DFI LPs": "BII (anchor), Norfund (USD 15m, 2026)",
     "Other named LPs": "—",
-    "Co-investor pattern note": "BII-anchored DFI + 1 Ghanaian pension trustee. First Ghanaian PF commitment under 5% alts rule."
+    "Co-investor pattern note": "BII-anchored DFI + 1 Ghanaian pension trustee. First Ghanaian PF commitment under 5% alts rule.",
+    "Asset class normalized": "Private Credit",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Growth Investment Partners (GIP) Zambia",
@@ -7254,7 +7587,10 @@ const DATASET = {
     "DFI LPs (count)": 2,
     "Named DFI LPs": "BII (USD 37.5m anchor), Swedfund (USD 15m)",
     "Other named LPs": "—",
-    "Co-investor pattern note": "Largest single disclosed Zambian-pension alts commitment. Trilateral DFI+pension anchor model."
+    "Co-investor pattern note": "Largest single disclosed Zambian-pension alts commitment. Trilateral DFI+pension anchor model.",
+    "Asset class normalized": "Private Credit",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Ci-Gaba Fund of Funds",
@@ -7268,7 +7604,10 @@ const DATASET = {
     "DFI LPs (count)": 2,
     "Named DFI LPs": "FSD Africa Investments (USD 7.5m), FMO",
     "Other named LPs": "Small Foundation",
-    "Co-investor pattern note": "West Africa's first domestically-domiciled private FoF. Ghanaian pensions >2/3 of first close."
+    "Co-investor pattern note": "West Africa's first domestically-domiciled private FoF. Ghanaian pensions >2/3 of first close.",
+    "Asset class normalized": "Fund of Funds",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund of Funds LP"
   },
   {
     "Fund / Vehicle": "ARM-Harith Infrastructure Fund I",
@@ -7282,7 +7621,10 @@ const DATASET = {
     "DFI LPs (count)": 0,
     "Named DFI LPs": "—",
     "Other named LPs": "—",
-    "Co-investor pattern note": "Landmark first-Nigerian-pension-funded infra fund."
+    "Co-investor pattern note": "Landmark first-Nigerian-pension-funded infra fund.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Oyass Capital (SME fund)",
@@ -7296,7 +7638,10 @@ const DATASET = {
     "DFI LPs (count)": 1,
     "Named DFI LPs": "KfW (German cooperation)",
     "Other named LPs": "—",
-    "Co-investor pattern note": "FONSIS source describes Oyass Capital as an SME-focused private-equity fund/financing vehicle set up with KfW/World Bank support; management mandate awarded to SEAF."
+    "Co-investor pattern note": "FONSIS source describes Oyass Capital as an SME-focused private-equity fund/financing vehicle set up with KfW/World Bank support; management mandate awarded to SEAF.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Infrastructure; SME Finance; Financial Inclusion / Financial Services",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Yield Uganda Investment Fund",
@@ -7310,7 +7655,10 @@ const DATASET = {
     "DFI LPs (count)": 3,
     "Named DFI LPs": "EU (via IFAD), Soros Economic Development Fund (OSF), FCA Investments",
     "Other named LPs": "—",
-    "Co-investor pattern note": "NSSF Uganda founding LP alongside EU + IFAD. [Phase 6 correction: NSSF Uganda's founding contribution was EUR 2m (not EUR 12m); EUR 12m was the TOTAL first close including EU/IFAD EUR 10m. Later EUR 8m added by Soros Economic Development Fund + FCA Investments brought total to EUR 20m.]"
+    "Co-investor pattern note": "NSSF Uganda founding LP alongside EU + IFAD. [Phase 6 correction: NSSF Uganda's founding contribution was EUR 2m (not EUR 12m); EUR 12m was the TOTAL first close including EU/IFAD EUR 10m. Later EUR 8m added by Soros Economic Development Fund + FCA Investments brought total to EUR 20m.]",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Agriculture / Food Security",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Ascent Rift Valley Fund I (ARVF I)",
@@ -7324,7 +7672,10 @@ const DATASET = {
     "DFI LPs (count)": 2,
     "Named DFI LPs": "Norfund, OeEB (Austria)",
     "Other named LPs": "Family offices, other institutional investors",
-    "Co-investor pattern note": "Historical pioneer fund for East African pension PE participation."
+    "Co-investor pattern note": "Historical pioneer fund for East African pension PE participation.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Ascent Rift Valley Fund II (ARVF II)",
@@ -7338,7 +7689,10 @@ const DATASET = {
     "DFI LPs (count)": 6,
     "Named DFI LPs": "BII, BIO, FMO, IFC, Norfund, Proparco",
     "Other named LPs": "SDG Frontier Fund; PTA Zep-Re",
-    "Co-investor pattern note": "Strong DFI cluster alongside re-up of East African pension LPs. Source narrative: ARVF was 'the only local PE fund continually unlocking local pension investment' as of 2015."
+    "Co-investor pattern note": "Strong DFI cluster alongside re-up of East African pension LPs. Source narrative: ARVF was 'the only local PE fund continually unlocking local pension investment' as of 2015.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Adenia Capital V",
@@ -7352,7 +7706,10 @@ const DATASET = {
     "DFI LPs (count)": 10,
     "Named DFI LPs": "FMO, Proparco, IFC, DEG, EIB, SIFEM, DFC, Norfund, FinDev Canada, Bpifrance (i.e., 10 DFIs per EIB disclosure)",
     "Other named LPs": "Blue Earth Capital, Casey Family Programs, South Suez Capital, European family offices",
-    "Co-investor pattern note": "~30 LPs total; >60% historical DFI re-ups; categorical 'Kenyan + Ghanaian pension funds' mentioned in press release but not individually named. [Phase 6 update: comprehensive LP list confirmed via EIB disclosure. 10 DFIs + PIC SA + categorical Kenyan/Ghanaian PFs + family offices = ~30 LP entities total.]"
+    "Co-investor pattern note": "~30 LPs total; >60% historical DFI re-ups; categorical 'Kenyan + Ghanaian pension funds' mentioned in press release but not individually named. [Phase 6 update: comprehensive LP list confirmed via EIB disclosure. 10 DFIs + PIC SA + categorical Kenyan/Ghanaian PFs + family offices = ~30 LP entities total.]",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Catalyst Fund II",
@@ -7366,7 +7723,10 @@ const DATASET = {
     "DFI LPs (count)": 5,
     "Named DFI LPs": "BII (USD 30m), EIB, IFC, Proparco, Swedfund",
     "Other named LPs": "Family offices, regional investors",
-    "Co-investor pattern note": "Single largest East African PE fund with disclosed local-pension cohort."
+    "Co-investor pattern note": "Single largest East African PE fund with disclosed local-pension cohort.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Helios Investors II/III/IV (historical)",
@@ -7380,7 +7740,10 @@ const DATASET = {
     "DFI LPs (count)": "multiple",
     "Named DFI LPs": "BII (since 2007), various DFIs",
     "Other named LPs": "Global pension funds, SWFs, endowments, family offices",
-    "Co-investor pattern note": "PIC has been recurring LP since Helios II; sizes not publicly disclosed."
+    "Co-investor pattern note": "PIC has been recurring LP since Helios II; sizes not publicly disclosed.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Vantage Mezzanine IV (Pan-African sub-fund)",
@@ -7394,7 +7757,10 @@ const DATASET = {
     "DFI LPs (count)": 6,
     "Named DFI LPs": "IFC, EIB, BII, Norfund, DEG, Finnfund",
     "Other named LPs": "European endowments, private-sector insurers",
-    "Co-investor pattern note": "Vantage's 'historical pattern' of substantial SA pension LP base; specific names not publicly itemised."
+    "Co-investor pattern note": "Vantage's 'historical pattern' of substantial SA pension LP base; specific names not publicly itemised.",
+    "Asset class normalized": "Private Credit",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Mediterrania Capital II / III / IV",
@@ -7408,7 +7774,10 @@ const DATASET = {
     "DFI LPs (count)": "multiple",
     "Named DFI LPs": "CDP Group (Italy), EIB, AfDB, others (varying by vintage)",
     "Other named LPs": "European family offices",
-    "Co-investor pattern note": "Maghreb-focused; CDG Morocco historical LP."
+    "Co-investor pattern note": "Maghreb-focused; CDG Morocco historical LP.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "AfricInvest FIVE (Financial Inclusion Vehicle)",
@@ -7422,7 +7791,10 @@ const DATASET = {
     "DFI LPs (count)": 4,
     "Named DFI LPs": "Norfund, IFU, AfDB (later), KfW (later)",
     "Other named LPs": "—",
-    "Co-investor pattern note": "Evergreen platform; CBK Pension Fund Kenya was first African pension LP in 2018; multiple closes since."
+    "Co-investor pattern note": "Evergreen platform; CBK Pension Fund Kenya was first African pension LP in 2018; multiple closes since.",
+    "Asset class normalized": "Platform / Holding Company",
+    "Sector / thematic focus": "Financial Inclusion / Financial Services; Multi-Sector",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Aleyo Capital Fund I",
@@ -7436,7 +7808,10 @@ const DATASET = {
     "DFI LPs (count)": 0,
     "Named DFI LPs": "—",
     "Other named LPs": "—",
-    "Co-investor pattern note": "BPOPF domestic incubation programme — single-LP-anchor model."
+    "Co-investor pattern note": "BPOPF domestic incubation programme — single-LP-anchor model.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Africa Lighthouse Capital Fund I",
@@ -7450,7 +7825,10 @@ const DATASET = {
     "DFI LPs (count)": 0,
     "Named DFI LPs": "—",
     "Other named LPs": "—",
-    "Co-investor pattern note": "Sister vehicle to Aleyo; BPOPF anchor."
+    "Co-investor pattern note": "Sister vehicle to Aleyo; BPOPF anchor.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Africa50 (general)",
@@ -7464,7 +7842,10 @@ const DATASET = {
     "DFI LPs (count)": 2,
     "Named DFI LPs": "AfDB (anchor sponsor), Bank Al-Maghrib, BCEAO",
     "Other named LPs": "—",
-    "Co-investor pattern note": "Continental infrastructure platform. PIC's 2025 commitment is largest single PF equity shareholding."
+    "Co-investor pattern note": "Continental infrastructure platform. PIC's 2025 commitment is largest single PF equity shareholding.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Africa50 Infrastructure Acceleration Fund (IAF)",
@@ -7478,7 +7859,10 @@ const DATASET = {
     "DFI LPs (count)": 2,
     "Named DFI LPs": "AfDB, IFC",
     "Other named LPs": "Attijariwafa Bank (Morocco), Arab Bank for Economic Development in Africa, West African Development Bank (BOAD)",
-    "Co-investor pattern note": "First major pan-African infra fund MAJORITY-funded by African institutions. Africa50's flagship LP-style vehicle."
+    "Co-investor pattern note": "First major pan-African infra fund MAJORITY-funded by African institutions. Africa50's flagship LP-style vehicle.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Africa Finance Corporation (AFC) — equity shareholders",
@@ -7492,7 +7876,10 @@ const DATASET = {
     "DFI LPs (count)": "0 (DFIs are not AFC shareholders; AFC IS itself a DFI)",
     "Named DFI LPs": "—",
     "Other named LPs": "Central Bank of Nigeria 38%; private investors 62%",
-    "Co-investor pattern note": "Continental institutional-equity vehicle. By count of institutions, AFC participation is the MOST COMMON form of cross-border African pension/SWF alts deployment."
+    "Co-investor pattern note": "Continental institutional-equity vehicle. By count of institutions, AFC participation is the MOST COMMON form of cross-border African pension/SWF alts deployment.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Pembani Remgro Infrastructure Fund",
@@ -7506,7 +7893,10 @@ const DATASET = {
     "DFI LPs (count)": "multiple",
     "Named DFI LPs": "Various DFIs and SA institutional investors",
     "Other named LPs": "—",
-    "Co-investor pattern note": "PIC anchor; significant African-LP-funded infra fund."
+    "Co-investor pattern note": "PIC anchor; significant African-LP-funded infra fund.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Convergence Partners Communications Infrastructure Fund",
@@ -7520,7 +7910,10 @@ const DATASET = {
     "DFI LPs (count)": "multiple",
     "Named DFI LPs": "Various DFIs",
     "Other named LPs": "—",
-    "Co-investor pattern note": "Digital infrastructure; PIC participant."
+    "Co-investor pattern note": "Digital infrastructure; PIC participant.",
+    "Asset class normalized": "Real Assets / Infrastructure Equity",
+    "Sector / thematic focus": "Infrastructure; Digital / Technology",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Wessal Capital (SWF joint investment vehicle)",
@@ -7534,7 +7927,10 @@ const DATASET = {
     "DFI LPs (count)": 0,
     "Named DFI LPs": "—",
     "Other named LPs": "Al Ajial Investment Fund Holding; Mubadala; Public Investment Fund; Qatar Holding",
-    "Co-investor pattern note": "Ithmar describes Wessal as a joint investment vehicle, equally owned by five SWFs. Specific launched projects: Wessal Bouregreg and Wessal Casa-Port."
+    "Co-investor pattern note": "Ithmar describes Wessal as a joint investment vehicle, equally owned by five SWFs. Specific launched projects: Wessal Bouregreg and Wessal Casa-Port.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure; Real Estate / Housing",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Mohammed VI Fund for Investment",
@@ -7548,7 +7944,10 @@ const DATASET = {
     "DFI LPs (count)": 0,
     "Named DFI LPs": "—",
     "Other named LPs": "Anchors various Moroccan sectoral funds",
-    "Co-investor pattern note": "Capitalised Moroccan strategic SWF — anchor for sub-funds."
+    "Co-investor pattern note": "Capitalised Moroccan strategic SWF — anchor for sub-funds.",
+    "Asset class normalized": "Mixed / Multi-Asset",
+    "Sector / thematic focus": "Multi-Sector",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Nigeria Infrastructure Fund (NIF, NSIA sub-fund)",
@@ -7562,7 +7961,10 @@ const DATASET = {
     "DFI LPs (count)": "multiple co-invest",
     "Named DFI LPs": "AfDB co-financing on selected deals; various",
     "Other named LPs": "—",
-    "Co-investor pattern note": "NIF is NSIA's direct-deal sub-fund; received USD 550m additional govt funding FY24."
+    "Co-investor pattern note": "NIF is NSIA's direct-deal sub-fund; received USD 550m additional govt funding FY24.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Infrastructure; Agriculture / Food Security; Healthcare",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "TSFE-ADQ Egyptian Health Platform",
@@ -7576,7 +7978,10 @@ const DATASET = {
     "DFI LPs (count)": 0,
     "Named DFI LPs": "—",
     "Other named LPs": "ADQ (UAE SWF)",
-    "Co-investor pattern note": "Bilateral SWF healthcare platform."
+    "Co-investor pattern note": "Bilateral SWF healthcare platform.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Healthcare",
+    "Investment approach": "Platform / Anchor Sponsor"
   },
   {
     "Fund / Vehicle": "Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN)",
@@ -7590,7 +7995,10 @@ const DATASET = {
     "DFI LPs (count)": 3,
     "Named DFI LPs": "AfDB, BII, Dutch Good Growth Fund",
     "Other named LPs": "—",
-    "Co-investor pattern note": "NSIA's earliest disclosed PE fund LP position; alongside three DFIs."
+    "Co-investor pattern note": "NSIA's earliest disclosed PE fund LP position; alongside three DFIs.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Agriculture / Food Security",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Capital Alliance Private Equity I-IV (CAPE)",
@@ -7604,7 +8012,10 @@ const DATASET = {
     "DFI LPs (count)": "multiple",
     "Named DFI LPs": "BII (CAPE IV); various DFIs across vintages",
     "Other named LPs": "—",
-    "Co-investor pattern note": "First Nigerian PE firm (founded 1997); CAPE I was Nigeria's first PE fund (1998). Continental pioneer of pension-PE inclusion."
+    "Co-investor pattern note": "First Nigerian PE firm (founded 1997); CAPE I was Nigeria's first PE fund (1998). Continental pioneer of pension-PE inclusion.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Rwanda SME Growth Fund",
@@ -7618,7 +8029,10 @@ const DATASET = {
     "DFI LPs (count)": 1,
     "Named DFI LPs": "FSD Africa Investments (structuring + planned guarantee)",
     "Other named LPs": "—",
-    "Co-investor pattern note": "First permanent capital vehicle anchored by an African pension fund (per RSSB CEO). Three regional firsts: pension-fund-led SME-only mandate, anchor permanent-capital vehicle, pension-fund TA facility."
+    "Co-investor pattern note": "First permanent capital vehicle anchored by an African pension fund (per RSSB CEO). Three regional firsts: pension-fund-led SME-only mandate, anchor permanent-capital vehicle, pension-fund TA facility.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Mirepa Capital SME Fund I",
@@ -7632,7 +8046,10 @@ const DATASET = {
     "DFI LPs (count)": 0,
     "Named DFI LPs": "—",
     "Other named LPs": "-",
-    "Co-investor pattern note": "Second Ghana fund anchored solely by local investors (after Injaro IGVCF). 100% local-LP-funded. Confirms Ghana's emerging mandated-minimum-alts policy is producing real deal flow."
+    "Co-investor pattern note": "Second Ghana fund anchored solely by local investors (after Injaro IGVCF). 100% local-LP-funded. Confirms Ghana's emerging mandated-minimum-alts policy is producing real deal flow.",
+    "Asset class normalized": "Venture Capital",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Injaro Ghana Venture Capital Fund (IGVCF)",
@@ -7646,7 +8063,10 @@ const DATASET = {
     "DFI LPs (count)": 0,
     "Named DFI LPs": "—",
     "Other named LPs": "-",
-    "Co-investor pattern note": "FIRST Ghana fund of its kind anchored by local pension funds. Historical precedent for Mirepa I, Ci-Gaba, GIP Ghana model. Ghana cedi-denominated."
+    "Co-investor pattern note": "FIRST Ghana fund of its kind anchored by local pension funds. Historical precedent for Mirepa I, Ci-Gaba, GIP Ghana model. Ghana cedi-denominated.",
+    "Asset class normalized": "Venture Capital",
+    "Sector / thematic focus": "SME Finance",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Africa Food Security Fund (AFSF)",
@@ -7660,7 +8080,10 @@ const DATASET = {
     "DFI LPs (count)": 5,
     "Named DFI LPs": "AfDB; BII (CDC Group); Dutch Good Growth Fund (DGGF); IFU; EBID",
     "Other named LPs": "Kuramo Capital Management",
-    "Co-investor pattern note": "DGGF news release names PIC/GEPF in first-round investor group alongside DFIs and DGGF; Kuramo subsequently joined to bring commitments to USD 84m."
+    "Co-investor pattern note": "DGGF news release names PIC/GEPF in first-round investor group alongside DFIs and DGGF; Kuramo subsequently joined to bring commitments to USD 84m.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Agriculture / Food Security",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Alitheia IDF Fund",
@@ -7674,7 +8097,10 @@ const DATASET = {
     "DFI LPs (count)": 0,
     "Named DFI LPs": null,
     "Other named LPs": "Soros Economic Development Fund",
-    "Co-investor pattern note": "NSIA names Alitheia IDF as an investment; SEDF describes Alitheia IDF as a USD 100m gender-lens fund. NSIA ticket size not disclosed."
+    "Co-investor pattern note": "NSIA names Alitheia IDF as an investment; SEDF describes Alitheia IDF as a USD 100m gender-lens fund. NSIA ticket size not disclosed.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Gender Lens",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Ingressive Capital Fund / funds",
@@ -7688,7 +8114,10 @@ const DATASET = {
     "DFI LPs (count)": 0,
     "Named DFI LPs": null,
     "Other named LPs": null,
-    "Co-investor pattern note": "NSIA names Ingressive Capital as an investment; specific NSIA vehicle/vintage and ticket size not publicly disclosed."
+    "Co-investor pattern note": "NSIA names Ingressive Capital as an investment; specific NSIA vehicle/vintage and ticket size not publicly disclosed.",
+    "Asset class normalized": "Venture Capital",
+    "Sector / thematic focus": "SME Finance; Digital / Technology",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Verod Growth Fund II",
@@ -7702,7 +8131,10 @@ const DATASET = {
     "DFI LPs (count)": 0,
     "Named DFI LPs": null,
     "Other named LPs": null,
-    "Co-investor pattern note": "NSIA impact report identifies a USD 5m FGF commitment to Verod Growth Fund II."
+    "Co-investor pattern note": "NSIA impact report identifies a USD 5m FGF commitment to Verod Growth Fund II.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "Verod Growth Fund III",
@@ -7716,7 +8148,10 @@ const DATASET = {
     "DFI LPs (count)": 0,
     "Named DFI LPs": null,
     "Other named LPs": null,
-    "Co-investor pattern note": "NSIA impact report identifies a USD 7.5m FGF commitment to Verod Growth Fund III."
+    "Co-investor pattern note": "NSIA impact report identifies a USD 7.5m FGF commitment to Verod Growth Fund III.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "MedServe oncology and diagnostics expansion",
@@ -7730,7 +8165,10 @@ const DATASET = {
     "DFI LPs (count)": 1,
     "Named DFI LPs": "IFC",
     "Other named LPs": "International Development Association Private Sector Window Local Currency Facility",
-    "Co-investor pattern note": "IFC provided roughly NGN 14.2bn / USD 24.5m local-currency financing for NSIA's wholly owned MedServe expansion program."
+    "Co-investor pattern note": "IFC provided roughly NGN 14.2bn / USD 24.5m local-currency financing for NSIA's wholly owned MedServe expansion program.",
+    "Asset class normalized": "Direct Equity / Strategic Stake",
+    "Sector / thematic focus": "Healthcare",
+    "Investment approach": "Fund LP"
   },
   {
     "Fund / Vehicle": "InfraCredit",
@@ -7744,7 +8182,10 @@ const DATASET = {
     "DFI LPs (count)": 4,
     "Named DFI LPs": "GuarantCo / PIDG; KfW; AfDB; InfraCo Africa",
     "Other named LPs": "Africa Finance Corporation; Leadway Assurance; AIICO Insurance; FCDO / Mobilist",
-    "Co-investor pattern note": "NSIA established InfraCredit with GuarantCo/PIDG. Later shareholders/backers include KfW, AfDB, InfraCo Africa, AFC, insurers, and Nigerian pension shareholders."
+    "Co-investor pattern note": "NSIA established InfraCredit with GuarantCo/PIDG. Later shareholders/backers include KfW, AfDB, InfraCo Africa, AFC, insurers, and Nigerian pension shareholders.",
+    "Asset class normalized": "Guarantee / Credit Enhancement",
+    "Sector / thematic focus": "Infrastructure",
+    "Investment approach": "Guarantee-backed Instrument"
   },
   {
     "Fund / Vehicle": "Construction Finance Warehouse Facility (CFWF)",
@@ -7758,7 +8199,10 @@ const DATASET = {
     "DFI LPs (count)": 0,
     "Named DFI LPs": null,
     "Other named LPs": null,
-    "Co-investor pattern note": "NSIA provided NGN 10bn anchor funding; FSD Africa supported facility set-up costs through technical assistance rather than a disclosed LP/co-investment commitment."
+    "Co-investor pattern note": "NSIA provided NGN 10bn anchor funding; FSD Africa supported facility set-up costs through technical assistance rather than a disclosed LP/co-investment commitment.",
+    "Asset class normalized": "Guarantee / Credit Enhancement",
+    "Sector / thematic focus": "Infrastructure; Digital / Technology",
+    "Investment approach": "Guarantee-backed Instrument"
   },
   {
     "Fund / Vehicle": "Oasis Africa VC Fund (OAF)",
@@ -7772,7 +8216,10 @@ const DATASET = {
     "DFI LPs (count)": 3,
     "Named DFI LPs": "Dutch Good Growth Fund (DGGF); IFC; EIB",
     "Other named LPs": "Local investor base of five institutions and individuals at first close",
-    "Co-investor pattern note": "VCTF government co-investment helped Oasis domicile the fund locally in Ghana. DGGF TA/legal work helped make the Ghana structure bankable for international DFIs; first close included DGGF, IFC and local investors, with EIB later disclosing an USD 8m commitment."
+    "Co-investor pattern note": "VCTF government co-investment helped Oasis domicile the fund locally in Ghana. DGGF TA/legal work helped make the Ghana structure bankable for international DFIs; first close included DGGF, IFC and local investors, with EIB later disclosing an USD 8m commitment.",
+    "Asset class normalized": "Venture Capital",
+    "Sector / thematic focus": "SME Finance; Financial Inclusion / Financial Services",
+    "Investment approach": "Fund LP"
   }
 ],
   "DFI_Co-Investor_Patterns": [

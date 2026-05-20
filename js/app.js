@@ -59,21 +59,96 @@ function fmtAUM(v) {
 function assetClass(str) {
   if (!str) return 'Other';
   const s = String(str).toLowerCase();
+  if (s.includes('guarantee') || s.includes('credit enhancement')) return 'Guarantee';
   if (s.includes('fof') || s.includes('fund of fund') || s.includes('fund-of-fund') || s.includes('fundoffunds')) return 'FundOfFunds';
-  if (s.includes('infrastructure') || s.includes('infra')) return 'Infra';
   if (s.includes('private credit') || s.includes('sme debt') || s.includes('credit')) return 'Credit';
-  if (s.includes('vc') || s.includes('venture')) return 'VC';
-  if (s.includes('direct')) return 'Direct';
-  if (s.includes('mixed')) return 'Mixed';
+  if (s.includes('venture capital') || s.includes('vc') || s.includes('venture')) return 'VC';
+  if (s.includes('direct equity') || s.includes('strategic stake') || s.includes('direct')) return 'Direct';
+  if (s.includes('platform') || s.includes('holding company')) return 'Platform';
+  if (s.includes('real assets') || s.includes('infrastructure') || s.includes('infra')) return 'RealAssets';
+  if (s.includes('mixed') || s.includes('multi-asset')) return 'Mixed';
   if (s.includes('pe') || s.includes('private equity') || s.includes('equity')) return 'PE';
   return 'Other';
 }
 
 function assetLabel(key) {
-  return key === 'FundOfFunds' ? 'Fund of Funds' : key;
+  const labels = {
+    PE: 'Private Equity',
+    VC: 'Venture Capital',
+    Credit: 'Private Credit',
+    RealAssets: 'Real Assets / Infrastructure Equity',
+    Direct: 'Direct Equity / Strategic Stake',
+    FundOfFunds: 'Fund of Funds',
+    Guarantee: 'Guarantee / Credit Enhancement',
+    Platform: 'Platform / Holding Company',
+    Mixed: 'Mixed / Multi-Asset',
+    Other: 'Unknown / Not Disclosed'
+  };
+  return labels[key] || key;
 }
 
 function uniq(arr) { return [...new Set(arr.filter(Boolean))].sort(); }
+
+const ASSET_TAXONOMY = [
+  'Private Equity',
+  'Venture Capital',
+  'Private Credit',
+  'Real Assets / Infrastructure Equity',
+  'Direct Equity / Strategic Stake',
+  'Fund of Funds',
+  'Guarantee / Credit Enhancement',
+  'Platform / Holding Company',
+  'Mixed / Multi-Asset',
+  'Unknown / Not Disclosed'
+];
+
+const APPROACH_TAXONOMY = [
+  'Fund LP',
+  'Fund of Funds LP',
+  'Direct Investment',
+  'Platform / Anchor Sponsor',
+  'Co-investment',
+  'Guarantee-backed Instrument',
+  'Mandate / Pipeline Only'
+];
+
+const FOCUS_TAXONOMY = [
+  'Infrastructure',
+  'SME Finance',
+  'Agriculture / Food Security',
+  'Financial Inclusion / Financial Services',
+  'Healthcare',
+  'Climate / Energy Transition',
+  'Real Estate / Housing',
+  'Digital / Technology',
+  'Gender Lens',
+  'Generalist',
+  'Multi-Sector'
+];
+
+function normalizedAsset(row) {
+  return row['Asset class normalized'] || row['Asset class'] || 'Unknown / Not Disclosed';
+}
+
+function investmentApproach(row) {
+  return row['Investment approach'] || '';
+}
+
+function focusTags(row) {
+  return parseSemicolon(row['Sector / thematic focus']);
+}
+
+function populateTaxonomyFilter(id, values) {
+  const el = document.getElementById(id);
+  if (!el || el.dataset.populated === '1') return;
+  values.forEach(v => {
+    const o = document.createElement('option');
+    o.value = v;
+    o.textContent = v;
+    el.appendChild(o);
+  });
+  el.dataset.populated = '1';
+}
 
 function searchText(v) {
   return String(v || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
@@ -509,7 +584,7 @@ function renderOverview() {
   // Commitments by asset class
   const byAsset = {};
   comms.forEach(r => {
-    const k = assetClass(r['Asset class']);
+    const k = assetClass(normalizedAsset(r));
     byAsset[k] = (byAsset[k] || 0) + 1;
   });
   document.getElementById('asset-breakdown').innerHTML = Object.entries(byAsset)
@@ -645,6 +720,8 @@ function renderCommitments() {
 
   const q    = document.getElementById('comm-search')?.value || '';
   const asst = document.getElementById('comm-asset-filter')?.value || '';
+  const focus = document.getElementById('comm-focus-filter')?.value || '';
+  const approach = document.getElementById('comm-approach-filter')?.value || '';
   const country = document.getElementById('comm-country-filter')?.value || '';
   const geo  = document.getElementById('comm-geo-filter')?.value || '';
   const conf = document.getElementById('comm-conf-filter')?.value || '';
@@ -652,7 +729,9 @@ function renderCommitments() {
 
   rows = rows.filter(r => {
     if (!rowMatchesSearch(r, ['Allocator (institution)','Fund / Vehicle / Deal name','GP or counterparty','Allocator country'], q)) return false;
-    if (asst && assetClass(r['Asset class']) !== asst) return false;
+    if (asst && normalizedAsset(r) !== asst) return false;
+    if (focus && !focusTags(r).includes(focus)) return false;
+    if (approach && investmentApproach(r) !== approach) return false;
     if (country && r['Allocator country'] !== country) return false;
     if (geo && !String(r['Geographic focus']||'').toLowerCase().includes(geo.toLowerCase())) return false;
     if (conf && String(r['Confidence']||'').charAt(0).toUpperCase() !== conf) return false;
@@ -683,7 +762,7 @@ function renderCommitments() {
 
   const tbody = document.getElementById('comm-tbody');
   if (!rows.length) {
-    tbody.innerHTML = `<tr><td colspan="9"><div class="empty-state"><div class="icon">🔍</div>No commitments match.</div></td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="11"><div class="empty-state"><div class="icon">🔍</div>No commitments match.</div></td></tr>`;
     return;
   }
   tbody.innerHTML = rows.map(r => `<tr>
@@ -691,7 +770,9 @@ function renderCommitments() {
     <td>${escHtml(r['Allocator country']||'—')}</td>
     <td class="truncate" style="max-width:180px" title="${escHtml(r['Fund / Vehicle / Deal name'])}">${escHtml(r['Fund / Vehicle / Deal name']||'—')}</td>
     <td>${escHtml(r['GP or counterparty']||'—')}</td>
-    <td>${assetTag(r['Asset class'])}</td>
+    <td>${assetTag(normalizedAsset(r))}</td>
+    <td>${escHtml(r['Sector / thematic focus']||'—')}</td>
+    <td>${escHtml(r['Investment approach']||'—')}</td>
     <td>${escHtml(r['Geographic focus']||'—')}</td>
     <td class="num">${escHtml(r['Vintage / Year']||'—')}</td>
     <td>${confBadge(r['Confidence'])}</td>
@@ -711,7 +792,7 @@ function renderCommitmentMap(rows) {
     g.items.push({
       allocator: r['Allocator (institution)'] || '—',
       vehicle: r['Fund / Vehicle / Deal name'] || '—',
-      asset: assetLabel(assetClass(r['Asset class'])),
+      asset: normalizedAsset(r),
       source: sourceLinksHtml(r, 'commitment')
     });
   });
@@ -728,11 +809,15 @@ function renderFunds() {
   let rows = D.funds();
   const q    = document.getElementById('fund-search')?.value || '';
   const asst = document.getElementById('fund-asset-filter')?.value || '';
+  const focus = document.getElementById('fund-focus-filter')?.value || '';
+  const approach = document.getElementById('fund-approach-filter')?.value || '';
   const geo  = document.getElementById('fund-geo-filter')?.value || '';
 
   rows = rows.filter(r => {
     if (!rowMatchesSearch(r, ['Fund / Vehicle','Manager / GP','Named African PF/SWF LPs','Named DFI LPs'], q)) return false;
-    if (asst && assetClass(r['Asset class']) !== asst) return false;
+    if (asst && normalizedAsset(r) !== asst) return false;
+    if (focus && !focusTags(r).includes(focus)) return false;
+    if (approach && investmentApproach(r) !== approach) return false;
     if (geo && !fundGeoTags(r['Geographic focus']).has(geo)) return false;
     return true;
   });
@@ -744,7 +829,7 @@ function renderFunds() {
     container.innerHTML = `<div class="empty-state"><div class="icon">🔍</div>No fund vehicles match.</div>`;
     return;
   }
-  const ac = r => assetClass(r['Asset class']);
+  const ac = r => assetClass(normalizedAsset(r));
   container.innerHTML = rows.map(r => {
     const lps = parseSemicolon(r['Named African PF/SWF LPs']);
     const dfis = parseSemicolon(r['Named DFI LPs']);
@@ -752,12 +837,13 @@ function renderFunds() {
     return `<div class="fund-card asset-${ac(r)}">
       <div class="fund-name">${escHtml(r['Fund / Vehicle']||'—')}</div>
       <div class="fund-meta">
-        ${assetTag(r['Asset class'])} &nbsp;
+        ${assetTag(normalizedAsset(r))} &nbsp;
         ${escHtml(r['Manager / GP']||'—')} &nbsp;·&nbsp;
         ${escHtml(r['Vintage']||'—')} &nbsp;·&nbsp;
         ${escHtml(r['Geographic focus']||'—')} &nbsp;·&nbsp;
         <strong>${fmtAUM(r['Fund size (USD m)'])}</strong>
       </div>
+      <div class="fund-lps"><strong>Focus:</strong> ${escHtml(r['Sector / thematic focus']||'—')} &nbsp; <strong>Approach:</strong> ${escHtml(r['Investment approach']||'—')}</div>
       ${lps.length ? `<div class="fund-lps"><strong>African LPs:</strong> ${lps.map(l => `<span class="pill">${escHtml(l)}</span>`).join(' ')}</div>` : ''}
       ${dfis.length ? `<div class="fund-lps"><strong>DFIs and Other LPs:</strong> ${dfis.map(d => `<span class="pill" style="background:#fef3c7;color:#78350f">${escHtml(d)}</span>`).join(' ')}</div>` : ''}
       <div class="source-link"><strong>Sources:</strong> ${sources}</div>
@@ -766,32 +852,32 @@ function renderFunds() {
 }
 
 function initCommitments() {
-  const assetOpts = ['PE','VC','Infra','Credit','Direct','FundOfFunds','Mixed','Other'];
   ['comm-asset-filter','fund-asset-filter'].forEach(id => {
-    const el = document.getElementById(id);
-    assetOpts.forEach(a => { const o = document.createElement('option'); o.value = a; o.textContent = assetLabel(a); el.appendChild(o); });
+    populateTaxonomyFilter(id, ASSET_TAXONOMY);
   });
+  ['comm-focus-filter','fund-focus-filter'].forEach(id => populateTaxonomyFilter(id, FOCUS_TAXONOMY));
+  ['comm-approach-filter','fund-approach-filter'].forEach(id => populateTaxonomyFilter(id, APPROACH_TAXONOMY));
   populateFundGeoFilter();
   populateCommitmentCountryFilter();
 
-  ['comm-search','comm-asset-filter','comm-country-filter','comm-geo-filter','comm-conf-filter','comm-year-filter'].forEach(id => {
+  ['comm-search','comm-asset-filter','comm-focus-filter','comm-approach-filter','comm-country-filter','comm-geo-filter','comm-conf-filter','comm-year-filter'].forEach(id => {
     document.getElementById(id)?.addEventListener('input', renderCommitments);
     document.getElementById(id)?.addEventListener('change', renderCommitments);
   });
   document.getElementById('comm-clear')?.addEventListener('click', () => {
-    ['comm-search','comm-asset-filter','comm-country-filter','comm-geo-filter','comm-conf-filter','comm-year-filter'].forEach(id => {
+    ['comm-search','comm-asset-filter','comm-focus-filter','comm-approach-filter','comm-country-filter','comm-geo-filter','comm-conf-filter','comm-year-filter'].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.value = '';
     });
     renderCommitments();
   });
 
-  ['fund-search','fund-asset-filter','fund-geo-filter'].forEach(id => {
+  ['fund-search','fund-asset-filter','fund-focus-filter','fund-approach-filter','fund-geo-filter'].forEach(id => {
     document.getElementById(id)?.addEventListener('input', renderFunds);
     document.getElementById(id)?.addEventListener('change', renderFunds);
   });
   document.getElementById('fund-clear')?.addEventListener('click', () => {
-    ['fund-search','fund-asset-filter','fund-geo-filter'].forEach(id => {
+    ['fund-search','fund-asset-filter','fund-focus-filter','fund-approach-filter','fund-geo-filter'].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.value = '';
     });
@@ -858,7 +944,7 @@ function renderPipeline() {
     ], q)) return false;
     if (status && r['Status category'] !== status) return false;
     if (country && r['Allocator country'] !== country) return false;
-    if (asset && assetClass(r['Asset class']) !== asset) return false;
+    if (asset && normalizedAsset(r) !== asset) return false;
     if (conf && String(r['Pipeline confidence'] || '').charAt(0).toUpperCase() !== conf) return false;
     return true;
   });
@@ -890,7 +976,7 @@ function renderPipeline() {
       <td>${escHtml(r['Allocator country'] || '—')}</td>
       <td class="truncate" style="max-width:210px" title="${escHtml(r['Fund / Vehicle / Deal name'])}">${escHtml(r['Fund / Vehicle / Deal name'] || '—')}</td>
       <td class="truncate" style="max-width:150px" title="${escHtml(r['GP or counterparty'])}">${escHtml(r['GP or counterparty'] || '—')}</td>
-      <td>${assetTag(r['Asset class'])}</td>
+      <td>${assetTag(normalizedAsset(r))}</td>
       <td class="truncate" style="max-width:160px" title="${escHtml(r['Potential size / target'])}">${escHtml(r['Potential size / target'] || '—')}</td>
       <td>${confBadge(r['Pipeline confidence'])}</td>
       <td style="min-width:260px">${escHtml(r['Reason not in Commitments Database'] || '')}<div class="source-link">${source}</div></td>
@@ -917,10 +1003,10 @@ function initPipeline() {
   });
 
   const assetFilter = document.getElementById('pipe-asset-filter');
-  uniq(rows.map(r => assetClass(r['Asset class']))).forEach(v => {
+  uniq(rows.map(r => normalizedAsset(r))).forEach(v => {
     const o = document.createElement('option');
     o.value = v;
-    o.textContent = assetLabel(v);
+    o.textContent = v;
     assetFilter.appendChild(o);
   });
 

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>African PF &amp; SWF Capital Mapping</title>
-<link rel="stylesheet" href="css/style.css?v=20260520-timeline">
+<link rel="stylesheet" href="css/style.css?v=20260520-taxonomy">
 </head>
 <body>
 
@@ -111,6 +111,8 @@
       <div class="filters-bar">
         <input type="text" id="comm-search" placeholder="Allocator, fund, GP…">
         <select id="comm-asset-filter"><option value="">All asset classes</option></select>
+        <select id="comm-focus-filter"><option value="">All sector / focus areas</option></select>
+        <select id="comm-approach-filter"><option value="">All approaches</option></select>
         <select id="comm-country-filter"><option value="">All allocator countries</option></select>
         <select id="comm-geo-filter">
           <option value="">All geographic scopes</option>
@@ -136,6 +138,8 @@
               <th data-col="Fund / Vehicle / Deal name">Fund / Vehicle <span class="sort-arrow"></span></th>
               <th>GP</th>
               <th>Asset</th>
+              <th>Focus</th>
+              <th>Approach</th>
               <th>Geography</th>
               <th data-col="Vintage / Year">Year <span class="sort-arrow">↓</span></th>
               <th>Conf.</th>
@@ -163,6 +167,8 @@
       <div class="filters-bar">
         <input type="text" id="fund-search" placeholder="Fund, manager, LP name…">
         <select id="fund-asset-filter"><option value="">All asset classes</option></select>
+        <select id="fund-focus-filter"><option value="">All sector / focus areas</option></select>
+        <select id="fund-approach-filter"><option value="">All approaches</option></select>
         <select id="fund-geo-filter">
           <option value="">All geographies</option>
         </select>
@@ -263,10 +269,12 @@
             <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em">Fund colors</div>
             <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#2563eb"></div> PE</div>
             <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#7c3aed"></div> VC</div>
-            <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#059669"></div> Infrastructure</div>
+            <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#059669"></div> Real Assets / Infra Equity</div>
             <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#d97706"></div> Private Credit</div>
             <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#dc2626"></div> Direct</div>
             <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#0891b2"></div> Fund of Funds</div>
+            <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#ea580c"></div> Guarantee / Credit Enhancement</div>
+            <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#4f46e5"></div> Platform / Holding Company</div>
             <div style="border-top:1px solid var(--border);margin:4px 0"></div>
             <div style="font-size:11px;color:var(--muted)">
               <strong style="color:#f59e0b">Gold edges</strong> = DFI / other-LP co-investment<br>
@@ -732,12 +740,12 @@
 </div><!-- /tab-charts -->
 
 <!-- ── Scripts ─────────────────────────────────────────────────── -->
-<script src="data/data.js?v=20260520-vctf-oasis"></script>
+<script src="data/data.js?v=20260520-taxonomy"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
-<script src="js/app.js?v=20260520-commitment-country-filter"></script>
-<script src="js/network.js?v=20260520-vctf-alias"></script>
+<script src="js/app.js?v=20260520-taxonomy"></script>
+<script src="js/network.js?v=20260520-taxonomy"></script>
 
 </body>
 </html>

@@ -674,6 +674,9 @@ body {
 .asset-Credit  { background: #fef3c7; color: #92400e; }
 .asset-Direct  { background: #fee2e2; color: #991b1b; }
 .asset-FundOfFunds { background: #cffafe; color: #164e63; }
+.asset-RealAssets { background: #d1fae5; color: #065f46; }
+.asset-Guarantee { background: #ffedd5; color: #9a3412; }
+.asset-Platform { background: #e0e7ff; color: #3730a3; }
 .asset-Mixed   { background: #f3f4f6; color: #374151; }
 .asset-Other   { background: #f3f4f6; color: #374151; }
 
@@ -1028,6 +1031,9 @@ canvas { max-width: 100%; }
 .fund-card.asset-Credit  { border-left-color: #d97706; }
 .fund-card.asset-Direct  { border-left-color: #dc2626; }
 .fund-card.asset-FundOfFunds { border-left-color: #0891b2; }
+.fund-card.asset-RealAssets { border-left-color: #059669; }
+.fund-card.asset-Guarantee { border-left-color: #ea580c; }
+.fund-card.asset-Platform { border-left-color: #4f46e5; }
 .fund-card.asset-Mixed   { border-left-color: #6b7280; }
 
 /* ── Misc ── */

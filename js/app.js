@@ -203,6 +203,98 @@ function assetTag(ac) {
   return `<span class="asset-tag asset-${key}">${assetLabel(key)}</span>`;
 }
 
+const FUND_GEO_OPTIONS = [
+  { value: 'Domestic', label: 'Domestic / single-country' },
+  { value: 'Pan-Africa', label: 'Pan-Africa' },
+  { value: 'Sub-Saharan Africa', label: 'Sub-Saharan Africa' },
+  { value: 'North Africa', label: 'North Africa' },
+  { value: 'Southern Africa', label: 'Southern Africa' },
+  { value: 'East Africa', label: 'East Africa' },
+  { value: 'West Africa', label: 'West Africa' },
+  { value: 'Central Africa', label: 'Central Africa' },
+  { value: 'Regional', label: 'Regional / multi-country' },
+  { value: 'Botswana', label: 'Botswana' },
+  { value: 'Cote dIvoire', label: "Cote d'Ivoire" },
+  { value: 'DRC', label: 'DRC' },
+  { value: 'Egypt', label: 'Egypt' },
+  { value: 'Ethiopia', label: 'Ethiopia' },
+  { value: 'Ghana', label: 'Ghana' },
+  { value: 'Kenya', label: 'Kenya' },
+  { value: 'Morocco', label: 'Morocco' },
+  { value: 'Nigeria', label: 'Nigeria' },
+  { value: 'Rwanda', label: 'Rwanda' },
+  { value: 'Senegal', label: 'Senegal' },
+  { value: 'Tanzania', label: 'Tanzania' },
+  { value: 'Uganda', label: 'Uganda' },
+  { value: 'Zambia', label: 'Zambia' }
+];
+
+const FUND_COUNTRY_PATTERNS = [
+  { tag: 'Botswana', region: 'Southern Africa', patterns: ['botswana'] },
+  { tag: 'Cote dIvoire', region: 'West Africa', patterns: ['cote d ivoire', 'cote divoire', 'ivory coast'] },
+  { tag: 'DRC', region: 'Central Africa', patterns: ['drc', 'democratic republic of congo'] },
+  { tag: 'Egypt', region: 'North Africa', patterns: ['egypt'] },
+  { tag: 'Ethiopia', region: 'East Africa', patterns: ['ethiopia'] },
+  { tag: 'Ghana', region: 'West Africa', patterns: ['ghana'] },
+  { tag: 'Kenya', region: 'East Africa', patterns: ['kenya'] },
+  { tag: 'Morocco', region: 'North Africa', patterns: ['morocco'] },
+  { tag: 'Nigeria', region: 'West Africa', patterns: ['nigeria'] },
+  { tag: 'Rwanda', region: 'East Africa', patterns: ['rwanda'] },
+  { tag: 'Senegal', region: 'West Africa', patterns: ['senegal'] },
+  { tag: 'Tanzania', region: 'East Africa', patterns: ['tanzania'] },
+  { tag: 'Uganda', region: 'East Africa', patterns: ['uganda'] },
+  { tag: 'Zambia', region: 'Southern Africa', patterns: ['zambia'] }
+];
+
+function fundGeoTags(focus) {
+  const raw = String(focus || '');
+  const text = searchText(raw);
+  const tags = new Set();
+  if (!text) return tags;
+
+  if (/\bpan africa\b|\bpan african\b|\bafrica\b/.test(text)) tags.add('Pan-Africa');
+  if (text.includes('sub saharan')) tags.add('Sub-Saharan Africa');
+  if (text.includes('north africa')) tags.add('North Africa');
+  if (text.includes('southern africa')) tags.add('Southern Africa');
+  if (text.includes('east africa')) tags.add('East Africa');
+  if (text.includes('west africa')) tags.add('West Africa');
+  if (text.includes('central africa')) tags.add('Central Africa');
+  if (text.includes('regional')) tags.add('Regional');
+
+  const countries = [];
+  FUND_COUNTRY_PATTERNS.forEach(c => {
+    if (c.patterns.some(p => text.includes(p))) {
+      tags.add(c.tag);
+      tags.add(c.region);
+      countries.push(c.tag);
+    }
+  });
+
+  const multiCountryMarkers = /[,+/]| and /.test(raw);
+  if (countries.length === 1 && !multiCountryMarkers && !tags.has('Pan-Africa') && !tags.has('Sub-Saharan Africa')) {
+    tags.add('Domestic');
+  }
+  if (countries.length > 1 || tags.has('Sub-Saharan Africa') || tags.has('North Africa') || tags.has('Southern Africa') || tags.has('East Africa') || tags.has('West Africa') || tags.has('Central Africa')) {
+    if (!tags.has('Domestic')) tags.add('Regional');
+  }
+  return tags;
+}
+
+function populateFundGeoFilter() {
+  const el = document.getElementById('fund-geo-filter');
+  if (!el || el.dataset.populated === '1') return;
+  const available = new Set();
+  D.funds().forEach(r => fundGeoTags(r['Geographic focus']).forEach(t => available.add(t)));
+  FUND_GEO_OPTIONS.forEach(opt => {
+    if (!available.has(opt.value)) return;
+    const o = document.createElement('option');
+    o.value = opt.value;
+    o.textContent = opt.label;
+    el.appendChild(o);
+  });
+  el.dataset.populated = '1';
+}
+
 function confBadge(c) {
   const v = String(c || '').trim().charAt(0).toUpperCase();
   if (!v || v === 'N') return '';
@@ -626,7 +718,7 @@ function renderFunds() {
   rows = rows.filter(r => {
     if (!rowMatchesSearch(r, ['Fund / Vehicle','Manager / GP','Named African PF/SWF LPs','Named DFI LPs'], q)) return false;
     if (asst && assetClass(r['Asset class']) !== asst) return false;
-    if (geo && !String(r['Geographic focus']||'').toLowerCase().includes(geo.toLowerCase())) return false;
+    if (geo && !fundGeoTags(r['Geographic focus']).has(geo)) return false;
     return true;
   });
 
@@ -664,6 +756,7 @@ function initCommitments() {
     const el = document.getElementById(id);
     assetOpts.forEach(a => { const o = document.createElement('option'); o.value = a; o.textContent = assetLabel(a); el.appendChild(o); });
   });
+  populateFundGeoFilter();
 
   ['comm-search','comm-asset-filter','comm-geo-filter','comm-conf-filter','comm-year-filter'].forEach(id => {
     document.getElementById(id)?.addEventListener('input', renderCommitments);

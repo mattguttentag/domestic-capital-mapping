@@ -481,41 +481,18 @@
   <div class="about-grid">
     <section class="card about-card">
       <div class="section-title">About the Dataset</div>
-      <p>This tool maps disclosed alternative-asset activity by African pension funds and sovereign wealth funds. The core research question is: which African institutional investors have made disclosed commitments to African alternative assets, to which funds, vehicles, or deals, and what role do DFIs and other catalytic investors play in enabling those commitments?</p>
-      <p>The dataset was assembled in May 2026 from public sources and compiled into an Excel workbook, then exported into this static dashboard. It combines a universe of African pension funds and SWFs with a commitment-level database, a fund-vehicle LP composition table, DFI and other-LP co-investor patterns, pipeline and mandate evidence, source provenance, and inclusion-audit notes.</p>
-    </section>
-
-    <section class="card about-card">
-      <div class="section-title">How It Was Compiled</div>
-      <div class="method-steps">
-        <div><strong>1. Build the allocator universe</strong><span>Catalogued African pension funds and SWFs across the continent, including approximate AUM, country, mandate type, regulator or owner, and reporting confidence.</span></div>
-        <div><strong>2. Identify disclosed commitments</strong><span>Added public evidence of allocator-to-fund, allocator-to-platform, direct equity, co-investment, and fund LP commitments in private equity, VC, infrastructure, private credit, and fund-of-funds vehicles.</span></div>
-        <div><strong>3. Separate non-commitments</strong><span>Moved targeted, expected, planned, MoU, pooled-mandate, and member-only evidence into Pipeline &amp; Mandates unless there was public evidence of an actual allocation.</span></div>
-        <div><strong>4. Add vehicle-level LP composition</strong><span>Created fund-vehicle rows listing named African PF/SWF LPs, DFIs, foundations, banks, insurers, and other known co-investors where public evidence supports inclusion.</span></div>
-        <div><strong>5. Audit inclusion and naming</strong><span>Reviewed weak-evidence rows, normalized repeated entities where possible, and retained source URLs and rationale in the Source Library and Inclusion Audit tabs.</span></div>
-      </div>
-    </section>
-
-    <section class="card about-card">
-      <div class="section-title">Scope Rules</div>
-      <ul class="about-list">
-        <li><strong>Included:</strong> African pension funds, sovereign wealth funds, SWF subsidiaries, pension managers investing on behalf of pension capital, and disclosed pension/SWF-backed vehicles.</li>
-        <li><strong>Asset scope:</strong> private equity, venture capital, infrastructure, private credit, fund-of-funds, direct equity, platform equity, and selected credit-enhancement vehicles tied to alternative-asset mobilisation.</li>
-        <li><strong>Look-through treatment:</strong> where a manager acts on behalf of an underlying public fund, such as PIC for GEPF, the dataset preserves that relationship rather than treating the manager as the ultimate asset owner.</li>
-        <li><strong>Confidence flags:</strong> high and medium confidence rows are used for headline commitment views; low-confidence or ambiguous rows are not treated as confirmed commitments.</li>
-      </ul>
+      <p>This dashboard maps publicly disclosed alternative-asset activity by African pension funds and sovereign wealth funds. It is meant to make a scattered market easier to see: which institutions are allocating, which funds or vehicles they are backing, and where DFIs, foundations, banks, insurers, and other catalytic investors appear alongside them.</p>
+      <p>The data was assembled from public reports, press releases, fund announcements, DFI disclosures, regulator material, and market research available as of May 2026. It focuses on named or well-evidenced participation in private equity, venture capital, infrastructure, private credit, fund-of-funds, direct equity, platform equity, and related vehicles that mobilise long-term domestic capital.</p>
     </section>
 
     <section class="card about-card">
       <div class="section-title">Known Limitations</div>
-      <ul class="about-list">
-        <li><strong>Public-disclosure bias:</strong> the database only captures commitments that can be traced to public evidence. Aggregate industry figures imply substantially more African LP capital than can be mapped to named allocator-fund pairs.</li>
-        <li><strong>Incomplete commitment sizes:</strong> many rows disclose only participation, a fund close, or a platform size rather than the allocator's ticket size, so count-based views are more reliable than capital-weighted totals.</li>
-        <li><strong>Name normalization is imperfect:</strong> entities may appear under manager names, fund names, acronyms, subsidiaries, or historical names. The dashboard applies selected aliases, but the workbook preserves source-facing names where useful.</li>
-        <li><strong>Mandates are not commitments:</strong> consortium membership, MoUs, policy targets, and planned allocations are tracked separately because they do not always translate into deployed capital.</li>
-        <li><strong>Dates and AUM are approximate:</strong> AUM values and vintage years are taken from available reporting and may reflect different reporting dates, currencies, or exchange-rate assumptions.</li>
-        <li><strong>DFI / Other LP category is broad:</strong> the network distinguishes PF/SWF allocators from fund vehicles and co-investors, but the co-investor category includes DFIs, catalytic funds, foundations, banks, insurers, TA-linked entities, and other named LPs where relevant.</li>
-      </ul>
+      <p><strong>Public-disclosure bias:</strong> The dashboard only captures activity that can be traced to public evidence. The real market is likely larger than the named allocator-fund pairs shown here.</p>
+      <p><strong>Incomplete commitment sizes:</strong> Many sources disclose participation, fund size, or platform size rather than the individual allocator's ticket size. For that reason, count-based views are usually more reliable than capital-weighted totals.</p>
+      <p><strong>Name normalization is imperfect:</strong> Institutions and vehicles may appear under manager names, fund names, acronyms, subsidiaries, or historical names. The dashboard applies selected aliases, but some source-facing names are preserved where useful.</p>
+      <p><strong>Mandates are not commitments:</strong> Consortium membership, MoUs, policy targets, and planned allocations are tracked separately because they do not always translate into deployed capital.</p>
+      <p><strong>Dates and AUM are approximate:</strong> AUM values and vintage years come from available reporting and may reflect different reporting dates, currencies, or exchange-rate assumptions.</p>
+      <p><strong>DFI / Other LP category is broad:</strong> The network distinguishes PF/SWF allocators from fund vehicles and co-investors, but the co-investor category includes DFIs, catalytic funds, foundations, banks, insurers, TA-linked entities, and other named LPs where relevant.</p>
     </section>
   </div>
 </div>

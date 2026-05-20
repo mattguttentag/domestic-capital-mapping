@@ -117,6 +117,12 @@ const FUND_APPROACH_LABELS = {
   'Fund of Funds LP': 'Fund of Funds'
 };
 
+const VEHICLE_INSTRUMENT_TYPES = [
+  'Fund',
+  'Fund of Funds',
+  'Guarantee-Backed Instrument'
+];
+
 const FOCUS_TAXONOMY = [
   'Infrastructure',
   'SME Finance',
@@ -144,6 +150,19 @@ function approachLabel(value, context = 'commitment') {
   return value || '—';
 }
 
+function vehicleInstrumentType(row) {
+  const asset = normalizedAsset(row);
+  const approach = investmentApproach(row);
+  if (approach === 'Guarantee-backed Instrument' || asset === 'Guarantee / Credit Enhancement') return 'Guarantee-Backed Instrument';
+  if (approach === 'Fund of Funds LP' || asset === 'Fund of Funds') return 'Fund of Funds';
+  if (approach === 'Fund LP' && asset !== 'Direct Equity / Strategic Stake' && asset !== 'Platform / Holding Company') return 'Fund';
+  return '';
+}
+
+function vehicleInstrumentRows() {
+  return D.funds().filter(vehicleInstrumentType);
+}
+
 function focusTags(row) {
   return parseSemicolon(row['Sector / thematic focus']);
 }
@@ -154,7 +173,7 @@ function populateTaxonomyFilter(id, values) {
   values.forEach(v => {
     const o = document.createElement('option');
     o.value = v;
-    o.textContent = id === 'fund-approach-filter' ? approachLabel(v, 'fund') : v;
+    o.textContent = v;
     el.appendChild(o);
   });
   el.dataset.populated = '1';
@@ -369,7 +388,7 @@ function populateFundGeoFilter() {
   const el = document.getElementById('fund-geo-filter');
   if (!el || el.dataset.populated === '1') return;
   const available = new Set();
-  D.funds().forEach(r => fundGeoTags(r['Geographic focus']).forEach(t => available.add(t)));
+  vehicleInstrumentRows().forEach(r => fundGeoTags(r['Geographic focus']).forEach(t => available.add(t)));
   FUND_GEO_OPTIONS.forEach(opt => {
     if (!available.has(opt.value)) return;
     const o = document.createElement('option');
@@ -569,7 +588,7 @@ function renderOverview() {
 
   document.getElementById('stat-allocators').textContent = allAllocators.length;
   document.getElementById('stat-commitments').textContent = comms.length;
-  document.getElementById('stat-funds').textContent = D.funds().length;
+  document.getElementById('stat-funds').textContent = vehicleInstrumentRows().length;
   document.getElementById('stat-dfis').textContent = D.dfis().filter(isTrueDfiRow).length;
 
   // Top allocators by commitment count
@@ -816,7 +835,7 @@ function renderCommitmentMap(rows) {
 }
 
 function renderFunds() {
-  let rows = D.funds();
+  let rows = vehicleInstrumentRows();
   const q    = document.getElementById('fund-search')?.value || '';
   const asst = document.getElementById('fund-asset-filter')?.value || '';
   const focus = document.getElementById('fund-focus-filter')?.value || '';
@@ -827,16 +846,16 @@ function renderFunds() {
     if (!rowMatchesSearch(r, ['Fund / Vehicle','Manager / GP','Named African PF/SWF LPs','Named DFI LPs'], q)) return false;
     if (asst && normalizedAsset(r) !== asst) return false;
     if (focus && !focusTags(r).includes(focus)) return false;
-    if (approach && investmentApproach(r) !== approach) return false;
+    if (approach && vehicleInstrumentType(r) !== approach) return false;
     if (geo && !fundGeoTags(r['Geographic focus']).has(geo)) return false;
     return true;
   });
 
-  document.getElementById('fund-result-count').textContent = `${rows.length} vehicles`;
+  document.getElementById('fund-result-count').textContent = `${rows.length} vehicles / instruments`;
 
   const container = document.getElementById('funds-list');
   if (!rows.length) {
-    container.innerHTML = `<div class="empty-state"><div class="icon">🔍</div>No fund vehicles match.</div>`;
+    container.innerHTML = `<div class="empty-state"><div class="icon">🔍</div>No vehicles or instruments match.</div>`;
     return;
   }
   const ac = r => assetClass(normalizedAsset(r));
@@ -853,7 +872,7 @@ function renderFunds() {
         ${escHtml(r['Geographic focus']||'—')} &nbsp;·&nbsp;
         <strong>${fmtAUM(r['Fund size (USD m)'])}</strong>
       </div>
-      <div class="fund-lps"><strong>Focus:</strong> ${escHtml(r['Sector / thematic focus']||'—')} &nbsp; <strong>Approach:</strong> ${escHtml(approachLabel(investmentApproach(r), 'fund'))}</div>
+      <div class="fund-lps"><strong>Focus:</strong> ${escHtml(r['Sector / thematic focus']||'—')} &nbsp; <strong>Type:</strong> ${escHtml(vehicleInstrumentType(r))}</div>
       ${lps.length ? `<div class="fund-lps"><strong>African LPs:</strong> ${lps.map(l => `<span class="pill">${escHtml(l)}</span>`).join(' ')}</div>` : ''}
       ${dfis.length ? `<div class="fund-lps"><strong>DFIs and Other LPs:</strong> ${dfis.map(d => `<span class="pill" style="background:#fef3c7;color:#78350f">${escHtml(d)}</span>`).join(' ')}</div>` : ''}
       <div class="source-link"><strong>Sources:</strong> ${sources}</div>
@@ -866,7 +885,8 @@ function initCommitments() {
     populateTaxonomyFilter(id, ASSET_TAXONOMY);
   });
   ['comm-focus-filter','fund-focus-filter'].forEach(id => populateTaxonomyFilter(id, FOCUS_TAXONOMY));
-  ['comm-approach-filter','fund-approach-filter'].forEach(id => populateTaxonomyFilter(id, APPROACH_TAXONOMY));
+  populateTaxonomyFilter('comm-approach-filter', APPROACH_TAXONOMY);
+  populateTaxonomyFilter('fund-approach-filter', VEHICLE_INSTRUMENT_TYPES);
   populateFundGeoFilter();
   populateCommitmentCountryFilter();
 

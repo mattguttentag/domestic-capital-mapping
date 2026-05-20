@@ -16,7 +16,7 @@
   <button class="tab-btn active" data-tab="overview">Overview</button>
   <button class="tab-btn" data-tab="institutions">Institutions</button>
   <button class="tab-btn" data-tab="commitments">Commitments</button>
-  <button class="tab-btn" data-tab="funds">Fund Vehicles</button>
+  <button class="tab-btn" data-tab="funds">Vehicles &amp; Instruments</button>
   <button class="tab-btn" data-tab="pipeline">Pipeline &amp; Mandates</button>
   <button class="tab-btn" data-tab="network">Network Map</button>
   <button class="tab-btn" data-tab="charts">DFI Co-Investment Frequency</button>
@@ -32,7 +32,7 @@
   <div class="stats-row">
     <div class="stat-card"><div class="stat-num" id="stat-allocators">—</div><div class="stat-label">Active Allocators</div></div>
     <div class="stat-card"><div class="stat-num" id="stat-commitments">—</div><div class="stat-label">Commitments (H+M)</div></div>
-    <div class="stat-card"><div class="stat-num" id="stat-funds">—</div><div class="stat-label">Fund Vehicles</div></div>
+    <div class="stat-card"><div class="stat-num" id="stat-funds">—</div><div class="stat-label">Vehicles &amp; Instruments</div></div>
     <div class="stat-card"><div class="stat-num" id="stat-dfis">—</div><div class="stat-label">DFI Co-Investors</div></div>
   </div>
 
@@ -158,17 +158,17 @@
 </div>
 </div>
 
-<!-- ═══════════════ FUND VEHICLES ═══════════════ -->
+<!-- ═══════════════ VEHICLES & INSTRUMENTS ═══════════════ -->
 <div id="tab-funds" class="tab-panel">
 <div class="pg">
 
     <div class="card">
-      <div class="section-title">Fund Vehicles <span class="count" id="fund-result-count"></span></div>
+      <div class="section-title">Vehicles &amp; Instruments <span class="count" id="fund-result-count"></span></div>
       <div class="filters-bar">
         <input type="text" id="fund-search" placeholder="Fund, manager, LP name…">
         <select id="fund-asset-filter"><option value="">All asset classes</option></select>
         <select id="fund-focus-filter"><option value="">All sector / focus areas</option></select>
-        <select id="fund-approach-filter"><option value="">All approaches</option></select>
+        <select id="fund-approach-filter"><option value="">All vehicle / instrument types</option></select>
         <select id="fund-geo-filter">
           <option value="">All geographies</option>
         </select>
@@ -247,7 +247,7 @@
         <div class="network-section">
           <h4>Show / Hide</h4>
           <label class="net-ctrl-label"><input type="checkbox" id="net-show-allocators" checked> Allocators (PF/SWF)</label>
-          <label class="net-ctrl-label"><input type="checkbox" id="net-show-funds" checked> Fund Vehicles</label>
+          <label class="net-ctrl-label"><input type="checkbox" id="net-show-funds" checked> Vehicles / Instruments</label>
           <label class="net-ctrl-label"><input type="checkbox" id="net-show-dfis" checked> DFI / Other LPs</label>
         </div>
       </div>
@@ -258,7 +258,7 @@
           <div style="display:flex;flex-direction:column;gap:6px">
             <div class="network-legend-item"><div class="legend-dot" style="background:#c8891a;transform:rotate(45deg);border-radius:2px"></div> DFI / Other LP (diamond, sized by count)</div>
             <div class="network-legend-item"><div class="legend-dot" style="background:#2563eb"></div> Allocator — circle</div>
-            <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#6b7280"></div> Fund Vehicle — square</div>
+            <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#6b7280"></div> Vehicle / Instrument — square</div>
             <div style="border-top:1px solid var(--border);margin:4px 0"></div>
             <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em">Allocator colors</div>
             <div class="network-legend-item"><div class="legend-dot" style="background:#1e7b5e"></div> Southern Africa</div>
@@ -266,7 +266,7 @@
             <div class="network-legend-item"><div class="legend-dot" style="background:#d97706"></div> West Africa</div>
             <div class="network-legend-item"><div class="legend-dot" style="background:#7c3aed"></div> North Africa</div>
             <div style="border-top:1px solid var(--border);margin:4px 0"></div>
-            <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em">Fund colors</div>
+            <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em">Vehicle / instrument colors</div>
             <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#2563eb"></div> PE</div>
             <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#7c3aed"></div> VC</div>
             <div class="network-legend-item"><div class="legend-dot legend-square" style="background:#059669"></div> Real Assets / Infra Equity</div>
@@ -711,7 +711,7 @@
       <p><strong>Name normalization is imperfect:</strong> Institutions and vehicles may appear under manager names, fund names, acronyms, subsidiaries, or historical names. The dashboard applies selected aliases, but some source-facing names are preserved where useful.</p>
       <p><strong>Mandates are not commitments:</strong> Consortium membership, MoUs, policy targets, and planned allocations are tracked separately because they do not always translate into deployed capital.</p>
       <p><strong>Dates and AUM are approximate:</strong> AUM values and vintage years come from available reporting and may reflect different reporting dates, currencies, or exchange-rate assumptions.</p>
-      <p><strong>DFI / Other LP category is broad:</strong> The network distinguishes PF/SWF allocators from fund vehicles and co-investors, but the co-investor category includes DFIs, catalytic funds, foundations, banks, insurers, TA-linked entities, and other named LPs where relevant.</p>
+      <p><strong>DFI / Other LP category is broad:</strong> The network distinguishes PF/SWF allocators from vehicles, instruments, and co-investors, but the co-investor category includes DFIs, catalytic funds, foundations, banks, insurers, TA-linked entities, and other named LPs where relevant.</p>
     </section>
 
     <section class="card about-card">
@@ -730,7 +730,7 @@
 
     <div class="card" style="grid-column:1/-1">
       <div class="section-title">DFI Co-Investor Frequency</div>
-      <p style="font-size:12px;color:var(--muted);margin-bottom:8px">Number of fund vehicles with at least one African PF/SWF LP where each DFI also co-invested. Excludes central banks, advisors, foundations, private LPs, and TA-only partners. <strong style="color:#1e7b5e">Green</strong> = Tier 1 · <strong style="color:#2563eb">Blue</strong> = Tier 2 · <strong style="color:#7c3aed">Purple</strong> = Tier 3.</p>
+      <p style="font-size:12px;color:var(--muted);margin-bottom:8px">Number of vehicles or instruments with at least one African PF/SWF LP where each DFI also co-invested. Excludes central banks, advisors, foundations, private LPs, and TA-only partners. <strong style="color:#1e7b5e">Green</strong> = Tier 1 · <strong style="color:#2563eb">Blue</strong> = Tier 2 · <strong style="color:#7c3aed">Purple</strong> = Tier 3.</p>
       <div class="chart-wrap tall"><canvas id="chart-dfi"></canvas></div>
     </div>
 
@@ -744,7 +744,7 @@
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
-<script src="js/app.js?v=20260520-fund-approach-labels"></script>
+<script src="js/app.js?v=20260520-vehicles-instruments"></script>
 <script src="js/network.js?v=20260520-taxonomy"></script>
 
 </body>

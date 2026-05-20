@@ -616,7 +616,7 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
 
   function typeLabel(d) {
     if (d.type === 'dfi') return 'DFI / Other LP';
-    if (d.type === 'fund') return 'Fund Vehicle';
+    if (d.type === 'fund') return 'Vehicle / Instrument';
     return 'Allocator';
   }
 

@@ -20,7 +20,7 @@ The animating research question: *which African institutional investors have com
 |---|---|
 | **Overview** | Key stats, top allocators, asset class mix, policy archetypes |
 | **Institutions** | Search & filter all 255 African pension funds and SWFs by country, type, AUM, confidence |
-| **Commitments & Funds** | Browse the 85-row commitment database; explore 32 fund vehicles with full LP composition |
+| **Commitments & Vehicles/Instruments** | Browse the 85-row commitment database; explore 32 vehicles and instruments with full LP composition |
 | **Pipeline & Mandates** | Review 12 targeted, expected, planned, MoU, and member-only mandate rows separately from actual commitments |
 | **DFI Network** | Force-directed graph: DFIs (amber diamonds) + allocators + funds as nodes; click to highlight co-investor clusters |
 | **Charts & Analysis** | DFI frequency bar chart, commitments-over-time, regulatory ceiling vs. actual allocation, disclosure gap summary |

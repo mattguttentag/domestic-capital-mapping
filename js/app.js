@@ -581,7 +581,6 @@ function initTabs() {
       btn.classList.add('active');
       document.getElementById(`tab-${target}`).classList.add('active');
       if (target === 'network') initNetworkIfNeeded();
-      if (target === 'charts')  renderCharts();
     });
   });
 }
@@ -649,6 +648,8 @@ function renderOverview() {
     byCountry[k] = (byCountry[k] || 0) + 1;
   });
   renderBreakdownTable('country-breakdown', byCountry, { total: Math.max(...Object.values(byCountry), 1), barColor: '#d97706' });
+
+  renderCharts();
 }
 
 function renderBreakdownTable(id, counts, options = {}) {
@@ -1118,6 +1119,9 @@ function renderCharts() {
 }
 
 function renderDFIChart() {
+  const canvas = document.getElementById('chart-dfi');
+  if (!canvas || typeof Chart === 'undefined') return;
+
   const dfis = D.dfis()
     .filter(r => isTrueDfiRow(r) && r['Co-investments in funds with African PF/SWF LP'])
     .sort((a, b) => (b['Co-investments in funds with African PF/SWF LP'] || 0) - (a['Co-investments in funds with African PF/SWF LP'] || 0))
@@ -1135,7 +1139,7 @@ function renderDFIChart() {
     return '#6b7280';
   });
 
-  const ctx = document.getElementById('chart-dfi').getContext('2d');
+  const ctx = canvas.getContext('2d');
   chartInstances.dfi = new Chart(ctx, {
     type: 'bar',
     data: {

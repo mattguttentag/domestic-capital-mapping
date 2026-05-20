@@ -19,7 +19,6 @@
   <button class="tab-btn" data-tab="funds">Vehicles &amp; Instruments</button>
   <button class="tab-btn" data-tab="pipeline">Pipeline &amp; Mandates</button>
   <button class="tab-btn" data-tab="network">Network Map</button>
-  <button class="tab-btn" data-tab="charts">DFI Co-Investment Frequency</button>
   <button class="tab-btn" data-tab="timeline">Major Milestone Timeline</button>
   <button class="tab-btn" data-tab="research">Research</button>
   <button class="tab-btn" data-tab="about">About</button>
@@ -86,6 +85,12 @@
           <tbody id="country-breakdown"></tbody>
         </table>
       </div>
+    </div>
+
+    <div class="card" style="grid-column:1/-1">
+      <div class="section-title">DFI Co-Investor Frequency</div>
+      <p style="font-size:12px;color:var(--muted);margin-bottom:8px">Number of vehicles or instruments with at least one African PF/SWF LP where each DFI also co-invested. Excludes central banks, advisors, foundations, private LPs, and TA-only partners. <strong style="color:#1e7b5e">Green</strong> = Tier 1 · <strong style="color:#2563eb">Blue</strong> = Tier 2 · <strong style="color:#7c3aed">Purple</strong> = Tier 3.</p>
+      <div class="chart-wrap tall"><canvas id="chart-dfi"></canvas></div>
     </div>
 
   </div><!-- /overview-grid -->
@@ -753,28 +758,12 @@
 </div><!-- /tab-about -->
 
 <!-- ═══════════════ CHARTS ═══════════════ -->
-<div id="tab-charts" class="tab-panel">
-<div class="pg">
-
-  <div class="overview-grid">
-
-    <div class="card" style="grid-column:1/-1">
-      <div class="section-title">DFI Co-Investor Frequency</div>
-      <p style="font-size:12px;color:var(--muted);margin-bottom:8px">Number of vehicles or instruments with at least one African PF/SWF LP where each DFI also co-invested. Excludes central banks, advisors, foundations, private LPs, and TA-only partners. <strong style="color:#1e7b5e">Green</strong> = Tier 1 · <strong style="color:#2563eb">Blue</strong> = Tier 2 · <strong style="color:#7c3aed">Purple</strong> = Tier 3.</p>
-      <div class="chart-wrap tall"><canvas id="chart-dfi"></canvas></div>
-    </div>
-
-  </div>
-
-</div>
-</div><!-- /tab-charts -->
-
 <!-- ── Scripts ─────────────────────────────────────────────────── -->
 <script src="data/data.js?v=20260520-taxonomy"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
-<script src="js/app.js?v=20260520-clean-taxonomy-overview"></script>
+<script src="js/app.js?v=20260520-dfi-chart-overview"></script>
 <script src="js/network.js?v=20260520-taxonomy"></script>
 
 </body>

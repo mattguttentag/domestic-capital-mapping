@@ -1129,22 +1129,13 @@ function renderDFIChart() {
 
   const labels = dfis.map(r => String(r['DFI / Catalytic capital provider']).replace(' (Norway)','').replace(' (Netherlands)','').replace(' (UK)','').replace(' (France)','').replace(' (Germany)','').replace(' (US)',''));
   const vals   = dfis.map(r => r['Co-investments in funds with African PF/SWF LP']);
-  const tiers  = dfis.map(r => String(r['Frequency tier'] || ''));
-
-  const colors = dfis.map(r => {
-    const t = String(r['Frequency tier'] || '');
-    if (t.includes('1')) return '#1e7b5e';
-    if (t.includes('2')) return '#2563eb';
-    if (t.includes('3')) return '#7c3aed';
-    return '#6b7280';
-  });
 
   const ctx = canvas.getContext('2d');
   chartInstances.dfi = new Chart(ctx, {
     type: 'bar',
     data: {
       labels,
-      datasets: [{ data: vals, backgroundColor: colors, borderRadius: 4, borderSkipped: false }]
+      datasets: [{ data: vals, backgroundColor: '#1e7b5e', borderRadius: 4, borderSkipped: false }]
     },
     options: {
       indexAxis: 'y',
@@ -1154,7 +1145,7 @@ function renderDFIChart() {
           callbacks: {
             label: (ctx) => {
               const r = dfis[ctx.dataIndex];
-              return [`Count: ${ctx.parsed.x}`, `Tier: ${r['Frequency tier']}`, `Role: ${String(r['Strategic role']||'').slice(0,60)}...`];
+              return [`Count: ${ctx.parsed.x}`, `Role: ${String(r['Strategic role']||'').slice(0,60)}...`];
             }
           }
         }

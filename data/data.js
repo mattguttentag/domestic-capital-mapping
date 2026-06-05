@@ -5239,6 +5239,26 @@ const DATASET = {
     "Asset class normalized": "Venture Capital",
     "Sector / thematic focus": "Infrastructure; SME Finance",
     "Investment approach": "Fund LP"
+  },
+  {
+    "Allocator (institution)": "Rwanda Social Security Board (RSSB)",
+    "Allocator country": "Rwanda",
+    "Allocator type": "Public PF",
+    "Commitment type": "Fund LP / Anchor",
+    "GP or counterparty": "Admaius Capital Partners",
+    "Fund / Vehicle / Deal name": "Virunga Africa Fund I",
+    "Asset class": "Private equity / growth / multi-sector",
+    "Geographic focus": "Pan-Africa",
+    "Vintage / Year": 2021,
+    "Commitment size (reported)": "Not separately disclosed (fund size USD 250m)",
+    "Currency": "USD",
+    "Disclosure type": "KIFC/RSSB press release / PDF",
+    "Source (short)": "KIFC/RSSB - Virunga Africa Fund I launch (2 Nov 2021)",
+    "Confidence": "H",
+    "Notes": "KIFC/RSSB PDF names QIA and RSSB as anchor/cornerstone investors. Fund managed by Admaius, headquartered in Kigali and domiciled in KIFC; targets healthcare, education, digital infrastructure, financial services, and wider economic transformation across Africa.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Healthcare; Education; Digital / Technology; Financial Inclusion / Financial Services; Multi-Sector",
+    "Investment approach": "Fund LP"
   }
 ],
   "Pipeline_and_Mandates": [
@@ -7121,6 +7141,14 @@ const DATASET = {
     "Date accessed": "May 2026",
     "URL": "https://vctf.com.gh/about-us/",
     "Used for": "VCTF mandate as government-backed venture capital fund of funds focused on SME venture funds"
+  },
+  {
+    "Allocator": "RSSB Rwanda",
+    "Source type": "Fund launch / press release",
+    "Title / publication": "Kigali International Financial Centre establishes a $250M pan-African Virunga Africa Fund I",
+    "Date accessed": "June 2026",
+    "URL": "https://www.rssb.rw/fileadmin/user_upload/Kigali_International_Financial_Centre.pdf",
+    "Used for": "Virunga Africa Fund I launch; QIA and RSSB named as anchor/cornerstone investors; Admaius manager; USD 250m fund size and pan-African sector focus"
   }
 ],
   "Tier_1_Candidates": [
@@ -8219,6 +8247,23 @@ const DATASET = {
     "Co-investor pattern note": "VCTF government co-investment helped Oasis domicile the fund locally in Ghana. DGGF TA/legal work helped make the Ghana structure bankable for international DFIs; first close included DGGF, IFC and local investors, with EIB later disclosing an USD 8m commitment.",
     "Asset class normalized": "Venture Capital",
     "Sector / thematic focus": "SME Finance; Financial Inclusion / Financial Services",
+    "Investment approach": "Fund LP"
+  },
+  {
+    "Fund / Vehicle": "Virunga Africa Fund I",
+    "Manager / GP": "Admaius Capital Partners",
+    "Vintage": 2021,
+    "Fund size (USD m)": 250,
+    "Asset class": "Private equity / growth / multi-sector",
+    "Geographic focus": "Pan-Africa",
+    "African PF/SWF LPs (count)": 1,
+    "Named African PF/SWF LPs": "RSSB (Rwanda Social Security Board) - anchor investor (commitment amount not separately disclosed)",
+    "DFI LPs (count)": 1,
+    "Named DFI LPs": "Qatar Investment Authority (QIA)",
+    "Other named LPs": "Not disclosed",
+    "Co-investor pattern note": "KIFC/RSSB launch announcement names QIA and RSSB as the two anchor/cornerstone investors in the USD 250m pan-African fund. Managed by Admaius and domiciled in KIFC.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Healthcare; Education; Digital / Technology; Financial Inclusion / Financial Services; Multi-Sector",
     "Investment approach": "Fund LP"
   }
 ],

@@ -125,6 +125,7 @@ const FOCUS_TAXONOMY = [
   'Agriculture / Food Security',
   'Financial Inclusion / Financial Services',
   'Healthcare',
+  'Education',
   'Climate / Energy Transition',
   'Real Estate / Housing',
   'Digital / Technology',

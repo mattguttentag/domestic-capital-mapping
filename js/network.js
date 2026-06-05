@@ -147,6 +147,9 @@ function buildNetwork() {
     if (/^(PIC SA|PIC South Africa|PIC \(South Africa\)|PIC \(mgr for GEPF\)|GEPF \(via PIC\)|GEPF)(\s|\(|$)/i.test(n)) {
       return 'GEPF / PIC (South Africa)';
     }
+    if (/^RSSB(\s|\(|$)/i.test(n)) {
+      return 'RSSB';
+    }
     return ALLOCATOR_ALIASES.get(n) || n;
   }
 

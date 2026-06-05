@@ -5461,7 +5461,7 @@ const DATASET = {
     "Investment approach": "Fund LP"
   },
   {
-    "Allocator (institution)": "FONSIS (Senegal)",
+    "Allocator (institution)": "FONSIS",
     "Allocator country": "Senegal",
     "Allocator type": "Sovereign Wealth Fund",
     "Commitment type": "Fund LP / Co-founder",
@@ -10026,7 +10026,7 @@ const DATASET = {
     "Asset class": "Private Equity / Impact",
     "Geographic focus": "Domestic (Senegal)",
     "African PF/SWF LPs (count)": 1,
-    "Named African PF/SWF LPs": "FONSIS (Senegal)",
+    "Named African PF/SWF LPs": "FONSIS",
     "DFI LPs (count)": 1,
     "Named DFI LPs": "European Union / IFAD",
     "Other named LPs": "Sonatel; SG Senegal; ASKIA Insurance",

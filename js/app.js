@@ -268,7 +268,8 @@ function sourceLinksFor(row, kind) {
   const sourceRows = D.sources().filter(s => s.URL);
   const short = searchText(row['Source (short)']);
   const shortTokens = searchText(row['Source (short)']).split(' ').filter(t => t.length >= 3 && ![
-    'the','and','for','with','source','press','release','report','fund','funds'
+    'the','and','for','with','source','press','release','report','fund','funds',
+    'pension','policy','africa','african','national','international','annual','finance','financial'
   ].includes(t));
   const vehicle = vehicleName;
   const allocator = row['Allocator (institution)'] || row['Named African PF/SWF LPs'] || '';
@@ -286,7 +287,7 @@ function sourceLinksFor(row, kind) {
     managerTokens.slice(0, 4).forEach(t => { if (hay.includes(t)) score += 6; });
     if (kind === 'fund' && vehicleTokens.length && score >= 18) score += 10;
     return { source: s, score };
-  }).filter(x => x.score >= 28)
+  }).filter(x => x.score >= 40)
     .sort((a, b) => b.score - a.score)
     .slice(0, 3)
     .map(x => ({

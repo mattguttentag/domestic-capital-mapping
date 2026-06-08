@@ -5479,6 +5479,46 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "SME Finance / Impact",
     "Investment approach": "Fund LP"
+  },
+  {
+    "Allocator (institution)": "CDC Gabon (State pension fund of Gabon)",
+    "Allocator country": "Gabon",
+    "Allocator type": "Civil-service PF",
+    "Commitment type": "Fund LP",
+    "GP or counterparty": "Amethis Finance",
+    "Fund / Vehicle / Deal name": "Amethis West Africa",
+    "Asset class": "Private Equity",
+    "Geographic focus": "CIMA zone (Francophone West & Central Africa)",
+    "Vintage / Year": 2014,
+    "Commitment size (reported)": "Not disclosed",
+    "Currency": "EUR",
+    "Disclosure type": "Press release",
+    "Source (short)": "Amethis West Africa creation announcement",
+    "Confidence": "H",
+    "Notes": "Named LP alongside BOAD (DFI) and Colina Group (Saham) in Amethis West Africa fund creation press release. First PE fund registered in Francophone Africa; structured under CIMA Code for insurance/pension technical reserves.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Multi-sector",
+    "Investment approach": "Fund LP"
+  },
+  {
+    "Allocator (institution)": "Caisse Nationale de Prévoyance Sociale (CNPS-CI)",
+    "Allocator country": "Côte d'Ivoire",
+    "Allocator type": "Public PF",
+    "Commitment type": "Fund LP",
+    "GP or counterparty": "Amethis Finance",
+    "Fund / Vehicle / Deal name": "Amethis fund (unspecified; likely Amethis West Africa)",
+    "Asset class": "Private Equity",
+    "Geographic focus": "CIMA zone / Francophone Africa",
+    "Vintage / Year": "c.2014 (est.)",
+    "Commitment size (reported)": "Not disclosed",
+    "Currency": "EUR",
+    "Disclosure type": "Reported / Indirect",
+    "Source (short)": "Pension Policy International / Agence Ecofin",
+    "Confidence": "M",
+    "Notes": "CNPS-CI reported to have placed assets in \"investment funds such as one launched by Amethis and the Africa50 fund\" (Agence Ecofin / Pension Policy International). Specific fund name not confirmed; Amethis West Africa most likely given geographic focus on CIMA zone.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Multi-sector",
+    "Investment approach": "Fund LP"
   }
 ],
   "Pipeline_and_Mandates": [
@@ -7662,6 +7702,22 @@ const DATASET = {
     "Date accessed": "2024-06-05",
     "URL": "https://www.terangacapital.com/en/about-us/",
     "Used for": "FONSIS confirmed as founding LP/shareholder in Teranga Capital (2016 impact SME fund, Senegal). Added as row 109."
+  },
+  {
+    "Allocator": "CDC Gabon (State pension fund of Gabon)",
+    "Source type": "Fund manager press release",
+    "Title / publication": "Amethis Finance – Announces the Creation of Amethis West Africa (AWA)",
+    "Date accessed": "2026-06-08",
+    "URL": "https://amethis.com/en/amethis-finance-announces-the-creation-of-amethis-west-africa/",
+    "Used for": "CDC Gabon confirmed as named LP in Amethis West Africa fund (€40-45m, 2014, CIMA zone). Added as Commitments DB row 110."
+  },
+  {
+    "Allocator": "Caisse Nationale de Prévoyance Sociale (CNPS-CI)",
+    "Source type": "Third-party report",
+    "Title / publication": "Côte d'Ivoire's CNPS Assets Grow from $40M to $2B in 13 Years – Pension Policy International (citing Agence Ecofin)",
+    "Date accessed": "2026-06-08",
+    "URL": "https://www.pensionpolicyinternational.com/cote-divoires-cnps-assets-grow-from-40m-to-2b-in-13-years/",
+    "Used for": "CNPS-CI reported to invest in \"investment funds such as one launched by Amethis and the Africa50 fund\". Specific fund name unconfirmed. Added as Commitments DB row 111 with confidence M."
   }
 ],
   "Tier_1_Candidates": [
@@ -10033,6 +10089,23 @@ const DATASET = {
     "Co-investor pattern note": "FONSIS is a founding LP/shareholder alongside I&P (via IPDEV2), Sonatel, SG Senegal, and ASKIA Insurance. EU is a governmental partner providing co-financing. Fund targets Senegalese SMEs via impact investing. Initial raise CFA 3.2bn (~USD 5.5m). Source: Teranga Capital website.",
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "SME Finance / Impact",
+    "Investment approach": "Fund LP"
+  },
+  {
+    "Fund / Vehicle": "Amethis West Africa",
+    "Manager / GP": "Amethis Finance",
+    "Vintage": 2014,
+    "Fund size (USD m)": 50,
+    "Asset class": "Private Equity",
+    "Geographic focus": "CIMA zone (Francophone West & Central Africa)",
+    "African PF/SWF LPs (count)": 1,
+    "Named African PF/SWF LPs": "CDC Gabon (State pension fund of Gabon)",
+    "DFI LPs (count)": 1,
+    "Named DFI LPs": "BOAD (Banque Ouest Africaine de Développement)",
+    "Other named LPs": "Colina Group (Saham)",
+    "Co-investor pattern note": "First PE fund registered in Francophone Africa; CIMA Code–eligible structure; CNPS-CI (Côte d'Ivoire) also likely LP (M confidence per Pension Policy International).",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Multi-sector",
     "Investment approach": "Fund LP"
   }
 ],

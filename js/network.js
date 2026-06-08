@@ -56,6 +56,7 @@ function buildNetwork() {
     { name: 'EBID', patterns: ['EBID', 'Ecowas Bank for Investment & Development', 'ECOWAS Bank for Investment and Development'] },
     { name: 'Kuramo Capital Management', patterns: ['Kuramo Capital Management', 'Kuramo'] },
     { name: 'QIA (Qatar)', patterns: ['Qatar Investment Authority', 'QIA'] },
+    { name: 'BOAD', patterns: ['BOAD', 'Banque Ouest Africaine de Développement', 'West African Development Bank'] },
   ];
 
   const ALLOCATOR_ALIASES = new Map([

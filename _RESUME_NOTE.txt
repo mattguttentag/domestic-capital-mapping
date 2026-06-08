@@ -1,72 +1,82 @@
 RESUME POINT — Annual Report / Local-Language Disclosure Audit
 ==============================================================
-Date paused: 2026-06-05
+Date paused: 2026-06-08
 
-SESSION ACCOMPLISHMENTS (this session):
-----------------------------------------
-GIPF (Namibia) — 5 new pan-African commitment rows added (rows 104-108):
-  104: South Suez Capital / South Suez Africa Fund (I, II + Managed Accounts)
-       Pan-African PE FoF; N$2.75bn market value FY2023 (~USD 151m); Confidence H
-       Source: GIPF 2023 Annual Report p.84-85 fund manager table
+SESSION ACCOMPLISHMENTS (this session — continued from prior):
+----------------------------------------------------------------
+CDC Gabon → Amethis West Africa (row 110, Confidence H):
+  Amethis West Africa fund (€40-45m, 2014, CIMA zone, Abidjan HQ)
+  CDC Gabon confirmed as named LP in Amethis creation press release
+  alongside BOAD (DFI) and Colina Group (Saham). First PE fund registered
+  in Francophone Africa under CIMA Code.
+  Source: https://amethis.com/en/amethis-finance-announces-the-creation-of-amethis-west-africa/
+
+CNPS-CI (Côte d'Ivoire) → Amethis fund unspecified (row 111, Confidence M):
+  CNPS-CI reported to invest in "investment funds such as one launched by
+  Amethis and the Africa50 fund" (Agence Ecofin / Pension Policy International).
+  Specific fund name unconfirmed; Amethis West Africa most likely.
+  Source: https://www.pensionpolicyinternational.com/cote-divoires-cnps-assets-grow-from-40m-to-2b-in-13-years/
+
+Funds & LP Co-Investors row 50 added: Amethis West Africa
+js/network.js: BOAD added to DFI_ALIASES
+cache-bust updated: v=20260608-amethis-boad
+Committed: ccbe5be → pushed
+
+AMETHIS RESEARCH — FINDINGS SUMMARY:
+  - Amethis West Africa (€~45m, 2014): CDC Gabon named LP (H), CNPS-CI likely LP (M),
+    BOAD and Colina Group (Saham) also in fund
+  - Amethis Fund II (€375m, 2019): ~70 private investors; NO African PF/SWF named
+  - Amethis Fund III (€406m, 2023): "several financial institutions from North, West,
+    and East Africa" — NOT named; DFIs = EIB, IFC, BII, Bpifrance, Proparco, KfW DEG,
+    Swedfund, FinDev Canada, AfricaGrow, OeEB, AECID
+  - Amethis MENA Fund II: BII confirmed; no African PF/SWF LPs found
+  ✓ RESEARCH COMPLETE for Amethis
+
+PRIOR SESSION ACCOMPLISHMENTS:
+--------------------------------
+GIPF (Namibia) — 5 new pan-African commitment rows (rows 104-108):
+  104: South Suez Africa Fund (I, II + Managed Accounts)
   105: Investec Africa Private Equity Fund 2 L.P.
-       Pan-African PE; Guernsey LP; manager now Ninety-One (fmr Investec AM); Confidence H
-       Source: GIPF 2023 AR p.96-99 Unlisted Fund Manager descriptions
   106: Neoma Africa Fund III (B) L.P. (previously Abraaj Africa Fund III)
-       Sub-Saharan Africa PE; Cayman LP; renamed after Abraaj bankruptcy 2018; Confidence H
-       Source: GIPF 2023 AR p.96-99
   107: Actis Africa fund (fund name unspecified in AR)
-       Africa PE; N$101.5m market value FY2023 (~USD 5.6m); Confidence M
-       Source: GIPF 2023 AR p.84-85 fund manager table
   108: Growthpoint Investec Africa Properties Limited
-       Africa RE (ex-SA): Ghana, Kenya, Morocco, Mozambique, Tanzania, Zambia; Confidence H
-       Source: GIPF 2023 AR p.96-99
 
-FONSIS (Senegal) — 1 new row added (row 109):
-  109: Teranga Capital
-       Senegal SME impact fund; FONSIS is founding LP alongside I&P, Sonatel, SG Senegal, ASKIA
-       CFA 3.2bn initial (~USD 5.5m); Confidence H
+FONSIS (Senegal) — row 109: Teranga Capital
 
-Source rows added: 219 (GIPF 2023 AR), 234 (Teranga Capital)
-
-RSSB network map dedup: CONFIRMED FIXED
-  - js/network.js line 150: /^RSSB(\s|\(|$)/i.test(n) → returns 'RSSB'
-  - index.html cache-bust: ?v=20260605-rssb-dedup
-
-CONFIRMED ALREADY IN DB (no action needed):
-  - NAPSA Zambia → GIP Zambia (row 69)  ✓
-  - NSSF Uganda → Yield Uganda Investment Fund (row 36)  ✓
-  - FONSIS → Oyass Capital (confirmed earlier)  ✓
+DATABASE STATE:
+  Commitments DB: 111 data rows (Excel rows 2-112; header in row 1)
+  Funds & LP Co-Investors: 47 data rows (Excel rows 4-50; header in row 3)
+  Source Library: 235 rows
 
 ANNUAL REPORT AUDIT STATUS:
 -------------------------------
 CHECKED:
   ✓ GIPF Namibia — 2023 AR PDF extracted; 5 new entries added
-  ✓ NSSF Uganda — investments page + Issuu 2024 report (no new commitments found beyond DB)
+  ✓ NSSF Uganda — investments page + Issuu 2024 report (no new commitments)
   ✓ FONSIS Senegal — website portfolio; 1 new entry added (Teranga Capital)
   ✓ NAPSA Zambia — GIP Zambia already in DB
   ✓ CDG Morocco — 5 entries already in DB (rows 20-24, 67); appears complete
+  ✓ Amethis funds — research complete; 2 new entries added (rows 110-111)
 
 STILL TO CHECK (priority order):
-  1. NSSF Uganda 2023/24 FULL financial statements (PDF too large for direct fetch)
-     → Download PDF from https://www.nssfug.org/site/assets/files/1726/nssf_uganda_annual_integrated_report_2023.pdf
-     → Use pdfplumber to extract; search for "private equity", "fund manager", "alternative"
+  1. NSSF Uganda 2023/24 FULL financial statements PDF
+     → https://www.nssfug.org/site/assets/files/1726/nssf_uganda_annual_integrated_report_2023.pdf
+     → pdfplumber to extract; search "private equity", "fund manager", "alternative"
 
   2. PSSSF Tanzania (formerly PPF) annual report / CAG audit
      → CAG audit FY2023: https://www.psssf.go.tz/uploads/publication/PSSSF-CAG-REPORT-...pdf
      → Connection refused on last attempt; retry or try main website publications page
 
   3. Nigeria PenCom — specific PFA commitments to PE funds
-     → PenCom only discloses aggregate; need to check major PFA annual reports:
-       ARM Pension, Stanbic IBTC Pension, AXA Mansard Pensions
-     → Regulation on Investment of Pension Fund Assets (Sept 2025 revision):
-       https://www.pencom.gov.ng/wp-content/uploads/2025/09/The-Revised-Regulation...pdf
+     → Need to check major PFA annual reports: ARM Pension, Stanbic IBTC, AXA Mansard Pensions
+     → Sept 2025 Regulation: https://www.pencom.gov.ng/wp-content/uploads/2025/09/The-Revised-Regulation...pdf
 
   4. NSSF Kenya 2023 annual report
-     → PDF at: https://www.nssf.or.ke/download/nssf-annual-report-and-financial-statements-for-the-year-ended-30-june-2023
-     → Also check 2022 statements: https://nssfintegratedreport.com/wp-content/uploads/2022/09/NSSF-financials-2022-2.pdf
+     → https://www.nssf.or.ke/download/nssf-annual-report-and-financial-statements-for-the-year-ended-30-june-2023
+     → 2022 statements: https://nssfintegratedreport.com/wp-content/uploads/2022/09/NSSF-financials-2022-2.pdf
 
   5. Francophone/Arabic reports (French/Arabic language):
-     → CDG Morocco 2023 annual report (Arabic/French) — check CDG Capital PE fund mandates
+     → CDG Morocco 2023 annual report — check CDG Capital PE fund mandates
      → RCAR Morocco — annual report not found; try rcar.ma site
      → CMR Morocco (CIMR) — cimr.ma
      → CNSS Gabon — fgis.ga or cnss.ga
@@ -74,35 +84,26 @@ STILL TO CHECK (priority order):
      → FONSIS 2022 annual report (French) — try fonsis.org directly
 
   6. FSDEA Angola — 2023 annual report (Portuguese)
-     → Previously found: vintage/size of Gemcorp fund was ALREADY fixed in this session
-     → Check for any other fund commitments beyond Gemcorp
+     → Check for fund commitments beyond Gemcorp (already in DB)
 
   7. KwaZulu-Natal pension funds (South Africa) — sometimes disclose Africa PE
-  8. GEPF / PIC (South Africa) — check 2023 annual report for any undisclosed Africa PE
+  8. GEPF / PIC (South Africa) — check 2023 annual report for undisclosed Africa PE
   9. East Africa Development Bank / EADB — small SWF-like entity
 
-ALSO NOTE — Potential Actis fund name:
-  The Actis entry in GIPF (row 107) says "fund name not specified in AR"
-  Could be: Actis Africa 3 Fund (closed 2012, USD 710M) or Actis Energy 4 (closed 2018, USD 576M)
-  Worth a targeted web search: "Actis GIPF Namibia" or "Actis pension fund Namibia LP"
+FOLLOW-UP ITEMS:
+  - Actis GIPF fund name: "specific fund not named in AR"
+    → Search: "Actis GIPF Namibia" or "Actis pension fund Namibia LP"
+    → Candidates: Actis Africa 3 Fund (2012, $710M) or Actis Energy 4 (2018, $576M)
+  - FONSIS additional vehicles to investigate:
+    → Kajom Capital (FONSIS + FHS + IFC housing fund, Senegal)
+    → WE! Fund (FONSIS + UNCDF + AfDB, women's fund)
+    → FPI (FONSIS infra preparation facility, $50m with Afreximbank)
+    (Note: may be GP not LP positions)
+  - CNPS-CI Amethis fund: confirm specific fund name (currently M confidence)
+    → CNPS-CI also has Africa50 fund commitment per same source — check if Africa50 is in DB
 
-FONSIS POTENTIAL ADDITIONS still to investigate:
-  - Kajom Capital (FONSIS + FHS + IFC housing fund, Senegal)
-  - WE! Fund (FONSIS + UNCDF + AfDB, women's fund)
-  - FPI (FONSIS infra preparation facility, $50m with Afreximbank)
-  These may be FONSIS-managed (GP not LP) so may not qualify as "commitments from" FONSIS
-
-GIPF POTENTIAL ADDITIONS still to investigate:
-  - Ninety-One managed mandate (N$15.5bn) includes "property in Africa" —
-    find out if this includes Growthpoint Investec Africa Properties (already added as row 108)
-  - All Seasons Ventures Partners LP (ASVP) — invests in USA/China/Europe, not Africa-focused
-    → Likely does NOT qualify for DB (not Africa PE/infra focus)
-
-DATABASE STATE:
-  Commitments DB: 109 data rows (header in row 1, data rows 2-110)
-  Source Library: 234 rows
-
-FILES MODIFIED THIS SESSION:
-  - african_pf and swf_dataset_5.13.26.xlsx (rows 104-109 added, source rows 219, 234 added)
-  - js/network.js (RSSB dedup fix at line 150 — already was in place from prior session)
-  - index.html (cache-bust was already updated from prior session)
+FILES MODIFIED (this session):
+  - african_pf and swf_dataset_5.13.26.xlsx (rows 110-111 commitments; row 50 funds; source rows 235-236)
+  - data/data.js (regenerated)
+  - js/network.js (BOAD DFI alias added; cache-bust updated)
+  - index.html (cache-bust updated)

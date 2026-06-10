@@ -839,7 +839,7 @@ function renderCommitments() {
     return;
   }
   tbody.innerHTML = rows.map(r => `<tr>
-    <td class="truncate" style="max-width:160px;font-weight:500" title="${escHtml(r['Allocator (institution)'])}">${escHtml(r['Allocator (institution)']||'—')}</td>
+    <td style="max-width:200px;font-weight:500;white-space:normal;overflow-wrap:break-word">${escHtml(r['Allocator (institution)']||'—')}</td>
     <td>${escHtml(r['Allocator country']||'—')}</td>
     <td class="truncate" style="max-width:180px" title="${escHtml(r['Fund / Vehicle / Deal name'])}">${escHtml(r['Fund / Vehicle / Deal name']||'—')}</td>
     <td>${escHtml(r['GP or counterparty']||'—')}</td>

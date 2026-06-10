@@ -1,6 +1,46 @@
 RESUME POINT — Annual Report / Local-Language Disclosure Audit
 ==============================================================
-Date paused: 2026-06-08
+Date paused: 2026-06-10
+
+2026-06-10 DISCOVERY SWEEP (new search approaches — 8 new commitments, rows 112-119):
+----------------------------------------------------------------
+NEW DISCOVERY CHANNELS THAT WORKED:
+  A. MiDA Advisors / USAID INVEST campaign disclosures (APSA + Prosper Africa
+     press releases) — names African pension LPs that GPs keep confidential:
+     → KPLC PF → Everstrong Kenya Infrastructure Fund EKIF (USD 9m, H)
+     → EPPF (SA) → DPI ADP III (USD 20m, H)
+     → KenGen Staff RBS → ADP III (H)
+     → CBK Pension Fund ("Banki Kuu Pension Scheme 2021") → ADP III (H)
+     → Old Mutual Umbrella Retirement Benefits Scheme (Kenya) → ADP III (H)
+  B. GP capital-raise press releases (fund-manager side):
+     → 22 Nigerian PFAs → Chapel Hill Denham NIDF (N58bn listed infra debt fund, H)
+  C. IFC case studies:
+     → KEPFIC → Acorn Student Accommodation D-REIT (USD 11m, H)
+  D. SAVCA/FSD Africa Southern Africa pension study 2022 (PDF extracted via pdfplumber):
+     → Lesotho PODCPF → Mergence Lesotho unlisted PE/infra portfolio (M)
+     Study also has regulatory context for Eswatini/Zambia/Zimbabwe/Mozambique
+     (no further named commitments found — Eswatini PFs have zero PE; NAPSA
+     confirmed no PE allocation as of 2022; Zambia State Insurance Pension
+     Trust Fund has PE allocations but funds unnamed — FOLLOW-UP CANDIDATE)
+
+CHANNELS THAT DID NOT YIELD (tried, no named African PF LPs):
+  - TLcom TIDE Africa II, Verod III, Takura III, Harith PAIDF II close releases
+  - Debswana Pension Fund, Eswatini PSPF, NSSA Zimbabwe direct searches
+
+MAP DEDUP FIXES (preview-verified):
+  - "KPLC Pension Fund" vs canonical KPLC PF name (ARVF I/II funds-tab cells)
+  - "CBK Pension Fund Kenya (since Oct 2018...)" vs canonical CBK name
+  - Network map now 68 allocator / 87 fund / 43 DFI nodes, no dupes, no console errors
+
+FOLLOW-UP CANDIDATES FROM THIS SWEEP:
+  - Zambia State Insurance Pension Trust Fund — PE allocations, funds unnamed
+  - ADP III other African LPs — check DPI annual ESG report for more names
+  - Everstrong EKIF — other KEPFIC members may commit (watch APSA/MiDA news)
+  - Ascent Rift Valley Fund III first close >USD 100m — check for Kenyan pension LPs
+    when final close announced
+  - Mergence Namibia funds — RFLAUN/other Namibian PF LPs possible (Reg 13 unlisted)
+
+PRIOR SESSION (2026-06-08):
 
 SESSION ACCOMPLISHMENTS (this session — continued from prior):
 ----------------------------------------------------------------

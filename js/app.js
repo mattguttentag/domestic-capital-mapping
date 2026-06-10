@@ -260,6 +260,22 @@ function sourceFallbackLinks(row) {
 }
 
 function sourceLinksFor(row, kind) {
+  // Exact join: explicit Source IDs column (semicolon-separated, 'NONE' = no sources)
+  const explicitIds = String(row['Source IDs'] || '').trim();
+  if (explicitIds) {
+    if (/^none$/i.test(explicitIds)) return [];
+    const byId = new Map(D.sources().map(s => [String(s['Source ID'] || '').trim(), s]));
+    const seen = new Set();
+    const links = explicitIds.split(/[;,]/).map(t => t.trim()).filter(Boolean)
+      .map(id => byId.get(id))
+      .filter(s => s && s.URL && !seen.has(s.URL) && seen.add(s.URL))
+      .map(s => ({
+        url: s.URL,
+        label: s['Source type'] || s.Allocator || 'source',
+        title: s['Title / publication'] || s.URL
+      }));
+    if (links.length) return links;
+  }
   if (row['Source URL']) {
     return [{ url: row['Source URL'], label: row['Source (short)'] || 'source' }];
   }

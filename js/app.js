@@ -221,7 +221,8 @@ function escHtml(s) {
 
 function sourceTokens(text) {
   return searchText(text).split(' ').filter(t => t.length >= 4 && ![
-    'fund','funds','with','from','and','the','for','investment','investments','capital','source','press','release','report'
+    'fund','funds','with','from','and','the','for','investment','investments','capital','source','press','release','report',
+    'private','equity','africa','african','pension','pensions','partners','growth','infrastructure','development'
   ].includes(t));
 }
 

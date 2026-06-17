@@ -219,6 +219,108 @@ function escHtml(s) {
   return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
+function escAttr(s) {
+  return escHtml(s).replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function displayEntityName(name) {
+  return String(name || '')
+    .replace(/\s*\([^)]*(?:USD|US\$|EUR|GBP|GHS|commitment|anchor|first close|LP|investor)[^)]*\)/gi, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function canonicalAllocatorFilterName(name) {
+  let value = displayEntityName(name);
+  value = value
+    .replace(/\s*\([^)]*(?:named|historical|recurring|cohort|likely|per |via |anchor)[^)]*\)/gi, '')
+    .replace(/\s*[—-]\s*.*(?:anchor|commitment|amount|seed|disclosed).*$/gi, '')
+    .replace(/\s+x\d+\b.*$/i, '')
+    .replace(/^plus\s+/i, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  const key = searchText(value);
+  const aliases = [
+    { test: /(^|\b)(rssb|rwanda social security board)(\b|$)/, name: 'Rwanda Social Security Board (RSSB)' },
+    { test: /(^|\b)(pic south africa|public investment corporation)(\b|$)|^pic$/, name: 'PIC South Africa' },
+    { test: /(^|\b)(bpopf|botswana public officers pension fund)(\b|$)/, name: 'Botswana Public Officers Pension Fund (BPOPF)' },
+    { test: /(^|\b)(nsia nigeria|nigeria sovereign investment authority)(\b|$)|^nsia$/, name: 'Nigeria Sovereign Investment Authority (NSIA)' },
+    { test: /(^|\b)(nssf uganda|national social security fund uganda)(\b|$)/, name: 'NSSF Uganda' },
+    { test: /(^|\b)napsa zambia(\b|$)/, name: 'NAPSA Zambia' }
+  ];
+  const hit = aliases.find(a => a.test.test(key));
+  return hit ? hit.name : value;
+}
+
+function canonicalDfiFilterName(name) {
+  const raw = String(name || '').trim();
+  const compact = searchText(raw);
+  const aliases = [
+    { name: 'BII', tests: ['bii', 'cdc group', 'british international investment'] },
+    { name: 'DFC', tests: ['us dfc', 'dfc', 'opic'] },
+    { name: 'Proparco', tests: ['proparco', 'fisea'] },
+    { name: 'Dutch Good Growth Fund', tests: ['dutch good growth fund', 'dggf'] },
+    { name: 'FSD Africa Investments', tests: ['fsd africa investments', 'fsd africa'] },
+    { name: 'GuarantCo / PIDG', tests: ['guarantco', 'pidg'] },
+    { name: 'QIA', tests: ['qia', 'qatar investment authority'] }
+  ];
+  const hit = aliases.find(a => a.tests.some(t => compact.includes(t)));
+  if (hit) return hit.name;
+  return displayEntityName(raw).replace(/\s*\/\s*FISEA\b/i, '').trim() || raw;
+}
+
+function clickableEntityHtml(label, action, filterValue, extraClass = '') {
+  const shown = label || '—';
+  if (!filterValue || shown === '—') return escHtml(shown);
+  return `<button type="button" class="entity-filter ${extraClass}" data-filter-action="${escAttr(action)}" data-filter-value="${escAttr(filterValue)}" title="Filter by ${escAttr(filterValue)}">${escHtml(shown)}</button>`;
+}
+
+function clearControls(ids) {
+  ids.forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (el.type === 'checkbox') el.checked = false;
+    else el.value = '';
+  });
+}
+
+function activateTab(target) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === target));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById(`tab-${target}`)?.classList.add('active');
+  if (target === 'network') initNetworkIfNeeded();
+}
+
+function showAllocatorCommitments(name) {
+  const filterName = canonicalAllocatorFilterName(name) || name;
+  clearControls(['comm-search','comm-asset-filter','comm-focus-filter','comm-approach-filter','comm-country-filter','comm-geo-filter','comm-conf-filter','comm-year-filter']);
+  const search = document.getElementById('comm-search');
+  if (search) search.value = filterName;
+  activateTab('commitments');
+  renderCommitments();
+}
+
+function showDfiVehicles(name) {
+  const filterName = canonicalDfiFilterName(name);
+  clearControls(['fund-search','fund-asset-filter','fund-focus-filter','fund-approach-filter','fund-geo-filter']);
+  const search = document.getElementById('fund-search');
+  if (search) search.value = filterName;
+  activateTab('funds');
+  renderFunds();
+}
+
+function handleEntityFilterClick(e) {
+  const btn = e.target.closest('[data-filter-action]');
+  if (!btn) return;
+  const value = btn.dataset.filterValue || btn.textContent || '';
+  if (btn.dataset.filterAction === 'allocator-commitments') {
+    showAllocatorCommitments(value);
+  } else if (btn.dataset.filterAction === 'dfi-vehicles') {
+    showDfiVehicles(value);
+  }
+}
+
 function sourceTokens(text) {
   return searchText(text).split(' ').filter(t => t.length >= 4 && ![
     'fund','funds','with','from','and','the','for','investment','investments','capital','source','press','release','report',
@@ -526,11 +628,11 @@ function renderAfricaMap(containerId, countries, mode) {
       ? `<div class="map-stat-card"><strong>${fmtAUM(d.aum || 0)}</strong><span>Approx. AUM</span></div>`
       : `<div class="map-stat-card"><strong>${d.allocators || 0}</strong><span>Allocators</span></div>`;
     const detail = d.items.slice(0, 10).map(item => mode === 'institutions'
-      ? `<div class="map-list-item"><strong>${escHtml(item.name)}</strong><br><span class="map-muted">${escHtml(item.type)} · ${fmtAUM(item.aum)}</span></div>`
-      : `<div class="map-list-item"><strong>${escHtml(item.vehicle)}</strong><br><span class="map-muted">${escHtml(item.allocator)} · ${escHtml(item.asset)}</span></div>`
+      ? `<div class="map-list-item"><strong>${clickableEntityHtml(item.name, 'allocator-commitments', item.name)}</strong><br><span class="map-muted">${escHtml(item.type)} · ${fmtAUM(item.aum)}</span></div>`
+      : `<div class="map-list-item"><strong>${escHtml(item.vehicle)}</strong><br><span class="map-muted">${clickableEntityHtml(item.allocator, 'allocator-commitments', item.allocator)} · ${escHtml(item.asset)}</span></div>`
     ).join('');
     const detailWithSources = mode === 'commitments'
-      ? d.items.slice(0, 10).map(item => `<div class="map-list-item"><strong>${escHtml(item.vehicle)}</strong><br><span class="map-muted">${escHtml(item.allocator)} - ${escHtml(item.asset)}</span>${item.source ? `<div class="source-link">${item.source}</div>` : ''}</div>`).join('')
+      ? d.items.slice(0, 10).map(item => `<div class="map-list-item"><strong>${escHtml(item.vehicle)}</strong><br><span class="map-muted">${clickableEntityHtml(item.allocator, 'allocator-commitments', item.allocator)} - ${escHtml(item.asset)}</span>${item.source ? `<div class="source-link">${item.source}</div>` : ''}</div>`).join('')
       : detail;
     return `<h3>${escHtml(d.country)}</h3>
       <p class="map-muted">${escHtml(d.caption || '')}</p>
@@ -594,12 +696,7 @@ function instType(row) {
 function initTabs() {
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      const target = btn.dataset.tab;
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-      btn.classList.add('active');
-      document.getElementById(`tab-${target}`).classList.add('active');
-      if (target === 'network') initNetworkIfNeeded();
+      activateTab(btn.dataset.tab);
     });
   });
 }
@@ -737,9 +834,10 @@ function renderInstitutions() {
   }
   tbody.innerHTML = rows.map(r => {
     const isTier1 = tier1Names.has(r['Institution']);
+    const institution = r['Institution'] || '—';
     return `<tr>
       <td><span class="tag ${r._entityType === 'SWF' ? 'tag-swf' : 'tag-pf'}">${r._entityType}</span></td>
-      <td class="truncate" style="max-width:240px;font-weight:500" title="${escHtml(r['Institution'])}">${escHtml(r['Institution'] || '—')}${isTier1 ? ' <span class="tag" style="background:#fef9e7;color:#7d6608;font-size:10px">T1</span>' : ''}</td>
+      <td class="truncate" style="max-width:240px;font-weight:500" title="${escAttr(institution)}">${clickableEntityHtml(institution, 'allocator-commitments', institution)}${isTier1 ? ' <span class="tag" style="background:#fef9e7;color:#7d6608;font-size:10px">T1</span>' : ''}</td>
       <td>${escHtml(r['Country'] || '—')}</td>
       <td class="truncate" style="max-width:160px" title="${escHtml(r['Type'] || r['Mandate type'] || '')}">${escHtml(r['Type'] || r['Mandate type'] || '—')}</td>
       <td class="num">${fmtAUM(r['AUM (USD m, approx)'])}</td>
@@ -780,6 +878,8 @@ function initInstitutions() {
     document.getElementById(id)?.addEventListener('change', renderInstitutions);
   });
   document.getElementById('inst-tier1')?.addEventListener('change', renderInstitutions);
+  document.getElementById('inst-tbody')?.addEventListener('click', handleEntityFilterClick);
+  document.getElementById('inst-map')?.addEventListener('click', handleEntityFilterClick);
   document.getElementById('inst-clear')?.addEventListener('click', () => {
     document.getElementById('inst-search').value = '';
     document.getElementById('inst-type-filter').value = '';
@@ -856,7 +956,7 @@ function renderCommitments() {
     return;
   }
   tbody.innerHTML = rows.map(r => `<tr>
-    <td style="max-width:200px;font-weight:500;white-space:normal;overflow-wrap:break-word">${escHtml(r['Allocator (institution)']||'—')}</td>
+    <td style="max-width:200px;font-weight:500;white-space:normal;overflow-wrap:break-word">${clickableEntityHtml(r['Allocator (institution)'] || '—', 'allocator-commitments', r['Allocator (institution)'] || '')}</td>
     <td>${escHtml(r['Allocator country']||'—')}</td>
     <td class="truncate" style="max-width:180px" title="${escHtml(r['Fund / Vehicle / Deal name'])}">${escHtml(r['Fund / Vehicle / Deal name']||'—')}</td>
     <td>${escHtml(r['GP or counterparty']||'—')}</td>
@@ -934,8 +1034,8 @@ function renderFunds() {
         <strong>${fmtAUM(r['Fund size (USD m)'])}</strong>
       </div>
       <div class="fund-lps"><strong>Focus:</strong> ${escHtml(r['Sector / thematic focus']||'—')} &nbsp; <strong>Type:</strong> ${escHtml(vehicleInstrumentType(r))}</div>
-      ${lps.length ? `<div class="fund-lps"><strong>African LPs:</strong> ${lps.map(l => `<span class="pill">${escHtml(l)}</span>`).join(' ')}</div>` : ''}
-      ${dfis.length ? `<div class="fund-lps"><strong>DFIs and Other LPs:</strong> ${dfis.map(d => `<span class="pill" style="background:#fef3c7;color:#78350f">${escHtml(d)}</span>`).join(' ')}</div>` : ''}
+      ${lps.length ? `<div class="fund-lps"><strong>African LPs:</strong> ${lps.map(l => clickableEntityHtml(l, 'allocator-commitments', canonicalAllocatorFilterName(l), 'pill entity-pill')).join(' ')}</div>` : ''}
+      ${dfis.length ? `<div class="fund-lps"><strong>DFIs and Other LPs:</strong> ${dfis.map(d => clickableEntityHtml(d, 'dfi-vehicles', canonicalDfiFilterName(d), 'pill entity-pill dfi-pill')).join(' ')}</div>` : ''}
       <div class="source-link"><strong>Sources:</strong> ${sources}</div>
     </div>`;
   }).join('');
@@ -954,6 +1054,8 @@ function initCommitments() {
     document.getElementById(id)?.addEventListener('input', renderCommitments);
     document.getElementById(id)?.addEventListener('change', renderCommitments);
   });
+  document.getElementById('comm-tbody')?.addEventListener('click', handleEntityFilterClick);
+  document.getElementById('comm-map')?.addEventListener('click', handleEntityFilterClick);
   document.getElementById('comm-clear')?.addEventListener('click', () => {
     ['comm-search','comm-asset-filter','comm-focus-filter','comm-approach-filter','comm-country-filter','comm-geo-filter','comm-conf-filter','comm-year-filter'].forEach(id => {
       const el = document.getElementById(id);
@@ -966,6 +1068,7 @@ function initCommitments() {
     document.getElementById(id)?.addEventListener('input', renderFunds);
     document.getElementById(id)?.addEventListener('change', renderFunds);
   });
+  document.getElementById('funds-list')?.addEventListener('click', handleEntityFilterClick);
   document.getElementById('fund-clear')?.addEventListener('click', () => {
     ['fund-search','fund-asset-filter','fund-focus-filter','fund-approach-filter','fund-geo-filter'].forEach(id => {
       const el = document.getElementById(id);

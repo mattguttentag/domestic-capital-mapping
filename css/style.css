@@ -1086,6 +1086,42 @@ canvas { max-width: 100%; }
   font-size: 11px;
   font-weight: 500;
 }
+.entity-filter {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--navy);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 650;
+  padding: 0;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.entity-filter:hover {
+  color: var(--green);
+}
+.entity-filter:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+.entity-filter.pill {
+  border: 0;
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+  text-decoration: none;
+}
+.entity-filter.pill:hover {
+  filter: brightness(0.96);
+  transform: translateY(-1px);
+}
+.entity-filter.dfi-pill {
+  background: #fef3c7;
+  color: #78350f;
+}
 
 .helper-text {
   color: var(--muted);

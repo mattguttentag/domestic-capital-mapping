@@ -9978,10 +9978,10 @@ const DATASET = {
     "Geographic focus": "Kenya, Uganda, Ethiopia",
     "African PF/SWF LPs (count)": 2,
     "Named African PF/SWF LPs": "Kenya Power & Lighting Co. Pension Fund (KPLC PF) (USD 4m, 2014 — 'first East African pension LP in PE'), NMG Pension Fund (USD 1m, 2015 via STANLIB)",
-    "DFI LPs (count)": 2,
-    "Named DFI LPs": "Norfund, OeEB (Austria)",
+    "DFI LPs (count)": 4,
+    "Named DFI LPs": "BII; FMO; Norfund; OeEB (Austria)",
     "Other named LPs": "Family offices, other institutional investors",
-    "Co-investor pattern note": "Historical pioneer fund for East African pension PE participation.",
+    "Co-investor pattern note": "Historical pioneer fund for East African pension PE participation. DFI project-database cross-check adds BII and FMO to the existing Norfund/OeEB ARVF I record.",
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Fund LP"
@@ -10029,10 +10029,10 @@ const DATASET = {
     "Geographic focus": "Kenya, Uganda, Tanzania, Ethiopia, Zambia, Rwanda, DRC",
     "African PF/SWF LPs (count)": "1+ (cohort)",
     "Named African PF/SWF LPs": "'Local pension funds' (NSSF Uganda likely; others not named)",
-    "DFI LPs (count)": 5,
-    "Named DFI LPs": "BII (USD 30m), EIB, IFC, Proparco, Swedfund",
+    "DFI LPs (count)": 6,
+    "Named DFI LPs": "BII (USD 30m); EIB; IFC; Proparco; SIFEM; Swedfund",
     "Other named LPs": "Family offices, regional investors",
-    "Co-investor pattern note": "Single largest East African PE fund with disclosed local-pension cohort.",
+    "Co-investor pattern note": "Single largest East African PE fund with disclosed local-pension cohort. DFI project-database cross-check adds SIFEM to the named Catalyst Fund II DFI LP set.",
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP"
@@ -10063,10 +10063,10 @@ const DATASET = {
     "Geographic focus": "Pan-Africa + Southern Africa",
     "African PF/SWF LPs (count)": "multiple (cohort)",
     "Named African PF/SWF LPs": "'A number of Southern African pension funds' (per Vantage disclosure; SA pension funds incl. BPOPF — see Phase 2 entry)",
-    "DFI LPs (count)": 6,
-    "Named DFI LPs": "IFC, EIB, BII, Norfund, DEG, Finnfund",
+    "DFI LPs (count)": 7,
+    "Named DFI LPs": "IFC; EIB; BII; Norfund; DEG; Finnfund; Swedfund",
     "Other named LPs": "European endowments, private-sector insurers",
-    "Co-investor pattern note": "Vantage's 'historical pattern' of substantial SA pension LP base; specific names not publicly itemised.",
+    "Co-investor pattern note": "Vantage's 'historical pattern' of substantial SA pension LP base; specific names not publicly itemised. DFI project-database cross-check adds Swedfund to the named Vantage Mezzanine IV DFI LP set.",
     "Asset class normalized": "Private Credit",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP"
@@ -10216,10 +10216,10 @@ const DATASET = {
     "Geographic focus": "Pan-Africa",
     "African PF/SWF LPs (count)": 1,
     "Named African PF/SWF LPs": "PIC South Africa (historical)",
-    "DFI LPs (count)": "multiple",
-    "Named DFI LPs": "Various DFIs",
+    "DFI LPs (count)": 2,
+    "Named DFI LPs": "BII; IFC",
     "Other named LPs": "—",
-    "Co-investor pattern note": "Digital infrastructure; PIC participant.",
+    "Co-investor pattern note": "Digital infrastructure; PIC participant. DFI project-database cross-check replaces generic DFI label with named BII and IFC commitments.",
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure; Digital / Technology",
     "Investment approach": "Fund LP"
@@ -10437,10 +10437,10 @@ const DATASET = {
     "Geographic focus": "West Africa / Nigeria",
     "African PF/SWF LPs (count)": 1,
     "Named African PF/SWF LPs": "NSIA Nigeria (USD 5m)",
-    "DFI LPs (count)": 0,
-    "Named DFI LPs": null,
+    "DFI LPs (count)": 1,
+    "Named DFI LPs": "FMO",
     "Other named LPs": null,
-    "Co-investor pattern note": "NSIA impact report identifies a USD 5m FGF commitment to Verod Growth Fund II.",
+    "Co-investor pattern note": "NSIA impact report identifies a USD 5m FGF commitment to Verod Growth Fund II. DFI project-database cross-check identifies FMO as a Verod Capital Growth II investor.",
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP"
@@ -10454,10 +10454,10 @@ const DATASET = {
     "Geographic focus": "West Africa / Nigeria",
     "African PF/SWF LPs (count)": 1,
     "Named African PF/SWF LPs": "NSIA Nigeria (USD 7.5m commitment)",
-    "DFI LPs (count)": 0,
-    "Named DFI LPs": null,
+    "DFI LPs (count)": 6,
+    "Named DFI LPs": "BII; BIO; FMO; IFC; Norfund; Proparco/FISEA",
     "Other named LPs": null,
-    "Co-investor pattern note": "NSIA impact report identifies a USD 7.5m FGF commitment to Verod Growth Fund III.",
+    "Co-investor pattern note": "NSIA impact report identifies a USD 7.5m FGF commitment to Verod Growth Fund III. DFI project-database cross-check identifies BII, BIO, FMO, IFC, Norfund and Proparco/FISEA as Verod Growth Fund III investors.",
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP"
@@ -10522,10 +10522,10 @@ const DATASET = {
     "Geographic focus": "Ghana + Cote d'Ivoire",
     "African PF/SWF LPs (count)": 1,
     "Named African PF/SWF LPs": "Venture Capital Trust Fund (VCTF)",
-    "DFI LPs (count)": 3,
-    "Named DFI LPs": "Dutch Good Growth Fund (DGGF); IFC; EIB",
+    "DFI LPs (count)": 5,
+    "Named DFI LPs": "Dutch Good Growth Fund (DGGF); IFC; EIB; Norfund; Proparco/FISEA",
     "Other named LPs": "Local investor base of five institutions and individuals at first close",
-    "Co-investor pattern note": "VCTF government co-investment helped Oasis domicile the fund locally in Ghana. DGGF TA/legal work helped make the Ghana structure bankable for international DFIs; first close included DGGF, IFC and local investors, with EIB later disclosing an USD 8m commitment.",
+    "Co-investor pattern note": "VCTF government co-investment helped Oasis domicile the fund locally in Ghana. DGGF TA/legal work helped make the Ghana structure bankable for international DFIs; first close included DGGF, IFC and local investors, with EIB later disclosing an USD 8m commitment. DFI project-database cross-check adds Norfund and Proparco/FISEA as Oasis Africa Fund LPs.",
     "Asset class normalized": "Venture Capital",
     "Sector / thematic focus": "SME Finance; Financial Inclusion / Financial Services",
     "Investment approach": "Fund LP"
@@ -10590,10 +10590,10 @@ const DATASET = {
     "Geographic focus": "Sub-Saharan Africa",
     "African PF/SWF LPs (count)": 1,
     "Named African PF/SWF LPs": "Government Institutions Pension Fund (GIPF)",
-    "DFI LPs (count)": 0,
-    "Named DFI LPs": "—",
+    "DFI LPs (count)": 4,
+    "Named DFI LPs": "BII; FMO; IFC; IFU",
     "Other named LPs": "—",
-    "Co-investor pattern note": "Cayman Islands LP. Provides growth capital to Sub-Saharan Africa portfolio companies. Originally managed by Abraaj Group; fund transitioned to Neoma Capital Partners after Abraaj bankruptcy 2018. Source: GIPF 2023 AR p.97.",
+    "Co-investor pattern note": "Cayman Islands LP. Provides growth capital to Sub-Saharan Africa portfolio companies. Originally managed by Abraaj Group; fund transitioned to Neoma Capital Partners after Abraaj bankruptcy 2018. Source: GIPF 2023 AR p.97. DFI project-database cross-check identifies BII, FMO, IFC and IFU as Neoma/Abraaj Africa Fund III investors.",
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP"
@@ -10692,10 +10692,10 @@ const DATASET = {
     "Geographic focus": "Pan-Africa",
     "African PF/SWF LPs (count)": 4,
     "Named African PF/SWF LPs": "Eskom Pension and Provident Fund (EPPF) (USD 20m); KenGen Staff Retirement Benefits Scheme; CBK Pension Fund (Kenya, Central Bank of Kenya); Old Mutual Umbrella Retirement Benefits Scheme (Kenya)",
-    "DFI LPs (count)": 0,
-    "Named DFI LPs": "—",
+    "DFI LPs (count)": 9,
+    "Named DFI LPs": "BII; FMO; Finnfund; IFC; IFU; Norfund; Proparco/FISEA; SIFEM; Swedfund",
     "Other named LPs": "Chicago Public School Teachers Pension (USD 10m); City of Philadelphia Board of Pensions (USD 50m); City of Hartford Pension Commission (USD 5m)",
-    "Co-investor pattern note": "Rare case of multiple named African pension LPs in a USD 900m pan-African PE fund, disclosed via MiDA Advisors / USAID INVEST campaign rather than GP press release.",
+    "Co-investor pattern note": "Rare case of multiple named African pension LPs in a USD 900m pan-African PE fund, disclosed via MiDA Advisors / USAID INVEST campaign rather than GP press release. DFI project-database cross-check identifies BII, FMO, Finnfund, IFC, IFU, Norfund, Proparco/FISEA, SIFEM and Swedfund as ADP III LPs/parallel fund investors.",
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Multi-sector",
     "Investment approach": "Fund LP"
@@ -10738,57 +10738,106 @@ const DATASET = {
   "DFI_Co-Investor_Patterns": [
   {
     "DFI / Catalytic capital provider": "BII",
-    "Co-investments in funds with African PF/SWF LP": 9,
-    "Notable vehicles": "Ascent Rift Valley Fund II (ARVF II); Capital Alliance Private Equity I-IV (CAPE); Catalyst Fund II; Growth Investment Partners (GIP) Ghana; Growth Investment Partners (GIP) Zambia; Helios Investors II/III/IV (historical); Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Vantage Mezzanine IV (Pan-African sub-fund); Africa Food Security Fund (AFSF)",
+    "Co-investments in funds with African PF/SWF LP": 14,
+    "Notable vehicles": "Growth Investment Partners (GIP) Ghana; Growth Investment Partners (GIP) Zambia; Ascent Rift Valley Fund I (ARVF I); Ascent Rift Valley Fund II (ARVF II); Catalyst Fund II; Helios Investors II/III/IV (historical); Vantage Mezzanine IV (Pan-African sub-fund); Convergence Partners Communications Infrastructure Fund; Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Capital Alliance Private Equity I-IV (CAPE); Africa Food Security Fund (AFSF); Verod Growth Fund III; Neoma Africa Fund III (B) L.P. (previously Abraaj Africa Fund III); African Development Partners III (ADP III)",
     "Strategic role": "Frequent anchor/catalytic DFI, including BII-established GIP platforms designed to crowd in local pension capital.",
     "Frequency tier": "1 (Top tier)"
   },
   {
+    "DFI / Catalytic capital provider": "IFC",
+    "Co-investments in funds with African PF/SWF LP": 11,
+    "Notable vehicles": "Ascent Rift Valley Fund II (ARVF II); Adenia Capital V; Catalyst Fund II; Vantage Mezzanine IV (Pan-African sub-fund); Africa50 Infrastructure Acceleration Fund (IAF); Convergence Partners Communications Infrastructure Fund; Verod Growth Fund III; MedServe oncology and diagnostics expansion; Oasis Africa VC Fund (OAF); Neoma Africa Fund III (B) L.P. (previously Abraaj Africa Fund III); African Development Partners III (ADP III)",
+    "Strategic role": "World Bank Group investor and disclosure source; active in flagship PE/infrastructure vehicles.",
+    "Frequency tier": "1 (Top tier)"
+  },
+  {
     "DFI / Catalytic capital provider": "AfDB",
-    "Co-investments in funds with African PF/SWF LP": 8,
-    "Notable vehicles": "AfricInvest FIVE (Financial Inclusion Vehicle); Africa50 (general); Africa50 Infrastructure Acceleration Fund (IAF); Mediterrania Capital II / III / IV; Nigeria Infrastructure Fund (NIF, NSIA sub-fund); Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Africa Food Security Fund (AFSF); InfraCredit",
+    "Co-investments in funds with African PF/SWF LP": 9,
+    "Notable vehicles": "Mediterrania Capital II / III / IV; AfricInvest FIVE (Financial Inclusion Vehicle); Africa50 (general); Africa50 Infrastructure Acceleration Fund (IAF); Nigeria Infrastructure Fund (NIF, NSIA sub-fund); Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Africa Food Security Fund (AFSF); InfraCredit; Nigeria Infrastructure Debt Fund (NIDF)",
     "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "1 (Top tier)"
   },
   {
     "DFI / Catalytic capital provider": "Norfund",
-    "Co-investments in funds with African PF/SWF LP": 6,
-    "Notable vehicles": "Adenia Capital V; AfricInvest FIVE (Financial Inclusion Vehicle); Ascent Rift Valley Fund I (ARVF I); Ascent Rift Valley Fund II (ARVF II); Growth Investment Partners (GIP) Ghana; Vantage Mezzanine IV (Pan-African sub-fund)",
+    "Co-investments in funds with African PF/SWF LP": 9,
+    "Notable vehicles": "Growth Investment Partners (GIP) Ghana; Ascent Rift Valley Fund I (ARVF I); Ascent Rift Valley Fund II (ARVF II); Adenia Capital V; Vantage Mezzanine IV (Pan-African sub-fund); AfricInvest FIVE (Financial Inclusion Vehicle); Verod Growth Fund III; Oasis Africa VC Fund (OAF); African Development Partners III (ADP III)",
     "Strategic role": "Frequent DFI co-investor in SME, infrastructure, and financial inclusion vehicles.",
     "Frequency tier": "1 (Top tier)"
   },
   {
-    "DFI / Catalytic capital provider": "IFC",
+    "DFI / Catalytic capital provider": "FMO",
+    "Co-investments in funds with African PF/SWF LP": 8,
+    "Notable vehicles": "Ci-Gaba Fund of Funds; Ascent Rift Valley Fund I (ARVF I); Ascent Rift Valley Fund II (ARVF II); Adenia Capital V; Verod Growth Fund II; Verod Growth Fund III; Neoma Africa Fund III (B) L.P. (previously Abraaj Africa Fund III); African Development Partners III (ADP III)",
+    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
+    "Frequency tier": "1 (Top tier)"
+  },
+  {
+    "DFI / Catalytic capital provider": "Proparco",
     "Co-investments in funds with African PF/SWF LP": 6,
-    "Notable vehicles": "Adenia Capital V; Africa50 Infrastructure Acceleration Fund (IAF); Ascent Rift Valley Fund II (ARVF II); Catalyst Fund II; Vantage Mezzanine IV (Pan-African sub-fund); Oasis Africa VC Fund (OAF)",
-    "Strategic role": "World Bank Group investor and disclosure source; active in flagship PE/infrastructure vehicles.",
-    "Frequency tier": "2 (Active)"
+    "Notable vehicles": "Ascent Rift Valley Fund II (ARVF II); Adenia Capital V; Catalyst Fund II; Verod Growth Fund III; Oasis Africa VC Fund (OAF); African Development Partners III (ADP III)",
+    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
+    "Frequency tier": "1 (Top tier)"
   },
   {
     "DFI / Catalytic capital provider": "EIB",
     "Co-investments in funds with African PF/SWF LP": 5,
-    "Notable vehicles": "Adenia Capital V; Catalyst Fund II; Mediterrania Capital II / III / IV; Vantage Mezzanine IV (Pan-African sub-fund); Oasis Africa VC Fund (OAF)",
+    "Notable vehicles": "Adenia Capital V; Catalyst Fund II; Vantage Mezzanine IV (Pan-African sub-fund); Mediterrania Capital II / III / IV; Oasis Africa VC Fund (OAF)",
     "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "2 (Active)"
   },
   {
-    "DFI / Catalytic capital provider": "FMO",
-    "Co-investments in funds with African PF/SWF LP": 3,
-    "Notable vehicles": "Adenia Capital V; Ascent Rift Valley Fund II (ARVF II); Ci-Gaba Fund of Funds",
-    "Strategic role": "Frequent co-investor across funds and fund-of-funds with African pension/SWF participation.",
+    "DFI / Catalytic capital provider": "IFU",
+    "Co-investments in funds with African PF/SWF LP": 4,
+    "Notable vehicles": "AfricInvest FIVE (Financial Inclusion Vehicle); Africa Food Security Fund (AFSF); Neoma Africa Fund III (B) L.P. (previously Abraaj Africa Fund III); African Development Partners III (ADP III)",
+    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "2 (Active)"
   },
   {
-    "DFI / Catalytic capital provider": "Proparco",
-    "Co-investments in funds with African PF/SWF LP": 3,
-    "Notable vehicles": "Adenia Capital V; Ascent Rift Valley Fund II (ARVF II); Catalyst Fund II",
+    "DFI / Catalytic capital provider": "Swedfund",
+    "Co-investments in funds with African PF/SWF LP": 4,
+    "Notable vehicles": "Growth Investment Partners (GIP) Zambia; Catalyst Fund II; Vantage Mezzanine IV (Pan-African sub-fund); African Development Partners III (ADP III)",
     "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "2 (Active)"
+  },
+  {
+    "DFI / Catalytic capital provider": "DGGF",
+    "Co-investments in funds with African PF/SWF LP": 3,
+    "Notable vehicles": "Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Africa Food Security Fund (AFSF); Oasis Africa VC Fund (OAF)",
+    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
+    "Frequency tier": "2 (Active)"
+  },
+  {
+    "DFI / Catalytic capital provider": "KfW",
+    "Co-investments in funds with African PF/SWF LP": 3,
+    "Notable vehicles": "Oyass Capital (SME fund); AfricInvest FIVE (Financial Inclusion Vehicle); InfraCredit",
+    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
+    "Frequency tier": "2 (Active)"
+  },
+  {
+    "DFI / Catalytic capital provider": "SIFEM",
+    "Co-investments in funds with African PF/SWF LP": 3,
+    "Notable vehicles": "Adenia Capital V; Catalyst Fund II; African Development Partners III (ADP III)",
+    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
+    "Frequency tier": "2 (Active)"
+  },
+  {
+    "DFI / Catalytic capital provider": "BIO",
+    "Co-investments in funds with African PF/SWF LP": 2,
+    "Notable vehicles": "Ascent Rift Valley Fund II (ARVF II); Verod Growth Fund III",
+    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
+    "Frequency tier": "3 (Selective / TA)"
   },
   {
     "DFI / Catalytic capital provider": "DEG",
     "Co-investments in funds with African PF/SWF LP": 2,
     "Notable vehicles": "Adenia Capital V; Vantage Mezzanine IV (Pan-African sub-fund)",
+    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
+    "Frequency tier": "3 (Selective / TA)"
+  },
+  {
+    "DFI / Catalytic capital provider": "European Union / IFAD",
+    "Co-investments in funds with African PF/SWF LP": 2,
+    "Notable vehicles": "Yield Uganda Investment Fund; Teranga Capital",
     "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "3 (Selective / TA)"
   },
@@ -10800,133 +10849,21 @@ const DATASET = {
     "Frequency tier": "3 (Selective / TA)"
   },
   {
-    "DFI / Catalytic capital provider": "KfW",
-    "Co-investments in funds with African PF/SWF LP": 3,
-    "Notable vehicles": "AfricInvest FIVE (Financial Inclusion Vehicle); Oyass Capital; InfraCredit",
-    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "MiDA Advisors",
+    "DFI / Catalytic capital provider": "Finnfund",
     "Co-investments in funds with African PF/SWF LP": 2,
-    "Notable vehicles": "AOFSA pooled infrastructure mandates (South Africa); KEPFIC pooled mandates (Kenya)",
-    "Strategic role": "Technical-assistance and transaction-advisory provider for pension-consortium infrastructure pipelines.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "Swedfund",
-    "Co-investments in funds with African PF/SWF LP": 2,
-    "Notable vehicles": "Catalyst Fund II; Growth Investment Partners (GIP) Zambia",
+    "Notable vehicles": "Vantage Mezzanine IV (Pan-African sub-fund); African Development Partners III (ADP III)",
     "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "3 (Selective / TA)"
   },
   {
-    "DFI / Catalytic capital provider": "USAID",
-    "Co-investments in funds with African PF/SWF LP": 2,
-    "Notable vehicles": "AOFSA pooled infrastructure mandates (South Africa); KEPFIC pooled mandates (Kenya)",
-    "Strategic role": "Technical-assistance provider supporting pension-consortium formation and capacity building.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "World Bank / IFC J-CAP",
-    "Co-investments in funds with African PF/SWF LP": 2,
-    "Notable vehicles": "AOFSA pooled infrastructure mandates (South Africa); KEPFIC pooled mandates (Kenya)",
-    "Strategic role": "Technical-assistance and market-development provider for pension-consortium structures.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "BCEAO",
+    "DFI / Catalytic capital provider": "BOAD",
     "Co-investments in funds with African PF/SWF LP": 1,
-    "Notable vehicles": "Africa50 (general)",
+    "Notable vehicles": "Amethis West Africa",
     "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "3 (Selective / TA)"
   },
   {
-    "DFI / Catalytic capital provider": "BIO",
-    "Co-investments in funds with African PF/SWF LP": 1,
-    "Notable vehicles": "Ascent Rift Valley Fund II (ARVF II)",
-    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "Bank Al-Maghrib",
-    "Co-investments in funds with African PF/SWF LP": 1,
-    "Notable vehicles": "Africa50 (general)",
-    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "Batseta Council",
-    "Co-investments in funds with African PF/SWF LP": 1,
-    "Notable vehicles": "AOFSA pooled infrastructure mandates (South Africa)",
-    "Strategic role": "South African retirement-fund industry body supporting AOFSA secretariat/governance.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "CDP Group",
-    "Co-investments in funds with African PF/SWF LP": 1,
-    "Notable vehicles": "Mediterrania Capital II / III / IV",
-    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "CrossBoundary",
-    "Co-investments in funds with African PF/SWF LP": 1,
-    "Notable vehicles": "AOFSA pooled infrastructure mandates (South Africa)",
-    "Strategic role": "Technical-assistance provider supporting AOFSA pipeline development.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "Dutch Good Growth Fund",
-    "Co-investments in funds with African PF/SWF LP": 3,
-    "Notable vehicles": "Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Africa Food Security Fund (AFSF); Oasis Africa VC Fund (OAF)",
-    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "FCA Investments",
-    "Co-investments in funds with African PF/SWF LP": 1,
-    "Notable vehicles": "Yield Uganda Investment Fund",
-    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "FinDev Canada",
-    "Co-investments in funds with African PF/SWF LP": 1,
-    "Notable vehicles": "Adenia Capital V",
-    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "IFU",
-    "Co-investments in funds with African PF/SWF LP": 2,
-    "Notable vehicles": "AfricInvest FIVE (Financial Inclusion Vehicle); Africa Food Security Fund (AFSF)",
-    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "OeEB",
-    "Co-investments in funds with African PF/SWF LP": 1,
-    "Notable vehicles": "Ascent Rift Valley Fund I (ARVF I)",
-    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "SIFEM",
-    "Co-investments in funds with African PF/SWF LP": 1,
-    "Notable vehicles": "Adenia Capital V",
-    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "Soros Economic Development Fund",
-    "Co-investments in funds with African PF/SWF LP": 1,
-    "Notable vehicles": "Yield Uganda Investment Fund",
-    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
-    "Frequency tier": "3 (Selective / TA)"
-  },
-  {
-    "DFI / Catalytic capital provider": "US DFC",
+    "DFI / Catalytic capital provider": "DFC",
     "Co-investments in funds with African PF/SWF LP": 1,
     "Notable vehicles": "Adenia Capital V",
     "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
@@ -10940,24 +10877,24 @@ const DATASET = {
     "Frequency tier": "3 (Selective / TA)"
   },
   {
-    "DFI / Catalytic capital provider": "Kuramo Capital Management",
+    "DFI / Catalytic capital provider": "FinDev Canada",
     "Co-investments in funds with African PF/SWF LP": 1,
-    "Notable vehicles": "Africa Food Security Fund (AFSF)",
-    "Strategic role": "Other named LP / fund-of-funds investor appearing in retained vehicles with African PF/SWF participation.",
+    "Notable vehicles": "Adenia Capital V",
+    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "3 (Selective / TA)"
   },
   {
     "DFI / Catalytic capital provider": "GuarantCo / PIDG",
     "Co-investments in funds with African PF/SWF LP": 1,
     "Notable vehicles": "InfraCredit",
-    "Strategic role": "Guarantee/catalytic capital provider that established InfraCredit with NSIA via PIDG/GuarantCo.",
+    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "3 (Selective / TA)"
   },
   {
     "DFI / Catalytic capital provider": "InfraCo Africa",
     "Co-investments in funds with African PF/SWF LP": 1,
     "Notable vehicles": "InfraCredit",
-    "Strategic role": "PIDG project-development arm/shareholder capital provider to InfraCredit.",
+    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
     "Frequency tier": "3 (Selective / TA)"
   }
 ],

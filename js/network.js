@@ -481,14 +481,26 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
     }
   });
 
-  // Labels for high-linkage nodes
+  function shortNodeLabel(d, force = false) {
+    const label = String(d.label || '');
+    if (!force && d.type !== 'dfi' && d.linkCount <= 3) return '';
+    const max = force ? (d.type === 'fund' ? 34 : 28) : 22;
+    return label.split('(')[0].trim().slice(0, max);
+  }
+
+  function labelFontSize(d, force = false) {
+    if (force) return d.type === 'fund' ? 9 : 10;
+    return d.type === 'dfi' ? 10 : (d.linkCount > 3 ? 9 : 0);
+  }
+
+  // Labels for high-linkage nodes; focused views reveal all visible node names.
   node.append('text')
     .attr('dy', d => nodeRadius(d) + 11)
     .attr('text-anchor', 'middle')
-    .attr('font-size', d => d.type === 'dfi' ? 10 : (d.linkCount > 3 ? 9 : 0))
+    .attr('font-size', d => labelFontSize(d))
     .attr('fill', '#374151')
     .attr('pointer-events', 'none')
-    .text(d => (d.type === 'dfi' || d.linkCount > 3) ? d.label.split('(')[0].slice(0, 22) : '');
+    .text(d => shortNodeLabel(d));
 
   // ── Tooltip ───────────────────────────────────────────────────
   const tooltip = document.getElementById('network-tooltip');
@@ -560,7 +572,10 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
       if (s === d.id || t === d.id) return 0.9;
       return 0.45;
     });
-    node.selectAll('text').attr('opacity', nd => connectedIds.has(nd.id) ? 1 : 0.08);
+    node.selectAll('text')
+      .text(nd => shortNodeLabel(nd, connectedIds.has(nd.id)))
+      .attr('font-size', nd => labelFontSize(nd, connectedIds.has(nd.id)))
+      .attr('opacity', nd => connectedIds.has(nd.id) ? 1 : 0.08);
 
     // Info panel
     let html = `<strong>${escHtml(d.label)}</strong>`;
@@ -621,7 +636,10 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
   function resetHighlight() {
     node.selectAll('circle, rect').attr('opacity', 1);
     link.attr('stroke-opacity', l => l.type === 'dfi-fund' ? 0.6 : 0.4);
-    node.selectAll('text').attr('opacity', 1);
+    node.selectAll('text')
+      .text(d => shortNodeLabel(d))
+      .attr('font-size', d => labelFontSize(d))
+      .attr('opacity', 1);
   }
 
   // ── Tick ─────────────────────────────────────────────────────

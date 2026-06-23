@@ -543,7 +543,7 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
       return;
     }
     selected = d.id;
-    const distanceById = nodesWithinHops(d.id, 2);
+    const distanceById = focusedContextForNode(d);
     const connectedIds = new Set(distanceById.keys());
 
     node.selectAll('circle, rect')
@@ -572,24 +572,36 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
     }
     const directCount = [...distanceById.values()].filter(v => v === 1).length;
     const contextCount = [...distanceById.values()].filter(v => v === 2).length;
-    html += `<br>Direct connections: <strong>${directCount}</strong><br>Two-hop context: <strong>${contextCount}</strong>`;
+    const contextLabel = d.type === 'dfi'
+      ? 'PF/SWF co-investor context'
+      : (d.type === 'allocator' ? 'DFI/other-LP context' : 'Investor context');
+    html += `<br>Direct connections: <strong>${directCount}</strong><br>${contextLabel}: <strong>${contextCount}</strong>`;
     infoEl.innerHTML = html;
     if (opts.center) centerOnNode(d);
   }
 
-  function nodesWithinHops(startId, maxHops = 2) {
-    const distances = new Map([[startId, 0]]);
-    const queue = [startId];
-    while (queue.length) {
-      const current = queue.shift();
-      const currentDistance = distances.get(current);
-      if (currentDistance >= maxHops) continue;
-      (adjacency.get(current) || []).forEach(next => {
-        if (distances.has(next)) return;
-        distances.set(next, currentDistance + 1);
-        queue.push(next);
+  function focusedContextForNode(startNode) {
+    const distances = new Map([[startNode.id, 0]]);
+    const firstHop = [...(adjacency.get(startNode.id) || [])];
+    firstHop.forEach(id => distances.set(id, 1));
+
+    let secondHopType = null;
+    if (startNode.type === 'dfi') secondHopType = 'allocator';
+    if (startNode.type === 'allocator') secondHopType = 'dfi';
+
+    if (!secondHopType) return distances;
+
+    firstHop.forEach(id => {
+      const viaNode = nodeById.get(id);
+      if (viaNode?.type !== 'fund') return;
+      (adjacency.get(id) || []).forEach(nextId => {
+        const nextNode = nodeById.get(nextId);
+        if (nextNode?.type === secondHopType && !distances.has(nextId)) {
+          distances.set(nextId, 2);
+        }
       });
-    }
+    });
+
     return distances;
   }
 

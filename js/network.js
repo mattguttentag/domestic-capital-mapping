@@ -515,6 +515,15 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
   // ── Click → highlight ─────────────────────────────────────────
   let selected = null;
   const infoEl = document.getElementById('network-selected-info');
+  const adjacency = new Map();
+  linkArr.forEach(l => {
+    const s = typeof l.source === 'object' ? l.source.id : l.source;
+    const t = typeof l.target === 'object' ? l.target.id : l.target;
+    if (!adjacency.has(s)) adjacency.set(s, new Set());
+    if (!adjacency.has(t)) adjacency.set(t, new Set());
+    adjacency.get(s).add(t);
+    adjacency.get(t).add(s);
+  });
 
   svg.on('click', (e) => {
     if (e.target !== svg.node()) return;
@@ -534,22 +543,24 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
       return;
     }
     selected = d.id;
-    const connectedIds = new Set([d.id]);
-    linkArr.forEach(l => {
-      const s = typeof l.source === 'object' ? l.source.id : l.source;
-      const t = typeof l.target === 'object' ? l.target.id : l.target;
-      if (s === d.id) connectedIds.add(t);
-      if (t === d.id) connectedIds.add(s);
-    });
+    const distanceById = nodesWithinHops(d.id, 2);
+    const connectedIds = new Set(distanceById.keys());
 
     node.selectAll('circle, rect')
-      .attr('opacity', nd => connectedIds.has(nd.id) ? 1 : 0.1);
+      .attr('opacity', nd => {
+        const distance = distanceById.get(nd.id);
+        if (distance === 0 || distance === 1) return 1;
+        if (distance === 2) return 0.72;
+        return 0.08;
+      });
     link.attr('stroke-opacity', l => {
       const s = typeof l.source === 'object' ? l.source.id : l.source;
       const t = typeof l.target === 'object' ? l.target.id : l.target;
-      return (s === d.id || t === d.id) ? 0.9 : 0.04;
+      if (!connectedIds.has(s) || !connectedIds.has(t)) return 0.03;
+      if (s === d.id || t === d.id) return 0.9;
+      return 0.45;
     });
-    node.selectAll('text').attr('opacity', nd => connectedIds.has(nd.id) ? 1 : 0.1);
+    node.selectAll('text').attr('opacity', nd => connectedIds.has(nd.id) ? 1 : 0.08);
 
     // Info panel
     let html = `<strong>${escHtml(d.label)}</strong>`;
@@ -559,9 +570,27 @@ function renderNetworkGraph(nodeArr, linkArr, regionColor, allocColor) {
       const displayAsset = typeof assetLabel === 'function' ? assetLabel(d.assetClass) : (d.assetClass || '—');
       html += `<br>Type: Fund<br>GP: ${escHtml(d.gp||'—')}<br>Asset: ${escHtml(displayAsset)}<br>Geo: ${escHtml(d.geo||'—')}`;
     }
-    html += `<br>Connections: <strong>${[...connectedIds].length - 1}</strong>`;
+    const directCount = [...distanceById.values()].filter(v => v === 1).length;
+    const contextCount = [...distanceById.values()].filter(v => v === 2).length;
+    html += `<br>Direct connections: <strong>${directCount}</strong><br>Two-hop context: <strong>${contextCount}</strong>`;
     infoEl.innerHTML = html;
     if (opts.center) centerOnNode(d);
+  }
+
+  function nodesWithinHops(startId, maxHops = 2) {
+    const distances = new Map([[startId, 0]]);
+    const queue = [startId];
+    while (queue.length) {
+      const current = queue.shift();
+      const currentDistance = distances.get(current);
+      if (currentDistance >= maxHops) continue;
+      (adjacency.get(current) || []).forEach(next => {
+        if (distances.has(next)) return;
+        distances.set(next, currentDistance + 1);
+        queue.push(next);
+      });
+    }
+    return distances;
   }
 
   function clearSelection() {

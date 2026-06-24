@@ -33,6 +33,8 @@ def sheet_to_records(sheet_name, header_row=0):
     records = []
     for _, row in df.iterrows():
         rec = {k: safe_val(v) for k, v in row.items()}
+        if 'Fund / Vehicle / Client' in rec and 'Fund / Vehicle / Deal name' not in rec:
+            rec['Fund / Vehicle / Deal name'] = rec['Fund / Vehicle / Client']
         # skip rows that are entirely None
         if any(v is not None for v in rec.values()):
             records.append(rec)
@@ -46,6 +48,7 @@ HEADER_ROWS = {
     'Pipeline & Mandates': 0,
     'Source Library': 0,
     'Tier 1 Candidates': 2,
+    'Tier 1 Disclosure Sweep': 0,
     'Funds & LP Co-Investors': 2,
     'DFI Co-Investor Patterns': 2,
     'Country Summary': 2,

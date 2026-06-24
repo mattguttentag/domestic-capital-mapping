@@ -3325,8 +3325,8 @@ const DATASET = {
     "Allocator country": "South Africa",
     "Allocator type": "Public PF (via mgr)",
     "Commitment type": "Fund LP",
-    "GP or counterparty": "Africa50",
-    "Fund / Vehicle / Deal name": "Africa50 (shareholder stake)",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Africa50",
     "Asset class": "Infrastructure platform",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2025,
@@ -3339,7 +3339,8 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S001"
+    "Source IDs": "S001",
+    "Fund / Vehicle / Deal name": "Africa50"
   },
   {
     "Allocator (institution)": "PIC (mgr for GEPF)",
@@ -3347,7 +3348,7 @@ const DATASET = {
     "Allocator type": "Public PF (via mgr)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Helios Investment Partners",
-    "Fund / Vehicle / Deal name": "Helios Investors II / III / IV (historical)",
+    "Fund / Vehicle / Client": "Helios Investors II / III / IV (historical)",
     "Asset class": "PE",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": "2009–2020",
@@ -3360,7 +3361,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP",
-    "Source IDs": "S011"
+    "Source IDs": "S011",
+    "Fund / Vehicle / Deal name": "Helios Investors II / III / IV (historical)"
   },
   {
     "Allocator (institution)": "PIC (mgr for GEPF)",
@@ -3368,7 +3370,7 @@ const DATASET = {
     "Allocator type": "Public PF (via mgr)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Pembani Remgro",
-    "Fund / Vehicle / Deal name": "Pembani Remgro Infrastructure Fund",
+    "Fund / Vehicle / Client": "Pembani Remgro Infrastructure Fund",
     "Asset class": "Infrastructure",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2015,
@@ -3377,11 +3379,12 @@ const DATASET = {
     "Disclosure type": "Trade press",
     "Source (short)": "Africa Capital Digest reporting",
     "Confidence": "M",
-    "Notes": "PIC was an anchor LP at fund formation.",
+    "Notes": "PIC was an anchor LP at fund formation. Source confirms Pembani Remgro Infrastructure Fund first close and private-pension participation but does not name PIC/GEPF; retain for review unless named PIC evidence is found.",
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": null
+    "Source IDs": "S251",
+    "Fund / Vehicle / Deal name": "Pembani Remgro Infrastructure Fund"
   },
   {
     "Allocator (institution)": "PIC (mgr for GEPF)",
@@ -3389,7 +3392,7 @@ const DATASET = {
     "Allocator type": "Public PF (via mgr)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Convergence Partners",
-    "Fund / Vehicle / Deal name": "Convergence Partners Communications Infrastructure Fund",
+    "Fund / Vehicle / Client": "Convergence Partners Communications Infrastructure Fund",
     "Asset class": "Infrastructure",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": "various",
@@ -3402,15 +3405,16 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure; Digital / Technology",
     "Investment approach": "Fund LP",
-    "Source IDs": null
+    "Source IDs": "S252",
+    "Fund / Vehicle / Deal name": "Convergence Partners Communications Infrastructure Fund"
   },
   {
     "Allocator (institution)": "PIC (mgr for GEPF)",
     "Allocator country": "South Africa",
     "Allocator type": "Public PF (via mgr)",
     "Commitment type": "Direct equity",
-    "GP or counterparty": "—",
-    "Fund / Vehicle / Deal name": "Isibaya developmental investments portfolio",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Isibaya developmental investments portfolio",
     "Asset class": "Direct / Mixed",
     "Geographic focus": "Domestic + Africa",
     "Vintage / Year": "ongoing",
@@ -3423,7 +3427,8 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure; Multi-Sector",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S002;S219;S220"
+    "Source IDs": "S002;S219;S220",
+    "Fund / Vehicle / Deal name": "Isibaya developmental investments portfolio"
   },
   {
     "Allocator (institution)": "Eskom Pension and Provident Fund (EPPF)",
@@ -3431,7 +3436,7 @@ const DATASET = {
     "Allocator type": "Parastatal PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Multiple SA + pan-Africa GPs",
-    "Fund / Vehicle / Deal name": "Multiple PE funds",
+    "Fund / Vehicle / Client": "Multiple PE funds",
     "Asset class": "PE",
     "Geographic focus": "South Africa + Pan-Africa",
     "Vintage / Year": "10+ years history",
@@ -3444,15 +3449,16 @@ const DATASET = {
     "Asset class normalized": "Mixed / Multi-Asset",
     "Sector / thematic focus": "Multi-Sector",
     "Investment approach": "Fund LP",
-    "Source IDs": "S032;S033"
+    "Source IDs": "S032;S033",
+    "Fund / Vehicle / Deal name": "Multiple PE funds"
   },
   {
     "Allocator (institution)": "GEPF (via PIC)",
     "Allocator country": "South Africa",
     "Allocator type": "Public PF (via mgr)",
     "Commitment type": "Platform",
-    "GP or counterparty": "African Development Bank",
-    "Fund / Vehicle / Deal name": "Africa50 (indirect via PIC)",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Africa50",
     "Asset class": "Infrastructure platform",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2025,
@@ -3465,7 +3471,8 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure; Financial Inclusion / Financial Services",
     "Investment approach": "Platform / Anchor Sponsor",
-    "Source IDs": "S001"
+    "Source IDs": "S001",
+    "Fund / Vehicle / Deal name": "Africa50"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -3473,7 +3480,7 @@ const DATASET = {
     "Allocator type": "SWF (3 sub-funds)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Africa50",
-    "Fund / Vehicle / Deal name": "Africa50 Infrastructure Acceleration Fund (IAF)",
+    "Fund / Vehicle / Client": "Africa50 Infrastructure Acceleration Fund (IAF)",
     "Asset class": "Infrastructure",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2026,
@@ -3486,15 +3493,16 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S004;S088"
+    "Source IDs": "S004;S088",
+    "Fund / Vehicle / Deal name": "Africa50 Infrastructure Acceleration Fund (IAF)"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
     "Allocator country": "Nigeria",
     "Allocator type": "SWF (3 sub-funds)",
     "Commitment type": "Direct equity",
-    "GP or counterparty": "Various consortia",
-    "Fund / Vehicle / Deal name": "Nigeria Infrastructure Fund (NIF) direct deals",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Nigeria Infrastructure Fund (NIF) direct deals",
     "Asset class": "Direct / Infrastructure",
     "Geographic focus": "Domestic",
     "Vintage / Year": "ongoing",
@@ -3507,15 +3515,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure; Multi-Sector",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S006"
+    "Source IDs": "S006",
+    "Fund / Vehicle / Deal name": "Nigeria Infrastructure Fund (NIF) direct deals"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
     "Allocator country": "Nigeria",
     "Allocator type": "SWF",
     "Commitment type": "Direct equity",
-    "GP or counterparty": "—",
-    "Fund / Vehicle / Deal name": "Lekki Deep Sea Port (PPP equity)",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Lekki Deep Sea Port (PPP equity)",
     "Asset class": "Direct / Infrastructure",
     "Geographic focus": "Domestic",
     "Vintage / Year": "2017–",
@@ -3528,15 +3537,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S006"
+    "Source IDs": "S006",
+    "Fund / Vehicle / Deal name": "Lekki Deep Sea Port (PPP equity)"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
     "Allocator country": "Nigeria",
     "Allocator type": "SWF",
     "Commitment type": "Direct equity",
-    "GP or counterparty": "—",
-    "Fund / Vehicle / Deal name": "Pandagric Novum (agribusiness)",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Pandagric Novum (agribusiness)",
     "Asset class": "Direct / Agribusiness",
     "Geographic focus": "Domestic",
     "Vintage / Year": "2018–",
@@ -3549,7 +3559,8 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Agriculture / Food Security",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S006"
+    "Source IDs": "S006",
+    "Fund / Vehicle / Deal name": "Pandagric Novum (agribusiness)"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -3557,7 +3568,7 @@ const DATASET = {
     "Allocator type": "SWF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "African Capital Alliance (ACA)",
-    "Fund / Vehicle / Deal name": "Capital Alliance Private Equity (CAPE) funds",
+    "Fund / Vehicle / Client": "Capital Alliance Private Equity (CAPE) funds",
     "Asset class": "PE",
     "Geographic focus": "West Africa / Nigeria",
     "Vintage / Year": "various",
@@ -3570,7 +3581,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP",
-    "Source IDs": "S145;S147"
+    "Source IDs": "S145;S147",
+    "Fund / Vehicle / Deal name": "Capital Alliance Private Equity (CAPE) funds"
   },
   {
     "Allocator (institution)": "Multiple Nigerian PFAs (consortium)",
@@ -3578,7 +3590,7 @@ const DATASET = {
     "Allocator type": "PFA cohort",
     "Commitment type": "Fund LP",
     "GP or counterparty": "ARM-Harith Infrastructure Investment",
-    "Fund / Vehicle / Deal name": "ARM-Harith Infrastructure Fund I",
+    "Fund / Vehicle / Client": "ARM-Harith Infrastructure Fund I",
     "Asset class": "Infrastructure",
     "Geographic focus": "Nigeria",
     "Vintage / Year": 2015,
@@ -3591,7 +3603,8 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S030;S031"
+    "Source IDs": "S030;S031",
+    "Fund / Vehicle / Deal name": "ARM-Harith Infrastructure Fund I"
   },
   {
     "Allocator (institution)": "Stanbic IBTC Pension Managers",
@@ -3599,7 +3612,7 @@ const DATASET = {
     "Allocator type": "PFA",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Various Nigerian PE/infra GPs",
-    "Fund / Vehicle / Deal name": "Multiple funds",
+    "Fund / Vehicle / Client": "Multiple funds",
     "Asset class": "PE / Infrastructure",
     "Geographic focus": "Nigeria / West Africa",
     "Vintage / Year": "various 2014–2024",
@@ -3608,11 +3621,12 @@ const DATASET = {
     "Disclosure type": "PenCom returns / trade press",
     "Source (short)": "PenCom Multi-Fund disclosures",
     "Confidence": "M",
-    "Notes": "Largest PFA; alts are growing portion of portfolio under Multi-Fund Structure but per-fund sizes are not publicly disclosed.",
+    "Notes": "Largest PFA; alts are growing portion of portfolio under Multi-Fund Structure but per-fund sizes are not publicly disclosed. Stanbic multi-fund/public material supports structure and aggregate alternatives context but not named fund-level commitments; consider moving to reference/aggregate exposure if no named fund evidence is found.",
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure; Multi-Sector",
     "Investment approach": "Fund LP",
-    "Source IDs": "NONE"
+    "Source IDs": "S260",
+    "Fund / Vehicle / Deal name": "Multiple funds"
   },
   {
     "Allocator (institution)": "ARM Pension Managers (Access ARM Pensions)",
@@ -3620,7 +3634,7 @@ const DATASET = {
     "Allocator type": "PFA",
     "Commitment type": "Fund LP",
     "GP or counterparty": "ARM-Harith Infrastructure Investment",
-    "Fund / Vehicle / Deal name": "ARM-Harith funds (intra-group affiliate)",
+    "Fund / Vehicle / Client": "ARM-Harith funds (intra-group affiliate)",
     "Asset class": "Infrastructure",
     "Geographic focus": "Nigeria",
     "Vintage / Year": "various",
@@ -3633,15 +3647,16 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S030;S031"
+    "Source IDs": "S030;S031",
+    "Fund / Vehicle / Deal name": "ARM-Harith funds (intra-group affiliate)"
   },
   {
     "Allocator (institution)": "The Sovereign Fund of Egypt (TSFE)",
     "Allocator country": "Egypt",
     "Allocator type": "SWF (strategic)",
     "Commitment type": "Co-investment",
-    "GP or counterparty": "B Investments",
-    "Fund / Vehicle / Deal name": "EZ International (El-Ezaby Pharmacy logistics JV)",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "EZ International (El-Ezaby Pharmacy logistics JV)",
     "Asset class": "Direct / Healthcare",
     "Geographic focus": "Domestic",
     "Vintage / Year": 2024,
@@ -3654,15 +3669,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Healthcare",
     "Investment approach": "Co-investment",
-    "Source IDs": "S023"
+    "Source IDs": "S023",
+    "Fund / Vehicle / Deal name": "EZ International (El-Ezaby Pharmacy logistics JV)"
   },
   {
     "Allocator (institution)": "The Sovereign Fund of Egypt (TSFE)",
     "Allocator country": "Egypt",
     "Allocator type": "SWF (strategic)",
     "Commitment type": "Platform",
-    "GP or counterparty": "ADQ (UAE)",
-    "Fund / Vehicle / Deal name": "TSFE-ADQ Egyptian Health Platform",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "TSFE-ADQ Egyptian Health Platform",
     "Asset class": "Direct / Healthcare",
     "Geographic focus": "Domestic",
     "Vintage / Year": "2022–",
@@ -3675,15 +3691,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Healthcare",
     "Investment approach": "Platform / Anchor Sponsor",
-    "Source IDs": "S023;S024"
+    "Source IDs": "S023;S024",
+    "Fund / Vehicle / Deal name": "TSFE-ADQ Egyptian Health Platform"
   },
   {
     "Allocator (institution)": "The Sovereign Fund of Egypt (TSFE)",
     "Allocator country": "Egypt",
     "Allocator type": "SWF (strategic)",
     "Commitment type": "Platform",
-    "GP or counterparty": "Saudi PIF / Qatari QIA / ADQ",
-    "Fund / Vehicle / Deal name": "Various Gulf-Egypt platforms",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Various Gulf-Egypt platforms",
     "Asset class": "Direct / Mixed",
     "Geographic focus": "Domestic",
     "Vintage / Year": "ongoing",
@@ -3696,15 +3713,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure; Financial Inclusion / Financial Services; Healthcare; Multi-Sector",
     "Investment approach": "Platform / Anchor Sponsor",
-    "Source IDs": "S023;S024"
+    "Source IDs": "S023;S024",
+    "Fund / Vehicle / Deal name": "Various Gulf-Egypt platforms"
   },
   {
     "Allocator (institution)": "Caisse de Dépôt et de Gestion (CDG)",
     "Allocator country": "Morocco",
     "Allocator type": "Sovereign + pension manager",
     "Commitment type": "Direct equity",
-    "GP or counterparty": "—",
-    "Fund / Vehicle / Deal name": "Fipar-Holding (CDG Invest)",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Fipar-Holding (CDG Invest)",
     "Asset class": "Direct / Diversified",
     "Geographic focus": "Domestic",
     "Vintage / Year": "ongoing",
@@ -3717,7 +3735,8 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure; Multi-Sector",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S027;S028"
+    "Source IDs": "S027;S028",
+    "Fund / Vehicle / Deal name": "Fipar-Holding (CDG Invest)"
   },
   {
     "Allocator (institution)": "Caisse de Dépôt et de Gestion (CDG)",
@@ -3725,7 +3744,7 @@ const DATASET = {
     "Allocator type": "Sovereign + pension manager",
     "Commitment type": "Fund GP (manage)",
     "GP or counterparty": "CDG Invest (self)",
-    "Fund / Vehicle / Deal name": "CapMezzanine III",
+    "Fund / Vehicle / Client": "CapMezzanine III",
     "Asset class": "Private credit / Mezz",
     "Geographic focus": "Domestic",
     "Vintage / Year": "active",
@@ -3738,7 +3757,8 @@ const DATASET = {
     "Asset class normalized": "Private Credit",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S224;S027"
+    "Source IDs": "S224;S027",
+    "Fund / Vehicle / Deal name": "CapMezzanine III"
   },
   {
     "Allocator (institution)": "Caisse de Dépôt et de Gestion (CDG)",
@@ -3746,7 +3766,7 @@ const DATASET = {
     "Allocator type": "Sovereign + pension manager",
     "Commitment type": "Fund GP (manage)",
     "GP or counterparty": "CDG Invest (self)",
-    "Fund / Vehicle / Deal name": "InfraMaroc",
+    "Fund / Vehicle / Client": "InfraMaroc",
     "Asset class": "Infrastructure",
     "Geographic focus": "Domestic",
     "Vintage / Year": "active",
@@ -3759,7 +3779,8 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S027;S224"
+    "Source IDs": "S027;S224",
+    "Fund / Vehicle / Deal name": "InfraMaroc"
   },
   {
     "Allocator (institution)": "Caisse de Dépôt et de Gestion (CDG)",
@@ -3767,7 +3788,7 @@ const DATASET = {
     "Allocator type": "Sovereign + pension manager",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Mediterrania Capital Partners",
-    "Fund / Vehicle / Deal name": "Mediterrania Capital II/III (historical)",
+    "Fund / Vehicle / Client": "Mediterrania Capital II/III (historical)",
     "Asset class": "PE",
     "Geographic focus": "North Africa / pan-Africa",
     "Vintage / Year": "various",
@@ -3780,15 +3801,16 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP",
-    "Source IDs": "S029"
+    "Source IDs": "S029",
+    "Fund / Vehicle / Deal name": "Mediterrania Capital II/III (historical)"
   },
   {
     "Allocator (institution)": "Caisse de Dépôt et de Gestion (CDG)",
     "Allocator country": "Morocco",
     "Allocator type": "Sovereign + pension manager",
     "Commitment type": "Direct equity",
-    "GP or counterparty": "IFC + Fipar-Holding",
-    "Fund / Vehicle / Deal name": "Retail Holding (food distribution, Morocco + Côte d'Ivoire)",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Retail Holding (food distribution, Morocco + Côte d'Ivoire)",
     "Asset class": "Direct / Consumer",
     "Geographic focus": "Regional",
     "Vintage / Year": 2024,
@@ -3801,15 +3823,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Agriculture / Food Security",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S028;S027"
+    "Source IDs": "S028;S027",
+    "Fund / Vehicle / Deal name": "Retail Holding (food distribution, Morocco + Côte d'Ivoire)"
   },
   {
     "Allocator (institution)": "Ithmar Capital",
     "Allocator country": "Morocco",
     "Allocator type": "SWF (sector-strategic)",
     "Commitment type": "Platform / direct strategic investment vehicle",
-    "GP or counterparty": "Wessal Capital joint venture",
-    "Fund / Vehicle / Deal name": "Wessal Capital (SWF joint investment vehicle)",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Wessal Capital (SWF joint investment vehicle)",
     "Asset class": "Direct / real estate / tourism infrastructure",
     "Geographic focus": "Domestic",
     "Vintage / Year": "active",
@@ -3822,7 +3845,8 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure; Real Estate / Housing",
     "Investment approach": "Platform / Anchor Sponsor",
-    "Source IDs": "S179"
+    "Source IDs": "S179",
+    "Fund / Vehicle / Deal name": "Wessal Capital (SWF joint investment vehicle)"
   },
   {
     "Allocator (institution)": "Mohammed VI Fund for Investment",
@@ -3830,7 +3854,7 @@ const DATASET = {
     "Allocator type": "SWF (strategic)",
     "Commitment type": "Fund LP / Anchor",
     "GP or counterparty": "Multiple Moroccan sectoral GPs",
-    "Fund / Vehicle / Deal name": "Sectoral co-investment funds",
+    "Fund / Vehicle / Client": "Sectoral co-investment funds",
     "Asset class": "Mixed",
     "Geographic focus": "Domestic",
     "Vintage / Year": "active",
@@ -3839,11 +3863,12 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Mohammed VI Fund framework",
     "Confidence": "M",
-    "Notes": "Newly-capitalised; intended as anchor for Moroccan sectoral funds.",
+    "Notes": "Newly-capitalised; intended as anchor for Moroccan sectoral funds. FM6I official material supports thematic/sectoral fund platform role; specific fund manager/vehicle rows should be split once selected funds close.",
     "Asset class normalized": "Mixed / Multi-Asset",
     "Sector / thematic focus": "Multi-Sector",
     "Investment approach": "Platform / Anchor Sponsor",
-    "Source IDs": "NONE"
+    "Source IDs": "S253",
+    "Fund / Vehicle / Deal name": "Sectoral co-investment funds"
   },
   {
     "Allocator (institution)": "Government Institutions Pension Fund (GIPF)",
@@ -3851,7 +3876,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP (multiple)",
     "GP or counterparty": "41 unique fund managers",
-    "Fund / Vehicle / Deal name": "77 indirect funds (covering PE, VC, private credit, infra, RE)",
+    "Fund / Vehicle / Client": "77 indirect funds (covering PE, VC, private credit, infra, RE)",
     "Asset class": "PE / VC / Infra / Private credit / RE",
     "Geographic focus": "Mostly Namibia + Africa",
     "Vintage / Year": "to 30 June 2025",
@@ -3864,7 +3889,8 @@ const DATASET = {
     "Asset class normalized": "Private Credit",
     "Sector / thematic focus": "Infrastructure; Multi-Sector",
     "Investment approach": "Fund LP",
-    "Source IDs": "S007;S218"
+    "Source IDs": "S007;S218",
+    "Fund / Vehicle / Deal name": "77 indirect funds (covering PE, VC, private credit, infra, RE)"
   },
   {
     "Allocator (institution)": "Government Institutions Pension Fund (GIPF)",
@@ -3872,7 +3898,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Stimulus Investments",
-    "Fund / Vehicle / Deal name": "Stimulus Investments Funds",
+    "Fund / Vehicle / Client": "Stimulus Investments Funds",
     "Asset class": "PE / Mezz",
     "Geographic focus": "Domestic (Namibia)",
     "Vintage / Year": "multiple vintages",
@@ -3885,7 +3911,8 @@ const DATASET = {
     "Asset class normalized": "Private Credit",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP",
-    "Source IDs": "S007;S218"
+    "Source IDs": "S007;S218",
+    "Fund / Vehicle / Deal name": "Stimulus Investments Funds"
   },
   {
     "Allocator (institution)": "Government Institutions Pension Fund (GIPF)",
@@ -3893,7 +3920,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Eos Capital",
-    "Fund / Vehicle / Deal name": "Eos Capital funds (Allegrow, Euphrates, etc.)",
+    "Fund / Vehicle / Client": "Eos Capital funds (Allegrow, Euphrates, etc.)",
     "Asset class": "PE",
     "Geographic focus": "Domestic (Namibia)",
     "Vintage / Year": "multiple vintages",
@@ -3906,7 +3933,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Multi-Sector",
     "Investment approach": "Fund LP",
-    "Source IDs": "S218"
+    "Source IDs": "S218",
+    "Fund / Vehicle / Deal name": "Eos Capital funds (Allegrow, Euphrates, etc.)"
   },
   {
     "Allocator (institution)": "Government Institutions Pension Fund (GIPF)",
@@ -3914,7 +3942,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Old Mutual Investment Group Namibia",
-    "Fund / Vehicle / Deal name": "OMIGNAM unlisted programmes",
+    "Fund / Vehicle / Client": "OMIGNAM unlisted programmes",
     "Asset class": "PE / Infrastructure",
     "Geographic focus": "Domestic (Namibia)",
     "Vintage / Year": "multiple",
@@ -3927,15 +3955,16 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S218"
+    "Source IDs": "S218",
+    "Fund / Vehicle / Deal name": "OMIGNAM unlisted programmes"
   },
   {
     "Allocator (institution)": "Government Institutions Pension Fund (GIPF)",
     "Allocator country": "Namibia",
     "Allocator type": "Public PF",
     "Commitment type": "Direct equity",
-    "GP or counterparty": "—",
-    "Fund / Vehicle / Deal name": "Housing financing programme",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Housing financing programme",
     "Asset class": "Direct / Housing infrastructure",
     "Geographic focus": "Domestic",
     "Vintage / Year": "ongoing",
@@ -3948,7 +3977,8 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure; Real Estate / Housing",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S218"
+    "Source IDs": "S218",
+    "Fund / Vehicle / Deal name": "Housing financing programme"
   },
   {
     "Allocator (institution)": "Botswana Public Officers Pension Fund (BPOPF)",
@@ -3956,7 +3986,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Aleyo Capital",
-    "Fund / Vehicle / Deal name": "Aleyo Capital Fund I",
+    "Fund / Vehicle / Client": "Aleyo Capital Fund I",
     "Asset class": "PE",
     "Geographic focus": "Domestic",
     "Vintage / Year": 2017,
@@ -3969,7 +3999,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP",
-    "Source IDs": "S017;S018"
+    "Source IDs": "S017;S018",
+    "Fund / Vehicle / Deal name": "Aleyo Capital Fund I"
   },
   {
     "Allocator (institution)": "Botswana Public Officers Pension Fund (BPOPF)",
@@ -3977,7 +4008,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Africa Lighthouse Capital",
-    "Fund / Vehicle / Deal name": "Africa Lighthouse Capital Fund I",
+    "Fund / Vehicle / Client": "Africa Lighthouse Capital Fund I",
     "Asset class": "PE",
     "Geographic focus": "Domestic + regional",
     "Vintage / Year": 2017,
@@ -3990,7 +4021,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP",
-    "Source IDs": "S017;S018"
+    "Source IDs": "S017;S018",
+    "Fund / Vehicle / Deal name": "Africa Lighthouse Capital Fund I"
   },
   {
     "Allocator (institution)": "Botswana Public Officers Pension Fund (BPOPF)",
@@ -3998,7 +4030,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Vantage Capital",
-    "Fund / Vehicle / Deal name": "Vantage Capital Mezzanine funds",
+    "Fund / Vehicle / Client": "Vantage Capital Mezzanine funds",
     "Asset class": "Private credit / Mezz",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": "various",
@@ -4011,7 +4043,8 @@ const DATASET = {
     "Asset class normalized": "Private Credit",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP",
-    "Source IDs": "S017;S128;S127"
+    "Source IDs": "S017;S128;S127",
+    "Fund / Vehicle / Deal name": "Vantage Capital Mezzanine funds"
   },
   {
     "Allocator (institution)": "Botswana Public Officers Pension Fund (BPOPF)",
@@ -4019,7 +4052,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Multiple SA + pan-Africa GPs",
-    "Fund / Vehicle / Deal name": "Various",
+    "Fund / Vehicle / Client": "Various",
     "Asset class": "PE / Infrastructure",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": "ongoing",
@@ -4032,7 +4065,8 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure; Multi-Sector",
     "Investment approach": "Fund LP",
-    "Source IDs": "S017"
+    "Source IDs": "S017",
+    "Fund / Vehicle / Deal name": "Various"
   },
   {
     "Allocator (institution)": "NSSF Uganda",
@@ -4040,7 +4074,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Pearl Capital Partners",
-    "Fund / Vehicle / Deal name": "Yield Uganda Investment Fund",
+    "Fund / Vehicle / Client": "Yield Uganda Investment Fund",
     "Asset class": "PE / Agribusiness",
     "Geographic focus": "Domestic",
     "Vintage / Year": 2017,
@@ -4053,15 +4087,16 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Agriculture / Food Security",
     "Investment approach": "Fund LP",
-    "Source IDs": "S014;S143;S144"
+    "Source IDs": "S014;S143;S144",
+    "Fund / Vehicle / Deal name": "Yield Uganda Investment Fund"
   },
   {
     "Allocator (institution)": "NSSF Uganda",
     "Allocator country": "Uganda",
     "Allocator type": "Public PF",
     "Commitment type": "Direct / Multiple",
-    "GP or counterparty": "Various",
-    "Fund / Vehicle / Deal name": "~20% alternatives portfolio (mostly RE, growing infra/PE)",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "~20% alternatives portfolio (mostly RE, growing infra/PE)",
     "Asset class": "Mixed",
     "Geographic focus": "Domestic + EAC",
     "Vintage / Year": "ongoing",
@@ -4074,7 +4109,8 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure; Real Estate / Housing; Multi-Sector",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S013;S074;S012"
+    "Source IDs": "S013;S074;S012",
+    "Fund / Vehicle / Deal name": "~20% alternatives portfolio (mostly RE, growing infra/PE)"
   },
   {
     "Allocator (institution)": "NSSF Uganda",
@@ -4082,7 +4118,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Catalyst Principal Partners (historical)",
-    "Fund / Vehicle / Deal name": "Catalyst Fund II",
+    "Fund / Vehicle / Client": "Catalyst Fund II",
     "Asset class": "PE",
     "Geographic focus": "East Africa",
     "Vintage / Year": 2017,
@@ -4095,7 +4131,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S102;S101"
+    "Source IDs": "S102;S101",
+    "Fund / Vehicle / Deal name": "Catalyst Fund II"
   },
   {
     "Allocator (institution)": "Fundo Soberano de Angola (FSDEA)",
@@ -4103,7 +4140,7 @@ const DATASET = {
     "Allocator type": "SWF",
     "Commitment type": "Platform / Anchor",
     "GP or counterparty": "Gemcorp Capital",
-    "Fund / Vehicle / Deal name": "Gemcorp-FSDEA Pan-African Infrastructure Fund",
+    "Fund / Vehicle / Client": "Gemcorp-FSDEA Pan-African Infrastructure Fund",
     "Asset class": "Infrastructure",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2025,
@@ -4116,15 +4153,16 @@ const DATASET = {
     "Asset class normalized": "Platform / Holding Company",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Platform / Anchor Sponsor",
-    "Source IDs": "S019;S206"
+    "Source IDs": "S019;S206",
+    "Fund / Vehicle / Deal name": "Gemcorp-FSDEA Pan-African Infrastructure Fund"
   },
   {
     "Allocator (institution)": "Fundo Soberano de Angola (FSDEA)",
     "Allocator country": "Angola",
     "Allocator type": "SWF",
     "Commitment type": "Direct / Co-invest",
-    "GP or counterparty": "Government consortium",
-    "Fund / Vehicle / Deal name": "Lobito Corridor partnership",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Lobito Corridor partnership",
     "Asset class": "Direct / Infrastructure",
     "Geographic focus": "Regional (Angola-Zambia-DRC)",
     "Vintage / Year": 2024,
@@ -4133,11 +4171,12 @@ const DATASET = {
     "Disclosure type": "Press release",
     "Source (short)": "Lobito Corridor announcement",
     "Confidence": "H",
-    "Notes": "Multi-party rail-and-port infrastructure development.",
+    "Notes": "Multi-party rail-and-port infrastructure development. FSDEA source supports strategic-plan/Lobito platform context, but not a discrete closed commitment; consider Pipeline/Reference unless transaction evidence is found.",
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Direct Investment",
-    "Source IDs": "NONE"
+    "Source IDs": "S254",
+    "Fund / Vehicle / Deal name": "Lobito Corridor partnership"
   },
   {
     "Allocator (institution)": "Fundo Soberano de Angola (FSDEA)",
@@ -4145,7 +4184,7 @@ const DATASET = {
     "Allocator type": "SWF",
     "Commitment type": "Fund LP (multi)",
     "GP or counterparty": "Various",
-    "Fund / Vehicle / Deal name": "Diversified portfolio incl. private equity funds",
+    "Fund / Vehicle / Client": "Diversified portfolio incl. private equity funds",
     "Asset class": "PE / Mixed",
     "Geographic focus": "Global + Africa",
     "Vintage / Year": "ongoing",
@@ -4158,7 +4197,8 @@ const DATASET = {
     "Asset class normalized": "Mixed / Multi-Asset",
     "Sector / thematic focus": "Infrastructure; Multi-Sector",
     "Investment approach": "Fund LP",
-    "Source IDs": "S021;S020"
+    "Source IDs": "S021;S020",
+    "Fund / Vehicle / Deal name": "Diversified portfolio incl. private equity funds"
   },
   {
     "Allocator (institution)": "FONSIS",
@@ -4166,7 +4206,7 @@ const DATASET = {
     "Allocator type": "SWF (strategic)",
     "Commitment type": "Fund LP / sponsor",
     "GP or counterparty": "SEAF (Small Enterprise Assistance Funds)",
-    "Fund / Vehicle / Deal name": "Oyass Capital (SME fund)",
+    "Fund / Vehicle / Client": "Oyass Capital (SME fund)",
     "Asset class": "PE / SME",
     "Geographic focus": "Domestic",
     "Vintage / Year": 2024,
@@ -4179,15 +4219,16 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "SME Finance; Financial Inclusion / Financial Services",
     "Investment approach": "Platform / Anchor Sponsor",
-    "Source IDs": "S025"
+    "Source IDs": "S025",
+    "Fund / Vehicle / Deal name": "Oyass Capital (SME fund)"
   },
   {
     "Allocator (institution)": "FONSIS",
     "Allocator country": "Senegal",
     "Allocator type": "SWF (strategic)",
     "Commitment type": "Direct / Co-invest",
-    "GP or counterparty": "Multiple",
-    "Fund / Vehicle / Deal name": "Strategic projects portfolio (Teyliom Industries, agribusiness, hospitality)",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Strategic projects portfolio (Teyliom Industries, agribusiness, hospitality)",
     "Asset class": "Direct",
     "Geographic focus": "Domestic",
     "Vintage / Year": "ongoing",
@@ -4200,15 +4241,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure; Agriculture / Food Security; Multi-Sector",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S026"
+    "Source IDs": "S026",
+    "Fund / Vehicle / Deal name": "Strategic projects portfolio (Teyliom Industries, agribusiness, hospitality)"
   },
   {
     "Allocator (institution)": "Agaciro Development Fund (AgDF)",
     "Allocator country": "Rwanda",
     "Allocator type": "SWF / Strategic",
     "Commitment type": "Direct equity",
-    "GP or counterparty": "—",
-    "Fund / Vehicle / Deal name": "Domestic strategic investments",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Domestic strategic investments",
     "Asset class": "Direct",
     "Geographic focus": "Domestic",
     "Vintage / Year": "ongoing",
@@ -4217,19 +4259,20 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "AgDF disclosures",
     "Confidence": "M",
-    "Notes": "AgDF holds equity in selected Rwandan strategic companies.",
+    "Notes": "AgDF holds equity in selected Rwandan strategic companies. AgDF annual report supports aggregate equity allocation; no named direct strategic investments listed in this row.",
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Direct Investment",
-    "Source IDs": "NONE"
+    "Source IDs": "S255",
+    "Fund / Vehicle / Deal name": "Domestic strategic investments"
   },
   {
     "Allocator (institution)": "Rwanda Social Security Board (RSSB)",
     "Allocator country": "Rwanda",
     "Allocator type": "Public PF",
     "Commitment type": "Direct equity",
-    "GP or counterparty": "—",
-    "Fund / Vehicle / Deal name": "BK Group, RwandAir, other strategic stakes",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "BK Group, RwandAir, other strategic stakes",
     "Asset class": "Direct",
     "Geographic focus": "Domestic",
     "Vintage / Year": "ongoing",
@@ -4238,19 +4281,20 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "RSSB disclosures",
     "Confidence": "H",
-    "Notes": "RSSB holds significant direct equity in Rwandan strategic enterprises.",
+    "Notes": "RSSB holds significant direct equity in Rwandan strategic enterprises. Source supports RSSB/BK Group ownership; row remains aggregate because RwandAir/other strategic stakes need separate source support.",
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Direct Investment",
-    "Source IDs": "NONE"
+    "Source IDs": "S256",
+    "Fund / Vehicle / Deal name": "BK Group, RwandAir, other strategic stakes"
   },
   {
     "Allocator (institution)": "Social Security and National Insurance Trust (SSNIT)",
     "Allocator country": "Ghana",
     "Allocator type": "Public PF",
     "Commitment type": "Direct / Mixed alts",
-    "GP or counterparty": "Various",
-    "Fund / Vehicle / Deal name": "Alternatives portfolio (real estate, PE, direct equity)",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Alternatives portfolio (real estate, PE, direct equity)",
     "Asset class": "PE / RE / Direct",
     "Geographic focus": "Domestic",
     "Vintage / Year": 2023,
@@ -4263,15 +4307,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure; Real Estate / Housing; Multi-Sector",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S034"
+    "Source IDs": "S034",
+    "Fund / Vehicle / Deal name": "Alternatives portfolio (real estate, PE, direct equity)"
   },
   {
     "Allocator (institution)": "Social Security and National Insurance Trust (SSNIT)",
     "Allocator country": "Ghana",
     "Allocator type": "Public PF",
     "Commitment type": "Direct equity",
-    "GP or counterparty": "—",
-    "Fund / Vehicle / Deal name": "Direct stakes in Ghanaian banks, agribusiness, real estate",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Direct stakes in Ghanaian banks, agribusiness, real estate",
     "Asset class": "Direct",
     "Geographic focus": "Domestic",
     "Vintage / Year": "ongoing",
@@ -4284,15 +4329,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Agriculture / Food Security; Financial Inclusion / Financial Services; Real Estate / Housing",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S034;S035"
+    "Source IDs": "S034;S035",
+    "Fund / Vehicle / Deal name": "Direct stakes in Ghanaian banks, agribusiness, real estate"
   },
   {
     "Allocator (institution)": "Ghana Infrastructure Investment Fund (GIIF)",
     "Allocator country": "Ghana",
     "Allocator type": "SWF (infra)",
     "Commitment type": "Direct / Co-invest",
-    "GP or counterparty": "Various",
-    "Fund / Vehicle / Deal name": "Domestic infrastructure deals (toll roads, energy, water)",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Domestic infrastructure deals (toll roads, energy, water)",
     "Asset class": "Direct / Infra",
     "Geographic focus": "Domestic",
     "Vintage / Year": "ongoing",
@@ -4305,15 +4351,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure; Multi-Sector",
     "Investment approach": "Direct Investment",
-    "Source IDs": "NONE"
+    "Source IDs": "S257",
+    "Fund / Vehicle / Deal name": "Domestic infrastructure deals (toll roads, energy, water)"
   },
   {
     "Allocator (institution)": "FGIS",
     "Allocator country": "Gabon",
     "Allocator type": "SWF (strategic)",
     "Commitment type": "Direct equity",
-    "GP or counterparty": "—",
-    "Fund / Vehicle / Deal name": "Gabonese financial and infra stakes",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Gabonese financial and infra stakes",
     "Asset class": "Direct / Mixed",
     "Geographic focus": "Domestic + regional",
     "Vintage / Year": "ongoing",
@@ -4322,19 +4369,20 @@ const DATASET = {
     "Disclosure type": "Annual report",
     "Source (short)": "FGIS disclosures",
     "Confidence": "M",
-    "Notes": "FGIS has built equity stakes in Gabonese banking and infrastructure.",
+    "Notes": "FGIS has built equity stakes in Gabonese banking and infrastructure. Source supports FGIS strategic investment/state-asset role, but not specific financial/infra stakes; keep as aggregate unless holdings are named.",
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure; Financial Inclusion / Financial Services; Multi-Sector",
     "Investment approach": "Direct Investment",
-    "Source IDs": "NONE"
+    "Source IDs": "S258",
+    "Fund / Vehicle / Deal name": "Gabonese financial and infra stakes"
   },
   {
     "Allocator (institution)": "FSD Djibouti",
     "Allocator country": "Djibouti",
     "Allocator type": "SWF (strategic)",
     "Commitment type": "Co-invest / Platform",
-    "GP or counterparty": "Various",
-    "Fund / Vehicle / Deal name": "Domestic strategic partnerships",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Domestic strategic partnerships",
     "Asset class": "Direct / Infra",
     "Geographic focus": "Domestic",
     "Vintage / Year": "ongoing",
@@ -4343,11 +4391,12 @@ const DATASET = {
     "Disclosure type": "Press releases",
     "Source (short)": "FSD disclosures",
     "Confidence": "M",
-    "Notes": "Mandate includes strategic co-investments.",
+    "Notes": "Mandate includes strategic co-investments. Source supports FSD co-investment mandate; no discrete closed platform transaction identified.",
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure; Multi-Sector",
     "Investment approach": "Platform / Anchor Sponsor",
-    "Source IDs": "NONE"
+    "Source IDs": "S259",
+    "Fund / Vehicle / Deal name": "Domestic strategic partnerships"
   },
   {
     "Allocator (institution)": "Axis Pension Trust",
@@ -4355,7 +4404,7 @@ const DATASET = {
     "Allocator type": "Tier 2/3 corporate trustee",
     "Commitment type": "Fund LP / Co-investor",
     "GP or counterparty": "Growth Investment Partners (GIP) – BII platform",
-    "Fund / Vehicle / Deal name": "Growth Investment Partners Ghana",
+    "Fund / Vehicle / Client": "Growth Investment Partners Ghana",
     "Asset class": "Private credit / SME debt",
     "Geographic focus": "Domestic (Ghana)",
     "Vintage / Year": 2026,
@@ -4368,7 +4417,8 @@ const DATASET = {
     "Asset class normalized": "Private Credit",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Co-investment",
-    "Source IDs": "S075;S077;S076"
+    "Source IDs": "S075;S077;S076",
+    "Fund / Vehicle / Deal name": "Growth Investment Partners Ghana"
   },
   {
     "Allocator (institution)": "Axis Pension Trust",
@@ -4376,7 +4426,7 @@ const DATASET = {
     "Allocator type": "Tier 2/3 corporate trustee",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Savannah Impact Advisory (Manager)",
-    "Fund / Vehicle / Deal name": "Ci Gaba Fund of Funds",
+    "Fund / Vehicle / Client": "Ci Gaba Fund of Funds",
     "Asset class": "Fund of Funds",
     "Geographic focus": "Ghana + Nigeria + Senegal + Côte d'Ivoire",
     "Vintage / Year": 2026,
@@ -4389,7 +4439,8 @@ const DATASET = {
     "Asset class normalized": "Fund of Funds",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Fund of Funds LP",
-    "Source IDs": "S080;S081"
+    "Source IDs": "S080;S081",
+    "Fund / Vehicle / Deal name": "Ci Gaba Fund of Funds"
   },
   {
     "Allocator (institution)": "Enterprise Trustees Limited",
@@ -4397,7 +4448,7 @@ const DATASET = {
     "Allocator type": "Tier 2/3 corporate trustee",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Savannah Impact Advisory (Manager)",
-    "Fund / Vehicle / Deal name": "Ci Gaba Fund of Funds",
+    "Fund / Vehicle / Client": "Ci Gaba Fund of Funds",
     "Asset class": "Fund of Funds",
     "Geographic focus": "Ghana + Nigeria + Senegal + Côte d'Ivoire",
     "Vintage / Year": 2026,
@@ -4410,15 +4461,16 @@ const DATASET = {
     "Asset class normalized": "Fund of Funds",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Fund of Funds LP",
-    "Source IDs": "S080;S081"
+    "Source IDs": "S080;S081",
+    "Fund / Vehicle / Deal name": "Ci Gaba Fund of Funds"
   },
   {
     "Allocator (institution)": "PIC (South Africa)",
     "Allocator country": "South Africa",
     "Allocator type": "Public PF (via mgr)",
     "Commitment type": "Direct equity (shareholder)",
-    "GP or counterparty": "Africa Finance Corporation (AFC)",
-    "Fund / Vehicle / Deal name": "AFC equity stake",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Africa Finance Corporation (AFC)",
     "Asset class": "Infrastructure / Multilateral",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2022,
@@ -4431,15 +4483,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S087;S220"
+    "Source IDs": "S087;S220",
+    "Fund / Vehicle / Deal name": "Africa Finance Corporation (AFC)"
   },
   {
     "Allocator (institution)": "Seychelles Pension Fund",
     "Allocator country": "Seychelles",
     "Allocator type": "Public PF",
     "Commitment type": "Direct equity (shareholder)",
-    "GP or counterparty": "Africa Finance Corporation (AFC)",
-    "Fund / Vehicle / Deal name": "AFC equity stake",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Africa Finance Corporation (AFC)",
     "Asset class": "Infrastructure / Multilateral",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": "various",
@@ -4452,15 +4505,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S083;S087"
+    "Source IDs": "S083;S087",
+    "Fund / Vehicle / Deal name": "Africa Finance Corporation (AFC)"
   },
   {
     "Allocator (institution)": "Ghana Infrastructure Investment Fund (GIIF)",
     "Allocator country": "Ghana",
     "Allocator type": "SWF (infra)",
     "Commitment type": "Direct equity (shareholder)",
-    "GP or counterparty": "Africa Finance Corporation (AFC)",
-    "Fund / Vehicle / Deal name": "AFC equity stake",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Africa Finance Corporation (AFC)",
     "Asset class": "Infrastructure / Multilateral",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": "various",
@@ -4473,15 +4527,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S083;S087"
+    "Source IDs": "S083;S087",
+    "Fund / Vehicle / Deal name": "Africa Finance Corporation (AFC)"
   },
   {
     "Allocator (institution)": "National Pension Fund (NPF) Mauritius",
     "Allocator country": "Mauritius",
     "Allocator type": "Public PF",
     "Commitment type": "Direct equity (shareholder)",
-    "GP or counterparty": "Africa Finance Corporation (AFC)",
-    "Fund / Vehicle / Deal name": "AFC equity stake",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Africa Finance Corporation (AFC)",
     "Asset class": "Infrastructure / Multilateral",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": "various",
@@ -4494,15 +4549,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S084;S087"
+    "Source IDs": "S084;S087",
+    "Fund / Vehicle / Deal name": "Africa Finance Corporation (AFC)"
   },
   {
     "Allocator (institution)": "National Savings Fund (NSF) Mauritius",
     "Allocator country": "Mauritius",
     "Allocator type": "Public PF",
     "Commitment type": "Direct equity (shareholder)",
-    "GP or counterparty": "Africa Finance Corporation (AFC)",
-    "Fund / Vehicle / Deal name": "AFC equity stake",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Africa Finance Corporation (AFC)",
     "Asset class": "Infrastructure / Multilateral",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": "various",
@@ -4515,15 +4571,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S084;S087"
+    "Source IDs": "S084;S087",
+    "Fund / Vehicle / Deal name": "Africa Finance Corporation (AFC)"
   },
   {
     "Allocator (institution)": "CNPS Cameroon",
     "Allocator country": "Cameroon",
     "Allocator type": "Public PF",
     "Commitment type": "Direct equity (shareholder)",
-    "GP or counterparty": "Africa Finance Corporation (AFC)",
-    "Fund / Vehicle / Deal name": "AFC equity stake",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Africa Finance Corporation (AFC)",
     "Asset class": "Infrastructure / Multilateral",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": "various",
@@ -4536,15 +4593,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S082"
+    "Source IDs": "S082",
+    "Fund / Vehicle / Deal name": "Africa Finance Corporation (AFC)"
   },
   {
     "Allocator (institution)": "CDC Gabon (State pension fund of Gabon)",
     "Allocator country": "Gabon",
     "Allocator type": "Civil-service PF",
     "Commitment type": "Direct equity (shareholder)",
-    "GP or counterparty": "Africa Finance Corporation (AFC)",
-    "Fund / Vehicle / Deal name": "AFC equity stake",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Africa Finance Corporation (AFC)",
     "Asset class": "Infrastructure / Multilateral",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": "various",
@@ -4557,15 +4615,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S087"
+    "Source IDs": "S087",
+    "Fund / Vehicle / Deal name": "Africa Finance Corporation (AFC)"
   },
   {
     "Allocator (institution)": "Government of Côte d'Ivoire",
     "Allocator country": "Côte d'Ivoire",
     "Allocator type": "Sovereign",
     "Commitment type": "Direct equity (shareholder)",
-    "GP or counterparty": "Africa Finance Corporation (AFC)",
-    "Fund / Vehicle / Deal name": "AFC equity stake",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Africa Finance Corporation (AFC)",
     "Asset class": "Infrastructure / Multilateral",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": "various",
@@ -4578,15 +4637,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S084;S087"
+    "Source IDs": "S084;S087",
+    "Fund / Vehicle / Deal name": "Africa Finance Corporation (AFC)"
   },
   {
     "Allocator (institution)": "Government of Sierra Leone",
     "Allocator country": "Sierra Leone",
     "Allocator type": "Sovereign",
     "Commitment type": "Direct equity (shareholder)",
-    "GP or counterparty": "Africa Finance Corporation (AFC)",
-    "Fund / Vehicle / Deal name": "AFC equity stake",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Africa Finance Corporation (AFC)",
     "Asset class": "Infrastructure / Multilateral",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": "various",
@@ -4599,15 +4659,16 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S083;S087"
+    "Source IDs": "S083;S087",
+    "Fund / Vehicle / Deal name": "Africa Finance Corporation (AFC)"
   },
   {
     "Allocator (institution)": "Government of Egypt",
     "Allocator country": "Egypt",
     "Allocator type": "Sovereign",
     "Commitment type": "Direct equity (shareholder)",
-    "GP or counterparty": "Africa Finance Corporation (AFC)",
-    "Fund / Vehicle / Deal name": "AFC equity stake",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Africa Finance Corporation (AFC)",
     "Asset class": "Infrastructure / Multilateral",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2024,
@@ -4620,7 +4681,8 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S085;S001;S082"
+    "Source IDs": "S085;S001;S082",
+    "Fund / Vehicle / Deal name": "Africa Finance Corporation (AFC)"
   },
   {
     "Allocator (institution)": "CDC Sénégal",
@@ -4628,7 +4690,7 @@ const DATASET = {
     "Allocator type": "Civil-service PF / Sovereign",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Africa50",
-    "Fund / Vehicle / Deal name": "Africa50 Infrastructure Acceleration Fund (IAF)",
+    "Fund / Vehicle / Client": "Africa50 Infrastructure Acceleration Fund (IAF)",
     "Asset class": "Infrastructure",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2024,
@@ -4641,7 +4703,8 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S088;S089;S090"
+    "Source IDs": "S088;S089;S090",
+    "Fund / Vehicle / Deal name": "Africa50 Infrastructure Acceleration Fund (IAF)"
   },
   {
     "Allocator (institution)": "CDC Benin",
@@ -4649,7 +4712,7 @@ const DATASET = {
     "Allocator type": "Civil-service PF / Sovereign",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Africa50",
-    "Fund / Vehicle / Deal name": "Africa50 Infrastructure Acceleration Fund (IAF)",
+    "Fund / Vehicle / Client": "Africa50 Infrastructure Acceleration Fund (IAF)",
     "Asset class": "Infrastructure",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2024,
@@ -4662,7 +4725,8 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S088;S089;S090"
+    "Source IDs": "S088;S089;S090",
+    "Fund / Vehicle / Deal name": "Africa50 Infrastructure Acceleration Fund (IAF)"
   },
   {
     "Allocator (institution)": "CNSS Togo",
@@ -4670,7 +4734,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Africa50",
-    "Fund / Vehicle / Deal name": "Africa50 Infrastructure Acceleration Fund (IAF)",
+    "Fund / Vehicle / Client": "Africa50 Infrastructure Acceleration Fund (IAF)",
     "Asset class": "Infrastructure",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2024,
@@ -4683,7 +4747,8 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S088;S089;S090"
+    "Source IDs": "S088;S089;S090",
+    "Fund / Vehicle / Deal name": "Africa50 Infrastructure Acceleration Fund (IAF)"
   },
   {
     "Allocator (institution)": "CDG Invest (Morocco)",
@@ -4691,7 +4756,7 @@ const DATASET = {
     "Allocator type": "Sovereign (subsidiary of CDG)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Africa50",
-    "Fund / Vehicle / Deal name": "Africa50 Infrastructure Acceleration Fund (IAF)",
+    "Fund / Vehicle / Client": "Africa50 Infrastructure Acceleration Fund (IAF)",
     "Asset class": "Infrastructure",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2024,
@@ -4704,7 +4769,8 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S088;S089;S090"
+    "Source IDs": "S088;S089;S090",
+    "Fund / Vehicle / Deal name": "Africa50 Infrastructure Acceleration Fund (IAF)"
   },
   {
     "Allocator (institution)": "CBK Pension Fund (Kenya, Central Bank of Kenya)",
@@ -4712,7 +4778,7 @@ const DATASET = {
     "Allocator type": "Occupational PF (central bank)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "AfricInvest",
-    "Fund / Vehicle / Deal name": "AfricInvest FIVE (Financial Inclusion Vehicle, evergreen)",
+    "Fund / Vehicle / Client": "AfricInvest FIVE (Financial Inclusion Vehicle, evergreen)",
     "Asset class": "PE / Financial services",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2018,
@@ -4725,15 +4791,16 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Financial Inclusion / Financial Services",
     "Investment approach": "Fund LP",
-    "Source IDs": "S092;S095;S093"
+    "Source IDs": "S092;S095;S093",
+    "Fund / Vehicle / Deal name": "AfricInvest FIVE (Financial Inclusion Vehicle, evergreen)"
   },
   {
     "Allocator (institution)": "NAPSA Zambia",
     "Allocator country": "Zambia",
     "Allocator type": "Public PF (mandatory)",
     "Commitment type": "Direct equity (platform anchor)",
-    "GP or counterparty": "BII + Swedfund",
-    "Fund / Vehicle / Deal name": "Growth Investment Partners Zambia (GIP Zambia)",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "Growth Investment Partners Zambia (GIP Zambia)",
     "Asset class": "Private credit / SME debt",
     "Geographic focus": "Domestic (Zambia)",
     "Vintage / Year": 2025,
@@ -4746,7 +4813,8 @@ const DATASET = {
     "Asset class normalized": "Private Credit",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S096;S097;S098"
+    "Source IDs": "S096;S097;S098",
+    "Fund / Vehicle / Deal name": "Growth Investment Partners Zambia (GIP Zambia)"
   },
   {
     "Allocator (institution)": "Multiple Kenyan pension funds",
@@ -4754,7 +4822,7 @@ const DATASET = {
     "Allocator type": "Pension fund cohort (unnamed)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Adenia Partners",
-    "Fund / Vehicle / Deal name": "Adenia Capital V",
+    "Fund / Vehicle / Client": "Adenia Capital V",
     "Asset class": "PE",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2024,
@@ -4767,7 +4835,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP",
-    "Source IDs": "S103;S104"
+    "Source IDs": "S103;S104",
+    "Fund / Vehicle / Deal name": "Adenia Capital V"
   },
   {
     "Allocator (institution)": "Multiple Ghanaian pension funds",
@@ -4775,7 +4844,7 @@ const DATASET = {
     "Allocator type": "Pension fund cohort (unnamed)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Adenia Partners",
-    "Fund / Vehicle / Deal name": "Adenia Capital V",
+    "Fund / Vehicle / Client": "Adenia Capital V",
     "Asset class": "PE",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2024,
@@ -4788,7 +4857,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP",
-    "Source IDs": "S103;S104"
+    "Source IDs": "S103;S104",
+    "Fund / Vehicle / Deal name": "Adenia Capital V"
   },
   {
     "Allocator (institution)": "PIC (South Africa)",
@@ -4796,7 +4866,7 @@ const DATASET = {
     "Allocator type": "Public PF (via mgr)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Adenia Partners",
-    "Fund / Vehicle / Deal name": "Adenia Capital V",
+    "Fund / Vehicle / Client": "Adenia Capital V",
     "Asset class": "PE",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2024,
@@ -4809,7 +4879,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP",
-    "Source IDs": "S103;S104"
+    "Source IDs": "S103;S104",
+    "Fund / Vehicle / Deal name": "Adenia Capital V"
   },
   {
     "Allocator (institution)": "Multiple East African pension funds (likely incl. NSSF Uganda)",
@@ -4817,7 +4888,7 @@ const DATASET = {
     "Allocator type": "Pension fund cohort",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Catalyst Principal Partners",
-    "Fund / Vehicle / Deal name": "Catalyst Fund II",
+    "Fund / Vehicle / Client": "Catalyst Fund II",
     "Asset class": "PE",
     "Geographic focus": "East Africa + DRC",
     "Vintage / Year": "2016–2017 final close",
@@ -4830,7 +4901,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S102;S101;S104"
+    "Source IDs": "S102;S101;S104",
+    "Fund / Vehicle / Deal name": "Catalyst Fund II"
   },
   {
     "Allocator (institution)": "KEPFIC (Kenya Pension Funds Investment Consortium)",
@@ -4838,7 +4910,7 @@ const DATASET = {
     "Allocator type": "Pension consortium (24 funds)",
     "Commitment type": "Pooled mandate / facilitated member investments",
     "GP or counterparty": "Various",
-    "Fund / Vehicle / Deal name": "KEPFIC-facilitated housing + infrastructure investments",
+    "Fund / Vehicle / Client": "KEPFIC-facilitated housing + infrastructure investments",
     "Asset class": "Infrastructure / Alts",
     "Geographic focus": "Domestic + Regional",
     "Vintage / Year": "2019–",
@@ -4851,7 +4923,8 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure; Real Estate / Housing; Multi-Sector",
     "Investment approach": "Mandate / Pipeline Only",
-    "Source IDs": "S106;S107;S105"
+    "Source IDs": "S106;S107;S105",
+    "Fund / Vehicle / Deal name": "KEPFIC-facilitated housing + infrastructure investments"
   },
   {
     "Allocator (institution)": "Kenya Power & Lighting Co. Pension Fund (KPLC PF)",
@@ -4859,7 +4932,7 @@ const DATASET = {
     "Allocator type": "Occupational PF (parastatal)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Ascent Capital Africa",
-    "Fund / Vehicle / Deal name": "Ascent Rift Valley Fund I (ARVF I)",
+    "Fund / Vehicle / Client": "Ascent Rift Valley Fund I (ARVF I)",
     "Asset class": "PE / SME growth",
     "Geographic focus": "East Africa (Kenya, Uganda, Ethiopia)",
     "Vintage / Year": 2014,
@@ -4872,7 +4945,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S114;S113"
+    "Source IDs": "S114;S113",
+    "Fund / Vehicle / Deal name": "Ascent Rift Valley Fund I (ARVF I)"
   },
   {
     "Allocator (institution)": "Nation Media Group Staff Retirement Benefits Scheme (NMG Pension Fund)",
@@ -4880,7 +4954,7 @@ const DATASET = {
     "Allocator type": "Corporate occupational PF",
     "Commitment type": "Fund LP (via STANLIB)",
     "GP or counterparty": "Ascent Capital Africa",
-    "Fund / Vehicle / Deal name": "Ascent Rift Valley Fund I (ARVF I)",
+    "Fund / Vehicle / Client": "Ascent Rift Valley Fund I (ARVF I)",
     "Asset class": "PE / SME growth",
     "Geographic focus": "East Africa (Kenya, Uganda, Ethiopia)",
     "Vintage / Year": 2015,
@@ -4893,7 +4967,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S113"
+    "Source IDs": "S113",
+    "Fund / Vehicle / Deal name": "Ascent Rift Valley Fund I (ARVF I)"
   },
   {
     "Allocator (institution)": "Kenya Power & Lighting Co. Pension Fund (KPLC PF)",
@@ -4901,7 +4976,7 @@ const DATASET = {
     "Allocator type": "Occupational PF (parastatal)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Ascent Capital Africa",
-    "Fund / Vehicle / Deal name": "Ascent Rift Valley Fund II (ARVF II)",
+    "Fund / Vehicle / Client": "Ascent Rift Valley Fund II (ARVF II)",
     "Asset class": "PE / SME growth",
     "Geographic focus": "East Africa (Kenya, Uganda, Ethiopia, Rwanda, Tanzania)",
     "Vintage / Year": "various 2018-2020",
@@ -4914,7 +4989,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S115;S116;S117"
+    "Source IDs": "S115;S116;S117",
+    "Fund / Vehicle / Deal name": "Ascent Rift Valley Fund II (ARVF II)"
   },
   {
     "Allocator (institution)": "Nation Media Group Staff Retirement Benefits Scheme (NMG Pension Fund)",
@@ -4922,7 +4998,7 @@ const DATASET = {
     "Allocator type": "Corporate occupational PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Ascent Capital Africa",
-    "Fund / Vehicle / Deal name": "Ascent Rift Valley Fund II (ARVF II)",
+    "Fund / Vehicle / Client": "Ascent Rift Valley Fund II (ARVF II)",
     "Asset class": "PE / SME growth",
     "Geographic focus": "East Africa",
     "Vintage / Year": "various 2018-2020",
@@ -4935,7 +5011,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S115;S116"
+    "Source IDs": "S115;S116",
+    "Fund / Vehicle / Deal name": "Ascent Rift Valley Fund II (ARVF II)"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -4943,7 +5020,7 @@ const DATASET = {
     "Allocator type": "SWF (NIF sub-fund)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Sahel Capital",
-    "Fund / Vehicle / Deal name": "Fund for Agricultural Finance in Nigeria (FAFIN)",
+    "Fund / Vehicle / Client": "Fund for Agricultural Finance in Nigeria (FAFIN)",
     "Asset class": "PE / Agribusiness",
     "Geographic focus": "Nigeria",
     "Vintage / Year": 2017,
@@ -4956,7 +5033,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Agriculture / Food Security",
     "Investment approach": "Fund LP",
-    "Source IDs": "S139;S140;S141"
+    "Source IDs": "S139;S140;S141",
+    "Fund / Vehicle / Deal name": "Fund for Agricultural Finance in Nigeria (FAFIN)"
   },
   {
     "Allocator (institution)": "Nigerian PFAs (historical cohort)",
@@ -4964,7 +5042,7 @@ const DATASET = {
     "Allocator type": "PFA cohort",
     "Commitment type": "Fund LP (historical)",
     "GP or counterparty": "African Capital Alliance (ACA)",
-    "Fund / Vehicle / Deal name": "CAPE I-IV (Capital Alliance Private Equity)",
+    "Fund / Vehicle / Client": "CAPE I-IV (Capital Alliance Private Equity)",
     "Asset class": "PE",
     "Geographic focus": "Nigeria + West Africa",
     "Vintage / Year": "1998-ongoing",
@@ -4977,7 +5055,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP",
-    "Source IDs": "S145;S146;S147"
+    "Source IDs": "S145;S146;S147",
+    "Fund / Vehicle / Deal name": "CAPE I-IV (Capital Alliance Private Equity)"
   },
   {
     "Allocator (institution)": "Rwanda Social Security Board (RSSB)",
@@ -4985,7 +5064,7 @@ const DATASET = {
     "Allocator type": "Public PF (mandatory)",
     "Commitment type": "Fund LP (anchor)",
     "GP or counterparty": "Enko Capital (Rwanda subsidiary)",
-    "Fund / Vehicle / Deal name": "Rwanda SME Growth Fund",
+    "Fund / Vehicle / Client": "Rwanda SME Growth Fund",
     "Asset class": "PE / SME growth (local-currency)",
     "Geographic focus": "Rwanda",
     "Vintage / Year": 2026,
@@ -4998,7 +5077,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S153;S154;S155"
+    "Source IDs": "S153;S154;S155",
+    "Fund / Vehicle / Deal name": "Rwanda SME Growth Fund"
   },
   {
     "Allocator (institution)": "Asset Owners Forum of South Africa (AOFSA)",
@@ -5006,7 +5086,7 @@ const DATASET = {
     "Allocator type": "Pension consortium (12-15 funds)",
     "Commitment type": "Pooled mandate / aggregate member commitments",
     "GP or counterparty": "Various (mandates allocated to managers)",
-    "Fund / Vehicle / Deal name": "SA infrastructure + alts mandates",
+    "Fund / Vehicle / Client": "SA infrastructure + alts mandates",
     "Asset class": "Infrastructure / Alts",
     "Geographic focus": "Domestic + regional",
     "Vintage / Year": "2021-ongoing",
@@ -5019,7 +5099,8 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure; Multi-Sector",
     "Investment approach": "Mandate / Pipeline Only",
-    "Source IDs": "S158;S156;S175"
+    "Source IDs": "S158;S156;S175",
+    "Fund / Vehicle / Deal name": "SA infrastructure + alts mandates"
   },
   {
     "Allocator (institution)": "Petra Trust Company (Ghana)",
@@ -5027,7 +5108,7 @@ const DATASET = {
     "Allocator type": "Tier 2/3 corporate trustee",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Mirepa Investment Advisors",
-    "Fund / Vehicle / Deal name": "Mirepa Capital SME Fund I",
+    "Fund / Vehicle / Client": "Mirepa Capital SME Fund I",
     "Asset class": "PE / SME growth",
     "Geographic focus": "Ghana",
     "Vintage / Year": 2023,
@@ -5040,7 +5121,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "SME Finance; Agriculture / Food Security; Financial Inclusion / Financial Services; Healthcare; Climate / Energy Transition; Digital / Technology",
     "Investment approach": "Fund LP",
-    "Source IDs": "S165;S166;S168"
+    "Source IDs": "S165;S166;S168",
+    "Fund / Vehicle / Deal name": "Mirepa Capital SME Fund I"
   },
   {
     "Allocator (institution)": "Axis Pension Trust",
@@ -5048,7 +5130,7 @@ const DATASET = {
     "Allocator type": "Tier 2/3 corporate trustee",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Mirepa Investment Advisors",
-    "Fund / Vehicle / Deal name": "Mirepa Capital SME Fund I",
+    "Fund / Vehicle / Client": "Mirepa Capital SME Fund I",
     "Asset class": "PE / SME growth",
     "Geographic focus": "Ghana",
     "Vintage / Year": 2023,
@@ -5061,7 +5143,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S165;S168"
+    "Source IDs": "S165;S168",
+    "Fund / Vehicle / Deal name": "Mirepa Capital SME Fund I"
   },
   {
     "Allocator (institution)": "Multiple Ghanaian pension schemes (via CAL Asset Management — CAMCOL)",
@@ -5069,7 +5152,7 @@ const DATASET = {
     "Allocator type": "Pension scheme cohort (via mgr)",
     "Commitment type": "Fund LP (via manager)",
     "GP or counterparty": "Mirepa Investment Advisors",
-    "Fund / Vehicle / Deal name": "Mirepa Capital SME Fund I",
+    "Fund / Vehicle / Client": "Mirepa Capital SME Fund I",
     "Asset class": "PE / SME growth",
     "Geographic focus": "Ghana",
     "Vintage / Year": 2023,
@@ -5082,7 +5165,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S165;S167;S168"
+    "Source IDs": "S165;S167;S168",
+    "Fund / Vehicle / Deal name": "Mirepa Capital SME Fund I"
   },
   {
     "Allocator (institution)": "Multiple Ghanaian pension funds (Injaro anchor cohort)",
@@ -5090,7 +5174,7 @@ const DATASET = {
     "Allocator type": "Pension fund cohort",
     "Commitment type": "Fund LP (anchor)",
     "GP or counterparty": "Injaro Investment Advisors",
-    "Fund / Vehicle / Deal name": "Injaro Ghana Venture Capital Fund (IGVCF)",
+    "Fund / Vehicle / Client": "Injaro Ghana Venture Capital Fund (IGVCF)",
     "Asset class": "PE / SME / VC",
     "Geographic focus": "Ghana + Côte d'Ivoire",
     "Vintage / Year": 2023,
@@ -5103,7 +5187,8 @@ const DATASET = {
     "Asset class normalized": "Venture Capital",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S172;S170;S169"
+    "Source IDs": "S172;S170;S169",
+    "Fund / Vehicle / Deal name": "Injaro Ghana Venture Capital Fund (IGVCF)"
   },
   {
     "Allocator (institution)": "GEPF / PIC (South Africa)",
@@ -5111,7 +5196,7 @@ const DATASET = {
     "Allocator type": "Public PF (via asset manager)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Zebu Investment Partners",
-    "Fund / Vehicle / Deal name": "Africa Food Security Fund (AFSF)",
+    "Fund / Vehicle / Client": "Africa Food Security Fund (AFSF)",
     "Asset class": "PE / agriculture / food security",
     "Geographic focus": "Sub-Saharan Africa",
     "Vintage / Year": 2019,
@@ -5124,7 +5209,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Agriculture / Food Security",
     "Investment approach": "Fund LP",
-    "Source IDs": "S178"
+    "Source IDs": "S178",
+    "Fund / Vehicle / Deal name": "Africa Food Security Fund (AFSF)"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -5132,7 +5218,7 @@ const DATASET = {
     "Allocator type": "SWF (FGF)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Alitheia Capital / IDF Capital",
-    "Fund / Vehicle / Deal name": "Alitheia IDF Fund",
+    "Fund / Vehicle / Client": "Alitheia IDF Fund",
     "Asset class": "PE / gender-lens",
     "Geographic focus": "Sub-Saharan Africa",
     "Vintage / Year": "2021 or earlier",
@@ -5145,7 +5231,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Infrastructure; Gender Lens",
     "Investment approach": "Fund LP",
-    "Source IDs": "S180"
+    "Source IDs": "S180",
+    "Fund / Vehicle / Deal name": "Alitheia IDF Fund"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -5153,7 +5240,7 @@ const DATASET = {
     "Allocator type": "SWF (FGF)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Ingressive Capital",
-    "Fund / Vehicle / Deal name": "Ingressive Capital Fund / funds",
+    "Fund / Vehicle / Client": "Ingressive Capital Fund / funds",
     "Asset class": "VC / technology-enabled SMEs",
     "Geographic focus": "Africa / Nigeria-led",
     "Vintage / Year": "2023 or earlier",
@@ -5166,7 +5253,8 @@ const DATASET = {
     "Asset class normalized": "Venture Capital",
     "Sector / thematic focus": "Infrastructure; SME Finance; Digital / Technology",
     "Investment approach": "Fund LP",
-    "Source IDs": "S180"
+    "Source IDs": "S180",
+    "Fund / Vehicle / Deal name": "Ingressive Capital Fund / funds"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -5174,7 +5262,7 @@ const DATASET = {
     "Allocator type": "SWF (FGF)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Verod Capital Management",
-    "Fund / Vehicle / Deal name": "Verod Growth Fund II",
+    "Fund / Vehicle / Client": "Verod Growth Fund II",
     "Asset class": "PE / growth equity",
     "Geographic focus": "West Africa / Nigeria",
     "Vintage / Year": 2017,
@@ -5187,7 +5275,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S181;S180"
+    "Source IDs": "S181;S180",
+    "Fund / Vehicle / Deal name": "Verod Growth Fund II"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -5195,7 +5284,7 @@ const DATASET = {
     "Allocator type": "SWF (FGF)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Verod Capital Management",
-    "Fund / Vehicle / Deal name": "Verod Growth Fund III",
+    "Fund / Vehicle / Client": "Verod Growth Fund III",
     "Asset class": "PE / growth equity",
     "Geographic focus": "West Africa / Nigeria",
     "Vintage / Year": "2021 or earlier",
@@ -5208,15 +5297,16 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S181;S180"
+    "Source IDs": "S181;S180",
+    "Fund / Vehicle / Deal name": "Verod Growth Fund III"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
     "Allocator country": "Nigeria",
     "Allocator type": "SWF (healthcare subsidiary)",
     "Commitment type": "Direct / co-investment",
-    "GP or counterparty": "NSIA Advanced Medical Services Limited (MedServe)",
-    "Fund / Vehicle / Deal name": "MedServe oncology and diagnostics expansion",
+    "GP or counterparty": null,
+    "Fund / Vehicle / Client": "MedServe",
     "Asset class": "Direct / Healthcare",
     "Geographic focus": "Nigeria",
     "Vintage / Year": 2026,
@@ -5229,7 +5319,8 @@ const DATASET = {
     "Asset class normalized": "Direct Equity / Strategic Stake",
     "Sector / thematic focus": "Healthcare",
     "Investment approach": "Direct Investment",
-    "Source IDs": "S182"
+    "Source IDs": "S182",
+    "Fund / Vehicle / Deal name": "MedServe"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -5237,7 +5328,7 @@ const DATASET = {
     "Allocator type": "SWF (NIF sub-fund)",
     "Commitment type": "Platform / direct strategic investment vehicle",
     "GP or counterparty": "Infrastructure Credit Guarantee Company PLC (InfraCredit)",
-    "Fund / Vehicle / Deal name": "InfraCredit",
+    "Fund / Vehicle / Client": "InfraCredit",
     "Asset class": "Infrastructure credit enhancement / guarantees",
     "Geographic focus": "Nigeria",
     "Vintage / Year": "2016/2017",
@@ -5250,7 +5341,8 @@ const DATASET = {
     "Asset class normalized": "Guarantee / Credit Enhancement",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Guarantee-backed Instrument",
-    "Source IDs": "S187;S191;S190"
+    "Source IDs": "S187;S191;S190",
+    "Fund / Vehicle / Deal name": "InfraCredit"
   },
   {
     "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
@@ -5258,7 +5350,7 @@ const DATASET = {
     "Allocator type": "SWF (NIF sub-fund)",
     "Commitment type": "Direct / facility anchor",
     "GP or counterparty": "InfraCredit",
-    "Fund / Vehicle / Deal name": "Construction Finance Warehouse Facility (CFWF)",
+    "Fund / Vehicle / Client": "Construction Finance Warehouse Facility (CFWF)",
     "Asset class": "Infrastructure construction finance / credit enhancement",
     "Geographic focus": "Nigeria",
     "Vintage / Year": 2023,
@@ -5271,7 +5363,8 @@ const DATASET = {
     "Asset class normalized": "Guarantee / Credit Enhancement",
     "Sector / thematic focus": "Infrastructure; Climate / Energy Transition",
     "Investment approach": "Guarantee-backed Instrument",
-    "Source IDs": "S188;S186"
+    "Source IDs": "S188;S186",
+    "Fund / Vehicle / Deal name": "Construction Finance Warehouse Facility (CFWF)"
   },
   {
     "Allocator (institution)": "Venture Capital Trust Fund (VCTF) Ghana",
@@ -5279,7 +5372,7 @@ const DATASET = {
     "Allocator type": "Government-backed VC fund of funds",
     "Commitment type": "Fund LP / Anchor",
     "GP or counterparty": "Oasis Capital Ghana",
-    "Fund / Vehicle / Deal name": "Oasis Africa VC Fund (OAF)",
+    "Fund / Vehicle / Client": "Oasis Africa VC Fund (OAF)",
     "Asset class": "PE / SME / VC",
     "Geographic focus": "Ghana + Cote d'Ivoire",
     "Vintage / Year": "2015/2016",
@@ -5292,7 +5385,8 @@ const DATASET = {
     "Asset class normalized": "Venture Capital",
     "Sector / thematic focus": "Infrastructure; SME Finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S194;S193;S197"
+    "Source IDs": "S194;S193;S197",
+    "Fund / Vehicle / Deal name": "Oasis Africa VC Fund (OAF)"
   },
   {
     "Allocator (institution)": "Venture Capital Trust Fund (VCTF) Ghana",
@@ -5300,7 +5394,7 @@ const DATASET = {
     "Allocator type": "Government-backed VC fund of funds",
     "Commitment type": "Fund LP / Anchor",
     "GP or counterparty": "Mirepa Investment Advisors",
-    "Fund / Vehicle / Deal name": "Mirepa Capital SME Fund I",
+    "Fund / Vehicle / Client": "Mirepa Capital SME Fund I",
     "Asset class": "PE / SME growth",
     "Geographic focus": "Ghana",
     "Vintage / Year": 2023,
@@ -5313,7 +5407,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S168;S167;S165"
+    "Source IDs": "S168;S167;S165",
+    "Fund / Vehicle / Deal name": "Mirepa Capital SME Fund I"
   },
   {
     "Allocator (institution)": "Venture Capital Trust Fund (VCTF) Ghana",
@@ -5321,7 +5416,7 @@ const DATASET = {
     "Allocator type": "Government-backed VC fund of funds",
     "Commitment type": "Fund LP / Anchor",
     "GP or counterparty": "Injaro Investment Advisors",
-    "Fund / Vehicle / Deal name": "Injaro Ghana Venture Capital Fund (IGVCF)",
+    "Fund / Vehicle / Client": "Injaro Ghana Venture Capital Fund (IGVCF)",
     "Asset class": "PE / SME / VC",
     "Geographic focus": "Ghana + Cote d'Ivoire",
     "Vintage / Year": 2023,
@@ -5334,7 +5429,8 @@ const DATASET = {
     "Asset class normalized": "Venture Capital",
     "Sector / thematic focus": "Infrastructure; SME Finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S192;S172;S170"
+    "Source IDs": "S192;S172;S170",
+    "Fund / Vehicle / Deal name": "Injaro Ghana Venture Capital Fund (IGVCF)"
   },
   {
     "Allocator (institution)": "Rwanda Social Security Board (RSSB)",
@@ -5342,7 +5438,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP / Anchor",
     "GP or counterparty": "Admaius Capital Partners",
-    "Fund / Vehicle / Deal name": "Virunga Africa Fund I",
+    "Fund / Vehicle / Client": "Virunga Africa Fund I",
     "Asset class": "Private equity / growth / multi-sector",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2021,
@@ -5355,7 +5451,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Healthcare; Education; Digital / Technology; Financial Inclusion / Financial Services; Multi-Sector",
     "Investment approach": "Fund LP",
-    "Source IDs": "S199"
+    "Source IDs": "S199",
+    "Fund / Vehicle / Deal name": "Virunga Africa Fund I"
   },
   {
     "Allocator (institution)": "Social Security and National Insurance Trust (SSNIT)",
@@ -5363,7 +5460,7 @@ const DATASET = {
     "Allocator type": "Public PF (mandatory)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Actis / Cordiant (co-managed)",
-    "Fund / Vehicle / Deal name": "Canada Investment Fund for Africa (CIFA)",
+    "Fund / Vehicle / Client": "Canada Investment Fund for Africa (CIFA)",
     "Asset class": "Private equity",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2005,
@@ -5376,7 +5473,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP",
-    "Source IDs": "S204;S203"
+    "Source IDs": "S204;S203",
+    "Fund / Vehicle / Deal name": "Canada Investment Fund for Africa (CIFA)"
   },
   {
     "Allocator (institution)": "Social Security and National Insurance Trust (SSNIT)",
@@ -5384,7 +5482,7 @@ const DATASET = {
     "Allocator type": "Public PF (mandatory)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Emerging Capital Partners",
-    "Fund / Vehicle / Deal name": "ECP Africa Fund III",
+    "Fund / Vehicle / Client": "ECP Africa Fund III",
     "Asset class": "Private equity / growth equity",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2008,
@@ -5397,7 +5495,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP",
-    "Source IDs": "S203"
+    "Source IDs": "S203",
+    "Fund / Vehicle / Deal name": "ECP Africa Fund III"
   },
   {
     "Allocator (institution)": "Social Security and National Insurance Trust (SSNIT)",
@@ -5405,7 +5504,7 @@ const DATASET = {
     "Allocator type": "Public PF (mandatory)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Harith General Partners",
-    "Fund / Vehicle / Deal name": "Pan-African Infrastructure Development Fund (PAIDF)",
+    "Fund / Vehicle / Client": "Pan-African Infrastructure Development Fund (PAIDF)",
     "Asset class": "Infrastructure",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2007,
@@ -5418,7 +5517,8 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S203"
+    "Source IDs": "S203",
+    "Fund / Vehicle / Deal name": "Pan-African Infrastructure Development Fund (PAIDF)"
   },
   {
     "Allocator (institution)": "Social Security and National Insurance Trust (SSNIT)",
@@ -5426,7 +5526,7 @@ const DATASET = {
     "Allocator type": "Public PF (mandatory)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Fidelity Capital Partners Limited (FCPL)",
-    "Fund / Vehicle / Deal name": "Fidelity Equity Fund II",
+    "Fund / Vehicle / Client": "Fidelity Equity Fund II",
     "Asset class": "Private equity / SME growth",
     "Geographic focus": "Ghana (up to 20% Liberia/Sierra Leone)",
     "Vintage / Year": 2012,
@@ -5439,7 +5539,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "SME Finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S205;S203"
+    "Source IDs": "S205;S203",
+    "Fund / Vehicle / Deal name": "Fidelity Equity Fund II"
   },
   {
     "Allocator (institution)": "Botswana Public Officers Pension Fund (BPOPF)",
@@ -5447,7 +5548,7 @@ const DATASET = {
     "Allocator type": "Public PF (DB)",
     "Commitment type": "Fund LP / Sole anchor (incubation mandate)",
     "GP or counterparty": "Thusano Capital",
-    "Fund / Vehicle / Deal name": "Thusano Capital Infrastructure Fund (BPOPF mandate)",
+    "Fund / Vehicle / Client": "Thusano Capital Infrastructure Fund (BPOPF mandate)",
     "Asset class": "Infrastructure",
     "Geographic focus": "Botswana",
     "Vintage / Year": 2020,
@@ -5460,7 +5561,8 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure; Energy; Agriculture / Food Security; Digital / Technology",
     "Investment approach": "Fund LP",
-    "Source IDs": "S207;S208"
+    "Source IDs": "S207;S208",
+    "Fund / Vehicle / Deal name": "Thusano Capital Infrastructure Fund (BPOPF mandate)"
   },
   {
     "Allocator (institution)": "Government Institutions Pension Fund (GIPF)",
@@ -5468,7 +5570,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP (Fund of Funds)",
     "GP or counterparty": "South Suez Capital (Pty) Ltd",
-    "Fund / Vehicle / Deal name": "South Suez Africa Fund (I, II + Managed Accounts)",
+    "Fund / Vehicle / Client": "South Suez Africa Fund (I, II + Managed Accounts)",
     "Asset class": "PE Fund of Funds",
     "Geographic focus": "Sub-Saharan Africa",
     "Vintage / Year": "Multiple vintages (2006–2015 est.)",
@@ -5481,7 +5583,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Multi-Sector (Pan-African PE)",
     "Investment approach": "Fund LP",
-    "Source IDs": "S218;S007"
+    "Source IDs": "S218;S007",
+    "Fund / Vehicle / Deal name": "South Suez Africa Fund (I, II + Managed Accounts)"
   },
   {
     "Allocator (institution)": "Government Institutions Pension Fund (GIPF)",
@@ -5489,7 +5592,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Investec Asset Management (now Ninety-One)",
-    "Fund / Vehicle / Deal name": "Investec Africa Private Equity Fund 2 L.P.",
+    "Fund / Vehicle / Client": "Investec Africa Private Equity Fund 2 L.P.",
     "Asset class": "Private Equity",
     "Geographic focus": "Pan-African (AU member states + Morocco)",
     "Vintage / Year": "c.2013 (est.)",
@@ -5502,7 +5605,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist (Pan-African PE)",
     "Investment approach": "Fund LP",
-    "Source IDs": "S218;S007"
+    "Source IDs": "S218;S007",
+    "Fund / Vehicle / Deal name": "Investec Africa Private Equity Fund 2 L.P."
   },
   {
     "Allocator (institution)": "Government Institutions Pension Fund (GIPF)",
@@ -5510,7 +5614,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Neoma Capital Partners (formerly Abraaj Group)",
-    "Fund / Vehicle / Deal name": "Neoma Africa Fund III (B) L.P. (previously Abraaj Africa Fund III)",
+    "Fund / Vehicle / Client": "Neoma Africa Fund III (B) L.P. (previously Abraaj Africa Fund III)",
     "Asset class": "Private Equity",
     "Geographic focus": "Sub-Saharan Africa",
     "Vintage / Year": "c.2014 (est.; original Abraaj vintage)",
@@ -5523,7 +5627,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist (Sub-Saharan Africa PE)",
     "Investment approach": "Fund LP",
-    "Source IDs": "S218;S007"
+    "Source IDs": "S218;S007",
+    "Fund / Vehicle / Deal name": "Neoma Africa Fund III (B) L.P. (previously Abraaj Africa Fund III)"
   },
   {
     "Allocator (institution)": "Government Institutions Pension Fund (GIPF)",
@@ -5531,7 +5636,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Actis Investment Management Limited",
-    "Fund / Vehicle / Deal name": "Actis Africa fund (specific fund not named in AR)",
+    "Fund / Vehicle / Client": "Actis Africa fund (specific fund not named in AR)",
     "Asset class": "Private Equity",
     "Geographic focus": "Africa (Pan-African)",
     "Vintage / Year": "Unknown",
@@ -5544,7 +5649,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Multi-Sector",
     "Investment approach": "Fund LP",
-    "Source IDs": "S218;S007"
+    "Source IDs": "S218;S007",
+    "Fund / Vehicle / Deal name": "Actis Africa fund (specific fund not named in AR)"
   },
   {
     "Allocator (institution)": "Government Institutions Pension Fund (GIPF)",
@@ -5552,7 +5658,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Growthpoint Properties / Investec",
-    "Fund / Vehicle / Deal name": "Growthpoint Investec Africa Properties Limited",
+    "Fund / Vehicle / Client": "Growthpoint Investec Africa Properties Limited",
     "Asset class": "Real Estate",
     "Geographic focus": "Africa (ex-South Africa): Ghana, Kenya, Morocco, Mozambique, Tanzania, Zambia",
     "Vintage / Year": "c.2016 (est.)",
@@ -5565,7 +5671,8 @@ const DATASET = {
     "Asset class normalized": "Real Estate",
     "Sector / thematic focus": "Commercial Real Estate (Pan-African)",
     "Investment approach": "Fund LP",
-    "Source IDs": "S218;S007"
+    "Source IDs": "S218;S007",
+    "Fund / Vehicle / Deal name": "Growthpoint Investec Africa Properties Limited"
   },
   {
     "Allocator (institution)": "FONSIS",
@@ -5573,7 +5680,7 @@ const DATASET = {
     "Allocator type": "Sovereign Wealth Fund",
     "Commitment type": "Fund LP / Co-founder",
     "GP or counterparty": "I&P (Investisseurs & Partenaires) / Local managers",
-    "Fund / Vehicle / Deal name": "Teranga Capital",
+    "Fund / Vehicle / Client": "Teranga Capital",
     "Asset class": "Private Equity / Impact",
     "Geographic focus": "Domestic (Senegal)",
     "Vintage / Year": "2016",
@@ -5586,7 +5693,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "SME Finance / Impact",
     "Investment approach": "Fund LP",
-    "Source IDs": "S233"
+    "Source IDs": "S233",
+    "Fund / Vehicle / Deal name": "Teranga Capital"
   },
   {
     "Allocator (institution)": "CDC Gabon (State pension fund of Gabon)",
@@ -5594,7 +5702,7 @@ const DATASET = {
     "Allocator type": "Civil-service PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Amethis Finance",
-    "Fund / Vehicle / Deal name": "Amethis West Africa",
+    "Fund / Vehicle / Client": "Amethis West Africa",
     "Asset class": "Private Equity",
     "Geographic focus": "CIMA zone (Francophone West & Central Africa)",
     "Vintage / Year": 2014,
@@ -5607,7 +5715,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Multi-sector",
     "Investment approach": "Fund LP",
-    "Source IDs": "S234"
+    "Source IDs": "S234",
+    "Fund / Vehicle / Deal name": "Amethis West Africa"
   },
   {
     "Allocator (institution)": "Caisse Nationale de Prévoyance Sociale (CNPS-CI)",
@@ -5615,7 +5724,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Amethis Finance",
-    "Fund / Vehicle / Deal name": "Amethis fund (unspecified; likely Amethis West Africa)",
+    "Fund / Vehicle / Client": "Amethis fund (unspecified; likely Amethis West Africa)",
     "Asset class": "Private Equity",
     "Geographic focus": "CIMA zone / Francophone Africa",
     "Vintage / Year": "c.2014 (est.)",
@@ -5628,7 +5737,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Multi-sector",
     "Investment approach": "Fund LP",
-    "Source IDs": "S235;S234"
+    "Source IDs": "S235;S234",
+    "Fund / Vehicle / Deal name": "Amethis fund (unspecified; likely Amethis West Africa)"
   },
   {
     "Allocator (institution)": "Kenya Power & Lighting Co. Pension Fund (KPLC PF)",
@@ -5636,7 +5746,7 @@ const DATASET = {
     "Allocator type": "Occupational PF (parastatal)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Everstrong Capital",
-    "Fund / Vehicle / Deal name": "Everstrong Kenya Infrastructure Fund (EKIF)",
+    "Fund / Vehicle / Client": "Everstrong Kenya Infrastructure Fund (EKIF)",
     "Asset class": "Infrastructure",
     "Geographic focus": "Kenya / East Africa",
     "Vintage / Year": 2024,
@@ -5649,7 +5759,8 @@ const DATASET = {
     "Asset class normalized": "Infrastructure",
     "Sector / thematic focus": "Multi-sector Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S236;S162"
+    "Source IDs": "S236;S162",
+    "Fund / Vehicle / Deal name": "Everstrong Kenya Infrastructure Fund (EKIF)"
   },
   {
     "Allocator (institution)": "Eskom Pension and Provident Fund (EPPF)",
@@ -5657,7 +5768,7 @@ const DATASET = {
     "Allocator type": "Corporate PF (parastatal)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Development Partners International (DPI)",
-    "Fund / Vehicle / Deal name": "African Development Partners III (ADP III)",
+    "Fund / Vehicle / Client": "African Development Partners III (ADP III)",
     "Asset class": "Private Equity",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2021,
@@ -5670,7 +5781,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Multi-sector",
     "Investment approach": "Fund LP",
-    "Source IDs": "S236;S162"
+    "Source IDs": "S236;S162",
+    "Fund / Vehicle / Deal name": "African Development Partners III (ADP III)"
   },
   {
     "Allocator (institution)": "KenGen Staff Retirement Benefits Scheme",
@@ -5678,7 +5790,7 @@ const DATASET = {
     "Allocator type": "Occupational PF (parastatal)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Development Partners International (DPI)",
-    "Fund / Vehicle / Deal name": "African Development Partners III (ADP III)",
+    "Fund / Vehicle / Client": "African Development Partners III (ADP III)",
     "Asset class": "Private Equity",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2021,
@@ -5691,7 +5803,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Multi-sector",
     "Investment approach": "Fund LP",
-    "Source IDs": "S236;S162"
+    "Source IDs": "S236;S162",
+    "Fund / Vehicle / Deal name": "African Development Partners III (ADP III)"
   },
   {
     "Allocator (institution)": "CBK Pension Fund (Kenya, Central Bank of Kenya)",
@@ -5699,7 +5812,7 @@ const DATASET = {
     "Allocator type": "Occupational PF (central bank staff)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Development Partners International (DPI)",
-    "Fund / Vehicle / Deal name": "African Development Partners III (ADP III)",
+    "Fund / Vehicle / Client": "African Development Partners III (ADP III)",
     "Asset class": "Private Equity",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2021,
@@ -5712,7 +5825,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Multi-sector",
     "Investment approach": "Fund LP",
-    "Source IDs": "S236;S162"
+    "Source IDs": "S236;S162",
+    "Fund / Vehicle / Deal name": "African Development Partners III (ADP III)"
   },
   {
     "Allocator (institution)": "Old Mutual Umbrella Retirement Benefits Scheme (Kenya)",
@@ -5720,7 +5834,7 @@ const DATASET = {
     "Allocator type": "Umbrella retirement scheme",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Development Partners International (DPI)",
-    "Fund / Vehicle / Deal name": "African Development Partners III (ADP III)",
+    "Fund / Vehicle / Client": "African Development Partners III (ADP III)",
     "Asset class": "Private Equity",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2021,
@@ -5733,7 +5847,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Multi-sector",
     "Investment approach": "Fund LP",
-    "Source IDs": "S236;S162"
+    "Source IDs": "S236;S162",
+    "Fund / Vehicle / Deal name": "African Development Partners III (ADP III)"
   },
   {
     "Allocator (institution)": "Multiple Nigerian PFAs (consortium)",
@@ -5741,7 +5856,7 @@ const DATASET = {
     "Allocator type": "Private PFAs",
     "Commitment type": "Fund LP (listed infrastructure debt fund)",
     "GP or counterparty": "Chapel Hill Denham",
-    "Fund / Vehicle / Deal name": "Nigeria Infrastructure Debt Fund (NIDF)",
+    "Fund / Vehicle / Client": "Nigeria Infrastructure Debt Fund (NIDF)",
     "Asset class": "Infrastructure Debt",
     "Geographic focus": "Nigeria",
     "Vintage / Year": "2017-2021 (Series 1-6)",
@@ -5754,7 +5869,8 @@ const DATASET = {
     "Asset class normalized": "Private Credit",
     "Sector / thematic focus": "Infrastructure Debt",
     "Investment approach": "Fund LP",
-    "Source IDs": "S237"
+    "Source IDs": "S237",
+    "Fund / Vehicle / Deal name": "Nigeria Infrastructure Debt Fund (NIDF)"
   },
   {
     "Allocator (institution)": "KEPFIC (Kenya Pension Funds Investment Consortium)",
@@ -5762,7 +5878,7 @@ const DATASET = {
     "Allocator type": "Pension consortium",
     "Commitment type": "REIT units (facilitated member commitments)",
     "GP or counterparty": "Acorn Holdings / Acorn Investment Management",
-    "Fund / Vehicle / Deal name": "Acorn Student Accommodation D-REIT (ASA D-REIT)",
+    "Fund / Vehicle / Client": "Acorn Student Accommodation D-REIT (ASA D-REIT)",
     "Asset class": "Real Estate (student housing)",
     "Geographic focus": "Kenya",
     "Vintage / Year": 2021,
@@ -5775,7 +5891,8 @@ const DATASET = {
     "Asset class normalized": "Real Estate",
     "Sector / thematic focus": "Student Housing",
     "Investment approach": "Fund LP",
-    "Source IDs": "S238;S105"
+    "Source IDs": "S238;S105",
+    "Fund / Vehicle / Deal name": "Acorn Student Accommodation D-REIT (ASA D-REIT)"
   },
   {
     "Allocator (institution)": "Public Officers' Defined Contribution Pension Fund (PODCPF)",
@@ -5783,7 +5900,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Investment mandate / managed account",
     "GP or counterparty": "Mergence Investment Managers (Lesotho)",
-    "Fund / Vehicle / Deal name": "Mergence Lesotho unlisted investment mandate (PE & infrastructure)",
+    "Fund / Vehicle / Client": "Mergence Lesotho unlisted investment mandate (PE & infrastructure)",
     "Asset class": "Private Equity / Infrastructure",
     "Geographic focus": "Lesotho (80% domestic)",
     "Vintage / Year": "c.2018-ongoing",
@@ -5796,7 +5913,8 @@ const DATASET = {
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Multi-sector / SME",
     "Investment approach": "Fund LP",
-    "Source IDs": "S239;S240"
+    "Source IDs": "S239;S240",
+    "Fund / Vehicle / Deal name": "Mergence Lesotho unlisted investment mandate (PE & infrastructure)"
   },
   {
     "Allocator (institution)": "PIC (mgr for GEPF)",
@@ -5804,7 +5922,7 @@ const DATASET = {
     "Allocator type": "Public PF asset manager",
     "Commitment type": "Fund LP / co-investor",
     "GP or counterparty": "Enko Capital",
-    "Fund / Vehicle / Deal name": "Enko Impact Credit Fund",
+    "Fund / Vehicle / Client": "Enko Impact Credit Fund",
     "Asset class": "Private credit",
     "Geographic focus": "Sub-Saharan Africa",
     "Vintage / Year": "2025",
@@ -5817,7 +5935,8 @@ const DATASET = {
     "Asset class normalized": "Private Credit",
     "Sector / thematic focus": "SME / Mid-market finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S241;S242"
+    "Source IDs": "S241;S242",
+    "Fund / Vehicle / Deal name": "Enko Impact Credit Fund"
   },
   {
     "Allocator (institution)": "PIC (mgr for GEPF)",
@@ -5825,7 +5944,7 @@ const DATASET = {
     "Allocator type": "Public PF asset manager",
     "Commitment type": "Fund LP / anchor investor",
     "GP or counterparty": "Hlayisani Capital",
-    "Fund / Vehicle / Deal name": "Hlayisani Venture Fund II",
+    "Fund / Vehicle / Client": "Hlayisani Venture Fund II",
     "Asset class": "VC / growth equity",
     "Geographic focus": "South Africa",
     "Vintage / Year": "2026",
@@ -5838,7 +5957,8 @@ const DATASET = {
     "Asset class normalized": "Venture Capital",
     "Sector / thematic focus": "Technology-enabled SMEs",
     "Investment approach": "Fund LP",
-    "Source IDs": "S243"
+    "Source IDs": "S243",
+    "Fund / Vehicle / Deal name": "Hlayisani Venture Fund II"
   },
   {
     "Allocator (institution)": "Motor Industry Retirement Fund (MIRF)",
@@ -5846,7 +5966,7 @@ const DATASET = {
     "Allocator type": "Multi-employer PF",
     "Commitment type": "Fund-of-funds allocation / initiative anchor",
     "GP or counterparty": "African Women Impact Fund / RisCura",
-    "Fund / Vehicle / Deal name": "African Women Impact Fund (AWIF)",
+    "Fund / Vehicle / Client": "African Women Impact Fund (AWIF)",
     "Asset class": "Fund of Funds / gender-lens private markets",
     "Geographic focus": "Africa",
     "Vintage / Year": "2022",
@@ -5859,7 +5979,8 @@ const DATASET = {
     "Asset class normalized": "Fund of Funds",
     "Sector / thematic focus": "Gender-lens / women fund managers",
     "Investment approach": "Fund of Funds LP",
-    "Source IDs": "S244;S245"
+    "Source IDs": "S244;S245",
+    "Fund / Vehicle / Deal name": "African Women Impact Fund (AWIF)"
   },
   {
     "Allocator (institution)": "Copartes Pension Fund",
@@ -5867,7 +5988,7 @@ const DATASET = {
     "Allocator type": "Pension fund",
     "Commitment type": "Fund-of-funds allocation / initiative anchor",
     "GP or counterparty": "African Women Impact Fund / RisCura",
-    "Fund / Vehicle / Deal name": "African Women Impact Fund (AWIF)",
+    "Fund / Vehicle / Client": "African Women Impact Fund (AWIF)",
     "Asset class": "Fund of Funds / gender-lens private markets",
     "Geographic focus": "Africa",
     "Vintage / Year": "2022",
@@ -5880,7 +6001,8 @@ const DATASET = {
     "Asset class normalized": "Fund of Funds",
     "Sector / thematic focus": "Gender-lens / women fund managers",
     "Investment approach": "Fund of Funds LP",
-    "Source IDs": "S244;S245"
+    "Source IDs": "S244;S245",
+    "Fund / Vehicle / Deal name": "African Women Impact Fund (AWIF)"
   },
   {
     "Allocator (institution)": "Mineworkers Provident Fund",
@@ -5888,7 +6010,7 @@ const DATASET = {
     "Allocator type": "Multi-employer PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Kholo Capital",
-    "Fund / Vehicle / Deal name": "Kholo Capital Mezzanine Debt Fund I",
+    "Fund / Vehicle / Client": "Kholo Capital Mezzanine Debt Fund I",
     "Asset class": "Private credit / mezzanine debt",
     "Geographic focus": "Southern Africa",
     "Vintage / Year": "2023",
@@ -5901,7 +6023,8 @@ const DATASET = {
     "Asset class normalized": "Private Credit",
     "Sector / thematic focus": "Mid-market finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S246;S247"
+    "Source IDs": "S246;S247",
+    "Fund / Vehicle / Deal name": "Kholo Capital Mezzanine Debt Fund I"
   },
   {
     "Allocator (institution)": "National Fund for Municipal Workers (NFMW)",
@@ -5909,7 +6032,7 @@ const DATASET = {
     "Allocator type": "Multi-employer PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Kholo Capital",
-    "Fund / Vehicle / Deal name": "Kholo Capital Mezzanine Debt Fund I",
+    "Fund / Vehicle / Client": "Kholo Capital Mezzanine Debt Fund I",
     "Asset class": "Private credit / mezzanine debt",
     "Geographic focus": "Southern Africa",
     "Vintage / Year": "2023",
@@ -5922,7 +6045,8 @@ const DATASET = {
     "Asset class normalized": "Private Credit",
     "Sector / thematic focus": "Mid-market finance",
     "Investment approach": "Fund LP",
-    "Source IDs": "S246;S247"
+    "Source IDs": "S246;S247",
+    "Fund / Vehicle / Deal name": "Kholo Capital Mezzanine Debt Fund I"
   },
   {
     "Allocator (institution)": "Public Service Superannuation Scheme (PSSS)",
@@ -5930,7 +6054,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Africa50",
-    "Fund / Vehicle / Deal name": "Africa50 Infrastructure Acceleration Fund (IAF)",
+    "Fund / Vehicle / Client": "Africa50 Infrastructure Acceleration Fund (IAF)",
     "Asset class": "Infrastructure",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2025,
@@ -5943,7 +6067,8 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S248"
+    "Source IDs": "S248",
+    "Fund / Vehicle / Deal name": "Africa50 Infrastructure Acceleration Fund (IAF)"
   },
   {
     "Allocator (institution)": "CNPS Cameroon",
@@ -5951,7 +6076,7 @@ const DATASET = {
     "Allocator type": "Public PF",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Africa50",
-    "Fund / Vehicle / Deal name": "Africa50 Infrastructure Acceleration Fund (IAF)",
+    "Fund / Vehicle / Client": "Africa50 Infrastructure Acceleration Fund (IAF)",
     "Asset class": "Infrastructure",
     "Geographic focus": "Pan-Africa",
     "Vintage / Year": 2025,
@@ -5964,7 +6089,8 @@ const DATASET = {
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S248"
+    "Source IDs": "S248",
+    "Fund / Vehicle / Deal name": "Africa50 Infrastructure Acceleration Fund (IAF)"
   },
   {
     "Allocator (institution)": "GEPF (via PIC)",
@@ -5972,7 +6098,7 @@ const DATASET = {
     "Allocator type": "Public PF (via mgr)",
     "Commitment type": "Fund LP",
     "GP or counterparty": "Ninety One",
-    "Fund / Vehicle / Deal name": "Africa Credit Opportunities Fund III (ACO Fund 3)",
+    "Fund / Vehicle / Client": "Africa Credit Opportunities Fund III (ACO Fund 3)",
     "Asset class": "Private credit",
     "Geographic focus": "Africa + emerging markets",
     "Vintage / Year": "2024/25",
@@ -5985,7 +6111,8 @@ const DATASET = {
     "Asset class normalized": "Private Credit",
     "Sector / thematic focus": "SME / Mid-market finance; Infrastructure",
     "Investment approach": "Fund LP",
-    "Source IDs": "S219;S249;S250"
+    "Source IDs": "S219;S249;S250",
+    "Fund / Vehicle / Deal name": "Africa Credit Opportunities Fund III (ACO Fund 3)"
   }
 ],
   "Pipeline_and_Mandates": [
@@ -8555,6 +8682,96 @@ const DATASET = {
     "URL": "https://www.findevcanada.ca/en/news/findev-canada-commits-usd-20-million-ninety-ones-africa-credit-opportunities-fund-iii-support",
     "Used for": "Additional DFI co-investor evidence for Ninety One Africa Credit Opportunities Fund III.",
     "Source ID": "S250"
+  },
+  {
+    "Allocator": "PIC / GEPF",
+    "Source type": "Trade press",
+    "Title / publication": "Africa Global Funds ? Pembani Remgro Infrastructure Fund hits first close at $245m",
+    "Date accessed": "2026-06-24",
+    "URL": "https://www.africaglobalfunds.com/news/private-equity/fundraising/pembani-remgro-infrastructure-fund-hits-first-close-at-245m/",
+    "Used for": "Pembani Remgro Infrastructure Fund first close and investor base. Source mentions private pension funds but does not name PIC/GEPF; row remains verification-needed for named PIC involvement.",
+    "Source ID": "S251"
+  },
+  {
+    "Allocator": "PIC / GEPF",
+    "Source type": "Trade press",
+    "Title / publication": "Africa Global Funds ? Convergence hits final close at over $200m for ICT infrastructure fund",
+    "Date accessed": "2026-06-24",
+    "URL": "https://www.africaglobalfunds.com/news/private-equity/fundraising/convergence-hits-final-close-at-over-200m-for-ict-infrastructure-fund/",
+    "Used for": "Convergence Partners Communication Infrastructure Fund final close names PIC acting on behalf of GEPF and lists DFI co-investors IFC, EIB, FMO, DBSA and CDC/BII.",
+    "Source ID": "S252"
+  },
+  {
+    "Allocator": "Mohammed VI Fund for Investment",
+    "Source type": "Official website",
+    "Title / publication": "FM6I ? Funds & Investments / thematic and sectoral funds",
+    "Date accessed": "2026-06-24",
+    "URL": "https://www.fm6i.ma/en",
+    "Used for": "FM6I mission and operating model, including thematic and sectoral funds, equity participation in high-impact projects, and financing solutions.",
+    "Source ID": "S253"
+  },
+  {
+    "Allocator": "Fundo Soberano de Angola (FSDEA)",
+    "Source type": "Official website",
+    "Title / publication": "FSDEA ? Council of Ministers approves FSDEA's 2024-2028 Strategic Plan",
+    "Date accessed": "2026-06-24",
+    "URL": "https://fundosoberano.ao/en/news-and-events/news/628/council-of-ministers-approves-fsdeas-2024-2028-strategic-plan",
+    "Used for": "FSDEA strategic plan and public reference to the Lobito Corridor Impact Development Platform; supports strategic-plan context rather than a discrete closed transaction.",
+    "Source ID": "S254"
+  },
+  {
+    "Allocator": "Agaciro Development Fund (AgDF)",
+    "Source type": "Annual report",
+    "Title / publication": "Agaciro Development Fund ? Annual Report 2021",
+    "Date accessed": "2026-06-24",
+    "URL": "https://www.agaciro.rw/fileadmin/user_upload/Annual%20Report%202021%20-%20Web.pdf",
+    "Used for": "AgDF audited annual report shows equity allocation and investment portfolio composition; supports aggregate direct-equity exposure, not named individual investments.",
+    "Source ID": "S255"
+  },
+  {
+    "Allocator": "Rwanda Social Security Board (RSSB)",
+    "Source type": "DFI project disclosure / company ownership source",
+    "Title / publication": "Early Warning System ? GTFP MIGA Kigali / BK Group ownership by RSSB and Agaciro",
+    "Date accessed": "2026-06-24",
+    "URL": "https://ewsdata.rightsindevelopment.org/projects/46350-gtfp-miga-kigali/",
+    "Used for": "BK Group ownership disclosure lists RSSB and Agaciro as major BKG owners; supports BK Group strategic stake but not all aggregate RSSB strategic holdings.",
+    "Source ID": "S256"
+  },
+  {
+    "Allocator": "Ghana Infrastructure Investment Fund (GIIF)",
+    "Source type": "Investor presentation",
+    "Title / publication": "GIIF ? Investor Presentation June 2024",
+    "Date accessed": "2026-06-24",
+    "URL": "https://giif.gov.gh/wp-content/uploads/2024/11/GIIF_Investor_Presentation_June-2024.pdf",
+    "Used for": "GIIF mandate, sector focus, committed transactions, investment portfolio and selected pipeline across transport, power, water/waste, housing and other infrastructure.",
+    "Source ID": "S257"
+  },
+  {
+    "Allocator": "FGIS Gabon",
+    "Source type": "IFSWF profile / membership note",
+    "Title / publication": "IFSWF ? Gabon's Sovereign Wealth Fund, FGIS, joins IFSWF",
+    "Date accessed": "2026-06-24",
+    "URL": "https://www.ifswf.org/general-news/gabon%E2%80%99s-sovereign-wealth-fund-fgis-joins-international-forum-sovereign-wealth-funds",
+    "Used for": "FGIS background as asset manager of the Gabonese sovereign wealth fund and manager of state assets; supports strategic-investment role, not row-level named holdings.",
+    "Source ID": "S258"
+  },
+  {
+    "Allocator": "Fonds Souverain de Djibouti (FSD)",
+    "Source type": "Official social profile",
+    "Title / publication": "Fonds Souverain de Djibouti ? mandate to co-invest in strategic sectors",
+    "Date accessed": "2026-06-24",
+    "URL": "https://dj.linkedin.com/company/fonds-souverain-de-djibouti",
+    "Used for": "FSD mandate to catalyze investment by co-investing alongside private sector investors in strategic sectors; supports platform/co-investment mandate context.",
+    "Source ID": "S259"
+  },
+  {
+    "Allocator": "Stanbic IBTC Pension Managers",
+    "Source type": "Official website",
+    "Title / publication": "Stanbic IBTC Pension Managers ? Multifund Information",
+    "Date accessed": "2026-06-24",
+    "URL": "https://www.stanbicibtcpension.com/nigeriapensionmanagers/pension-managers/services/rsa-fund-information/multifund-information",
+    "Used for": "Stanbic IBTC Multi-Fund structure context; does not identify specific PE/infra fund commitments, so row remains aggregate/verification-needed.",
+    "Source ID": "S260"
   }
 ],
   "Tier_1_Candidates": [

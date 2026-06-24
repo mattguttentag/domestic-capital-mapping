@@ -6005,7 +6005,7 @@ const DATASET = {
     "Source (short)": "FSDAi GBP 10m catalytic commitment April 2025",
     "Pipeline confidence": "M",
     "Reason not in Commitments Database": "FSDAi commitment is structured to unlock pension contributions, but no named or closed PFA LP allocation is disclosed yet.",
-    "Source URL": "https://archive.fsdafrica.org/arm-harith-and-fsd-africa-investments-announce-gbp-10m-commitment-to-unlock-nigerian-pension-funds-and-catalyse-local-capital-for-infrastructure/",
+    "Source URL": "https://fsdafrica.org/nairobi-15-april-2025-10am-eat-fsd-africa-investments-fsdai-the-uk-backed-specialist-development-finance-investor-is-investing-gbp-10-million-into-arm-hariths-climate-and-transition-in/",
     "Asset class normalized": "Real Assets / Infrastructure Equity",
     "Sector / thematic focus": "Infrastructure; Climate / Energy Transition",
     "Investment approach": "Mandate / Pipeline Only"
@@ -6732,9 +6732,9 @@ const DATASET = {
   {
     "Allocator": "PSSSF Tanzania",
     "Source type": "Regulator filing",
-    "Title / publication": "PSSSF investment guidelines / Annual report",
+    "Title / publication": "PSSSF official website",
     "Date accessed": "May 2026",
-    "URL": "https://www.psssf.go.tz/uploads/publication/37Publication2023-05-022267.pdf",
+    "URL": "https://www.psssf.go.tz/",
     "Used for": "PSSSF investment guidelines reference",
     "Source ID": "S048"
   },
@@ -7029,9 +7029,9 @@ const DATASET = {
   {
     "Allocator": "Savannah Impact Advisory",
     "Source type": "Manager website",
-    "Title / publication": "Savannah Impact Advisory (Manager of Ci Gaba FoF)",
+    "Title / publication": "Savannah Impact Advisory - Ci-Gaba Fund page",
     "Date accessed": "May 2026",
-    "URL": "https://siaghana.com/our-about/",
+    "URL": "https://www.siaghana.com/ci-gaba-fund",
     "Used for": "Ci Gaba FoF manager profile",
     "Source ID": "S081"
   },
@@ -7128,9 +7128,9 @@ const DATASET = {
   {
     "Allocator": "AfricInvest FIVE",
     "Source type": "Press release",
-    "Title / publication": "AVCA — AfricInvest FIVE second close brings Norfund, IFU, CBK Pension Fund as investors (Oct 2018)",
+    "Title / publication": "AfricInvest - FIVE second close brings Norfund, IFU, CBK Pension Fund as investors (Oct 2018)",
     "Date accessed": "May 2026",
-    "URL": "https://www.avca-africa.org/newsroom/member-news/2018/africinvest-s-five-achieves-its-second-close-bringing-norfund-ifu-and-cbk-pension-fund-as-investors/",
+    "URL": "https://www.africinvest.com/news-and-media/news/africinvest-s-five-achieves-its-second-close-bringing-norfund-ifu-and-cbk-pension-fund-as-investors/",
     "Used for": "CBK Pension Fund Kenya commitment to AfricInvest FIVE",
     "Source ID": "S092"
   },
@@ -7146,9 +7146,9 @@ const DATASET = {
   {
     "Allocator": "AfricInvest FIVE",
     "Source type": "Press release",
-    "Title / publication": "AVCA — AfricInvest FIVE fourth close (2019)",
+    "Title / publication": "AfricInvest - FIVE fourth close brings AfDB as investor (2019)",
     "Date accessed": "May 2026",
-    "URL": "https://www.avca-africa.org/newsroom/member-news/2019/africinvest-s-five-achieves-fourth-close/",
+    "URL": "https://www.africinvest.com/news-and-media/news/africinvest-s-permanent-vehicle-five-achieves-its-fourth-close-bringing-afdb-as-investor/",
     "Used for": "Confirmation of continuing LP composition",
     "Source ID": "S094"
   },
@@ -7758,9 +7758,9 @@ const DATASET = {
   {
     "Allocator": "AOFSA",
     "Source type": "DFI document",
-    "Title / publication": "Prosper Africa — U.S., Kenyan and South African Pension Funds Commit Over $94m to African PE & Infrastructure",
+    "Title / publication": "Africa PSA mirror - U.S., Kenyan and South African Pension Funds Commit Over $94m to African PE & Infrastructure",
     "Date accessed": "May 2026",
-    "URL": "https://www.prosperafrica.gov/news/impact-story/u-s-kenyan-and-south-african-pension-funds-commit-over-94-million-to-african-private-equity-infrastructure/",
+    "URL": "https://www.africapsa.org/news/u-s-kenyan-and-south-african-pension-funds-commit-over-94-million-to-african-private-equity-infrastructure/",
     "Used for": "Prosper Africa / USAID context for KEPFIC + AOFSA",
     "Source ID": "S162"
   },
@@ -12044,7 +12044,7 @@ const DATASET = {
     "Decision": "Exclude",
     "Audit confidence": "Excluded - insufficient actual African PF/SWF evidence",
     "Rationale": "Pipeline/catalytic structure only. Public evidence says FSDAi commitment is expected to unlock Nigerian pension contributions; no named/closed PFA LP evidence found.",
-    "Source URLs": "https://archive.fsdafrica.org/arm-harith-and-fsd-africa-investments-announce-gbp-10m-commitment-to-unlock-nigerian-pension-funds-and-catalyse-local-capital-for-infrastructure/"
+    "Source URLs": "https://fsdafrica.org/nairobi-15-april-2025-10am-eat-fsd-africa-investments-fsdai-the-uk-backed-specialist-development-finance-investor-is-investing-gbp-10-million-into-arm-hariths-climate-and-transition-in/"
   },
   {
     "Sheet": "Funds & LP Co-Investors",

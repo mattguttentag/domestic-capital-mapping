@@ -3742,28 +3742,6 @@ const DATASET = {
     "Allocator (institution)": "Caisse de Dépôt et de Gestion (CDG)",
     "Allocator country": "Morocco",
     "Allocator type": "Sovereign + pension manager",
-    "Commitment type": "Fund LP",
-    "GP or counterparty": "Mediterrania Capital Partners",
-    "Fund / Vehicle / Client": "Mediterrania Capital II/III (historical)",
-    "Asset class": "PE",
-    "Geographic focus": "North Africa / pan-Africa",
-    "Vintage / Year": "various",
-    "Commitment size (reported)": "Not disclosed publicly",
-    "Currency": "EUR",
-    "Disclosure type": "Trade press",
-    "Source (short)": "Industry coverage",
-    "Confidence": "M",
-    "Notes": "CDG has historically been an LP in Mediterrania PE funds focused on Maghreb mid-market.",
-    "Asset class normalized": "Private Equity",
-    "Sector / thematic focus": "Generalist",
-    "Investment approach": "Fund LP",
-    "Source IDs": "S029",
-    "Fund / Vehicle / Deal name": "Mediterrania Capital II/III (historical)"
-  },
-  {
-    "Allocator (institution)": "Caisse de Dépôt et de Gestion (CDG)",
-    "Allocator country": "Morocco",
-    "Allocator type": "Sovereign + pension manager",
     "Commitment type": "Direct equity",
     "GP or counterparty": null,
     "Fund / Vehicle / Client": "Retail Holding (food distribution, Morocco + Côte d'Ivoire)",
@@ -10565,23 +10543,6 @@ const DATASET = {
     "Investment approach": "Fund LP"
   },
   {
-    "Fund / Vehicle": "Mediterrania Capital II / III / IV",
-    "Manager / GP": "Mediterrania Capital Partners",
-    "Vintage": "Various 2014-2024",
-    "Fund size (USD m)": "EUR multi-100m",
-    "Asset class": "PE",
-    "Geographic focus": "North Africa + Sub-Saharan",
-    "African PF/SWF LPs (count)": 1,
-    "Named African PF/SWF LPs": "CDG Morocco (historical LP)",
-    "DFI LPs (count)": "multiple",
-    "Named DFI LPs": "CDP Group (Italy), EIB, AfDB, others (varying by vintage)",
-    "Other named LPs": "European family offices",
-    "Co-investor pattern note": "Maghreb-focused; CDG Morocco historical LP.",
-    "Asset class normalized": "Private Equity",
-    "Sector / thematic focus": "Generalist",
-    "Investment approach": "Fund LP"
-  },
-  {
     "Fund / Vehicle": "AfricInvest FIVE (Financial Inclusion Vehicle)",
     "Manager / GP": "AfricInvest",
     "Vintage": "Open-ended evergreen (started 2017)",
@@ -11347,9 +11308,9 @@ const DATASET = {
   },
   {
     "DFI / Catalytic capital provider": "AfDB",
-    "Co-investments in funds with African PF/SWF LP": 9,
-    "Notable vehicles": "Mediterrania Capital II / III / IV; AfricInvest FIVE (Financial Inclusion Vehicle); Africa50 (general); Africa50 Infrastructure Acceleration Fund (IAF); Nigeria Infrastructure Fund (NIF, NSIA sub-fund); Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Africa Food Security Fund (AFSF); InfraCredit; Nigeria Infrastructure Debt Fund (NIDF)",
-    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
+    "Co-investments in funds with African PF/SWF LP": 8,
+    "Notable vehicles": "AfricInvest FIVE (Financial Inclusion Vehicle); Africa50 (general); Africa50 Infrastructure Acceleration Fund (IAF); Nigeria Infrastructure Fund (NIF, NSIA sub-fund); Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Africa Food Security Fund (AFSF); InfraCredit; Nigeria Infrastructure Debt Fund (NIDF)",
+    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation. Mediterrania removed pending public evidence of a specific African PF/SWF LP.",
     "Frequency tier": "1 (Top tier)"
   },
   {
@@ -11375,9 +11336,9 @@ const DATASET = {
   },
   {
     "DFI / Catalytic capital provider": "EIB",
-    "Co-investments in funds with African PF/SWF LP": 5,
-    "Notable vehicles": "Adenia Capital V; Catalyst Fund II; Vantage Mezzanine IV (Pan-African sub-fund); Mediterrania Capital II / III / IV; Oasis Africa VC Fund (OAF)",
-    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation.",
+    "Co-investments in funds with African PF/SWF LP": 4,
+    "Notable vehicles": "Adenia Capital V; Catalyst Fund II; Vantage Mezzanine IV (Pan-African sub-fund); Oasis Africa VC Fund (OAF)",
+    "Strategic role": "Co-investor or catalytic-capital provider appearing in retained vehicles with African PF/SWF participation. Mediterrania removed pending public evidence of a specific African PF/SWF LP.",
     "Frequency tier": "2 (Active)"
   },
   {
@@ -12392,16 +12353,6 @@ const DATASET = {
     "Original row": 21,
     "Vehicle / entity": "Vantage Mezzanine IV (Pan-African sub-fund)",
     "Column H / named African PF/SWF evidence": "'A number of Southern African pension funds' (per Vantage disclosure; SA pension funds incl. BPOPF — see Phase 2 entry)",
-    "Decision": "Include",
-    "Audit confidence": "Include",
-    "Rationale": "Column H identifies a named African PF/SWF, a named cohort, or the allocator itself is an African SWF/PF vehicle.",
-    "Source URLs": null
-  },
-  {
-    "Sheet": "Funds & LP Co-Investors",
-    "Original row": 22,
-    "Vehicle / entity": "Mediterrania Capital II / III / IV",
-    "Column H / named African PF/SWF evidence": "CDG Morocco (historical LP)",
     "Decision": "Include",
     "Audit confidence": "Include",
     "Rationale": "Column H identifies a named African PF/SWF, a named cohort, or the allocator itself is an African SWF/PF vehicle.",

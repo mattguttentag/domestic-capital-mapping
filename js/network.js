@@ -100,7 +100,6 @@ function buildNetwork() {
     ['AfricInvest FIVE (Financial Inclusion Vehicle, evergreen)', 'AfricInvest FIVE (Financial Inclusion Vehicle)'],
     ['Fund for Agricultural Finance in Nigeria (FAFIN)', 'Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN)'],
     ['Vantage Capital Mezzanine funds', 'Vantage Mezzanine IV (Pan-African sub-fund)'],
-    ['Mediterrania Capital II/III (historical)', 'Mediterrania Capital II / III / IV'],
     ['Nigeria Infrastructure Fund (NIF) direct deals', 'Nigeria Infrastructure Fund (NIF, NSIA sub-fund)'],
     ['Africa50 (general)', 'Africa50'],
     ['Africa50 (shareholder stake)', 'Africa50'],

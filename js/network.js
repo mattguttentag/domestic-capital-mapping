@@ -99,8 +99,6 @@ function buildNetwork() {
     ['Growth Investment Partners Zambia (GIP Zambia)', 'Growth Investment Partners Zambia'],
     ['AfricInvest FIVE (Financial Inclusion Vehicle, evergreen)', 'AfricInvest FIVE (Financial Inclusion Vehicle)'],
     ['Fund for Agricultural Finance in Nigeria (FAFIN)', 'Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN)'],
-    ['CAPE I-IV (Capital Alliance Private Equity)', 'Capital Alliance Private Equity I-IV (CAPE)'],
-    ['Capital Alliance Private Equity (CAPE) funds', 'Capital Alliance Private Equity I-IV (CAPE)'],
     ['Vantage Capital Mezzanine funds', 'Vantage Mezzanine IV (Pan-African sub-fund)'],
     ['Mediterrania Capital II/III (historical)', 'Mediterrania Capital II / III / IV'],
     ['Nigeria Infrastructure Fund (NIF) direct deals', 'Nigeria Infrastructure Fund (NIF, NSIA sub-fund)'],
@@ -110,7 +108,6 @@ function buildNetwork() {
     ['Africa Finance Corporation (AFC) — equity shareholders', 'Africa Finance Corporation (AFC)'],
     ['Africa Finance Corporation (AFC) - equity shareholders', 'Africa Finance Corporation (AFC)'],
     ['AFC equity stake', 'Africa Finance Corporation (AFC)'],
-    ['Helios Investors II / III / IV (historical)', 'Helios Investors II/III/IV (historical)'],
   ]);
 
   function normalizeText(v) {

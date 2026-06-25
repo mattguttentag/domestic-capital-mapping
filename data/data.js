@@ -3347,28 +3347,6 @@ const DATASET = {
     "Allocator country": "South Africa",
     "Allocator type": "Public PF (via mgr)",
     "Commitment type": "Fund LP",
-    "GP or counterparty": "Helios Investment Partners",
-    "Fund / Vehicle / Client": "Helios Investors II / III / IV (historical)",
-    "Asset class": "PE",
-    "Geographic focus": "Pan-Africa",
-    "Vintage / Year": "2009–2020",
-    "Commitment size (reported)": "Not disclosed publicly",
-    "Currency": "USD",
-    "Disclosure type": "Trade press / GP disclosure",
-    "Source (short)": "Helios LP composition; widely reported",
-    "Confidence": "M",
-    "Notes": "PIC has been a recurring LP in Helios funds dating back to Helios II; specific commitment sizes not publicly disclosed.",
-    "Asset class normalized": "Private Equity",
-    "Sector / thematic focus": "Generalist",
-    "Investment approach": "Fund LP",
-    "Source IDs": "S011",
-    "Fund / Vehicle / Deal name": "Helios Investors II / III / IV (historical)"
-  },
-  {
-    "Allocator (institution)": "PIC (mgr for GEPF)",
-    "Allocator country": "South Africa",
-    "Allocator type": "Public PF (via mgr)",
-    "Commitment type": "Fund LP",
     "GP or counterparty": "Pembani Remgro",
     "Fund / Vehicle / Client": "Pembani Remgro Infrastructure Fund",
     "Asset class": "Infrastructure",
@@ -3561,28 +3539,6 @@ const DATASET = {
     "Investment approach": "Direct Investment",
     "Source IDs": "S006",
     "Fund / Vehicle / Deal name": "Pandagric Novum (agribusiness)"
-  },
-  {
-    "Allocator (institution)": "Nigeria Sovereign Investment Authority (NSIA)",
-    "Allocator country": "Nigeria",
-    "Allocator type": "SWF",
-    "Commitment type": "Fund LP",
-    "GP or counterparty": "African Capital Alliance (ACA)",
-    "Fund / Vehicle / Client": "Capital Alliance Private Equity (CAPE) funds",
-    "Asset class": "PE",
-    "Geographic focus": "West Africa / Nigeria",
-    "Vintage / Year": "various",
-    "Commitment size (reported)": "Not disclosed publicly",
-    "Currency": "USD",
-    "Disclosure type": "Trade press / industry knowledge",
-    "Source (short)": "Industry reporting",
-    "Confidence": "M",
-    "Notes": "NSIA has been an LP in Nigerian-focused PE funds; sizes not disclosed.",
-    "Asset class normalized": "Private Equity",
-    "Sector / thematic focus": "Generalist",
-    "Investment approach": "Fund LP",
-    "Source IDs": "S145;S147",
-    "Fund / Vehicle / Deal name": "Capital Alliance Private Equity (CAPE) funds"
   },
   {
     "Allocator (institution)": "Multiple Nigerian PFAs (consortium)",
@@ -5037,26 +4993,48 @@ const DATASET = {
     "Fund / Vehicle / Deal name": "Fund for Agricultural Finance in Nigeria (FAFIN)"
   },
   {
-    "Allocator (institution)": "Nigerian PFAs (historical cohort)",
+    "Allocator (institution)": "Nigerian pension funds (aggregate)",
     "Allocator country": "Nigeria",
-    "Allocator type": "PFA cohort",
-    "Commitment type": "Fund LP (historical)",
+    "Allocator type": "PFA / local pension cohort",
+    "Commitment type": "Fund LP (aggregate disclosure)",
     "GP or counterparty": "African Capital Alliance (ACA)",
-    "Fund / Vehicle / Client": "CAPE I-IV (Capital Alliance Private Equity)",
+    "Fund / Vehicle / Client": "Capital Alliance Private Equity III (CAPE III)",
     "Asset class": "PE",
     "Geographic focus": "Nigeria + West Africa",
-    "Vintage / Year": "1998-ongoing",
-    "Commitment size (reported)": "Cumulative >USD 1bn raised across CAPE I-IV",
+    "Vintage / Year": 2009,
+    "Commitment size (reported)": "About USD 45m from local pension funds",
     "Currency": "USD",
-    "Disclosure type": "ACA disclosures / industry coverage",
-    "Source (short)": "ACA member interview and corporate site",
+    "Disclosure type": "GP / industry interview",
+    "Source (short)": "EMPEA / GPCA ACA interview",
     "Confidence": "M",
-    "Notes": "ACA historically championed PE inclusion as allowable Nigerian pension asset class. Some PFA commitments to CAPE funds confirmed by ACA's stated 'institutional investor base, primarily pension funds and DFIs'; specific PFA names not individually disclosed.",
+    "Notes": "ACA founder Okechukwu Enelamah stated that ACA received about USD 45m from local pension funds into its third fund. Individual PFAs not publicly named.",
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP",
-    "Source IDs": "S145;S146;S147",
-    "Fund / Vehicle / Deal name": "CAPE I-IV (Capital Alliance Private Equity)"
+    "Source IDs": "S261;S145",
+    "Fund / Vehicle / Deal name": "Capital Alliance Private Equity III (CAPE III)"
+  },
+  {
+    "Allocator (institution)": "Nigerian PFAs / CPFAs (aggregate)",
+    "Allocator country": "Nigeria",
+    "Allocator type": "PFA / CPFA cohort",
+    "Commitment type": "Fund LP (aggregate disclosure)",
+    "GP or counterparty": "African Capital Alliance (ACA)",
+    "Fund / Vehicle / Client": "Capital Alliance Private Equity IV (CAPE IV)",
+    "Asset class": "PE",
+    "Geographic focus": "Nigeria + West Africa",
+    "Vintage / Year": 2016,
+    "Commitment size (reported)": "Not disclosed publicly; PenCom reports CPFA capital calls on CAPE IV",
+    "Currency": "USD / NGN",
+    "Disclosure type": "Regulator / DFI mobilisation study / GP close announcement",
+    "Source (short)": "PenCom 2020; BII mobilisation study; ACA/GPCA final close",
+    "Confidence": "M",
+    "Notes": "Public evidence confirms aggregate Nigerian pension participation in CAPE IV: PenCom reports CPFA capital calls on CAPE IV, and BII states the CAPE IV local-currency vehicle directly attracted local pension funds. Individual PFAs/CPFAs not publicly named.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP",
+    "Source IDs": "S147;S262;S263;S264",
+    "Fund / Vehicle / Deal name": "Capital Alliance Private Equity IV (CAPE IV)"
   },
   {
     "Allocator (institution)": "Rwanda Social Security Board (RSSB)",
@@ -7735,7 +7713,7 @@ const DATASET = {
     "Title / publication": "African Capital Alliance — About / corporate site",
     "Date accessed": "May 2026",
     "URL": "https://www.acagp.com/about-african-capital-alliance/",
-    "Used for": "ACA history; CAPE I-IV; >USD 1bn cumulative; championed Nigerian pension PE inclusion",
+    "Used for": "ACA history; CAPE fund family context; championed Nigerian pension PE inclusion",
     "Source ID": "S145"
   },
   {
@@ -8772,6 +8750,42 @@ const DATASET = {
     "URL": "https://www.stanbicibtcpension.com/nigeriapensionmanagers/pension-managers/services/rsa-fund-information/multifund-information",
     "Used for": "Stanbic IBTC Multi-Fund structure context; does not identify specific PE/infra fund commitments, so row remains aggregate/verification-needed.",
     "Source ID": "S260"
+  },
+  {
+    "Allocator": "African Capital Alliance (ACA)",
+    "Source type": "EMPEA / GPCA interview",
+    "Title / publication": "Inside Perspectives: An Interview with Okechukwu Enelamah of African Capital Alliance",
+    "Date accessed": "2026-06-25",
+    "URL": "https://www.globalprivatecapital.org/app/uploads/2017/03/Inside-Perspectives-EMPER-Q2-12-web.pdf",
+    "Used for": "CAPE III received about USD 45m from local pension funds; also lists CAPE I, II and III sample investments.",
+    "Source ID": "S261"
+  },
+  {
+    "Allocator": "CAPE IV",
+    "Source type": "GP / industry association press release",
+    "Title / publication": "African Capital Alliance Closes CAPE IV with US$570m in Capital Commitments",
+    "Date accessed": "2026-06-25",
+    "URL": "https://www.globalprivatecapital.org/newsroom/african-capital-alliance-closes-cape-iv-with-us570-m-in-capital-commitments-sub-saharan-africa/",
+    "Used for": "CAPE IV final close; investor base included public and private pension funds, sovereign wealth funds, funds of funds and DFIs.",
+    "Source ID": "S262"
+  },
+  {
+    "Allocator": "CAPE IV",
+    "Source type": "Regulator annual report",
+    "Title / publication": "National Pension Commission 2020 Annual Report",
+    "Date accessed": "2026-06-25",
+    "URL": "https://www.pencom.gov.ng/wp-content/uploads/2021/11/APPROVED-2020-ANNUAL-REPORT.pdf",
+    "Used for": "PenCom reports CPFA private equity investments increased due to capital calls on Capital Alliance Private Equity Fund IV.",
+    "Source ID": "S263"
+  },
+  {
+    "Allocator": "CAPE IV",
+    "Source type": "DFI mobilisation study",
+    "Title / publication": "BII ? Analysis of mobilisation in four BII-backed funds",
+    "Date accessed": "2026-06-25",
+    "URL": "https://assets.bii.co.uk/wp-content/uploads/2024/03/19095026/Analysis-of-mobilisation-in-four-BII-backed-funds.pdf",
+    "Used for": "BII says CAPE IV local-currency-enabled vehicle directly attracted local pension funds and supported domestic capital-market development.",
+    "Source ID": "S264"
   }
 ],
   "Tier_1_Candidates": [
@@ -8782,7 +8796,7 @@ const DATASET = {
     "AUM (USD m, approx)": 125000,
     "As-of year": 2024,
     "Why prioritised": "By far the largest African pension pool",
-    "Known/expected African alts evidence": "Disclosed PE/infra exposure including Africa-ex-SA via PIC's Isibaya programme; LP in DPI, Helios, others (historical)."
+    "Known/expected African alts evidence": "Disclosed PE/infra exposure including Africa-ex-SA via PIC's Isibaya programme; LP in DPI and other disclosed vehicles (historical)."
   },
   {
     "Country": "Egypt",
@@ -9231,7 +9245,7 @@ const DATASET = {
     "No-evidence rationale": null,
     "Recommended next action": "Resolve commitment amount and co-investors for Ninety One African Credit Opportunities Fund III; add confirmed row if amount/source detail is sufficient.",
     "Audit date seeded": "2026-06-05",
-    "Notes": "Disclosed PE/infra exposure including Africa-ex-SA via PIC's Isibaya programme; LP in DPI, Helios, others (historical)."
+    "Notes": "Disclosed PE/infra exposure including Africa-ex-SA via PIC's Isibaya programme; LP in DPI and other disclosed vehicles (historical)."
   },
   {
     "Sweep priority": "P0",
@@ -10534,23 +10548,6 @@ const DATASET = {
     "Investment approach": "Fund LP"
   },
   {
-    "Fund / Vehicle": "Helios Investors II/III/IV (historical)",
-    "Manager / GP": "Helios Investment Partners",
-    "Vintage": "2009-2020",
-    "Fund size (USD m)": "Multi-bn cumulative",
-    "Asset class": "PE",
-    "Geographic focus": "Pan-Africa",
-    "African PF/SWF LPs (count)": 1,
-    "Named African PF/SWF LPs": "PIC South Africa (historical, recurring)",
-    "DFI LPs (count)": "multiple",
-    "Named DFI LPs": "BII (since 2007), various DFIs",
-    "Other named LPs": "Global pension funds, SWFs, endowments, family offices",
-    "Co-investor pattern note": "PIC has been recurring LP since Helios II; sizes not publicly disclosed.",
-    "Asset class normalized": "Private Equity",
-    "Sector / thematic focus": "Generalist",
-    "Investment approach": "Fund LP"
-  },
-  {
     "Fund / Vehicle": "Vantage Mezzanine IV (Pan-African sub-fund)",
     "Manager / GP": "Vantage Capital",
     "Vintage": 2021,
@@ -10806,18 +10803,35 @@ const DATASET = {
     "Investment approach": "Fund LP"
   },
   {
-    "Fund / Vehicle": "Capital Alliance Private Equity I-IV (CAPE)",
+    "Fund / Vehicle": "Capital Alliance Private Equity III (CAPE III)",
     "Manager / GP": "African Capital Alliance (ACA)",
-    "Vintage": "1998-ongoing",
-    "Fund size (USD m)": ">1,000 cumulative",
+    "Vintage": 2009,
+    "Fund size (USD m)": "400",
     "Asset class": "PE",
     "Geographic focus": "Nigeria + West Africa",
-    "African PF/SWF LPs (count)": "historical cohort",
-    "Named African PF/SWF LPs": "Nigerian PFAs (categorical historical disclosure; ACA explicitly 'championed PE inclusion as allowable Nigerian pension asset class')",
+    "African PF/SWF LPs (count)": "aggregate local pension cohort",
+    "Named African PF/SWF LPs": "Nigerian local pension funds (aggregate; individual PFAs not publicly named)",
     "DFI LPs (count)": "multiple",
-    "Named DFI LPs": "BII (CAPE IV); various DFIs across vintages",
-    "Other named LPs": "—",
-    "Co-investor pattern note": "First Nigerian PE firm (founded 1997); CAPE I was Nigeria's first PE fund (1998). Continental pioneer of pension-PE inclusion.",
+    "Named DFI LPs": "BII; EIB; IFC and other DFIs reported across CAPE funds",
+    "Other named LPs": "Not publicly named",
+    "Co-investor pattern note": "ACA reported about USD 45m from local pension funds into CAPE III. Individual PFAs not publicly named.",
+    "Asset class normalized": "Private Equity",
+    "Sector / thematic focus": "Generalist",
+    "Investment approach": "Fund LP"
+  },
+  {
+    "Fund / Vehicle": "Capital Alliance Private Equity IV (CAPE IV)",
+    "Manager / GP": "African Capital Alliance (ACA)",
+    "Vintage": 2016,
+    "Fund size (USD m)": "570",
+    "Asset class": "PE",
+    "Geographic focus": "Nigeria + West Africa",
+    "African PF/SWF LPs (count)": "aggregate Nigerian PFA/CPFA cohort",
+    "Named African PF/SWF LPs": "Nigerian PFAs / CPFAs (aggregate; individual PFAs/CPFAs not publicly named)",
+    "DFI LPs (count)": "multiple",
+    "Named DFI LPs": "BII; EIB; DFIs reported in final-close sources",
+    "Other named LPs": "Public and private pension funds; sovereign wealth funds; funds of funds",
+    "Co-investor pattern note": "CAPE IV final close included public/private pension funds and SWFs; BII mobilisation study and PenCom reporting confirm Nigerian pension/CPFA participation via a local-currency-enabled vehicle/capital calls.",
     "Asset class normalized": "Private Equity",
     "Sector / thematic focus": "Generalist",
     "Investment approach": "Fund LP"
@@ -11320,8 +11334,8 @@ const DATASET = {
   {
     "DFI / Catalytic capital provider": "BII",
     "Co-investments in funds with African PF/SWF LP": 15,
-    "Notable vehicles": "Growth Investment Partners (GIP) Ghana; Growth Investment Partners (GIP) Zambia; Ascent Rift Valley Fund I (ARVF I); Ascent Rift Valley Fund II (ARVF II); Catalyst Fund II; Helios Investors II/III/IV (historical); Vantage Mezzanine IV (Pan-African sub-fund); Convergence Partners Communications Infrastructure Fund; Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Capital Alliance Private Equity I-IV (CAPE); Africa Food Security Fund (AFSF); Verod Growth Fund III; Neoma Africa Fund III (B) L.P. (previously Abraaj Africa Fund III); African Development Partners III (ADP III); Enko Impact Credit Fund",
-    "Strategic role": "Frequent anchor/catalytic DFI, including BII-established GIP platforms designed to crowd in local pension capital.",
+    "Notable vehicles": "Growth Investment Partners (GIP) Ghana; Growth Investment Partners (GIP) Zambia; Ascent Rift Valley Fund I (ARVF I); Ascent Rift Valley Fund II (ARVF II); Catalyst Fund II; Vantage Mezzanine IV (Pan-African sub-fund); Convergence Partners Communications Infrastructure Fund; Sahel Capital Fund for Agricultural Finance in Nigeria (FAFIN); Capital Alliance Private Equity III (CAPE III); Capital Alliance Private Equity IV (CAPE IV); Africa Food Security Fund (AFSF); Verod Growth Fund III; Neoma Africa Fund III (B) L.P. (previously Abraaj Africa Fund III); African Development Partners III (ADP III); Enko Impact Credit Fund",
+    "Strategic role": "Frequent anchor/catalytic DFI, including BII-established GIP platforms designed to crowd in local pension capital; CAPE IV evidence supports Nigerian pension participation.",
     "Frequency tier": "1 (Top tier)"
   },
   {
@@ -12335,16 +12349,6 @@ const DATASET = {
   },
   {
     "Sheet": "Funds & LP Co-Investors",
-    "Original row": 16,
-    "Vehicle / entity": "Helios Investors II/III/IV (historical)",
-    "Column H / named African PF/SWF evidence": "PIC South Africa (historical, recurring)",
-    "Decision": "Include",
-    "Audit confidence": "Include",
-    "Rationale": "Column H identifies a named African PF/SWF, a named cohort, or the allocator itself is an African SWF/PF vehicle.",
-    "Source URLs": null
-  },
-  {
-    "Sheet": "Funds & LP Co-Investors",
     "Original row": 17,
     "Vehicle / entity": "Helios CLEAR Fund (Climate, Energy Access & Resilience)",
     "Column H / named African PF/SWF evidence": "None publicly named (Helios indicates SWFs + pension funds among LPs but unspecified)",
@@ -12572,16 +12576,6 @@ const DATASET = {
     "Audit confidence": "Excluded - insufficient actual African PF/SWF evidence",
     "Rationale": "Launch evidence says subscription is open to/targeting qualified institutional investors including pension funds; no actual PFA allocation disclosed.",
     "Source URLs": "https://www.ecofinagency.com/news-finances/2502-53253-nigerian-investment-firm-sahel-capital-launches-55-million-fund-to-narrow-farm-finance-gap"
-  },
-  {
-    "Sheet": "Funds & LP Co-Investors",
-    "Original row": 40,
-    "Vehicle / entity": "Capital Alliance Private Equity I-IV (CAPE)",
-    "Column H / named African PF/SWF evidence": "Nigerian PFAs (categorical historical disclosure; ACA explicitly 'championed PE inclusion as allowable Nigerian pension asset class')",
-    "Decision": "Include",
-    "Audit confidence": "Include",
-    "Rationale": "Column H identifies a named African PF/SWF, a named cohort, or the allocator itself is an African SWF/PF vehicle.",
-    "Source URLs": null
   },
   {
     "Sheet": "Funds & LP Co-Investors",
